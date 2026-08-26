@@ -2,7 +2,7 @@ const copy = {
   nl: {
     hero: {
       eyebrow: 'Hypotheken × Technologie × Economie × Econometrie',
-      title: 'Moeilijke vraagstukken. Oplossingen die passen.',
+      title: 'Moeilijke vraagstukken. Passende oplossingen.',
       copy: 'Smart Backoffice Solutions combineert diepgaande kennis van de Nederlandse hypotheekmarkt met technologie, economie en econometrie. Met econometrie halen we betrouwbare kennis uit data; met software engineering vertalen we die kennis naar systemen die werken. We bouwen wat het vraagstuk vraagt — vaak met AI, nooit technologie om de technologie.',
       cta: 'Neem contact op',
       more: 'Wat we doen'
