@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Política de privacidade — Food Moments</title>
+<link rel="icon" href="../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="foodmoments.css">
+</head>
+<body>
+<main class="doc">
+
+<nav class="langs"><a href="privacy.en.html">EN</a>
+<a href="privacy.de.html">DE</a>
+<a href="privacy.nl.html">NL</a>
+<a href="privacy.es.html">ES</a>
+<a href="privacy.fr.html">FR</a>
+<a class="active" href="privacy.pt.html">PT</a></nav>
+<h1>Política de privacidade — Food Moments</h1>
+<p class="meta">Data de entrada em vigor: 27 de agosto de 2026. Esta política está disponível em inglês, alemão, neerlandês, espanhol, francês e português; a versão inglesa é a vinculativa.</p>
+<p>O Food Moments estima o valor nutricional das suas refeições a partir de fotografias e das suas próprias palavras. A aplicação foi construída para que os seus dados continuem a ser seus: não há conta, nem publicidade, nem rastreio, e tudo o que regista é guardado apenas no seu iPhone. A única exceção — o envio da refeição em análise para um serviço de IA — é descrita com precisão abaixo e só acontece depois de ter dado o seu consentimento na aplicação.</p>
+<h2>1. Quem é o responsável</h2>
+<p>O responsável pelo tratamento é a <strong>Smart Backoffice Solutions B.V.</strong>, Saal van Zwanenbergweg 11, 5026 RM Tilburg, Países Baixos, inscrita no registo comercial neerlandês (KvK) com o número 90141482. Contacto: <strong><a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></strong>.</p>
+<h2>2. O que a aplicação trata, e onde fica</h2>
+<p><strong>Guardado apenas no seu iPhone, nunca transmitido para nós:</strong></p>
+<ul>
+  <li>As suas fotografias de refeições, notas, correções e o histórico de alterações</li>
+  <li>As estimativas nutricionais e a sua cronologia</li>
+  <li>As suas definições de objetivos diários (ano de nascimento, sexo, peso, altura, atividade, objetivo)</li>
+  <li>Os dados do Apple Health (energia em repouso e ativa), se ativar «Obter objetivos do Apple Health» — lidos no dispositivo para definir o seu objetivo diário de energia, <strong>nunca transmitidos</strong>, nunca usados para publicidade, nunca escritos no Health</li>
+  <li>As estatísticas de utilização e custo mostradas nas Definições</li>
+</ul>
+<p>Não operamos nenhum servidor que guarde os seus dados. As cópias de segurança são ficheiros que cria você mesmo na aplicação e guarda onde quiser; nós nunca as vemos.</p>
+<p><strong>Enviado para a análise de uma refeição (apenas com o seu consentimento, ver §3):</strong></p>
+<ul>
+  <li>As fotografias da refeição em análise</li>
+  <li>A sua nota e as correções posteriores dessa refeição</li>
+  <li>O texto de rótulos nutricionais e a informação de produtos por código de barras encontrados nas fotografias</li>
+  <li>Resumos de uma linha das suas refeições recentes, para que as porções se mantenham consistentes de dia para dia</li>
+</ul>
+<p><strong>Enviado quando dita com o motor online (opcional, desativado por predefinição):</strong></p>
+<ul>
+  <li>A gravação áudio do seu ditado, para ser transcrita em texto</li>
+</ul>
+<p><strong>Enviado quando é encontrado um código de barras numa fotografia:</strong></p>
+<ul>
+  <li>O número do código de barras, consultado na base de dados pública Open Food Facts (§4)</li>
+</ul>
+<h2>3. Análise de refeições por IA — o seu consentimento</h2>
+<p>Para calcular uma estimativa, a aplicação envia os dados acima indicados para um modelo de IA (OpenAI GPT ou Anthropic Claude, conforme a sua escolha nas definições da aplicação) em execução em <strong>servidores Microsoft Azure na União Europeia</strong>, na nossa própria implementação. Os dados são usados exclusivamente para calcular a sua estimativa nutricional. Não são usados para treinar modelos de IA. Não existe conta, pelo que nenhum nome, endereço de e-mail ou outro identificador acompanha o pedido.</p>
+<p>A aplicação pede o seu <strong>consentimento explícito antes da primeira análise</strong> (base jurídica: art. 6.º, n.º 1, al. a) do RGPD). Pode <strong>retirar o consentimento a qualquer momento</strong> em Definições → Privacidade; a análise fica então desativada até voltar a aceitar, e o resto da aplicação continua a funcionar. O mesmo se aplica ao ditado online, que ativa separadamente nas Definições e pode desligar a qualquer momento.</p>
+<p>As fotografias de refeições e as notas podem revelar incidentalmente algo sobre si — uma dieta, uma alergia, uma prática de jejum. Minimizamos isso enviando apenas a refeição em análise, mantendo os resultados apenas no seu dispositivo e não guardando nada do lado do servidor.</p>
+<h2>4. Prestadores de serviços</h2>
+<ul>
+  <li>A <strong>Microsoft Ireland Operations Ltd.</strong> (serviços de IA do Azure) fornece a infraestrutura de todas as análises e trata os pedidos de análise com GPT e o ditado online como nosso subcontratante, ao abrigo do Data Protection Addendum da Microsoft. As nossas implementações usam a EU Data Zone do Azure, pelo que o tratamento ocorre na União Europeia. O controlo de abusos da Microsoft verifica os pedidos automaticamente no momento do processamento, sem os guardar; apenas os pedidos sinalizados como potencialmente abusivos podem ser conservados temporariamente para revisão, segundo o procedimento padrão publicado pela Microsoft — em implementações na UE, guardados e revistos na UE — e são depois eliminados. A Microsoft não usa os seus dados para treinar modelos.</li>
+  <li>A <strong>Anthropic PBC</strong> opera os modelos Claude: se escolher Claude nas definições, os seus pedidos de análise são tratados pela Anthropic como subcontratante independente segundo as suas condições de tratamento de dados — na nossa implementação, ainda em infraestrutura Azure dentro da EU Data Zone. Conteúdos sinalizados pelos sistemas automáticos de segurança podem, a título excecional, ser revistos pela equipa de segurança da Anthropic e conservados por mais tempo segundo essas condições. A Anthropic não usa os seus dados para treinar modelos.</li>
+  <li>A <strong>Open Food Facts</strong> (uma organização francesa sem fins lucrativos) recebe apenas os dígitos de um código de barras lido e devolve informação pública do produto. Como em qualquer pedido pela internet, os servidores deles veem tecnicamente o seu endereço IP.</li>
+  <li>A <strong>Apple</strong> trata a sua compra na App Store e a sua subscrição como responsável independente, segundo as suas próprias condições. O ditado com o motor offline, a leitura de rótulos e a deteção de códigos de barras correm inteiramente no seu iPhone com os frameworks locais da Apple — para isso nenhum dado sai do dispositivo.</li>
+</ul>
+<p>Não partilhamos dados com mais ninguém. Não vendemos dados. A aplicação não contém SDK de análise nem de publicidade.</p>
+<h2>5. Transferências internacionais</h2>
+<p>As nossas implementações de IA estão fixadas na EU Data Zone; a análise e o ditado são tratados na União Europeia. Na medida em que a Microsoft, enquanto empresa global, possa em casos excecionais tratar dados de suporte ou telemetria fora do EEE, aplicam-se como garantias os compromissos do EU Data Boundary da Microsoft e as cláusulas contratuais-tipo da UE do seu Data Protection Addendum.</p>
+<h2>6. Conservação</h2>
+<p>Não conservamos nada: os seus dados vivem no seu iPhone até os eliminar. As refeições individuais eliminam-se deslizando-as; eliminar a aplicação remove tudo. A conservação transitória da Microsoft está descrita no §4. As cópias de segurança que exporta ficam sob o seu próprio controlo.</p>
+<h2>7. Segurança</h2>
+<p>Tudo o que é enviado sai do seu dispositivo por ligações encriptadas (TLS). No dispositivo, os seus dados estão protegidos pela encriptação integrada do iOS e pelo seu código de desbloqueio. Ver §2: a melhor proteção é os seus dados não estarem guardados centralmente em lado nenhum.</p>
+<h2>8. Os seus direitos</h2>
+<p>Ao abrigo do RGPD, tem direito de acesso, retificação, apagamento, limitação, portabilidade e oposição, e o direito de retirar o consentimento a qualquer momento sem afetar a licitude do tratamento anterior à retirada. Como os seus dados estão no seu dispositivo e não connosco, exerce a maioria dos direitos diretamente na aplicação: ver tudo na cronologia, corrigir qualquer refeição, exportar tudo em Definições → Cópia de segurança, apagar o que quiser removendo os registos ou a aplicação. Para tudo o resto, ou em caso de dúvidas, escreva para <strong><a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></strong> — respondemos no prazo de um mês. Tem ainda o direito de apresentar reclamação junto de uma autoridade de controlo; nos Países Baixos é a Autoriteit Persoonsgegevens (autoriteitpersoonsgegevens.nl), em Portugal a CNPD (cnpd.pt) — pode dirigir-se à autoridade do seu próprio país.</p>
+<h2>9. Crianças</h2>
+<p>O Food Moments não se destina a crianças. Não tratamos conscientemente dados de crianças — não tratamos, de todo, contas nem identidades.</p>
+<h2>10. Alterações</h2>
+<p>Se os fluxos de dados da aplicação mudarem, esta política será atualizada antes de a alteração ser lançada, com a data de entrada em vigor acima. As alterações substanciais são adicionalmente anunciadas na aplicação.</p>
+</main>
+<footer class="doc-footer">
+  <span>Smart Backoffice Solutions B.V. · Saal van Zwanenbergweg 11, 5026 RM Tilburg · KvK 90141482</span>
+  <a href="./#pt">Food Moments — Suporte</a>
+</footer>
+</body>
+</html>
