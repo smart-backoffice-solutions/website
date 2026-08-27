@@ -64,7 +64,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 @keyframes bob { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-10px) rotate(2deg); } }
 .hero h1 { font-size: clamp(38px, 7vw, 62px); font-weight: 700; margin: 26px 0 10px; }
-.hero .see-it { font-family: Fraunces, Georgia, serif; font-size: clamp(21px, 3.4vw, 27px); font-weight: 500; color: var(--orange-deep); margin: 0 0 26px; }
+.see-it { font-family: Fraunces, Georgia, serif; font-size: clamp(21px, 3.4vw, 27px); font-weight: 500; color: var(--orange-deep); margin: 0 0 26px; }
 .hero p.lead { max-width: 640px; margin: 0 auto 30px; font-size: clamp(17px, 2.3vw, 19px); color: var(--soft); }
 .badge {
   display: inline-block; background: var(--ink); color: var(--cream);
@@ -181,6 +181,36 @@ section p.sub { max-width: 640px; color: var(--soft); margin: 0 0 34px; }
 }
 .bubble p { margin: 0; font-size: 15px; font-style: italic; }
 .bubble small { display: block; font-style: normal; font-size: 12px; color: var(--soft); margin-top: 4px; }
+.bubble.typed { background: #fff; border-radius: 16px; border-bottom-right-radius: 4px; }
+.bubble.typed p { font-style: normal; font-family: "SF Mono", ui-monospace, Menlo, monospace; font-size: 13.5px; }
+
+/* photos-first */
+.photoflow {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 26px 24px 20px;
+}
+.photoflow .shots { justify-content: center; flex-wrap: wrap; margin: 0 0 16px; }
+.photoflow .shot { width: 92px; height: 116px; font-size: 44px; }
+.photoflow .shot-more {
+  width: 92px; height: 116px; border: 2px dashed var(--line); border-radius: 12px;
+  display: grid; place-items: center; color: var(--soft);
+  font-size: 12.5px; font-weight: 600; text-align: center; line-height: 1.35; padding: 6px;
+}
+.photoflow p.caption { text-align: center; font-size: 13.5px; color: var(--soft); margin: 0; }
+
+/* manifesto + closing */
+.manifesto { text-align: center; padding: 70px 0 24px; }
+.manifesto p.big {
+  font-family: Fraunces, Georgia, serif; font-size: clamp(24px, 4vw, 34px); font-weight: 600;
+  line-height: 1.35; max-width: 780px; margin: 0 auto 22px;
+}
+.manifesto p.big em { font-style: normal; color: var(--orange-deep); }
+.manifesto p.big em.g { color: var(--green-deep); }
+.manifesto p.follow, .closing p.follow { max-width: 620px; margin: 0 auto; color: var(--soft); font-size: 17px; }
+.closing { text-align: center; padding: 76px 0 10px; }
+.closing img { width: 92px; height: auto; transform: rotate(-6deg); filter: drop-shadow(0 10px 16px rgba(122, 82, 30, .18)); }
+.closing h2 { font-size: clamp(30px, 5vw, 44px); margin: 18px 0 8px; }
+.closing p.follow { margin-bottom: 28px; }
 
 /* values */
 .values { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -232,8 +262,8 @@ footer .legal a { color: inherit; }
   <h1>Your food tells a story.</h1>
   <p class="see-it">See it. Understand it.</p>
   <p class="lead">A coffee in the morning, lunch with friends, an afternoon snack and dinner
-  at home are all Food&nbsp;Moments. Snap a photo, say a few words, and watch the moments
-  add up to the story of your day.</p>
+  at home are all Food&nbsp;Moments. Together, they tell the story of how you eat — and
+  Food&nbsp;Moments helps you see that story clearly.</p>
   <span class="badge">Coming soon to the App&nbsp;Store <span>· for iPhone</span></span>
 </div>
 
@@ -273,12 +303,33 @@ footer .legal a { color: inherit; }
 </section>
 
 <section>
-  <p class="kicker">Voice makes it effortless</p>
-  <h2>Just say it.</h2>
-  <p class="sub">Typing while your food gets cold is a chore — talking isn't. Hold the mic,
-  describe the meal in your own words, let go. That's what makes tracking stick in
-  practice: a Food Moment takes seconds, not menus. Your words always win over the photo —
-  the app listens to <i>you</i>.</p>
+  <p class="kicker">Photos first</p>
+  <h2>It starts with a photo.</h2>
+  <p class="sub">The photo is the primary source. The analysis reads the dishes, the
+  portions — even a nutrition label or a barcode when one is in the shot. And it doesn't
+  have to be one photo: a meal can hold up to ten. Cooking tonight? Snap the ingredients
+  as you go, then the finished plate — the analysis puts it all together.</p>
+  <div class="photoflow">
+    <div class="shots">
+      <div class="shot">🍅</div>
+      <div class="shot">🧅</div>
+      <div class="shot">🥩</div>
+      <div class="shot">🍝</div>
+      <div class="shot-more">+ up to<br>10 photos</div>
+    </div>
+    <p class="caption">One dinner, four photos: the ingredients while cooking, then the
+    plate that reached the table.</p>
+  </div>
+</section>
+
+<section>
+  <p class="kicker">Then add your words — your way</p>
+  <h2>Say it. Or type it.</h2>
+  <p class="sub">Often the photos are already enough. When they're not — what went into the
+  smoothie, how much of the pan you actually ate — add context in your own words. If you
+  like typing, type. But do try the mic: dictation here runs on the latest speech models,
+  streams in while you're still talking, and holds up even on a noisy street. Either way,
+  your words always win over the photo — the app listens to <i>you</i>.</p>
   <div class="voice-panel">
     <div class="micwrap">
       <div class="mic">
@@ -297,10 +348,10 @@ footer .legal a { color: inherit; }
         orange juice.&rdquo;</p>
         <small>Spoken at capture — portions and details flow straight into the estimate.</small>
       </div>
-      <div class="bubble">
-        <p>&ldquo;Actually the dressing was on the side, I barely used any.&rdquo;</p>
-        <small>Corrections work the same way, any time later: say what changed and the
-        numbers are recalculated.</small>
+      <div class="bubble typed">
+        <p>Actually the dressing was on the side, I barely used any.</p>
+        <small>Typed, later that day — corrections work both ways: write it or say it,
+        and the numbers are recalculated.</small>
       </div>
     </div>
   </div>
@@ -463,16 +514,27 @@ footer .legal a { color: inherit; }
   </div>
 </section>
 
+<div class="manifesto">
+  <p class="big">Food is not just calories. It is energy, protein, carbohydrates, fat,
+  fibre — and <em>timing</em>, <em>habits</em>, <em class="g">pleasure</em> and
+  <em class="g">context</em>.</p>
+  <p class="follow">The goal is not perfection or guilt. It is understanding. When you
+  understand what you eat, you can make better choices for yourself.</p>
+</div>
+
 <div class="pull">
-  <blockquote>Have the dessert. Enjoy the pizza. The point is to <em>know what it means</em> —
-  and make the next decision with better information.</blockquote>
+  <blockquote>Have the dessert. Enjoy the pizza. The point is to <em>know what it means</em>
+  in the context of the rest of your day — and then make the next decision with better
+  information.</blockquote>
 </div>
 
 <section>
   <p class="kicker">What we stand for</p>
   <h2>Eat with context, not guilt.</h2>
-  <p class="sub">Nobody eats perfectly all the time — and nobody should have to. Food
-  Moments is for people who care about themselves, not for people being punished for eating.</p>
+  <p class="sub">Good food gives energy, supports health and makes everyday life feel
+  better. At the same time, nobody eats perfectly all the time — and Food Moments
+  normalizes that. This is an app for people who care about themselves, not one that
+  punishes people for eating.</p>
   <div class="values">
     <span class="value"><em>Understanding</em> over restriction</span>
     <span class="value"><em>Balance</em> over perfection</span>
@@ -496,6 +558,15 @@ footer .legal a { color: inherit; }
     <a href="privacy.en.html">privacy policy</a>, in plain language.</p>
   </div>
 </section>
+
+<div class="closing">
+  <img src="carrot.png" alt="">
+  <h2>Your food tells a story.</h2>
+  <p class="see-it">See it. Understand it.</p>
+  <p class="follow">Food Moments makes that story visible — so you can enjoy what you eat,
+  understand what it does for you, and make better choices for what comes next.</p>
+  <span class="badge">Coming soon to the App&nbsp;Store <span>· for iPhone</span></span>
+</div>
 
 <footer>
   <ul class="fine">
