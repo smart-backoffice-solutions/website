@@ -4,136 +4,330 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Food Moments — Support &amp; Privacy</title>
-<link rel="icon" href="../favicon.png">
+<title>Food Moments — Understand what you eat</title>
+<meta name="description" content="Food Moments turns the food you eat into a visual story of your day. Snap it, see what is in it, and understand how it all adds up.">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="foodmoments.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Food Moments landing — warm, cheerful, its own world (deliberately unlike the
+   main smart-backoffice.nl design). Palette comes from the app icon: cream→mint
+   gradient, carrot orange, leaf green, warm ink. */
+:root {
+  --cream: #fff7e0;
+  --mint: #d6f0db;
+  --card: #fffdf6;
+  --ink: #33200f;
+  --soft: #7a6a58;
+  --orange: #f2820f;
+  --orange-deep: #d95f08;
+  --green: #4a9e4a;
+  --green-deep: #388c47;
+  --line: #eadfc8;
+  --shadow: 0 10px 30px rgba(122, 82, 30, .10);
+  --radius: 22px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: linear-gradient(160deg, var(--cream) 0%, var(--cream) 45%, var(--mint) 100%) fixed;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+h1, h2, h3 { font-family: Fraunces, Georgia, serif; letter-spacing: -.01em; line-height: 1.12; margin: 0; }
+a { color: var(--orange-deep); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 22px; }
+
+/* header */
+.top {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 22px 0 6px;
+}
+.wordmark { display: flex; align-items: center; gap: 10px; font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: 21px; color: var(--ink); }
+.wordmark img { width: 34px; height: 34px; transform: rotate(-6deg); }
+.top a.finelink { font-size: 14.5px; font-weight: 600; color: var(--soft); }
+.top a.finelink:hover { color: var(--orange-deep); }
+
+/* hero */
+.hero { text-align: center; padding: 44px 0 30px; }
+.hero img.carrot {
+  width: clamp(150px, 28vw, 220px); height: auto;
+  filter: drop-shadow(0 16px 24px rgba(122, 82, 30, .18));
+  animation: bob 7s ease-in-out infinite;
+}
+@keyframes bob { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-10px) rotate(2deg); } }
+@media (prefers-reduced-motion: reduce) { .hero img.carrot { animation: none; } }
+.hero h1 { font-size: clamp(38px, 7vw, 62px); font-weight: 700; margin: 26px 0 10px; }
+.hero .see-it { font-family: Fraunces, Georgia, serif; font-size: clamp(21px, 3.4vw, 27px); font-weight: 500; color: var(--orange-deep); margin: 0 0 26px; }
+.hero p.lead { max-width: 640px; margin: 0 auto 30px; font-size: clamp(17px, 2.3vw, 19px); color: var(--soft); }
+.badge {
+  display: inline-block; background: var(--ink); color: var(--cream);
+  border-radius: 999px; padding: 12px 24px; font-weight: 600; font-size: 15.5px;
+}
+.badge span { opacity: .65; font-weight: 500; }
+
+/* sections */
+section { padding: 54px 0 10px; }
+.kicker {
+  font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em;
+  color: var(--green-deep); margin: 0 0 10px;
+}
+section h2 { font-size: clamp(28px, 4.6vw, 40px); font-weight: 600; margin-bottom: 14px; }
+section p.sub { max-width: 620px; color: var(--soft); margin: 0 0 34px; }
+
+/* steps */
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+@media (max-width: 760px) { .steps { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 420px) { .steps { grid-template-columns: 1fr; } }
+.step {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 22px 20px 18px; box-shadow: var(--shadow);
+}
+.step .num {
+  width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--orange); color: #fff; font-weight: 700; font-size: 16px; margin-bottom: 14px;
+}
+.step:nth-child(even) .num { background: var(--green); }
+.step h3 { font-size: 21px; margin-bottom: 6px; }
+.step p { margin: 0; font-size: 15px; color: var(--soft); }
+
+/* two-column feature rows */
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; align-items: center; }
+@media (max-width: 760px) { .duo { grid-template-columns: 1fr; } }
+
+/* nutrient chips + day bars */
+.chips { display: flex; flex-wrap: wrap; gap: 9px; margin: 0 0 8px; }
+.chip {
+  background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+  padding: 7px 15px; font-size: 14.5px; font-weight: 600; box-shadow: var(--shadow);
+}
+.panel {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 24px 24px 20px; box-shadow: var(--shadow);
+}
+.panel .panel-title { font-size: 13.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--soft); margin: 0 0 16px; }
+.bar-row { margin-bottom: 14px; }
+.bar-row .bar-label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+.bar-row .bar-label span:last-child { color: var(--soft); font-weight: 500; }
+.bar { height: 12px; border-radius: 999px; background: #f0e7d2; overflow: hidden; }
+.bar i { display: block; height: 100%; border-radius: 999px; background: var(--orange); }
+.bar i.green { background: var(--green); }
+
+/* the day feed */
+.feed { display: grid; gap: 12px; }
+.moment {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 14px 18px; box-shadow: var(--shadow);
+}
+.moment .snap { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; font-size: 27px; background: linear-gradient(150deg, var(--cream), var(--mint)); flex: none; }
+.moment .what { flex: 1; min-width: 0; }
+.moment .what b { display: block; font-size: 16px; }
+.moment .what small { color: var(--soft); font-size: 13.5px; }
+.moment .kcal { font-weight: 700; font-size: 15px; color: var(--orange-deep); white-space: nowrap; }
+
+/* values */
+.values { display: flex; flex-wrap: wrap; gap: 10px; }
+.values .value {
+  background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+  padding: 10px 19px; font-size: 15.5px; font-weight: 600; box-shadow: var(--shadow);
+}
+.values .value em { font-style: normal; color: var(--green-deep); }
+
+/* pull quote */
+.pull {
+  text-align: center; padding: 64px 0 20px;
+}
+.pull blockquote {
+  margin: 0 auto; max-width: 700px;
+  font-family: Fraunces, Georgia, serif; font-size: clamp(24px, 4vw, 34px); font-weight: 600; line-height: 1.3;
+}
+.pull blockquote em { font-style: normal; color: var(--orange-deep); }
+
+/* privacy */
+.privacy .panel { display: flex; gap: 18px; align-items: flex-start; }
+.privacy .panel .lock { font-size: 30px; line-height: 1.2; }
+.privacy .panel p { margin: 0; font-size: 15.5px; color: var(--soft); }
+.privacy .panel b { color: var(--ink); }
+
+/* fine print */
+footer {
+  margin-top: 70px; padding: 40px 0 56px;
+  border-top: 1px solid var(--line);
+}
+footer .fine {
+  display: flex; flex-wrap: wrap; gap: 8px 26px; margin: 0 0 18px; padding: 0; list-style: none;
+  font-size: 14.5px; font-weight: 600;
+}
+footer .fine a { color: var(--soft); }
+footer .fine a:hover { color: var(--orange-deep); }
+footer .legal { font-size: 13px; color: var(--soft); }
+footer .legal a { color: inherit; }
+</style>
 </head>
 <body>
-<main class="doc">
+<div class="wrap">
 
-<p class="eyebrow">Smart Backoffice Solutions</p>
-<h1>Food Moments</h1>
-<nav class="langs hub-langs"><button data-lang="en">EN</button>
-<button data-lang="de">DE</button>
-<button data-lang="nl">NL</button>
-<button data-lang="es">ES</button>
-<button data-lang="fr">FR</button>
-<button data-lang="pt">PT</button></nav>
-<section id="en" lang="en">
-<h2>Food Moments — Support &amp; Privacy</h2>
-<p>Food Moments estimates the nutritional value of your meals from photos and your own words — with no account, and all data stored on your iPhone.</p>
-<p><strong>Get help:</strong> email us at <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a>. We reply within a few working days.</p>
-<p><strong>Documents</strong></p>
-<ul>
-  <li><a href="https://smart-backoffice.nl/foodmoments/privacy.en.html">Privacy Policy</a></li>
-  <li><a href="https://smart-backoffice.nl/foodmoments/terms.en.html">Supplemental Terms</a> — the app is licensed under <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's standard EULA</a></li>
-</ul>
-<p><strong>Your data.</strong> Food Moments stores your meals only on your iPhone. To export everything, use Settings → Backup in the app. To delete everything, delete meals in the app or delete the app itself. To withdraw your consent to AI analysis, use Settings → Privacy. Because we store nothing on servers, there is nothing we could access, correct or delete for you — but for any privacy question or request (access, correction, deletion), email <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a> and we will answer within one month.</p>
-<p><strong>Provider</strong></p>
-<p class="address">Smart Backoffice Solutions B.V.<br>Saal van Zwanenbergweg 11, 5026 RM Tilburg<br>Netherlands<br>Chamber of Commerce (KvK): 90141482<br>Email: <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></p>
+<header class="top">
+  <div class="wordmark"><img src="carrot.png" alt="" width="34" height="34">Food Moments</div>
+  <a class="finelink" href="support.html">Support &amp; Privacy</a>
+</header>
+
+<div class="hero">
+  <img class="carrot" src="carrot.png" alt="The Food Moments carrot">
+  <h1>Your food tells a story.</h1>
+  <p class="see-it">See it. Understand it.</p>
+  <p class="lead">A coffee in the morning, lunch with friends, an afternoon snack and dinner
+  at home are all Food&nbsp;Moments. Snap a photo, see what your food contains, and watch
+  the moments add up to the story of your day.</p>
+  <span class="badge">Coming soon to the App&nbsp;Store <span>· for iPhone</span></span>
+</div>
+
+<section>
+  <p class="kicker">How it works</p>
+  <h2>Snap. See. Understand. Choose.</h2>
+  <p class="sub">Almost no effort in — a lot of understanding out.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="num">1</div>
+      <h3>Snap</h3>
+      <p>Photograph your food, in one shot or several. Add a few words if you like — typed or spoken.</p>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <h3>See</h3>
+      <p>Get an estimate of what it contains: energy, protein, carbs, fat, fibre and more.</p>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <h3>Understand</h3>
+      <p>See how this moment fits into your day — what you ate, and when you ate it.</p>
+    </div>
+    <div class="step">
+      <div class="num">4</div>
+      <h3>Choose</h3>
+      <p>Make the next choice with context. Not with guilt.</p>
+    </div>
+  </div>
 </section>
-<section id="de" lang="de">
-<h2>Food Moments — Support &amp; Datenschutz</h2>
-<p>Food Moments schätzt den Nährwert Ihrer Mahlzeiten aus Fotos und Ihren eigenen Worten — ohne Konto, alle Daten bleiben auf Ihrem iPhone.</p>
-<p><strong>Hilfe:</strong> Schreiben Sie uns an <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a>. Wir antworten innerhalb weniger Werktage.</p>
-<p><strong>Dokumente</strong></p>
-<ul>
-  <li><a href="https://smart-backoffice.nl/foodmoments/privacy.de.html">Datenschutzerklärung</a></li>
-  <li><a href="https://smart-backoffice.nl/foodmoments/terms.de.html">Ergänzende Bedingungen</a> — die App ist lizenziert unter <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apples Standard-EULA</a></li>
-</ul>
-<p><strong>Ihre Daten.</strong> Food Moments speichert Ihre Mahlzeiten nur auf Ihrem iPhone. Alles exportieren: Einstellungen → Backup in der App. Alles löschen: Mahlzeiten in der App oder die App selbst löschen. Einwilligung zur KI-Analyse widerrufen: Einstellungen → Privacy. Da wir nichts auf Servern speichern, gibt es nichts, worauf wir für Sie zugreifen oder was wir berichtigen oder löschen könnten — bei Datenschutzfragen oder -anfragen (Auskunft, Berichtigung, Löschung) schreiben Sie an <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a>; wir antworten innerhalb eines Monats.</p>
-<p><strong>Anbieter</strong></p>
-<p class="address">Smart Backoffice Solutions B.V.<br>Saal van Zwanenbergweg 11, 5026 RM Tilburg<br>Niederlande<br>Handelskammer (KvK): 90141482<br>E-Mail: <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></p>
+
+<section>
+  <div class="duo">
+    <div>
+      <p class="kicker">Nutrition beyond calories</p>
+      <h2>Calories are only the beginning.</h2>
+      <p class="sub">Food is not just a number. It is energy, protein, carbohydrates, fat,
+      fibre, timing and context. Food Moments shows where you stand over the day — so you
+      can see what makes sense next <b>before</b> the next meal, not after it.</p>
+      <div class="chips">
+        <span class="chip">Energy</span><span class="chip">Protein</span><span class="chip">Carbs</span><span class="chip">Fat</span><span class="chip">Fibre</span><span class="chip">Salt</span><span class="chip">Sugar</span>
+      </div>
+    </div>
+    <div class="panel">
+      <p class="panel-title">Your day so far</p>
+      <div class="bar-row">
+        <div class="bar-label"><span>Energy</span><span>62%</span></div>
+        <div class="bar"><i style="width:62%"></i></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label"><span>Protein</span><span>74%</span></div>
+        <div class="bar"><i style="width:74%"></i></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label"><span>Fibre</span><span>48%</span></div>
+        <div class="bar"><i class="green" style="width:48%"></i></div>
+      </div>
+    </div>
+  </div>
 </section>
-<section id="nl" lang="nl">
-<h2>Food Moments — Support &amp; Privacy</h2>
-<p>Food Moments schat de voedingswaarde van uw maaltijden op basis van foto's en uw eigen woorden — zonder account, alle gegevens blijven op uw iPhone.</p>
-<p><strong>Hulp:</strong> mail ons via <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a>. Wij antwoorden binnen enkele werkdagen.</p>
-<p><strong>Documenten</strong></p>
-<ul>
-  <li><a href="https://smart-backoffice.nl/foodmoments/privacy.nl.html">Privacyverklaring</a></li>
-  <li><a href="https://smart-backoffice.nl/foodmoments/terms.nl.html">Aanvullende voorwaarden</a> — de app is gelicentieerd onder <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apples standaard-EULA</a></li>
-</ul>
-<p><strong>Uw gegevens.</strong> Food Moments bewaart uw maaltijden alleen op uw iPhone. Alles exporteren: Instellingen → Back-up in de app. Alles verwijderen: maaltijden in de app of de app zelf verwijderen. Toestemming voor AI-analyse intrekken: Instellingen → Privacy. Omdat wij niets op servers opslaan, is er niets waartoe wij voor u toegang hebben of wat wij kunnen corrigeren of verwijderen — voor privacyvragen of -verzoeken (inzage, correctie, verwijdering) mailt u <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a>; wij antwoorden binnen een maand.</p>
-<p><strong>Aanbieder</strong></p>
-<p class="address">Smart Backoffice Solutions B.V.<br>Saal van Zwanenbergweg 11, 5026 RM Tilburg<br>Nederland<br>Kamer van Koophandel (KvK): 90141482<br>E-mail: <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></p>
+
+<section>
+  <div class="duo">
+    <div class="feed">
+      <div class="moment">
+        <div class="snap">☕️</div>
+        <div class="what"><b>Cappuccino &amp; croissant</b><small>08:10 · a slow start</small></div>
+        <div class="kcal">340 kcal</div>
+      </div>
+      <div class="moment">
+        <div class="snap">🥗</div>
+        <div class="what"><b>Lunch with friends</b><small>12:40 · salad, bread, juice</small></div>
+        <div class="kcal">560 kcal</div>
+      </div>
+      <div class="moment">
+        <div class="snap">🍎</div>
+        <div class="what"><b>Afternoon apple</b><small>16:05 · desk snack</small></div>
+        <div class="kcal">80 kcal</div>
+      </div>
+      <div class="moment">
+        <div class="snap">🍝</div>
+        <div class="what"><b>Pasta at home</b><small>19:30 · and a glass of red</small></div>
+        <div class="kcal">720 kcal</div>
+      </div>
+    </div>
+    <div>
+      <p class="kicker">Your personal feed</p>
+      <h2>One meal is a number. A day of Food&nbsp;Moments is a story.</h2>
+      <p class="sub">Your meals, drinks and snacks appear naturally over the course of the
+      day — photos first, like a personal feed viewed through nutrition. Seeing food
+      chronologically makes patterns visible: what breakfast looked like, how much protein
+      came before dinner, how balanced the day became.</p>
+    </div>
+  </div>
 </section>
-<section id="es" lang="es">
-<h2>Food Moments — Soporte y privacidad</h2>
-<p>Food Moments estima el valor nutricional de sus comidas a partir de fotos y de sus propias palabras — sin cuenta, con todos los datos almacenados en su iPhone.</p>
-<p><strong>Ayuda:</strong> escríbanos a <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a>. Respondemos en pocos días laborables.</p>
-<p><strong>Documentos</strong></p>
-<ul>
-  <li><a href="https://smart-backoffice.nl/foodmoments/privacy.es.html">Política de privacidad</a></li>
-  <li><a href="https://smart-backoffice.nl/foodmoments/terms.es.html">Condiciones complementarias</a> — la aplicación se licencia bajo el <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">CLUF estándar de Apple</a></li>
-</ul>
-<p><strong>Sus datos.</strong> Food Moments guarda sus comidas solo en su iPhone. Para exportarlo todo, use Ajustes → Copia de seguridad en la aplicación. Para borrarlo todo, elimine comidas en la aplicación o elimine la propia aplicación. Para retirar su consentimiento al análisis por IA, use Ajustes → Privacidad. Como no almacenamos nada en servidores, no hay nada a lo que podamos acceder ni nada que podamos corregir o borrar por usted — pero para cualquier pregunta o solicitud de privacidad (acceso, corrección, supresión), escriba a <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a> y responderemos en el plazo de un mes.</p>
-<p><strong>Proveedor</strong></p>
-<p class="address">Smart Backoffice Solutions B.V.<br>Saal van Zwanenbergweg 11, 5026 RM Tilburg<br>Países Bajos<br>Registro mercantil (KvK): 90141482<br>Correo: <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></p>
+
+<div class="pull">
+  <blockquote>Have the dessert. Enjoy the pizza. The point is to <em>know what it means</em> —
+  and make the next decision with better information.</blockquote>
+</div>
+
+<section>
+  <p class="kicker">What we stand for</p>
+  <h2>Eat with context, not guilt.</h2>
+  <p class="sub">Nobody eats perfectly all the time — and nobody should have to. Food
+  Moments is for people who care about themselves, not for people being punished for eating.</p>
+  <div class="values">
+    <span class="value"><em>Understanding</em> over restriction</span>
+    <span class="value"><em>Balance</em> over perfection</span>
+    <span class="value"><em>Nutrition</em> beyond calories</span>
+    <span class="value"><em>Context</em> over isolated numbers</span>
+    <span class="value"><em>Enjoyment</em> without losing awareness</span>
+    <span class="value">Better decisions, <em>one Food Moment at a time</em></span>
+  </div>
 </section>
-<section id="fr" lang="fr">
-<h2>Food Moments — Assistance et confidentialité</h2>
-<p>Food Moments estime la valeur nutritionnelle de vos repas à partir de photos et de vos propres mots — sans compte, toutes les données restant sur votre iPhone.</p>
-<p><strong>Besoin d'aide :</strong> écrivez-nous à <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a>. Nous répondons sous quelques jours ouvrés.</p>
-<p><strong>Documents</strong></p>
-<ul>
-  <li><a href="https://smart-backoffice.nl/foodmoments/privacy.fr.html">Politique de confidentialité</a></li>
-  <li><a href="https://smart-backoffice.nl/foodmoments/terms.fr.html">Conditions complémentaires</a> — l'application est concédée sous la <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">licence standard d'Apple (CLUF)</a></li>
-</ul>
-<p><strong>Vos données.</strong> Food Moments stocke vos repas uniquement sur votre iPhone. Pour tout exporter : Réglages → Sauvegarde dans l'application. Pour tout supprimer : supprimez des repas dans l'application ou supprimez l'application elle-même. Pour retirer votre consentement à l'analyse par IA : Réglages → Confidentialité. Comme nous ne stockons rien sur des serveurs, il n'y a rien à quoi nous pourrions accéder, rien que nous pourrions corriger ou supprimer pour vous — mais pour toute question ou demande relative à la vie privée (accès, rectification, effacement), écrivez à <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a> ; nous répondrons sous un mois.</p>
-<p><strong>Fournisseur</strong></p>
-<p class="address">Smart Backoffice Solutions B.V.<br>Saal van Zwanenbergweg 11, 5026 RM Tilburg<br>Pays-Bas<br>Registre du commerce (KvK) : 90141482<br>E-mail : <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></p>
+
+<section class="privacy">
+  <p class="kicker">Private by design</p>
+  <h2>Your food. Your data.</h2>
+  <p class="sub">No account, no cloud profile. Your meals, photos and history stay on your
+  iPhone.</p>
+  <div class="panel">
+    <div class="lock">🔒</div>
+    <p><b>Everything is stored on your phone.</b> Photos and notes are sent out only for the
+    nutritional analysis you ask for — with your consent, and never to build a profile.
+    The details are in the <a href="privacy.en.html">privacy policy</a>, in plain language.</p>
+  </div>
 </section>
-<section id="pt" lang="pt">
-<h2>Food Moments — Suporte e privacidade</h2>
-<p>O Food Moments estima o valor nutricional das suas refeições a partir de fotografias e das suas próprias palavras — sem conta, com todos os dados guardados no seu iPhone.</p>
-<p><strong>Ajuda:</strong> escreva-nos para <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a>. Respondemos em poucos dias úteis.</p>
-<p><strong>Documentos</strong></p>
-<ul>
-  <li><a href="https://smart-backoffice.nl/foodmoments/privacy.pt.html">Política de privacidade</a></li>
-  <li><a href="https://smart-backoffice.nl/foodmoments/terms.pt.html">Condições complementares</a> — a aplicação é licenciada sob o <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA padrão da Apple</a></li>
-</ul>
-<p><strong>Os seus dados.</strong> O Food Moments guarda as suas refeições apenas no seu iPhone. Para exportar tudo, use Definições → Cópia de segurança na aplicação. Para apagar tudo, elimine refeições na aplicação ou elimine a própria aplicação. Para retirar o seu consentimento à análise por IA, use Definições → Privacidade. Como não guardamos nada em servidores, não há nada a que possamos aceder, corrigir ou apagar por si — mas para qualquer questão ou pedido de privacidade (acesso, retificação, apagamento), escreva para <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a> e responderemos no prazo de um mês.</p>
-<p><strong>Fornecedor</strong></p>
-<p class="address">Smart Backoffice Solutions B.V.<br>Saal van Zwanenbergweg 11, 5026 RM Tilburg<br>Países Baixos<br>Registo comercial (KvK): 90141482<br>E-mail: <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></p>
-</section>
-</main>
-<footer class="doc-footer">
-  <span>Smart Backoffice Solutions B.V. · Saal van Zwanenbergweg 11, 5026 RM Tilburg · KvK 90141482</span>
-  <a href="https://smart-backoffice.nl">smart-backoffice.nl</a>
+
+<footer>
+  <ul class="fine">
+    <li><a href="support.html">Support &amp; Privacy</a></li>
+    <li><a href="privacy.en.html">Privacy Policy</a></li>
+    <li><a href="terms.en.html">Supplemental Terms</a></li>
+    <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's standard EULA</a></li>
+  </ul>
+  <p class="legal">Food Moments is made by
+  <a href="https://smart-backoffice.nl">Smart Backoffice Solutions B.V.</a> ·
+  Saal van Zwanenbergweg 11, 5026 RM Tilburg, Netherlands · KvK 90141482 ·
+  <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></p>
 </footer>
-<script>
-(function () {
-  const langs = ['en', 'de', 'nl', 'es', 'fr', 'pt'];
-  document.body.classList.add("js");
-  function setLang(l) {
-    if (!langs.includes(l)) l = "en";
-    document.documentElement.lang = l;
-    langs.forEach(c => { document.getElementById(c).hidden = c !== l; });
-    document.querySelectorAll(".langs button").forEach(b =>
-      b.classList.toggle("active", b.dataset.lang === l));
-    try { localStorage.setItem("sbo-lang", l); } catch (e) {}
-  }
-  document.querySelectorAll(".langs button").forEach(b =>
-    b.addEventListener("click", () => setLang(b.dataset.lang)));
-  function initial() {
-    const fromHash = location.hash.replace("#", "");
-    if (langs.includes(fromHash)) return fromHash;
-    try {
-      const stored = localStorage.getItem("sbo-lang");
-      if (langs.includes(stored)) return stored;
-    } catch (e) {}
-    return (navigator.language || "en").slice(0, 2);
-  }
-  window.addEventListener("hashchange", () => {
-    const l = location.hash.replace("#", "");
-    if (langs.includes(l)) setLang(l);
-  });
-  setLang(initial());
-})();
-</script>
+
+</div>
 </body>
 </html>
