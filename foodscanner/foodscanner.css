@@ -78,11 +78,27 @@ a:hover { color: var(--accent); }
 .langs a:hover { color: var(--accent); }
 .langs a.active { color: var(--accent); }
 
+/* The hub switches languages like the main site: mono buttons, active in red. */
+.langs button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: 500 12px/1.6 "IBM Plex Mono", monospace;
+  letter-spacing: .08em;
+  padding: 0;
+  cursor: pointer;
+}
+.langs button:hover { color: var(--accent); }
+.langs button.active { color: var(--accent); }
+
 .hub-langs { text-transform: uppercase; margin-top: 26px; }
 
 section { border-bottom: 1px solid var(--line); padding-bottom: 34px; margin-bottom: 40px; }
 section h2 { font-size: 24px; margin-top: 0; }
 section:last-of-type { border-bottom: 0; margin-bottom: 0; }
+section[hidden] { display: none; }
+/* With JS active only one section is visible — drop the separators. */
+body.js section { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
 
 .address { color: var(--muted); font-size: 14.5px; }
 

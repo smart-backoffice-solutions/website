@@ -16,12 +16,12 @@
 
 <p class="eyebrow">Smart Backoffice Solutions</p>
 <h1>Food Scanner</h1>
-<nav class="langs hub-langs"><a href="#en">English</a>
-<a href="#de">Deutsch</a>
-<a href="#nl">Nederlands</a>
-<a href="#es">Español</a>
-<a href="#fr">Français</a>
-<a href="#pt">Português</a></nav>
+<nav class="langs hub-langs"><button data-lang="en">EN</button>
+<button data-lang="de">DE</button>
+<button data-lang="nl">NL</button>
+<button data-lang="es">ES</button>
+<button data-lang="fr">FR</button>
+<button data-lang="pt">PT</button></nav>
 <section id="en" lang="en">
 <h2>Food Scanner — Support &amp; Privacy</h2>
 <p>Food Scanner estimates the nutritional value of your meals from photos and your own words — with no account, and all data stored on your iPhone.</p>
@@ -105,5 +105,35 @@
   <span>Smart Backoffice Solutions B.V. · Saal van Zwanenbergweg 11, 5026 RM Tilburg · KvK 90141482</span>
   <a href="https://smart-backoffice.nl">smart-backoffice.nl</a>
 </footer>
+<script>
+(function () {
+  const langs = ['en', 'de', 'nl', 'es', 'fr', 'pt'];
+  document.body.classList.add("js");
+  function setLang(l) {
+    if (!langs.includes(l)) l = "en";
+    document.documentElement.lang = l;
+    langs.forEach(c => { document.getElementById(c).hidden = c !== l; });
+    document.querySelectorAll(".langs button").forEach(b =>
+      b.classList.toggle("active", b.dataset.lang === l));
+    try { localStorage.setItem("sbo-lang", l); } catch (e) {}
+  }
+  document.querySelectorAll(".langs button").forEach(b =>
+    b.addEventListener("click", () => setLang(b.dataset.lang)));
+  function initial() {
+    const fromHash = location.hash.replace("#", "");
+    if (langs.includes(fromHash)) return fromHash;
+    try {
+      const stored = localStorage.getItem("sbo-lang");
+      if (langs.includes(stored)) return stored;
+    } catch (e) {}
+    return (navigator.language || "en").slice(0, 2);
+  }
+  window.addEventListener("hashchange", () => {
+    const l = location.hash.replace("#", "");
+    if (langs.includes(l)) setLang(l);
+  });
+  setLang(initial());
+})();
+</script>
 </body>
 </html>
