@@ -250,7 +250,7 @@ footer .legal { font-size: 13px; color: var(--soft); }
 footer .legal a { color: inherit; }
 
 /* ---- support hub & legal documents: plain text on the gradient, no card ---- */
-.doc { max-width: 780px; padding: 18px 0 10px; }
+.doc { max-width: 780px; padding: 64px 0 10px; }
 .doc h1 { font-size: clamp(32px, 5vw, 46px); font-weight: 600; margin: 0 0 12px; }
 .doc > h2 { font-size: 23px; font-weight: 600; margin: 40px 0 10px; }
 .doc p { margin: 0 0 16px; }
@@ -271,18 +271,8 @@ section[hidden] { display: none; }
 /* With JS active only one section is visible — drop the separators. */
 body.js section { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
 
-/* legal-page footer (same visual language as the landing's fine print) */
-.doc-footer {
-  border-top: 1px solid var(--line);
-  padding: 24px 0 56px;
-  color: var(--soft); font-size: 13px;
-}
-.doc-footer a { color: var(--soft); font-weight: 600; font-size: 14.5px; margin-right: 24px; }
-.doc-footer a:hover { color: var(--orange-deep); }
-.doc-footer span { display: block; margin-top: 12px; }
-
 @media print {
   body { background: #fff; }
-  .top, .doc-footer { display: none; }
+  .top, footer { display: none; }
   .doc { max-width: 100%; padding: 0; }
 }
