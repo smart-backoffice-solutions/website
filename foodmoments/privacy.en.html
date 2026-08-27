@@ -47,7 +47,7 @@
   <li>Text of nutrition labels and barcode product information found in the photos</li>
   <li>One-line summaries of your recent meals, so portions stay consistent across days</li>
 </ul>
-<p><strong>Sent when you dictate with the online engine (optional, off by default):</strong></p>
+<p><strong>Sent when you dictate a note (only with your consent, see §3):</strong></p>
 <ul>
   <li>The audio recording of your dictation, to be transcribed into text</li>
 </ul>
@@ -56,15 +56,15 @@
   <li>The barcode number, looked up in the public Open Food Facts database (§4)</li>
 </ul>
 <h2>3. Meal analysis by AI — your consent</h2>
-<p>To compute an estimate, the app sends the data listed above to an AI model (OpenAI GPT or Anthropic Claude, whichever you choose in the app's settings) running on <strong>Microsoft Azure servers in the European Union</strong>, on our own deployment. The data is used solely to compute your nutritional estimate. It is not used to train AI models. No account exists, so no name, email address or other identifier accompanies the request.</p>
-<p>The app asks for your <strong>explicit consent before the first analysis</strong> (legal basis: Art. 6(1)(a) GDPR). You can <strong>withdraw consent at any time</strong> in Settings → Privacy; analysis then stays off until you agree again, and the rest of the app keeps working. The same applies to online dictation, which you enable separately in Settings and can switch off at any time.</p>
+<p>To compute an estimate, the app sends the data listed above to an AI model (OpenAI GPT) running on <strong>Microsoft Azure servers in the European Union</strong>, on our own deployment. The data is used solely to compute your nutritional estimate. It is not used to train AI models. No account exists, so no name, email address or other identifier accompanies the request.</p>
+<p>The app asks for your <strong>explicit consent before the first analysis</strong> (legal basis: Art. 6(1)(a) GDPR). You can <strong>withdraw consent at any time</strong> in Settings → Privacy; analysis then stays off until you agree again, and the rest of the app keeps working.</p>
+<p>Dictation has its own consent. A spoken note is turned into text by a speech model on the same deployment, so the app asks <strong>before your first dictation</strong> (Art. 6(1)(a) GDPR as well) and you can withdraw that consent in the same place; dictation then stays off, and a note can always be typed instead.</p>
 <p>Meal photos and notes can incidentally reveal things about you — a diet, an allergy, a fasting practice. We minimize this by sending only the meal being analyzed, keeping the results only on your device, and storing nothing server-side.</p>
 <h2>4. Service providers</h2>
 <ul>
-  <li><strong>Microsoft Ireland Operations Ltd.</strong> (Azure AI services) provides the infrastructure for all analyses and processes GPT analysis requests and online dictation as our processor, under Microsoft's Data Protection Addendum. Our deployments use Azure's EU Data Zone, so processing takes place in the European Union. Microsoft's abuse monitoring checks requests automatically at the time of processing without storing them; only requests flagged as potentially abusive may be stored temporarily for review under Microsoft's standard published procedure — for EU deployments stored and reviewed within the EU — and are deleted afterwards. Microsoft does not use your data to train models.</li>
-  <li><strong>Anthropic PBC</strong> operates the Claude models: if you choose Claude in the app's settings, your analysis requests are processed by Anthropic as an independent processor under Anthropic's data-processing terms — on our deployment still on Azure infrastructure within the EU Data Zone. Content flagged by automatic safety systems may exceptionally be reviewed by Anthropic's safety team and retained longer under those terms. Anthropic does not use your data to train models.</li>
+  <li><strong>Microsoft Ireland Operations Ltd.</strong> (Azure AI services) provides the infrastructure and processes analysis requests and dictation recordings as our processor, under Microsoft's Data Protection Addendum. Our deployments use Azure's EU Data Zone, so processing takes place in the European Union. Microsoft's abuse monitoring checks requests automatically at the time of processing without storing them; only requests flagged as potentially abusive may be stored temporarily for review under Microsoft's standard published procedure — for EU deployments stored and reviewed within the EU — and are deleted afterwards. Microsoft does not use your data to train models.</li>
   <li><strong>Open Food Facts</strong> (a French non-profit) receives only the digits of a scanned barcode to return public product information. As with any internet request, their servers technically see your IP address.</li>
-  <li><strong>Apple</strong> processes your App Store purchase and subscription as an independent controller under its own terms. Dictation with the offline engine, label reading and barcode detection run entirely on your iPhone using Apple's on-device frameworks — no data leaves the device for these.</li>
+  <li><strong>Apple</strong> processes your App Store purchase and subscription as an independent controller under its own terms. Label reading and barcode detection run entirely on your iPhone using Apple's on-device frameworks — no data leaves the device for these.</li>
 </ul>
 <p>We share no data with anyone else. We sell no data. There are no analytics or advertising SDKs in the app.</p>
 <h2>5. International transfers</h2>
