@@ -32,6 +32,8 @@ body {
 h1, h2, h3 { font-family: Fraunces, Georgia, serif; letter-spacing: -.01em; line-height: 1.12; margin: 0; }
 a { color: var(--orange-deep); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+/* the wordmark is a mark, not a sentence: it changes colour on hover, never underlines */
+.wordmark:hover { text-decoration: none; color: var(--orange-deep); }
 .wrap { max-width: 960px; margin: 0 auto; padding: 0 22px; }
 
 /* header — identical on every page: wordmark left, small language codes right.
@@ -43,10 +45,9 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   font-family: Fraunces, Georgia, serif; font-size: 19px; color: var(--ink); text-decoration: none;
 }
 .crumbs a.up { font-weight: 500; color: var(--soft); }
-.crumbs a.up:hover { color: var(--orange-deep); }
 .crumbs .here { font-weight: 700; }
-.crumbs .wordmark.plain { font-weight: 500; color: var(--soft); }
-.crumbs .wordmark.plain:hover { color: var(--orange-deep); }
+.crumbs .wordmark.plain { font-size: 19px; font-weight: 500; color: var(--soft); }
+.crumbs a.up:hover, .crumbs .wordmark.plain:hover { color: var(--orange-deep); text-decoration: none; }
 @media (max-width: 620px) {
   .crumbs { flex-wrap: wrap; gap: 6px 8px; }
   .crumbs a.up, .crumbs .here, .crumbs .sep { font-size: 16px; }
@@ -58,7 +59,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: 21px;
   color: var(--ink); text-decoration: none;
 }
-.wordmark img { height: 34px; width: auto; border-radius: 22.5%; }
+.wordmark img { height: 34px; width: auto; border-radius: 22.5%; margin-left: -4px; }
 .langs { display: flex; flex-wrap: wrap; gap: 4px 14px; font-family: Fraunces, Georgia, serif; font-size: 13.5px; }
 .langs a, .langs button {
   background: none; border: 0; padding: 0; cursor: pointer;
@@ -91,6 +92,11 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* landing sections */
 section { padding: 54px 0 10px; }
+/* Sections whose illustration is wide read better when their text is not: a narrower block,
+   centred as a block (the text itself stays left-aligned), with more air above it. */
+section.airy { padding-top: 162px; }
+.lede { max-width: 620px; margin: 0 auto 34px; }
+.lede p.sub { margin-bottom: 0; }
 .kicker {
   font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em;
   color: var(--green-deep); margin: 0 0 10px;
@@ -115,8 +121,14 @@ section p.sub { max-width: 640px; color: var(--soft); margin: 0 0 34px; }
 .step p b { color: var(--ink); }
 
 /* two-column feature rows */
-.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; align-items: center; }
-@media (max-width: 760px) { .duo { grid-template-columns: 1fr; } }
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; align-items: start; }
+/* Dropped so the card begins level with the middle of the paragraph beside it — centred, it
+   floated above the kicker and looked unmoored. */
+.duo .detailcard { margin-top: clamp(24px, 11vw, 148px); }
+@media (max-width: 760px) {
+  .duo { grid-template-columns: 1fr; }
+  .duo .detailcard { margin-top: 0; }
+}
 
 /* ---- stylized app cards (faithful to MealMomentCard / DaySummaryCard) ---- */
 .mcard {
@@ -156,43 +168,44 @@ section p.sub { max-width: 640px; color: var(--soft); margin: 0 0 34px; }
 /* the feed: a phone-width timeline, day card on top */
 .phone { max-width: 430px; margin: 0 auto; display: grid; gap: 12px; }
 
-/* ---- capture screen, shaped like PhotoStepView: viewfinder, the strip of shots taken so far,
-   then the control row it really has — library, shutter, counter — and the Next button ---- */
+/* ---- capture screen, shaped like PhotoStepView and framed in iPhone proportions so it reads
+   as a screenshot: viewfinder, the strip of shots taken so far, then the control row the app
+   really has — library, shutter, counter — and Next beneath ---- */
 .capture {
-  max-width: 420px; margin: 0 auto;
-  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 14px; box-shadow: var(--shadow);
+  width: 288px; margin: 0 auto; aspect-ratio: 9 / 19.5;
+  background: linear-gradient(165deg, var(--cream) 0%, var(--cream) 55%, var(--mint) 100%);
+  border: 9px solid #262220; border-radius: 42px;
+  box-shadow: 0 18px 40px rgba(122, 82, 30, .22);
+  padding: 16px 12px 12px; display: flex; flex-direction: column;
 }
 .viewfinder {
-  height: 210px; border-radius: 16px; display: grid; place-items: center; font-size: 74px;
-  background: linear-gradient(155deg, #efe7d6, #d9d0bd);
-  box-shadow: inset 0 0 0 1px rgba(122, 82, 30, .10);
+  flex: 1; border-radius: 20px; display: grid; place-items: center; font-size: 84px;
+  background: linear-gradient(155deg, #efe7d6, #d6ccb8);
+  box-shadow: inset 0 0 0 1px rgba(122, 82, 30, .12);
 }
-.filmstrip { display: flex; gap: 8px; margin: 12px 0 4px; overflow: hidden; }
+.filmstrip { display: flex; gap: 8px; margin: 10px 0 0; justify-content: center; }
 .filmstrip .shot, .filmstrip .shot-more {
-  width: 64px; height: 78px; flex: none; border-radius: 12px;
+  width: 62px; height: 74px; flex: none; border-radius: 12px;
   display: grid; place-items: center; font-size: 28px;
-  background: linear-gradient(150deg, var(--cream), var(--mint)); border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .8); border: 1px solid var(--line);
 }
 .filmstrip .shot-more { font-size: 11px; font-weight: 700; color: var(--soft); line-height: 1.25; text-align: center; }
-.camrow { display: flex; align-items: center; justify-content: space-between; padding: 14px 12px 6px; }
+.camrow { display: flex; align-items: center; justify-content: space-between; padding: 14px 10px 4px; }
 .camrow .lib { color: var(--soft); display: flex; }
 .camrow .count { font-size: 14px; font-weight: 600; color: var(--soft); font-variant-numeric: tabular-nums; }
-.camrow .shutter { width: 58px; height: 58px; border-radius: 50%; border: 4px solid var(--ink); }
-.camnext { text-align: center; font-weight: 600; color: var(--orange-deep); padding: 4px 0 2px; }
-p.caption { text-align: center; font-size: 13.5px; color: var(--soft); margin: 14px 0 0; }
+.camrow .shutter { width: 54px; height: 54px; border-radius: 50%; border: 4px solid var(--ink); }
+.camnext { text-align: center; font-weight: 600; color: var(--orange-deep); font-size: 15px; }
+p.caption { text-align: center; font-size: 13.5px; color: var(--soft); margin: 16px auto 0; max-width: 460px; }
 
-/* ---- the two screens dictation really has: the note step with its Back · mic · Analyze row
-   (NoteStepView), and the dimmed hold-to-talk overlay (SoundWaveOverlayView) ---- */
-.voice-panel { display: grid; grid-template-columns: 1.15fr .85fr; gap: 22px; align-items: stretch; }
-@media (max-width: 760px) { .voice-panel { grid-template-columns: 1fr; } }
+/* ---- the note step (NoteStepView): the field with its Back · mic · Analyze row ---- */
+.voice-panel { max-width: 460px; margin: 0 auto; }
 .notestep {
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 18px; box-shadow: var(--shadow); display: flex; flex-direction: column;
 }
 .notestep .nhint { font-size: 13.5px; color: var(--soft); margin: 0 0 12px; }
 .notestep .nfield {
-  flex: 1; min-height: 128px; background: #fff; border: 1px solid var(--line);
+  min-height: 132px; background: #fff; border: 1px solid var(--line);
   border-radius: 14px; padding: 14px; font-size: 15.5px;
 }
 .notestep .nrow { display: flex; align-items: center; justify-content: space-between; margin-top: 16px; }
@@ -206,27 +219,6 @@ p.caption { text-align: center; font-size: 13.5px; color: var(--soft); margin: 1
   background: linear-gradient(160deg, var(--orange), var(--orange-deep));
   box-shadow: 0 8px 18px rgba(217, 95, 8, .32);
 }
-.holdscreen {
-  border-radius: var(--radius); padding: 26px 20px; background: #57514a; color: #fff;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
-}
-.holdscreen .wave { display: flex; align-items: center; gap: 5px; height: 76px; }
-.holdscreen .wave i { width: 5px; border-radius: 3px; background: #fff; opacity: .92; animation: wv 1.15s ease-in-out infinite; }
-.holdscreen .release { margin: 0; font-weight: 700; font-size: 16px; }
-.holdscreen .holdhint { margin: 0; font-size: 13px; color: rgba(255, 255, 255, .7); }
-.wave i:nth-child(2n) { animation-delay: .12s } .wave i:nth-child(3n) { animation-delay: .26s }
-.wave i:nth-child(4n) { animation-delay: .38s } .wave i:nth-child(5n) { animation-delay: .5s }
-@keyframes wv { 0%, 100% { height: 14px } 50% { height: 62px } }
-@media (prefers-reduced-motion: reduce) { .wave i { animation: none; height: 34px } }
-.bubbles { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 18px; }
-@media (max-width: 760px) { .bubbles { grid-template-columns: 1fr; } }
-.bubble {
-  background: linear-gradient(150deg, var(--cream), #fdf3d9); border: 1px solid var(--line);
-  border-radius: 16px; border-bottom-left-radius: 4px; padding: 14px 16px;
-}
-.bubble.typed { background: #fff; border-radius: 16px; border-bottom-right-radius: 4px; }
-.bubble p { margin: 0 0 6px; font-size: 15px; }
-.bubble small { color: var(--soft); font-size: 12.5px; }
 
 /* ---- the detail view (MealMomentEditView): Estimate → Components → Confidence, with a full
    nutrient row per component — which is what "calories are only the beginning" means ---- */
@@ -297,12 +289,12 @@ footer .legal { font-size: 13px; color: var(--soft); }
 footer .legal a { color: inherit; }
 
 /* ---- support hub & legal documents: plain text on the gradient, no card ---- */
-.doc { max-width: 780px; padding: 64px 0 10px; }
+.doc { max-width: none; padding: 64px 0 10px; }
 .doc h1 { font-size: clamp(32px, 5vw, 46px); font-weight: 600; margin: 0 0 12px; }
 .doc > h2 { font-size: 23px; font-weight: 600; margin: 40px 0 10px; }
-.doc p { margin: 0 0 16px; }
+.doc p { margin: 0 0 16px; text-align: justify; hyphens: auto; }
 .doc ul { margin: 0 0 16px; padding-left: 22px; }
-.doc li { margin-bottom: 6px; }
+.doc li { margin-bottom: 6px; text-align: justify; hyphens: auto; }
 .meta {
   font-size: 13.5px; color: var(--soft); font-style: italic;
   border-bottom: 1px solid var(--line);
