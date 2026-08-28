@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: 21px;
   color: var(--ink); text-decoration: none;
 }
-.wordmark img { height: 34px; width: auto; transform: rotate(-6deg); }
+.wordmark img { height: 34px; width: auto; border-radius: 22.5%; }
 .langs { display: flex; flex-wrap: wrap; gap: 4px 14px; font-family: Fraunces, Georgia, serif; font-size: 13.5px; }
 .langs a, .langs button {
   background: none; border: 0; padding: 0; cursor: pointer;
@@ -208,7 +208,7 @@ section p.sub { max-width: 640px; color: var(--soft); margin: 0 0 34px; }
 .manifesto p.big em.g { color: var(--green-deep); }
 .manifesto p.follow, .closing p.follow { max-width: 620px; margin: 0 auto; color: var(--soft); font-size: 17px; }
 .closing { text-align: center; padding: 76px 0 10px; }
-.closing img { height: 88px; width: auto; transform: rotate(-6deg); filter: drop-shadow(0 10px 16px rgba(122, 82, 30, .18)); }
+.closing img { height: 88px; width: auto; border-radius: 22.5%; box-shadow: 0 10px 22px rgba(122, 82, 30, .16); }
 .closing h2 { font-size: clamp(30px, 5vw, 44px); margin: 18px 0 8px; }
 .closing p.follow { margin-bottom: 28px; }
 
