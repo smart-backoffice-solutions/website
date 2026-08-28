@@ -34,7 +34,24 @@ a { color: var(--orange-deep); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .wrap { max-width: 960px; margin: 0 auto; padding: 0 22px; }
 
-/* header — identical on every page: wordmark left, small language codes right */
+/* header — identical on every page: wordmark left, small language codes right.
+   On the document pages the wordmark grows into a breadcrumb, so the reader can see where they
+   are: only the current page is bold, the levels above it are plain links. */
+.crumbs { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.crumbs .sep { color: var(--soft); font-family: Fraunces, Georgia, serif; font-size: 19px; }
+.crumbs a.up, .crumbs .here {
+  font-family: Fraunces, Georgia, serif; font-size: 19px; color: var(--ink); text-decoration: none;
+}
+.crumbs a.up { font-weight: 500; color: var(--soft); }
+.crumbs a.up:hover { color: var(--orange-deep); }
+.crumbs .here { font-weight: 700; }
+.crumbs .wordmark.plain { font-weight: 500; color: var(--soft); }
+.crumbs .wordmark.plain:hover { color: var(--orange-deep); }
+@media (max-width: 620px) {
+  .crumbs { flex-wrap: wrap; gap: 6px 8px; }
+  .crumbs a.up, .crumbs .here, .crumbs .sep { font-size: 16px; }
+}
+
 .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0 6px; }
 .wordmark {
   display: flex; align-items: center; gap: 10px;
@@ -52,9 +69,9 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .langs a.active, .langs button.active { color: var(--orange-deep); font-weight: 600; }
 
 /* hero — the app icon exactly as on the iPhone home screen, name beneath */
-.hero { text-align: center; padding: 64px 0 30px; }
+.hero { text-align: center; padding: 128px 0 45px; }
 .hero .appicon {
-  width: clamp(120px, 20vw, 168px); height: auto;
+  width: clamp(240px, 40vw, 336px); height: auto;
   border-radius: 22.5%;
   box-shadow: 0 12px 28px rgba(122, 82, 30, .18);
 }
@@ -63,9 +80,9 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   font-size: clamp(23px, 3.8vw, 32px); font-weight: 400; line-height: 1.2;
   margin: 18px 0 0;
 }
-.hero h1 { font-size: clamp(38px, 7vw, 62px); font-weight: 700; margin: 48px 0 10px; }
-.see-it { font-family: Fraunces, Georgia, serif; font-size: clamp(21px, 3.4vw, 27px); font-weight: 500; color: var(--orange-deep); margin: 0 0 26px; }
-.hero p.lead { max-width: 640px; margin: 0 auto 30px; font-size: clamp(17px, 2.3vw, 19px); color: var(--soft); }
+.hero h1 { font-size: clamp(38px, 7vw, 62px); font-weight: 700; margin: 96px 0 10px; }
+.see-it { font-family: Fraunces, Georgia, serif; font-size: clamp(21px, 3.4vw, 27px); font-weight: 500; color: var(--orange-deep); margin: 0 0 78px; }
+.hero p.lead { max-width: 640px; margin: 0 auto 90px; font-size: clamp(17px, 2.3vw, 19px); color: var(--soft); }
 .badge {
   display: inline-block; background: var(--ink); color: var(--cream);
   border-radius: 999px; padding: 12px 24px; font-weight: 600; font-size: 15.5px;
@@ -210,6 +227,7 @@ section p.sub { max-width: 640px; color: var(--soft); margin: 0 0 34px; }
 .closing { text-align: center; padding: 76px 0 10px; }
 .closing img { height: 88px; width: auto; border-radius: 22.5%; box-shadow: 0 10px 22px rgba(122, 82, 30, .16); }
 .closing h2 { font-size: clamp(30px, 5vw, 44px); margin: 18px 0 8px; }
+.closing .see-it { margin-bottom: 26px; }
 .closing p.follow { margin-bottom: 28px; }
 
 /* pull quote */
