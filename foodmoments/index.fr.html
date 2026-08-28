@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="foodmoments.css?v=2b24f7d7">
+<link rel="stylesheet" href="foodmoments.css?v=0677179d">
 </head>
 <body>
 <div class="wrap">
@@ -68,16 +68,28 @@
   <p class="kicker">Les photos d'abord</p>
   <h2>Commencez par prendre des photos.</h2>
   <p class="sub">La photo est la source première. L'analyse lit les plats, les portions — même une étiquette nutritionnelle ou un code-barres s'il apparaît sur l'image. Et il ne faut pas s'arrêter à une photo : un repas peut en contenir jusqu'à dix. Vous cuisinez ce soir ? Photographiez les ingrédients au fil de la préparation, puis l'assiette finale — l'analyse assemble le tout.</p>
-  <div class="photoflow">
-    <div class="shots">
+  <div class="capture">
+    <div class="viewfinder"><span>🍝</span></div>
+    <div class="filmstrip">
       <div class="shot">🍅</div>
       <div class="shot">🧅</div>
       <div class="shot">🥩</div>
       <div class="shot">🍝</div>
       <div class="shot-more">+ jusqu'à<br>10 photos</div>
     </div>
-    <p class="caption">Un dîner, quatre photos : les ingrédients pendant la cuisine, puis l'assiette arrivée à table.</p>
+    <div class="camrow">
+      <span class="lib" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M6 16l3.5-4 3 3.2L15.5 12 18 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="shutter"></span>
+      <span class="count">4/10</span>
+    </div>
+    <div class="camnext">Suivant</div>
   </div>
+  <p class="caption">Un dîner, quatre photos : les ingrédients pendant la cuisine, puis l'assiette arrivée à table.</p>
 </section>
 
 <section>
@@ -85,26 +97,35 @@
   <h2>Dites-le. Ou tapez-le.</h2>
   <p class="sub">Souvent, les photos suffisent. Quand ce n'est pas le cas — ce qu'il y avait dans le smoothie, la part de la poêle que vous avez vraiment mangée — ajoutez du contexte avec vos propres mots. Vous préférez taper ? Tapez. Mais essayez le micro : la dictée s'appuie sur les derniers modèles vocaux, s'affiche pendant que vous parlez encore et tient bon même dans une rue bruyante. Dans tous les cas, vos mots l'emportent toujours sur la photo — l'app vous écoute, <i>vous</i>.</p>
   <div class="voice-panel">
-    <div class="micwrap">
-      <div class="mic">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <rect x="9" y="2.5" width="6" height="12" rx="3" fill="#fff"/>
-          <path d="M5.5 11.5a6.5 6.5 0 0 0 13 0" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-          <path d="M12 18v3.5M8.5 21.5h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-        </svg>
+    <div class="notestep">
+      <p class="nhint">Ce que les photos ne montrent pas ? La taille de la portion, les ingrédients, ce que c&rsquo;était &mdash; et quand, si ce n&rsquo;est pas à l&rsquo;instant.</p>
+      <div class="nfield">« Salade de poulet avec une tranche de pain au levain — et je n'ai bu que la moitié du jus d'orange. »</div>
+      <div class="nrow">
+        <span class="nbtn">Retour</span>
+        <span class="mic">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="9" y="2.5" width="6" height="12" rx="3" fill="#fff"/>
+            <path d="M5.5 11.5a6.5 6.5 0 0 0 13 0" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 18v3.5M8.5 21.5h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="nbtn solid">&#10022; Analyser</span>
       </div>
-      <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <p class="hold">Maintenez pour parler</p>
     </div>
-    <div class="bubbles">
-      <div class="bubble">
-        <p>« Salade de poulet avec une tranche de pain au levain — et je n'ai bu que la moitié du jus d'orange. »</p>
-        <small>Dit au moment de la capture — portions et détails alimentent directement l'estimation.</small>
-      </div>
-      <div class="bubble typed">
-        <p>En fait la sauce était à part, j'en ai à peine pris.</p>
-        <small>Tapé plus tard dans la journée — les corrections marchent dans les deux sens : écrivez-le ou dites-le, et les chiffres sont recalculés.</small>
-      </div>
+    <div class="holdscreen">
+      <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <p class="release">Relâchez pour insérer</p>
+      <p class="holdhint">Maintenez pour parler</p>
+    </div>
+  </div>
+  <div class="bubbles">
+    <div class="bubble">
+      <p>« Salade de poulet avec une tranche de pain au levain — et je n'ai bu que la moitié du jus d'orange. »</p>
+      <small>Dit au moment de la capture — portions et détails alimentent directement l'estimation.</small>
+    </div>
+    <div class="bubble typed">
+      <p>En fait la sauce était à part, j'en ai à peine pris.</p>
+      <small>Tapé plus tard dans la journée — les corrections marchent dans les deux sens : écrivez-le ou dites-le, et les chiffres sont recalculés.</small>
     </div>
   </div>
 </section>
@@ -116,25 +137,10 @@
       <h2>Les calories ne sont que le début.</h2>
       <p class="sub">Chaque Food Moment est détaillé comme le ferait un menu — chaque plat et boisson avec sa portion et ses chiffres, additionnés en totaux : énergie, protéines, glucides, lipides, fibres, sucres, sel et un poids estimé. Et l'app vous dit honnêtement à quel point elle est sûre — pour que vous sachiez quand une courte note dictée affinerait l'estimation.</p>
     </div>
-    <div class="mcard">
-      <div class="mtitle">Salade de poulet, pain et jus</div>
-      <div class="mdate">mer. 27 août, 12:40</div>
-      <div class="comp" style="border-top:0; margin-top:6px">
-        <div class="cemoji">🥗</div>
-        <div class="cname">Salade de poulet<small>Plat · ~320 g, sauce à part</small></div>
-        <div class="ckcal">310 kcal</div>
-      </div>
-      <div class="comp">
-        <div class="cemoji">🍞</div>
-        <div class="cname">Pain au levain, beurré<small>Accompagnement · ~90 g, une tranche épaisse</small></div>
-        <div class="ckcal">180 kcal</div>
-      </div>
-      <div class="comp">
-        <div class="cemoji">🧃</div>
-        <div class="cname">Jus d'orange<small>Boisson · ~110 ml, un demi-verre</small></div>
-        <div class="ckcal">70 kcal</div>
-      </div>
-      <div class="ngrid" style="border-top:1px solid var(--line); padding-top:12px">
+    <div class="detailcard">
+      <div class="dsec">Estimation</div>
+      <div class="dwhole">Repas entier</div>
+      <div class="ngrid">
         <span><b>560</b><small>kcal</small></span>
         <span><b>34 g</b><small>protéines</small></span>
         <span><b>52 g</b><small>glucides</small></span>
@@ -144,8 +150,61 @@
         <span><b>5 g</b><small>gras sat.</small></span>
         <span><b>1,9 g</b><small>sel</small></span>
         <span><b>~520 g</b><small>poids</small></span>
-        <span class="conf"><b>moyenne</b><small>confiance</small></span>
+        <span></span>
       </div>
+      <p class="dsum">Salade de poulet, une tranche de pain au levain beurrée et un demi-verre de jus d'orange.</p>
+      <div class="dsec">Composants</div>
+      <p class="dhint">Les plats et boissons qui composent le repas. Balayez pour en retirer un, maintenez pour réordonner — toute autre correction passe par Feedback.</p>
+      <div class="comp">
+        <div class="cname">Salade de poulet</div>
+        <div class="cmeta">Plat · ~320 g, sauce à part</div>
+        <div class="ngrid">
+        <span><b>330</b><small>kcal</small></span>
+        <span><b>30 g</b><small>protéines</small></span>
+        <span><b>12 g</b><small>glucides</small></span>
+        <span><b>16 g</b><small>lipides</small></span>
+        <span><b>4 g</b><small>fibres</small></span>
+        <span><b>5 g</b><small>sucres</small></span>
+        <span><b>3 g</b><small>gras sat.</small></span>
+        <span><b>1,1 g</b><small>sel</small></span>
+        <span><b>~320 g</b><small>poids</small></span>
+        <span></span>
+      </div>
+      </div>
+      <div class="comp">
+        <div class="cname">Pain au levain, beurré</div>
+        <div class="cmeta">Accompagnement · ~90 g, une tranche épaisse</div>
+        <div class="ngrid">
+        <span><b>180</b><small>kcal</small></span>
+        <span><b>4 g</b><small>protéines</small></span>
+        <span><b>29 g</b><small>glucides</small></span>
+        <span><b>6 g</b><small>lipides</small></span>
+        <span><b>3 g</b><small>fibres</small></span>
+        <span><b>2 g</b><small>sucres</small></span>
+        <span><b>2 g</b><small>gras sat.</small></span>
+        <span><b>0,8 g</b><small>sel</small></span>
+        <span><b>~90 g</b><small>poids</small></span>
+        <span></span>
+      </div>
+      </div>
+      <div class="comp">
+        <div class="cname">Jus d'orange</div>
+        <div class="cmeta">Boisson · ~110 ml, un demi-verre</div>
+        <div class="ngrid">
+        <span><b>50</b><small>kcal</small></span>
+        <span><b>0 g</b><small>protéines</small></span>
+        <span><b>11 g</b><small>glucides</small></span>
+        <span><b>0 g</b><small>lipides</small></span>
+        <span><b>0 g</b><small>fibres</small></span>
+        <span><b>11 g</b><small>sucres</small></span>
+        <span><b>0 g</b><small>gras sat.</small></span>
+        <span><b>0,0 g</b><small>sel</small></span>
+        <span><b>~110 g</b><small>poids</small></span>
+        <span></span>
+      </div>
+      </div>
+      <div class="dsec">Confiance</div>
+      <div class="dconf"><b>moyenne</b><p>Le plat était clairement identifiable, fait maison ou au restaurant ; les portions sont estimées d&rsquo;après les photos, comptez donc environ &plusmn;30&nbsp;% sur l&rsquo;énergie et davantage sur les protéines et les lipides.</p></div>
     </div>
   </div>
 </section>
@@ -288,14 +347,6 @@
     <p><b>Tout est stocké sur votre iPhone.</b> Les photos et les notes ne sont envoyées que pour l'analyse nutritionnelle que vous demandez — avec votre consentement, et jamais pour constituer un profil. La dictée est la seule chose qui peut voyager plus loin : son service vocal s'exécute là où Microsoft dispose de capacité, un enregistrement peut donc être traité hors de l'UE. Elle a son propre consentement, demandé une fois — et si vous saisissez la note au clavier, tout reste sur l'iPhone. Les détails figurent dans la <a href="privacy.fr.html">politique de confidentialité</a>, en langage clair.</p>
   </div>
 </section>
-
-<div class="closing">
-  <img src="appicon.png" alt="">
-  <h2>Votre alimentation raconte une histoire.</h2>
-  <p class="see-it">Voyez-la. Comprenez-la.</p>
-  <p class="follow">Food Moments rend cette histoire visible — pour que vous puissiez savourer ce que vous mangez, comprendre ce que cela vous apporte et faire de meilleurs choix pour la suite.</p>
-  <span class="badge">Bientôt sur l'App&nbsp;Store <span>· pour iPhone</span></span>
-</div>
 
 <footer>
   <ul class="fine">

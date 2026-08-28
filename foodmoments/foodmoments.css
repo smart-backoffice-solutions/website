@@ -136,16 +136,6 @@ section p.sub { max-width: 640px; color: var(--soft); margin: 0 0 34px; }
 .ngrid small { font-size: 10.5px; color: var(--soft); }
 .ngrid .conf b { color: var(--orange-deep); }
 
-/* components inside the analysis card */
-.comp { display: flex; align-items: center; gap: 12px; padding: 9px 0; border-top: 1px solid var(--line); }
-.comp .cemoji {
-  width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center;
-  font-size: 22px; background: linear-gradient(150deg, var(--cream), var(--mint)); flex: none;
-}
-.comp .cname { flex: 1; min-width: 0; font-size: 14px; font-weight: 600; line-height: 1.35; }
-.comp .cname small { display: block; font-weight: 400; font-size: 12px; color: var(--soft); }
-.comp .ckcal { font-size: 13.5px; font-weight: 600; color: var(--orange-deep); white-space: nowrap; font-variant-numeric: tabular-nums; }
-
 /* the day summary card — dark grey with white bars, like the app's timeline header */
 .daycard {
   background: #57514a; color: #fff; border-radius: 18px; padding: 14px 16px;
@@ -166,56 +156,100 @@ section p.sub { max-width: 640px; color: var(--soft); margin: 0 0 34px; }
 /* the feed: a phone-width timeline, day card on top */
 .phone { max-width: 430px; margin: 0 auto; display: grid; gap: 12px; }
 
-/* photos-first */
-.photoflow {
+/* ---- capture screen, shaped like PhotoStepView: viewfinder, the strip of shots taken so far,
+   then the control row it really has — library, shutter, counter — and the Next button ---- */
+.capture {
+  max-width: 420px; margin: 0 auto;
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-  box-shadow: var(--shadow); padding: 26px 24px 20px;
+  padding: 14px; box-shadow: var(--shadow);
 }
-.photoflow .shots { justify-content: center; flex-wrap: wrap; margin: 0 0 16px; }
-.photoflow .shot { width: 92px; height: 116px; font-size: 44px; }
-.photoflow .shot-more {
-  width: 92px; height: 116px; border: 2px dashed var(--line); border-radius: 12px;
-  display: grid; place-items: center; color: var(--soft);
-  font-size: 12.5px; font-weight: 600; text-align: center; line-height: 1.35; padding: 6px;
+.viewfinder {
+  height: 210px; border-radius: 16px; display: grid; place-items: center; font-size: 74px;
+  background: linear-gradient(155deg, #efe7d6, #d9d0bd);
+  box-shadow: inset 0 0 0 1px rgba(122, 82, 30, .10);
 }
-.photoflow p.caption { text-align: center; font-size: 13.5px; color: var(--soft); margin: 0; }
+.filmstrip { display: flex; gap: 8px; margin: 12px 0 4px; overflow: hidden; }
+.filmstrip .shot, .filmstrip .shot-more {
+  width: 64px; height: 78px; flex: none; border-radius: 12px;
+  display: grid; place-items: center; font-size: 28px;
+  background: linear-gradient(150deg, var(--cream), var(--mint)); border: 1px solid var(--line);
+}
+.filmstrip .shot-more { font-size: 11px; font-weight: 700; color: var(--soft); line-height: 1.25; text-align: center; }
+.camrow { display: flex; align-items: center; justify-content: space-between; padding: 14px 12px 6px; }
+.camrow .lib { color: var(--soft); display: flex; }
+.camrow .count { font-size: 14px; font-weight: 600; color: var(--soft); font-variant-numeric: tabular-nums; }
+.camrow .shutter { width: 58px; height: 58px; border-radius: 50%; border: 4px solid var(--ink); }
+.camnext { text-align: center; font-weight: 600; color: var(--orange-deep); padding: 4px 0 2px; }
+p.caption { text-align: center; font-size: 13.5px; color: var(--soft); margin: 14px 0 0; }
 
-/* voice section */
-.voice-panel {
+/* ---- the two screens dictation really has: the note step with its Back · mic · Analyze row
+   (NoteStepView), and the dimmed hold-to-talk overlay (SoundWaveOverlayView) ---- */
+.voice-panel { display: grid; grid-template-columns: 1.15fr .85fr; gap: 22px; align-items: stretch; }
+@media (max-width: 760px) { .voice-panel { grid-template-columns: 1fr; } }
+.notestep {
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-  box-shadow: var(--shadow); padding: 30px 28px;
-  display: grid; grid-template-columns: auto 1fr; gap: 30px; align-items: center;
+  padding: 18px; box-shadow: var(--shadow); display: flex; flex-direction: column;
 }
-@media (max-width: 700px) { .voice-panel { grid-template-columns: 1fr; text-align: center; } }
-.micwrap { text-align: center; }
-.mic {
-  width: 86px; height: 86px; border-radius: 50%; margin: 0 auto 12px;
+.notestep .nhint { font-size: 13.5px; color: var(--soft); margin: 0 0 12px; }
+.notestep .nfield {
+  flex: 1; min-height: 128px; background: #fff; border: 1px solid var(--line);
+  border-radius: 14px; padding: 14px; font-size: 15.5px;
+}
+.notestep .nrow { display: flex; align-items: center; justify-content: space-between; margin-top: 16px; }
+.notestep .nbtn {
+  font-size: 14.5px; font-weight: 600; color: var(--ink);
+  background: rgba(122, 82, 30, .08); border-radius: 999px; padding: 9px 16px;
+}
+.notestep .nbtn.solid { background: var(--orange); color: #fff; }
+.notestep .mic {
+  width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; flex: none;
   background: linear-gradient(160deg, var(--orange), var(--orange-deep));
-  display: grid; place-items: center; box-shadow: 0 12px 26px rgba(217, 95, 8, .35);
+  box-shadow: 0 8px 18px rgba(217, 95, 8, .32);
 }
-.wave { display: flex; gap: 3px; align-items: center; justify-content: center; height: 30px; margin-bottom: 8px; }
-.wave i { width: 4px; border-radius: 2px; background: var(--orange); animation: wv 1.15s ease-in-out infinite; }
-.wave i:nth-child(1) { height: 10px; animation-delay: 0s; }
-.wave i:nth-child(2) { height: 20px; animation-delay: .12s; }
-.wave i:nth-child(3) { height: 28px; animation-delay: .24s; }
-.wave i:nth-child(4) { height: 16px; animation-delay: .36s; }
-.wave i:nth-child(5) { height: 24px; animation-delay: .48s; }
-.wave i:nth-child(6) { height: 12px; animation-delay: .6s; }
-.wave i:nth-child(7) { height: 22px; animation-delay: .72s; }
-@keyframes wv { 0%, 100% { transform: scaleY(.55); } 50% { transform: scaleY(1.25); } }
-@media (prefers-reduced-motion: reduce) { .wave i { animation: none; } }
-.micwrap .hold { font-size: 12.5px; font-weight: 600; color: var(--soft); margin: 0; }
-.bubbles { display: grid; gap: 12px; }
+.holdscreen {
+  border-radius: var(--radius); padding: 26px 20px; background: #57514a; color: #fff;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+}
+.holdscreen .wave { display: flex; align-items: center; gap: 5px; height: 76px; }
+.holdscreen .wave i { width: 5px; border-radius: 3px; background: #fff; opacity: .92; animation: wv 1.15s ease-in-out infinite; }
+.holdscreen .release { margin: 0; font-weight: 700; font-size: 16px; }
+.holdscreen .holdhint { margin: 0; font-size: 13px; color: rgba(255, 255, 255, .7); }
+.wave i:nth-child(2n) { animation-delay: .12s } .wave i:nth-child(3n) { animation-delay: .26s }
+.wave i:nth-child(4n) { animation-delay: .38s } .wave i:nth-child(5n) { animation-delay: .5s }
+@keyframes wv { 0%, 100% { height: 14px } 50% { height: 62px } }
+@media (prefers-reduced-motion: reduce) { .wave i { animation: none; height: 34px } }
+.bubbles { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 18px; }
+@media (max-width: 760px) { .bubbles { grid-template-columns: 1fr; } }
 .bubble {
   background: linear-gradient(150deg, var(--cream), #fdf3d9); border: 1px solid var(--line);
-  border-radius: 16px; border-bottom-left-radius: 4px; padding: 12px 16px;
+  border-radius: 16px; border-bottom-left-radius: 4px; padding: 14px 16px;
 }
-.bubble p { margin: 0; font-size: 15px; font-style: italic; }
-.bubble small { display: block; font-style: normal; font-size: 12px; color: var(--soft); margin-top: 4px; }
 .bubble.typed { background: #fff; border-radius: 16px; border-bottom-right-radius: 4px; }
-.bubble.typed p { font-style: normal; font-family: "SF Mono", ui-monospace, Menlo, monospace; font-size: 13.5px; }
+.bubble p { margin: 0 0 6px; font-size: 15px; }
+.bubble small { color: var(--soft); font-size: 12.5px; }
 
-/* manifesto + closing */
+/* ---- the detail view (MealMomentEditView): Estimate → Components → Confidence, with a full
+   nutrient row per component — which is what "calories are only the beginning" means ---- */
+.detailcard {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 16px 18px 18px; box-shadow: var(--shadow); text-align: left;
+}
+.detailcard .dsec {
+  font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--soft); margin: 20px 0 8px;
+}
+.detailcard .dsec:first-child { margin-top: 2px; }
+.detailcard .dwhole { font-size: 15px; font-weight: 600; }
+.detailcard .dsum { font-size: 13.5px; color: var(--soft); margin: 4px 0 0; }
+.detailcard .dhint { font-size: 12.5px; color: var(--soft); margin: 0 0 12px; }
+.detailcard .comp { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }
+.detailcard .comp:first-of-type { border-top: 0; margin-top: 0; padding-top: 0; }
+.detailcard .cname { font-size: 15px; font-weight: 600; }
+.detailcard .cmeta { font-size: 12.5px; color: var(--soft); margin-top: 2px; }
+.detailcard .dconf b { display: block; font-size: 15px; color: var(--orange-deep); text-transform: capitalize; }
+.detailcard .dconf p { font-size: 12.5px; color: var(--soft); margin: 4px 0 0; }
+
+/* manifesto */
 .manifesto { text-align: center; padding: 70px 0 24px; }
 .manifesto p.big {
   font-family: Fraunces, Georgia, serif; font-size: clamp(24px, 4vw, 34px); font-weight: 600;
@@ -223,12 +257,7 @@ section p.sub { max-width: 640px; color: var(--soft); margin: 0 0 34px; }
 }
 .manifesto p.big em { font-style: normal; color: var(--orange-deep); }
 .manifesto p.big em.g { color: var(--green-deep); }
-.manifesto p.follow, .closing p.follow { max-width: 620px; margin: 0 auto; color: var(--soft); font-size: 17px; }
-.closing { text-align: center; padding: 76px 0 10px; }
-.closing img { height: 88px; width: auto; border-radius: 22.5%; box-shadow: 0 10px 22px rgba(122, 82, 30, .16); }
-.closing h2 { font-size: clamp(30px, 5vw, 44px); margin: 18px 0 8px; }
-.closing .see-it { margin-bottom: 26px; }
-.closing p.follow { margin-bottom: 28px; }
+.manifesto p.follow { max-width: 620px; margin: 0 auto; color: var(--soft); font-size: 17px; }
 
 /* pull quote */
 .pull { text-align: center; padding: 64px 0 20px; }

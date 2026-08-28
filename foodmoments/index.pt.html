@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="foodmoments.css?v=2b24f7d7">
+<link rel="stylesheet" href="foodmoments.css?v=0677179d">
 </head>
 <body>
 <div class="wrap">
@@ -68,16 +68,28 @@
   <p class="kicker">Primeiro, as fotos</p>
   <h2>Comece por tirar fotos.</h2>
   <p class="sub">A foto é a fonte principal. A análise lê os pratos e as porções — até um rótulo nutricional ou um código de barras, se aparecer na imagem. E não tem de ser uma só foto: uma refeição pode ter até dez. Vai cozinhar hoje? Fotografe os ingredientes à medida que avança e depois o prato final — a análise junta tudo.</p>
-  <div class="photoflow">
-    <div class="shots">
+  <div class="capture">
+    <div class="viewfinder"><span>🍝</span></div>
+    <div class="filmstrip">
       <div class="shot">🍅</div>
       <div class="shot">🧅</div>
       <div class="shot">🥩</div>
       <div class="shot">🍝</div>
       <div class="shot-more">+ até<br>10 fotos</div>
     </div>
-    <p class="caption">Um jantar, quatro fotos: os ingredientes enquanto cozinhava e depois o prato que chegou à mesa.</p>
+    <div class="camrow">
+      <span class="lib" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M6 16l3.5-4 3 3.2L15.5 12 18 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="shutter"></span>
+      <span class="count">4/10</span>
+    </div>
+    <div class="camnext">Seguinte</div>
   </div>
+  <p class="caption">Um jantar, quatro fotos: os ingredientes enquanto cozinhava e depois o prato que chegou à mesa.</p>
 </section>
 
 <section>
@@ -85,26 +97,35 @@
   <h2>Diga-o. Ou escreva-o.</h2>
   <p class="sub">Muitas vezes as fotos já chegam. Quando não chegam — o que levou o batido, quanto da frigideira comeu realmente — acrescente contexto nas suas próprias palavras. Se gosta de escrever, escreva. Mas experimente o microfone: o ditado corre nos mais recentes modelos de voz, vai transcrevendo enquanto ainda fala e aguenta-se mesmo numa rua barulhenta. Seja como for, as suas palavras valem sempre mais do que a foto — a app ouve-o a <i>si</i>.</p>
   <div class="voice-panel">
-    <div class="micwrap">
-      <div class="mic">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <rect x="9" y="2.5" width="6" height="12" rx="3" fill="#fff"/>
-          <path d="M5.5 11.5a6.5 6.5 0 0 0 13 0" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-          <path d="M12 18v3.5M8.5 21.5h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-        </svg>
+    <div class="notestep">
+      <p class="nhint">O que as fotografias não mostram? O tamanho da porção, os ingredientes, o que era &mdash; e quando, se não foi agora mesmo.</p>
+      <div class="nfield">«Salada de frango com uma fatia de pão — e do sumo de laranja só bebi metade.»</div>
+      <div class="nrow">
+        <span class="nbtn">Voltar</span>
+        <span class="mic">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="9" y="2.5" width="6" height="12" rx="3" fill="#fff"/>
+            <path d="M5.5 11.5a6.5 6.5 0 0 0 13 0" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 18v3.5M8.5 21.5h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="nbtn solid">&#10022; Analisar</span>
       </div>
-      <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <p class="hold">Mantenha premido e fale</p>
     </div>
-    <div class="bubbles">
-      <div class="bubble">
-        <p>«Salada de frango com uma fatia de pão — e do sumo de laranja só bebi metade.»</p>
-        <small>Dito no momento da captura — porções e detalhes entram diretamente na estimativa.</small>
-      </div>
-      <div class="bubble typed">
-        <p>Afinal o molho vinha à parte, quase não usei.</p>
-        <small>Escrito mais tarde nesse dia — as correções funcionam das duas formas: escreva ou diga, e os números são recalculados.</small>
-      </div>
+    <div class="holdscreen">
+      <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <p class="release">Solte para inserir</p>
+      <p class="holdhint">Mantenha premido e fale</p>
+    </div>
+  </div>
+  <div class="bubbles">
+    <div class="bubble">
+      <p>«Salada de frango com uma fatia de pão — e do sumo de laranja só bebi metade.»</p>
+      <small>Dito no momento da captura — porções e detalhes entram diretamente na estimativa.</small>
+    </div>
+    <div class="bubble typed">
+      <p>Afinal o molho vinha à parte, quase não usei.</p>
+      <small>Escrito mais tarde nesse dia — as correções funcionam das duas formas: escreva ou diga, e os números são recalculados.</small>
     </div>
   </div>
 </section>
@@ -116,25 +137,10 @@
       <h2>As calorias são só o começo.</h2>
       <p class="sub">Cada Food Moment é decomposto como numa ementa — cada prato e bebida com a sua porção e os seus números, somados em totais: energia, proteína, hidratos, gordura, fibra, açúcares, sal e um peso estimado. E a app diz-lhe honestamente quão confiante está — para saber quando uma nota falada rápida afinaria a estimativa.</p>
     </div>
-    <div class="mcard">
-      <div class="mtitle">Salada de frango com pão e sumo</div>
-      <div class="mdate">qua, 27 ago, 12:40</div>
-      <div class="comp" style="border-top:0; margin-top:6px">
-        <div class="cemoji">🥗</div>
-        <div class="cname">Salada de frango<small>Prato principal · ~320 g, molho à parte</small></div>
-        <div class="ckcal">310 kcal</div>
-      </div>
-      <div class="comp">
-        <div class="cemoji">🍞</div>
-        <div class="cname">Pão com manteiga<small>Acompanhamento · ~90 g, uma fatia grossa</small></div>
-        <div class="ckcal">180 kcal</div>
-      </div>
-      <div class="comp">
-        <div class="cemoji">🧃</div>
-        <div class="cname">Sumo de laranja<small>Bebida · ~110 ml, meio copo</small></div>
-        <div class="ckcal">70 kcal</div>
-      </div>
-      <div class="ngrid" style="border-top:1px solid var(--line); padding-top:12px">
+    <div class="detailcard">
+      <div class="dsec">Estimativa</div>
+      <div class="dwhole">Refeição inteira</div>
+      <div class="ngrid">
         <span><b>560</b><small>kcal</small></span>
         <span><b>34 g</b><small>proteína</small></span>
         <span><b>52 g</b><small>hidratos</small></span>
@@ -144,8 +150,61 @@
         <span><b>5 g</b><small>gord. sat.</small></span>
         <span><b>1,9 g</b><small>sal</small></span>
         <span><b>~520 g</b><small>peso</small></span>
-        <span class="conf"><b>média</b><small>confiança</small></span>
+        <span></span>
       </div>
+      <p class="dsum">Salada de frango, uma fatia de pão com manteiga e meio copo de sumo de laranja.</p>
+      <div class="dsec">Componentes</div>
+      <p class="dhint">Os pratos e bebidas que compõem a refeição. Deslize para remover um, mantenha premido para reordenar — qualquer outra correção passa pelo Feedback.</p>
+      <div class="comp">
+        <div class="cname">Salada de frango</div>
+        <div class="cmeta">Prato principal · ~320 g, molho à parte</div>
+        <div class="ngrid">
+        <span><b>330</b><small>kcal</small></span>
+        <span><b>30 g</b><small>proteína</small></span>
+        <span><b>12 g</b><small>hidratos</small></span>
+        <span><b>16 g</b><small>gordura</small></span>
+        <span><b>4 g</b><small>fibra</small></span>
+        <span><b>5 g</b><small>açúcares</small></span>
+        <span><b>3 g</b><small>gord. sat.</small></span>
+        <span><b>1,1 g</b><small>sal</small></span>
+        <span><b>~320 g</b><small>peso</small></span>
+        <span></span>
+      </div>
+      </div>
+      <div class="comp">
+        <div class="cname">Pão com manteiga</div>
+        <div class="cmeta">Acompanhamento · ~90 g, uma fatia grossa</div>
+        <div class="ngrid">
+        <span><b>180</b><small>kcal</small></span>
+        <span><b>4 g</b><small>proteína</small></span>
+        <span><b>29 g</b><small>hidratos</small></span>
+        <span><b>6 g</b><small>gordura</small></span>
+        <span><b>3 g</b><small>fibra</small></span>
+        <span><b>2 g</b><small>açúcares</small></span>
+        <span><b>2 g</b><small>gord. sat.</small></span>
+        <span><b>0,8 g</b><small>sal</small></span>
+        <span><b>~90 g</b><small>peso</small></span>
+        <span></span>
+      </div>
+      </div>
+      <div class="comp">
+        <div class="cname">Sumo de laranja</div>
+        <div class="cmeta">Bebida · ~110 ml, meio copo</div>
+        <div class="ngrid">
+        <span><b>50</b><small>kcal</small></span>
+        <span><b>0 g</b><small>proteína</small></span>
+        <span><b>11 g</b><small>hidratos</small></span>
+        <span><b>0 g</b><small>gordura</small></span>
+        <span><b>0 g</b><small>fibra</small></span>
+        <span><b>11 g</b><small>açúcares</small></span>
+        <span><b>0 g</b><small>gord. sat.</small></span>
+        <span><b>0,0 g</b><small>sal</small></span>
+        <span><b>~110 g</b><small>peso</small></span>
+        <span></span>
+      </div>
+      </div>
+      <div class="dsec">Confiança</div>
+      <div class="dconf"><b>média</b><p>A comida era claramente identificável, caseira ou de restaurante; as porções são estimadas a partir das fotografias, portanto conte com cerca de &plusmn;30&nbsp;% na energia e mais na proteína e na gordura.</p></div>
     </div>
   </div>
 </section>
@@ -288,14 +347,6 @@
     <p><b>Tudo fica guardado no seu iPhone.</b> As fotos e notas só são enviadas para a análise nutricional que você pede — com o seu consentimento, e nunca para criar um perfil. O ditado é a única coisa que pode viajar mais longe: o seu serviço de voz corre onde a Microsoft tiver capacidade, pelo que uma gravação pode ser tratada fora da UE. Tem o seu próprio consentimento, pedido uma vez — e se escrever a nota, tudo fica no iPhone. Os detalhes estão na <a href="privacy.pt.html">política de privacidade</a>, em linguagem clara.</p>
   </div>
 </section>
-
-<div class="closing">
-  <img src="appicon.png" alt="">
-  <h2>A sua comida conta uma história.</h2>
-  <p class="see-it">Veja-a. Entenda-a.</p>
-  <p class="follow">O Food Moments torna essa história visível — para que possa apreciar o que come, perceber o que isso faz por si e fazer melhores escolhas para o que vem a seguir.</p>
-  <span class="badge">Em breve na App&nbsp;Store <span>· para iPhone</span></span>
-</div>
 
 <footer>
   <ul class="fine">

@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="foodmoments.css?v=2b24f7d7">
+<link rel="stylesheet" href="foodmoments.css?v=0677179d">
 </head>
 <body>
 <div class="wrap">
@@ -68,16 +68,28 @@
   <p class="kicker">Photos first</p>
   <h2>Start by taking pictures.</h2>
   <p class="sub">The photo is the primary source. The analysis reads the dishes, the portions — even a nutrition label or a barcode when one is in the shot. And it doesn't have to be one photo: a meal can hold up to ten. Cooking tonight? Snap the ingredients as you go, then the finished plate — the analysis puts it all together.</p>
-  <div class="photoflow">
-    <div class="shots">
+  <div class="capture">
+    <div class="viewfinder"><span>🍝</span></div>
+    <div class="filmstrip">
       <div class="shot">🍅</div>
       <div class="shot">🧅</div>
       <div class="shot">🥩</div>
       <div class="shot">🍝</div>
       <div class="shot-more">+ up to<br>10 photos</div>
     </div>
-    <p class="caption">One dinner, four photos: the ingredients while cooking, then the plate that reached the table.</p>
+    <div class="camrow">
+      <span class="lib" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M6 16l3.5-4 3 3.2L15.5 12 18 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="shutter"></span>
+      <span class="count">4/10</span>
+    </div>
+    <div class="camnext">Next</div>
   </div>
+  <p class="caption">One dinner, four photos: the ingredients while cooking, then the plate that reached the table.</p>
 </section>
 
 <section>
@@ -85,26 +97,35 @@
   <h2>Say it. Or type it.</h2>
   <p class="sub">Often the photos are already enough. When they're not — what went into the smoothie, how much of the pan you actually ate — add context in your own words. If you like typing, type. But do try the mic: dictation here runs on the latest speech models, streams in while you're still talking, and holds up even on a noisy street. Either way, your words always win over the photo — the app listens to <i>you</i>.</p>
   <div class="voice-panel">
-    <div class="micwrap">
-      <div class="mic">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <rect x="9" y="2.5" width="6" height="12" rx="3" fill="#fff"/>
-          <path d="M5.5 11.5a6.5 6.5 0 0 0 13 0" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-          <path d="M12 18v3.5M8.5 21.5h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-        </svg>
+    <div class="notestep">
+      <p class="nhint">Anything the photos don’t show? Portion size, ingredients, what it was &mdash; and when, if not just now.</p>
+      <div class="nfield">&ldquo;Chicken salad with a slice of sourdough — and I only drank half the orange juice.&rdquo;</div>
+      <div class="nrow">
+        <span class="nbtn">Back</span>
+        <span class="mic">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="9" y="2.5" width="6" height="12" rx="3" fill="#fff"/>
+            <path d="M5.5 11.5a6.5 6.5 0 0 0 13 0" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 18v3.5M8.5 21.5h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="nbtn solid">&#10022; Analyze</span>
       </div>
-      <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <p class="hold">Press &amp; hold to talk</p>
     </div>
-    <div class="bubbles">
-      <div class="bubble">
-        <p>&ldquo;Chicken salad with a slice of sourdough — and I only drank half the orange juice.&rdquo;</p>
-        <small>Spoken at capture — portions and details flow straight into the estimate.</small>
-      </div>
-      <div class="bubble typed">
-        <p>Actually the dressing was on the side, I barely used any.</p>
-        <small>Typed, later that day — corrections work both ways: write it or say it, and the numbers are recalculated.</small>
-      </div>
+    <div class="holdscreen">
+      <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <p class="release">Release to insert</p>
+      <p class="holdhint">Press &amp; hold to talk</p>
+    </div>
+  </div>
+  <div class="bubbles">
+    <div class="bubble">
+      <p>&ldquo;Chicken salad with a slice of sourdough — and I only drank half the orange juice.&rdquo;</p>
+      <small>Spoken at capture — portions and details flow straight into the estimate.</small>
+    </div>
+    <div class="bubble typed">
+      <p>Actually the dressing was on the side, I barely used any.</p>
+      <small>Typed, later that day — corrections work both ways: write it or say it, and the numbers are recalculated.</small>
     </div>
   </div>
 </section>
@@ -116,25 +137,10 @@
       <h2>Calories are only the beginning.</h2>
       <p class="sub">Every Food Moment is broken down the way a menu would list it — each dish and drink with its own portion and numbers, summed into totals: energy, protein, carbs, fat, fibre, sugars, salt and an estimated weight. And the app tells you honestly how confident it is, so you know when a quick spoken note would sharpen the estimate.</p>
     </div>
-    <div class="mcard">
-      <div class="mtitle">Chicken salad with bread and juice</div>
-      <div class="mdate">Wed, Aug 27, 12:40</div>
-      <div class="comp" style="border-top:0; margin-top:6px">
-        <div class="cemoji">🥗</div>
-        <div class="cname">Chicken salad<small>Main · ~320 g, dressing on the side</small></div>
-        <div class="ckcal">310 kcal</div>
-      </div>
-      <div class="comp">
-        <div class="cemoji">🍞</div>
-        <div class="cname">Sourdough bread, buttered<small>Side · ~90 g, one thick slice</small></div>
-        <div class="ckcal">180 kcal</div>
-      </div>
-      <div class="comp">
-        <div class="cemoji">🧃</div>
-        <div class="cname">Orange juice<small>Drink · ~110 ml, half a glass</small></div>
-        <div class="ckcal">70 kcal</div>
-      </div>
-      <div class="ngrid" style="border-top:1px solid var(--line); padding-top:12px">
+    <div class="detailcard">
+      <div class="dsec">Estimate</div>
+      <div class="dwhole">Whole meal</div>
+      <div class="ngrid">
         <span><b>560</b><small>kcal</small></span>
         <span><b>34 g</b><small>protein</small></span>
         <span><b>52 g</b><small>carbs</small></span>
@@ -144,8 +150,61 @@
         <span><b>5 g</b><small>sat. fat</small></span>
         <span><b>1.9 g</b><small>salt</small></span>
         <span><b>~520 g</b><small>weight</small></span>
-        <span class="conf"><b>medium</b><small>confidence</small></span>
+        <span></span>
       </div>
+      <p class="dsum">Chicken salad, a buttered slice of sourdough and half a glass of orange juice.</p>
+      <div class="dsec">Components</div>
+      <p class="dhint">The dishes and drinks that make up the meal. Swipe one away, hold to reorder — every other correction goes through Feedback.</p>
+      <div class="comp">
+        <div class="cname">Chicken salad</div>
+        <div class="cmeta">Main · ~320 g, dressing on the side</div>
+        <div class="ngrid">
+        <span><b>330</b><small>kcal</small></span>
+        <span><b>30 g</b><small>protein</small></span>
+        <span><b>12 g</b><small>carbs</small></span>
+        <span><b>16 g</b><small>fat</small></span>
+        <span><b>4 g</b><small>fibre</small></span>
+        <span><b>5 g</b><small>sugars</small></span>
+        <span><b>3 g</b><small>sat. fat</small></span>
+        <span><b>1.1 g</b><small>salt</small></span>
+        <span><b>~320 g</b><small>weight</small></span>
+        <span></span>
+      </div>
+      </div>
+      <div class="comp">
+        <div class="cname">Sourdough bread, buttered</div>
+        <div class="cmeta">Side · ~90 g, one thick slice</div>
+        <div class="ngrid">
+        <span><b>180</b><small>kcal</small></span>
+        <span><b>4 g</b><small>protein</small></span>
+        <span><b>29 g</b><small>carbs</small></span>
+        <span><b>6 g</b><small>fat</small></span>
+        <span><b>3 g</b><small>fibre</small></span>
+        <span><b>2 g</b><small>sugars</small></span>
+        <span><b>2 g</b><small>sat. fat</small></span>
+        <span><b>0.8 g</b><small>salt</small></span>
+        <span><b>~90 g</b><small>weight</small></span>
+        <span></span>
+      </div>
+      </div>
+      <div class="comp">
+        <div class="cname">Orange juice</div>
+        <div class="cmeta">Drink · ~110 ml, half a glass</div>
+        <div class="ngrid">
+        <span><b>50</b><small>kcal</small></span>
+        <span><b>0 g</b><small>protein</small></span>
+        <span><b>11 g</b><small>carbs</small></span>
+        <span><b>0 g</b><small>fat</small></span>
+        <span><b>0 g</b><small>fibre</small></span>
+        <span><b>11 g</b><small>sugars</small></span>
+        <span><b>0 g</b><small>sat. fat</small></span>
+        <span><b>0.0 g</b><small>salt</small></span>
+        <span><b>~110 g</b><small>weight</small></span>
+        <span></span>
+      </div>
+      </div>
+      <div class="dsec">Confidence</div>
+      <div class="dconf"><b>medium</b><p>The food was clearly identifiable home or restaurant food; portions are estimated from the photos, so expect roughly &plusmn;30&nbsp;% on energy and more on protein and fat.</p></div>
     </div>
   </div>
 </section>
@@ -288,14 +347,6 @@
     <p><b>Everything is stored on your phone.</b> Photos and notes are sent out only for the nutritional analysis you ask for — with your consent, and never to build a profile. Dictation is the one thing that can travel further: its speech service runs wherever Microsoft has capacity, so a recording may be processed outside the EU. It has its own consent, asked once — and typing the note instead keeps everything on the phone. The details are in the <a href="privacy.en.html">privacy policy</a>, in plain language.</p>
   </div>
 </section>
-
-<div class="closing">
-  <img src="appicon.png" alt="">
-  <h2>Your food tells a story.</h2>
-  <p class="see-it">See it. Understand it.</p>
-  <p class="follow">Food Moments makes that story visible — so you can enjoy what you eat, understand what it does for you, and make better choices for what comes next.</p>
-  <span class="badge">Coming soon to the App&nbsp;Store <span>· for iPhone</span></span>
-</div>
 
 <footer>
   <ul class="fine">

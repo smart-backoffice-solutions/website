@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="foodmoments.css?v=2b24f7d7">
+<link rel="stylesheet" href="foodmoments.css?v=0677179d">
 </head>
 <body>
 <div class="wrap">
@@ -68,16 +68,28 @@
   <p class="kicker">Fotos zuerst</p>
   <h2>Fang mit ein paar Fotos an.</h2>
   <p class="sub">Das Foto ist die wichtigste Quelle. Die Analyse erkennt die Gerichte und Portionen — sogar eine Nährwerttabelle oder einen Barcode, wenn einer im Bild ist. Und es muss nicht ein Foto sein: Eine Mahlzeit kann bis zu zehn haben. Du kochst heute? Fotografiere die Zutaten nebenbei und am Ende den fertigen Teller — die Analyse setzt alles zusammen.</p>
-  <div class="photoflow">
-    <div class="shots">
+  <div class="capture">
+    <div class="viewfinder"><span>🍝</span></div>
+    <div class="filmstrip">
       <div class="shot">🍅</div>
       <div class="shot">🧅</div>
       <div class="shot">🥩</div>
       <div class="shot">🍝</div>
       <div class="shot-more">+ bis zu<br>10 Fotos</div>
     </div>
-    <p class="caption">Ein Abendessen, vier Fotos: die Zutaten beim Kochen, dann der Teller, der auf den Tisch kam.</p>
+    <div class="camrow">
+      <span class="lib" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M6 16l3.5-4 3 3.2L15.5 12 18 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="shutter"></span>
+      <span class="count">4/10</span>
+    </div>
+    <div class="camnext">Weiter</div>
   </div>
+  <p class="caption">Ein Abendessen, vier Fotos: die Zutaten beim Kochen, dann der Teller, der auf den Tisch kam.</p>
 </section>
 
 <section>
@@ -85,26 +97,35 @@
   <h2>Sag es. Oder tipp es.</h2>
   <p class="sub">Oft reichen die Fotos schon. Wenn nicht — was in den Smoothie kam, wie viel von der Pfanne du wirklich gegessen hast — gib Kontext in deinen eigenen Worten dazu. Wenn du gern tippst, tipp. Aber probier das Mikro: Die Diktierfunktion läuft auf den neuesten Sprachmodellen, schreibt schon mit, während du noch sprichst, und funktioniert selbst an einer lauten Straße. So oder so: Deine Worte zählen immer mehr als das Foto — die App hört auf <i>dich</i>.</p>
   <div class="voice-panel">
-    <div class="micwrap">
-      <div class="mic">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <rect x="9" y="2.5" width="6" height="12" rx="3" fill="#fff"/>
-          <path d="M5.5 11.5a6.5 6.5 0 0 0 13 0" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-          <path d="M12 18v3.5M8.5 21.5h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-        </svg>
+    <div class="notestep">
+      <p class="nhint">Was zeigen die Fotos nicht? Portionsgröße, Zutaten, was es war &mdash; und wann, falls nicht gerade eben.</p>
+      <div class="nfield">„Hähnchensalat mit einer Scheibe Sauerteigbrot — und vom Orangensaft habe ich nur die Hälfte getrunken.&ldquo;</div>
+      <div class="nrow">
+        <span class="nbtn">Zurück</span>
+        <span class="mic">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="9" y="2.5" width="6" height="12" rx="3" fill="#fff"/>
+            <path d="M5.5 11.5a6.5 6.5 0 0 0 13 0" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 18v3.5M8.5 21.5h7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="nbtn solid">&#10022; Analysieren</span>
       </div>
-      <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <p class="hold">Gedrückt halten und sprechen</p>
     </div>
-    <div class="bubbles">
-      <div class="bubble">
-        <p>„Hähnchensalat mit einer Scheibe Sauerteigbrot — und vom Orangensaft habe ich nur die Hälfte getrunken.&ldquo;</p>
-        <small>Beim Festhalten gesprochen — Portionen und Details fließen direkt in die Schätzung ein.</small>
-      </div>
-      <div class="bubble typed">
-        <p>Das Dressing war übrigens separat, ich habe kaum etwas genommen.</p>
-        <small>Getippt, später am Tag — Korrekturen gehen beides: schreiben oder sagen, und die Zahlen werden neu berechnet.</small>
-      </div>
+    <div class="holdscreen">
+      <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <p class="release">Loslassen zum Einfügen</p>
+      <p class="holdhint">Gedrückt halten und sprechen</p>
+    </div>
+  </div>
+  <div class="bubbles">
+    <div class="bubble">
+      <p>„Hähnchensalat mit einer Scheibe Sauerteigbrot — und vom Orangensaft habe ich nur die Hälfte getrunken.&ldquo;</p>
+      <small>Beim Festhalten gesprochen — Portionen und Details fließen direkt in die Schätzung ein.</small>
+    </div>
+    <div class="bubble typed">
+      <p>Das Dressing war übrigens separat, ich habe kaum etwas genommen.</p>
+      <small>Getippt, später am Tag — Korrekturen gehen beides: schreiben oder sagen, und die Zahlen werden neu berechnet.</small>
     </div>
   </div>
 </section>
@@ -116,25 +137,10 @@
       <h2>Kalorien sind erst der Anfang.</h2>
       <p class="sub">Jeder Food Moment wird so aufgeschlüsselt, wie er auf einer Speisekarte stünde — jedes Gericht und Getränk mit eigener Portion und eigenen Zahlen, aufsummiert zu Gesamtwerten: Energie, Eiweiß, Kohlenhydrate, Fett, Ballaststoffe, Zucker, Salz und ein geschätztes Gewicht. Und die App sagt dir ehrlich, wie sicher sie ist — damit du weißt, wann eine kurze gesprochene Notiz die Schätzung schärfen würde.</p>
     </div>
-    <div class="mcard">
-      <div class="mtitle">Hähnchensalat mit Brot und Saft</div>
-      <div class="mdate">Mi., 27. Aug., 12:40</div>
-      <div class="comp" style="border-top:0; margin-top:6px">
-        <div class="cemoji">🥗</div>
-        <div class="cname">Hähnchensalat<small>Hauptgericht · ~320 g, Dressing separat</small></div>
-        <div class="ckcal">310 kcal</div>
-      </div>
-      <div class="comp">
-        <div class="cemoji">🍞</div>
-        <div class="cname">Sauerteigbrot, gebuttert<small>Beilage · ~90 g, eine dicke Scheibe</small></div>
-        <div class="ckcal">180 kcal</div>
-      </div>
-      <div class="comp">
-        <div class="cemoji">🧃</div>
-        <div class="cname">Orangensaft<small>Getränk · ~110 ml, ein halbes Glas</small></div>
-        <div class="ckcal">70 kcal</div>
-      </div>
-      <div class="ngrid" style="border-top:1px solid var(--line); padding-top:12px">
+    <div class="detailcard">
+      <div class="dsec">Schätzung</div>
+      <div class="dwhole">Ganze Mahlzeit</div>
+      <div class="ngrid">
         <span><b>560</b><small>kcal</small></span>
         <span><b>34 g</b><small>Eiweiß</small></span>
         <span><b>52 g</b><small>Kohlenhydrate</small></span>
@@ -144,8 +150,61 @@
         <span><b>5 g</b><small>ges. Fett</small></span>
         <span><b>1,9 g</b><small>Salz</small></span>
         <span><b>~520 g</b><small>Gewicht</small></span>
-        <span class="conf"><b>mittel</b><small>Vertrauen</small></span>
+        <span></span>
       </div>
+      <p class="dsum">Hähnchensalat, eine gebutterte Scheibe Sauerteigbrot und ein halbes Glas Orangensaft.</p>
+      <div class="dsec">Komponenten</div>
+      <p class="dhint">Die Gerichte und Getränke, aus denen die Mahlzeit besteht. Eines wegwischen, halten zum Umsortieren — jede andere Korrektur läuft über Feedback.</p>
+      <div class="comp">
+        <div class="cname">Hähnchensalat</div>
+        <div class="cmeta">Hauptgericht · ~320 g, Dressing separat</div>
+        <div class="ngrid">
+        <span><b>330</b><small>kcal</small></span>
+        <span><b>30 g</b><small>Eiweiß</small></span>
+        <span><b>12 g</b><small>Kohlenhydrate</small></span>
+        <span><b>16 g</b><small>Fett</small></span>
+        <span><b>4 g</b><small>Ballaststoffe</small></span>
+        <span><b>5 g</b><small>Zucker</small></span>
+        <span><b>3 g</b><small>ges. Fett</small></span>
+        <span><b>1,1 g</b><small>Salz</small></span>
+        <span><b>~320 g</b><small>Gewicht</small></span>
+        <span></span>
+      </div>
+      </div>
+      <div class="comp">
+        <div class="cname">Sauerteigbrot, gebuttert</div>
+        <div class="cmeta">Beilage · ~90 g, eine dicke Scheibe</div>
+        <div class="ngrid">
+        <span><b>180</b><small>kcal</small></span>
+        <span><b>4 g</b><small>Eiweiß</small></span>
+        <span><b>29 g</b><small>Kohlenhydrate</small></span>
+        <span><b>6 g</b><small>Fett</small></span>
+        <span><b>3 g</b><small>Ballaststoffe</small></span>
+        <span><b>2 g</b><small>Zucker</small></span>
+        <span><b>2 g</b><small>ges. Fett</small></span>
+        <span><b>0,8 g</b><small>Salz</small></span>
+        <span><b>~90 g</b><small>Gewicht</small></span>
+        <span></span>
+      </div>
+      </div>
+      <div class="comp">
+        <div class="cname">Orangensaft</div>
+        <div class="cmeta">Getränk · ~110 ml, ein halbes Glas</div>
+        <div class="ngrid">
+        <span><b>50</b><small>kcal</small></span>
+        <span><b>0 g</b><small>Eiweiß</small></span>
+        <span><b>11 g</b><small>Kohlenhydrate</small></span>
+        <span><b>0 g</b><small>Fett</small></span>
+        <span><b>0 g</b><small>Ballaststoffe</small></span>
+        <span><b>11 g</b><small>Zucker</small></span>
+        <span><b>0 g</b><small>ges. Fett</small></span>
+        <span><b>0,0 g</b><small>Salz</small></span>
+        <span><b>~110 g</b><small>Gewicht</small></span>
+        <span></span>
+      </div>
+      </div>
+      <div class="dsec">Vertrauen</div>
+      <div class="dconf"><b>mittel</b><p>Das Essen war klar erkennbares Haus- oder Restaurantessen; die Portionen sind aus den Fotos geschätzt, also rechne mit rund &plusmn;30&nbsp;% bei der Energie und mehr bei Eiweiß und Fett.</p></div>
     </div>
   </div>
 </section>
@@ -288,14 +347,6 @@
     <p><b>Alles wird auf deinem iPhone gespeichert.</b> Fotos und Notizen werden nur für die Nährwertanalyse verschickt, die du selbst anstößt — mit deiner Einwilligung, und nie, um ein Profil zu erstellen. Das Diktat ist das Einzige, was weiter reisen kann: Sein Sprachdienst läuft dort, wo Microsoft gerade Kapazität hat, eine Aufnahme kann also außerhalb der EU verarbeitet werden. Dafür gibt es eine eigene Einwilligung, die einmal abgefragt wird — und wenn du die Notiz tippst, bleibt alles auf dem iPhone. Die Details stehen in der <a href="privacy.de.html">Datenschutzerklärung</a> — in klarer Sprache.</p>
   </div>
 </section>
-
-<div class="closing">
-  <img src="appicon.png" alt="">
-  <h2>Dein Essen erzählt eine Geschichte.</h2>
-  <p class="see-it">Sieh sie. Versteh sie.</p>
-  <p class="follow">Food Moments macht diese Geschichte sichtbar — damit du genießen kannst, was du isst, verstehst, was es für dich tut, und bessere Entscheidungen für das triffst, was als Nächstes kommt.</p>
-  <span class="badge">Bald im App&nbsp;Store <span>· für iPhone</span></span>
-</div>
 
 <footer>
   <ul class="fine">
