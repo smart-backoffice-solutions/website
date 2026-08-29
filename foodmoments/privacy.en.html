@@ -37,16 +37,17 @@
   <li>Your meal photos, notes, corrections and edit history</li>
   <li>The nutritional estimates and your timeline</li>
   <li>Your nutrition profile (birth year, sex, weight, height, activity, goal)</li>
+  <li>Your daily targets, day by day — for days based on Apple Health, including the burned-energy figure the target was computed from (see below)</li>
   <li>Your timeline background photos, if you picked your own</li>
 </ul>
 <p>This storage runs on Microsoft Azure in <strong>West Europe</strong> (§4). Your iPhone keeps roughly the last two weeks ready to show and fetches older days when you scroll back to them; signing in on a new iPhone restores everything. Deleting the app therefore no longer deletes your data — deleting your account does, completely and in the app (§6, §8).</p>
 <p><strong>Your account</strong> is deliberately minimal: your <strong>email address</strong>, and nothing else — no name, no password. You sign in with a one-time six-digit code we email you; each iPhone you sign in on gets its own session, and signing out ends it. Legal basis for the account and for storing your meal data in it: the performance of our contract with you (Art. 6(1)(b) GDPR) — this storage *is* the service.</p>
 <p><strong>Stored only on your iPhone, never transmitted to us:</strong></p>
 <ul>
-  <li>Apple Health data (resting and active energy), if you enable "Take targets from Apple Health" — read on the device to set your daily energy target, <strong>never transmitted</strong>, never used for advertising, never written to Health</li>
   <li>Usage and cost statistics shown in Settings</li>
 </ul>
-<p>We also run a <strong>gateway</strong> that every analysis and dictation request passes through, described in §3. It reads <strong>none of your meal content</strong> — photos, notes and recordings travel through it and are gone as soon as the answer comes back. What it does keep is a technical identifier for your device, also explained in §3. Backups are files you create yourself in the app and keep wherever you choose; we never see them.</p>
+<p><strong>Apple Health</strong>, if you enable "Take targets from Apple Health": the app reads your resting and active energy on this iPhone to set the day's energy target. The readings stay in Apple Health — they are never sent to the AI model, never used for advertising, and the app never writes to Health. What your account stores is the result: each day's energy target, together with the burned-energy total it was computed from, kept with your daily targets so a past day keeps its true target on a new iPhone.</p>
+<p>We also run a <strong>gateway</strong> that every analysis and dictation request passes through, described in §3. It reads <strong>none of your meal content</strong> — photos, notes and recordings travel through it and are gone as soon as the answer comes back. What it does keep is a technical identifier for your device, also explained in §3.</p>
 <p><strong>Sent for a meal analysis (only with your consent, see §3):</strong></p>
 <ul>
   <li>The photos of the meal being analyzed</li>
@@ -83,7 +84,7 @@
 <p>Where Microsoft as a global company could in exceptional cases process support or telemetry data outside the EEA, Microsoft's EU Data Boundary commitments and the same standard contractual clauses apply as safeguards.</p>
 <h2 id="s6">6. Retention</h2>
 <p><strong>Your account's data is kept until you delete it</strong> — that is the point of an account. A single meal is deleted by swiping it away, on our servers as well as on the phone; <strong>Settings → Account → Delete account</strong> erases everything we hold at once — meals, photos, profile, sessions and any export file still waiting. Deleting the app no longer deletes anything: sign in again and everything is back; delete the account when you want it gone.</p>
-<p>Everything around the account is short-lived. A <strong>login code</strong> works once and expires after about ten minutes. The zip made by <strong>Download all my data</strong> is deleted from our server within 48 hours (its download link stops working after 24). Nothing you send for an analysis or a dictation is stored on our gateway — it is forwarded and then gone — and Microsoft's transient retention is described in §4. Backups you export are under your own control.</p>
+<p>Everything around the account is short-lived. A <strong>login code</strong> works once and expires after about ten minutes. The zip made by <strong>Download all my data</strong> is deleted from our server within 48 hours (its download link stops working after 24). Nothing you send for an analysis or a dictation is stored on our gateway — it is forwarded and then gone — and Microsoft's transient retention is described in §4.</p>
 <p>The device identifier described in §3 is kept, as before, for as long as that installation of the app uses the service, because it is what a request is checked against, and we delete it on request — write to the address in §1 and mention that you want your device registration removed. It tells us nothing about you and nothing about what you eat.</p>
 <h2 id="s7">7. Security</h2>
 <p>Everything sent leaves your device over encrypted connections (TLS), and on the device your data is protected by iOS's built-in encryption and your device passcode. Your account's data also lives on our servers now, so it is protected there rather than by not existing: it is stored on Microsoft Azure in the European Union and encrypted at rest; it can be reached only through the app itself, because every request must prove — via Apple's App Attest (§3) — that it comes from an unmodified copy of Food Moments *and* must carry a valid session for your account; sessions are per device and end when you sign out; and the server stores session tokens only as hashes, so a stolen copy of our records could not be used to sign in as you. There are no passwords to steal: a login code arrives by email, works once, and dies after minutes.</p>
@@ -92,7 +93,7 @@
 <ul>
   <li><strong>Access</strong>: everything we hold about you is what the app shows you — the timeline is the data.</li>
   <li><strong>Rectification</strong>: correct any meal in the app; change your profile in Settings.</li>
-  <li><strong>Portability</strong>: <strong>Settings → Account → Download all my data</strong> has the server pack everything — every photo, a set of pages you can browse on any computer, and a table a spreadsheet can read — and email you a download link. Settings → Backup still writes the same data to a file of your own.</li>
+  <li><strong>Portability</strong>: <strong>Settings → Account → Download all my data</strong> has the server pack everything — every photo, a set of pages you can browse on any computer, and a table a spreadsheet can read — and email you a download link.</li>
   <li><strong>Erasure</strong>: swipe a meal away, or delete everything at once with <strong>Settings → Account → Delete account</strong>.</li>
 </ul>
 <p>For anything else, or questions, contact <strong><a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></strong> — we answer within one month. You also have the right to lodge a complaint with a supervisory authority; in the Netherlands this is the Autoriteit Persoonsgegevens (autoriteitpersoonsgegevens.nl), but you may contact the authority of your own country.</p>
