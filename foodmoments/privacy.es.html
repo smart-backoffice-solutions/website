@@ -29,9 +29,9 @@
 <h1>Política de privacidad — Food Moments</h1>
 <p class="meta">Fecha de entrada en vigor: 28 de agosto de 2026. Esta política está disponible en inglés, alemán, neerlandés, español, francés y portugués; la versión inglesa es la vinculante.</p>
 <p>Food Moments estima el valor nutricional de sus comidas a partir de fotos y de sus propias palabras. La aplicación está construida para que sus datos sigan siendo suyos: no hay cuenta, ni publicidad, ni rastreo, y todo lo que usted registra se almacena únicamente en su iPhone. La única excepción — el envío de la comida que se está analizando a un servicio de IA — se describe con precisión más abajo y solo ocurre después de que usted haya dado su consentimiento en la aplicación.</p>
-<h2>1. Quién es el responsable</h2>
+<h2 id="s1">1. Quién es el responsable</h2>
 <p>El responsable del tratamiento es <strong>Smart Backoffice Solutions B.V.</strong>, Saal van Zwanenbergweg 11, 5026 RM Tilburg, Países Bajos, inscrita en el registro mercantil neerlandés (KvK) con el número 90141482. Contacto: <strong><a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></strong>.</p>
-<h2>2. Qué procesa la aplicación, y dónde permanece</h2>
+<h2 id="s2">2. Qué procesa la aplicación, y dónde permanece</h2>
 <p><strong>Almacenado solo en su iPhone, nunca transmitido a nosotros:</strong></p>
 <ul>
   <li>Sus fotos de comidas, notas, correcciones y el historial de cambios</li>
@@ -56,35 +56,35 @@
 <ul>
   <li>El número del código de barras, consultado en la base de datos pública Open Food Facts (§4)</li>
 </ul>
-<h2>3. Análisis de comidas mediante IA — su consentimiento</h2>
+<h2 id="s3">3. Análisis de comidas mediante IA — su consentimiento</h2>
 <p>Para calcular una estimación, la aplicación envía los datos indicados arriba a un modelo de IA (OpenAI GPT) que se ejecuta en <strong>servidores de Microsoft Azure en la Unión Europea</strong>, en nuestra propia implementación. Los datos se usan exclusivamente para calcular su estimación nutricional. No se usan para entrenar modelos de IA. No existe ninguna cuenta, así que ningún nombre, dirección de correo u otro identificador acompaña a la solicitud.</p>
 <p><strong>Toda solicitud pasa primero por nuestra propia pasarela.</strong> Es un servidor pequeño que operamos en Microsoft Azure en la Unión Europea. Existe para que las credenciales del servicio de IA no estén dentro de la aplicación, donde cualquiera podría extraerlas del archivo descargado y generar costes a nuestra cuenta. La pasarela comprueba que la solicitud procede realmente de una copia sin modificar de Food Moments en un dispositivo Apple auténtico —mediante App Attest de Apple— y la transmite sin cambios. No lee lo que usted envía, no guarda ninguna copia y solo registra contadores: cuántas solicitudes, cuántos bytes, cuánto tardaron y si tuvieron éxito. Sus fotos, notas y grabaciones no aparecen nunca en sus registros.</p>
 <p>Para esa comprobación su iPhone crea una clave criptográfica que nunca sale del dispositivo, y la pasarela almacena el <strong>identificador</strong> de esa clave junto con un contador que impide reproducir una solicitud interceptada. Ese identificador es un valor aleatorio que pertenece a esta instalación de la aplicación, no a usted: sin nombre, sin dirección de correo, sin número de serie, y no podemos deducir de él quién es usted. Se crea con el primer análisis o el primer dictado, y al eliminar la aplicación queda inservible. Base jurídica de este único dato técnico: nuestro interés legítimo en proteger el servicio frente a abusos (art. 6.1.f del RGPD).</p>
 <p>La aplicación pide su <strong>consentimiento explícito antes del primer análisis</strong> (base jurídica: art. 6.1.a del RGPD). Puede <strong>retirar el consentimiento en cualquier momento</strong> en Ajustes → Privacidad; el análisis queda entonces desactivado hasta que vuelva a aceptar, y el resto de la aplicación sigue funcionando.</p>
 <p>El dictado tiene su propio consentimiento, con una diferencia que conviene leer. Una nota hablada la convierte en texto un modelo de voz, también en nuestra propia implementación de Microsoft Azure, pero esa implementación es de tipo <strong>Global Standard</strong>, porque el modelo de voz que usa la aplicación no se ofrece como implementación fijada a la UE. Microsoft dirige cada solicitud al centro de datos que tenga capacidad, que puede estar fuera de la Unión Europea, incluidos los Estados Unidos. <strong>El dictado es, por tanto, la única parte de Food Moments cuyos datos pueden salir de la UE</strong>; en §5 se describen las garantías aplicables. La aplicación pregunta <strong>antes de su primer dictado</strong> (igualmente art. 6.1.a del RGPD) y puede retirar ese consentimiento en el mismo lugar; el dictado queda entonces desactivado y una nota siempre se puede escribir — al escribirla, todo lo relativo a esa nota permanece en su iPhone.</p>
 <p>Las fotos de comidas y las notas pueden revelar incidentalmente algo sobre usted — una dieta, una alergia, una práctica de ayuno. Lo minimizamos enviando solo la comida que se analiza, manteniendo los resultados únicamente en su dispositivo y sin almacenar nada de ello en nuestra pasarela.</p>
-<h2>4. Proveedores de servicios</h2>
+<h2 id="s4">4. Proveedores de servicios</h2>
 <ul>
   <li><strong>Microsoft Ireland Operations Ltd.</strong> (Azure) proporciona la infraestructura y procesa las solicitudes de análisis y las grabaciones de dictado como nuestro encargado del tratamiento, bajo el Data Protection Addendum de Microsoft. Esto abarca tanto las implementaciones de IA como la pasarela descrita en el §3, que se ejecuta en Azure Functions en <strong>Europa Occidental</strong> y cuyos identificadores de dispositivo se guardan en Azure Table Storage en la misma región. Las dos implementaciones de IA se diferencian en dónde se ejecutan. El <strong>análisis de comidas</strong> se ejecuta en una implementación de Azure en la <strong>EU Data Zone</strong>: esas fotos, notas y correcciones se tratan en la Unión Europea. El <strong>dictado</strong> se ejecuta en una implementación <strong>Global Standard</strong>, porque el modelo de voz no está disponible fijado a la UE: Microsoft dirige cada grabación a la capacidad disponible en cualquier región del mundo, que puede estar fuera de la UE (§5). El control de abusos de Microsoft comprueba las solicitudes automáticamente en el momento del procesamiento, sin almacenarlas; solo las solicitudes marcadas como potencialmente abusivas pueden conservarse temporalmente para su revisión conforme al procedimiento estándar publicado por Microsoft — en las implementaciones de la UE, almacenadas y revisadas dentro de la UE — y se eliminan después. Microsoft no usa sus datos para entrenar modelos.</li>
   <li><strong>Open Food Facts</strong> (una organización sin ánimo de lucro francesa) recibe solo los dígitos de un código de barras escaneado y devuelve información pública del producto. Como en cualquier solicitud por internet, sus servidores ven técnicamente su dirección IP.</li>
   <li><strong>Apple</strong> procesa su compra en el App Store y su suscripción como responsable independiente bajo sus propias condiciones. La lectura de etiquetas y la detección de códigos de barras se ejecutan íntegramente en su iPhone con los frameworks locales de Apple — para ello ningún dato sale del dispositivo.</li>
 </ul>
 <p>No compartimos datos con nadie más. No vendemos datos. La aplicación no contiene SDK de analítica ni de publicidad.</p>
-<h2>5. Transferencias internacionales</h2>
+<h2 id="s5">5. Transferencias internacionales</h2>
 <p>El <strong>análisis de comidas</strong> está fijado a la EU Data Zone de Azure y se procesa en la Unión Europea. La pasarela por la que pasa (§3) también se encuentra en la Unión Europea, de modo que no añade ninguna transferencia.</p>
 <p><strong>El dictado no.</strong> Su implementación de voz es global, de modo que el audio de un dictado — y el texto ya transcrito, que se envía junto con él para que las palabras y los nombres se mantengan coherentes — puede tratarse fuera del EEE, incluidos los Estados Unidos. Esa transferencia está cubierta por las cláusulas contractuales tipo de la UE del Data Protection Addendum de Microsoft, junto con las medidas complementarias de Microsoft: cifrado en tránsito y en reposo, ninguna utilización de los datos para entrenar modelos y ningún almacenamiento más allá del control de abusos transitorio descrito en §4. Microsoft participa además en el Marco de Privacidad de Datos UE-EE. UU., para el que la Comisión Europea adoptó una decisión de adecuación el 10 de julio de 2023. A la grabación no la acompaña nada que le identifique, y sus comidas, fotos e historial nunca forman parte de una solicitud de dictado.</p>
 <p>Si prefiere que nada suyo salga de la UE, escriba su nota en lugar de dictarla: la aplicación es plenamente utilizable sin dictado, y el consentimiento de dictado puede retirarse en cualquier momento en Ajustes → Privacidad.</p>
 <p>En la medida en que Microsoft, como empresa global, pudiera en casos excepcionales procesar datos de soporte o telemetría fuera del EEE, se aplican como garantías los compromisos del EU Data Boundary de Microsoft y las mismas cláusulas contractuales tipo.</p>
-<h2>6. Conservación</h2>
+<h2 id="s6">6. Conservación</h2>
 <p><strong>De sus datos de comidas no conservamos nada</strong>: viven en su iPhone hasta que usted los elimina. Las comidas individuales se eliminan deslizándolas; eliminar la aplicación lo borra todo. Lo que envía para un análisis o un dictado no se almacena en nuestra pasarela: se transmite y desaparece. La conservación transitoria de Microsoft se describe en §4. Las copias de seguridad que exporte quedan bajo su propio control.</p>
 <p>La única excepción es el identificador de dispositivo descrito en el §3. Lo conservamos mientras esa instalación de la aplicación use el servicio, porque es aquello con lo que se comprueba una solicitud, y lo eliminamos si nos lo pide: escriba a la dirección del §1 indicando que desea eliminar el registro de su dispositivo. No nos dice nada sobre usted ni sobre lo que come.</p>
-<h2>7. Seguridad</h2>
+<h2 id="s7">7. Seguridad</h2>
 <p>Todo lo que se envía sale de su dispositivo por conexiones cifradas (TLS). En el dispositivo, sus datos están protegidos por el cifrado integrado de iOS y su código de desbloqueo. Véase §2: la mejor protección es que sus datos no están almacenados centralmente en ningún sitio.</p>
-<h2>8. Sus derechos</h2>
+<h2 id="s8">8. Sus derechos</h2>
 <p>En virtud del RGPD, usted tiene derecho de acceso, rectificación, supresión, limitación, portabilidad y oposición, y el derecho a retirar su consentimiento en cualquier momento sin que ello afecte a la licitud del tratamiento anterior a la retirada. Como sus datos están en su dispositivo y no con nosotros, la mayoría de los derechos los ejerce directamente en la aplicación: verlo todo en la línea de tiempo, corregir cualquier comida, exportarlo todo con Ajustes → Copia de seguridad, eliminar cualquier cosa borrándola o borrando la aplicación. Para todo lo demás, o si tiene preguntas, escriba a <strong><a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></strong> — respondemos en el plazo de un mes. También tiene derecho a presentar una reclamación ante una autoridad de control; en los Países Bajos es la Autoriteit Persoonsgegevens (autoriteitpersoonsgegevens.nl), en España la Agencia Española de Protección de Datos (aepd.es) — puede dirigirse a la autoridad de su propio país.</p>
-<h2>9. Menores</h2>
+<h2 id="s9">9. Menores</h2>
 <p>Food Moments no está dirigida a menores. No procesamos conscientemente datos de menores — no procesamos cuentas ni identidades en absoluto.</p>
-<h2>10. Cambios</h2>
+<h2 id="s10">10. Cambios</h2>
 <p>Si cambian los flujos de datos de la aplicación, esta política se actualiza antes de que el cambio se publique, con la fecha de entrada en vigor indicada arriba.</p>
 <p><strong>Todo cambio se publica en la <a href="https://smart-backoffice.nl/foodmoments/support.html#es">página de soporte</a>.</strong> Los cambios pequeños — redacción, gramática, una errata, una aclaración que no altera lo que ocurre con sus datos — se anuncian ahí y en ningún otro sitio.</p>
 <p><strong>Un cambio con implicaciones sustanciales para sus datos se anuncia además en la aplicación</strong>, antes de que entre en vigor. Y un flujo de datos realmente nuevo necesita algo más que un aviso: no comienza hasta que usted lo haya aceptado, igual que aceptó el análisis y el dictado.</p>
@@ -100,5 +100,22 @@
   <p class="legal">Food Moments es obra de <a href="https://smart-backoffice.nl">Smart Backoffice Solutions B.V.</a> · Saal van Zwanenbergweg 11, 5026 RM Tilburg, Países Bajos · KvK 90141482 · <a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></p>
 </footer>
 </div>
+<script>
+// Keep the reader's place when they switch language. The sections are numbered identically in all
+// six translations, so `#s4` is the same clause everywhere — but a plain link would drop the
+// fragment and drop them back at the top of the document, which is exactly what the numbered
+// anchors exist to avoid.
+(function () {
+  function carry() {
+    var hash = location.hash;
+    var links = document.querySelectorAll("nav.langs a");
+    for (var i = 0; i < links.length; i++) {
+      links[i].href = links[i].href.split("#")[0] + hash;
+    }
+  }
+  carry();
+  addEventListener("hashchange", carry);
+})();
+</script>
 </body>
 </html>
