@@ -55,9 +55,9 @@
 <ul>
   <li>De audio-opname van uw dictaat, om in tekst te worden omgezet. Anders dan al het andere in deze lijst wordt die verwerkt op een wereldwijde Azure-implementatie en kan die de Europese Unie dus verlaten — zie §3 en §5</li>
 </ul>
-<p><strong>Verzonden wanneer een barcode wordt herkend:</strong></p>
+<p><strong>Verzonden wanneer u een barcode scant of er een op een foto wordt herkend:</strong></p>
 <ul>
-  <li>Het barcodenummer, opgezocht in de publieke Open Food Facts-databank (§4)</li>
+  <li>Het barcodenummer, opgezocht in de publieke Open Food Facts-databank (§4). De naam, verpakkingsgrootte, voedingswaarden en foto van het product komen terug naar uw iPhone en worden daar bewaard; de foto wordt nooit naar ons geüpload, nooit ter analyse verzonden en reist nooit mee in een gedeelde maaltijd — uw iPhone haalt zijn eigen kopie op bij Open Food Facts</li>
 </ul>
 <p><strong>Automatisch verzonden als de app vastloopt of crasht:</strong></p>
 <ul>
@@ -77,7 +77,7 @@
 <h2 id="s4">4. Dienstverleners</h2>
 <ul>
   <li><strong>Microsoft Ireland Operations Ltd.</strong> (Azure) levert de infrastructuur en verwerkt analyseverzoeken en dictaatopnamen als onze verwerker onder Microsofts Data Protection Addendum. Dat geldt voor de AI-implementaties, voor de in §3 beschreven gateway — die op Azure Functions in <strong>West-Europa</strong> draait, met de apparaatkenmerken en de crashdiagnoses uit §2 in Azure Table Storage in dezelfde regio — en voor de <strong>opslag achter uw account</strong> (§2): uw maaltijden, foto's en profiel staan in Azure-opslag in West-Europa, binnen de Europese Unie. De e-mails met een aanmeldcode of een exportlink worden verstuurd via <strong>Azure Communication Services</strong>, geconfigureerd met datalocatie in de Europese Unie, vanaf noreply@smart-backoffice.nl. De twee AI-implementaties verschillen in waar zij draaien. De <strong>maaltijdanalyse</strong> draait op een Azure-implementatie in de <strong>EU Data Zone</strong>; die foto's, notities en correcties worden in de Europese Unie verwerkt. Het <strong>dicteren</strong> draait op een <strong>Global Standard</strong>-implementatie, omdat het spraakmodel niet EU-gebonden beschikbaar is: Microsoft stuurt elke opname naar beschikbare capaciteit in een willekeurige regio wereldwijd, die buiten de EU kan liggen (§5). Microsofts misbruikcontrole controleert verzoeken automatisch op het moment van verwerking, zonder ze op te slaan; alleen verzoeken die als mogelijk misbruik zijn gemarkeerd, kunnen volgens Microsofts gepubliceerde standaardprocedure tijdelijk voor beoordeling worden bewaard — bij EU-implementaties opgeslagen en beoordeeld binnen de EU — en worden daarna verwijderd. Microsoft gebruikt uw gegevens niet om modellen te trainen.</li>
-  <li><strong>Open Food Facts</strong> (een Franse non-profitorganisatie) ontvangt alleen de cijfers van een gescande barcode en geeft publieke productinformatie terug. Zoals bij elk internetverzoek zien hun servers technisch gezien uw IP-adres.</li>
+  <li><strong>Open Food Facts</strong> (een Franse non-profitorganisatie) ontvangt alleen de cijfers van een gescande barcode en geeft publieke productinformatie terug; uw iPhone haalt daarna de foto van dat product bij hen op. Zoals bij elk internetverzoek zien hun servers technisch gezien uw IP-adres. Hun productgegevens staan onder de Open Database License en hun foto's onder Creative Commons Attribution-ShareAlike 3.0; de app vermeldt hun bijdragers waar zij deze toont.</li>
   <li><strong>Apple</strong> verwerkt uw App Store-aankoop en abonnement als zelfstandige verwerkingsverantwoordelijke onder eigen voorwaarden. Het lezen van etiketten en barcodeherkenning gebeuren volledig op uw iPhone met Apples on-device-frameworks — daarvoor verlaat niets het apparaat.</li>
 </ul>
 <p>Met niemand anders delen wij gegevens. Wij verkopen geen gegevens. De app bevat geen analyse- of advertentie-SDK's.</p>

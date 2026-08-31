@@ -55,9 +55,9 @@
 <ul>
   <li>The audio recording of your dictation, to be transcribed into text. Unlike everything else in this list, this one is processed on a worldwide Azure deployment and can therefore leave the European Union — see §3 and §5</li>
 </ul>
-<p><strong>Sent when a barcode is found in a photo:</strong></p>
+<p><strong>Sent when you scan a barcode, or one is found in a photo:</strong></p>
 <ul>
-  <li>The barcode number, looked up in the public Open Food Facts database (§4)</li>
+  <li>The barcode number, looked up in the public Open Food Facts database (§4). The product's name, pack size, nutrition values and photograph come back to your iPhone and are kept there; the photograph is never uploaded to us, never sent for analysis and never travels in a meal you share — your iPhone fetches its own copy from Open Food Facts</li>
 </ul>
 <p><strong>Sent automatically if the app crashes or freezes:</strong></p>
 <ul>
@@ -77,7 +77,7 @@
 <h2 id="s4">4. Service providers</h2>
 <ul>
   <li><strong>Microsoft Ireland Operations Ltd.</strong> (Azure) provides the infrastructure and processes analysis requests and dictation recordings as our processor, under Microsoft's Data Protection Addendum. This covers the AI deployments, the gateway described in §3 — which runs on Azure Functions in <strong>West Europe</strong>, with its device identifiers and the crash diagnostics from §2 in Azure Table Storage in the same region — and the <strong>storage behind your account</strong> (§2): your meals, photos and profile live in Azure storage in West Europe, inside the European Union. The emails that carry a login code or an export link are sent through <strong>Azure Communication Services</strong>, configured with its data location in the European Union, from noreply@smart-backoffice.nl. The two AI deployments differ in where they run. <strong>Meal analysis</strong> runs on an Azure <strong>EU Data Zone</strong> deployment, so those photos, notes and corrections are processed in the European Union. <strong>Dictation</strong> runs on a <strong>Global Standard</strong> deployment, because the speech model is not available as an EU-pinned one: Microsoft routes each recording to available capacity in any region worldwide, which may be outside the EU (§5). Microsoft's abuse monitoring checks requests automatically at the time of processing without storing them; only requests flagged as potentially abusive may be stored temporarily for review under Microsoft's standard published procedure — for EU deployments stored and reviewed within the EU — and are deleted afterwards. Microsoft does not use your data to train models.</li>
-  <li><strong>Open Food Facts</strong> (a French non-profit) receives only the digits of a scanned barcode to return public product information. As with any internet request, their servers technically see your IP address.</li>
+  <li><strong>Open Food Facts</strong> (a French non-profit) receives only the digits of a scanned barcode to return public product information, and your iPhone then fetches that product's photograph from them. As with any internet request, their servers technically see your IP address. Their product data is published under the Open Database License and their photographs under Creative Commons Attribution-ShareAlike 3.0; the app credits their contributors where it shows them.</li>
   <li><strong>Apple</strong> processes your App Store purchase and subscription as an independent controller under its own terms. Label reading and barcode detection run entirely on your iPhone using Apple's on-device frameworks — no data leaves the device for these.</li>
 </ul>
 <p>We share no data with anyone else. We sell no data. There are no analytics or advertising SDKs in the app.</p>

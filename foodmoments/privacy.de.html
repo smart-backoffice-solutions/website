@@ -55,9 +55,9 @@
 <ul>
   <li>Die Audioaufnahme Ihres Diktats, zur Umwandlung in Text. Anders als alles andere in dieser Liste wird sie auf einer weltweiten Azure-Bereitstellung verarbeitet und kann die Europäische Union daher verlassen — siehe §3 und §5</li>
 </ul>
-<p><strong>Beim Erkennen eines Barcodes gesendet:</strong></p>
+<p><strong>Gesendet, wenn Sie einen Barcode scannen oder er auf einem Foto erkannt wird:</strong></p>
 <ul>
-  <li>Die Barcode-Nummer, zum Nachschlagen in der öffentlichen Open-Food-Facts-Datenbank (§4)</li>
+  <li>Die Barcode-Nummer, zum Nachschlagen in der öffentlichen Open-Food-Facts-Datenbank (§4). Name, Packungsgröße, Nährwerte und Foto des Produkts kommen zurück auf Ihr iPhone und werden dort gespeichert; das Foto wird nie zu uns hochgeladen, nie zur Analyse gesendet und reist nie in einer geteilten Mahlzeit mit — Ihr iPhone holt sich seine eigene Kopie von Open Food Facts</li>
 </ul>
 <p><strong>Automatisch gesendet, wenn die App abstürzt oder einfriert:</strong></p>
 <ul>
@@ -77,7 +77,7 @@
 <h2 id="s4">4. Dienstleister</h2>
 <ul>
   <li><strong>Microsoft Ireland Operations Ltd.</strong> (Azure) stellt die Infrastruktur bereit und verarbeitet Analyseanfragen und Diktataufnahmen als unser Auftragsverarbeiter nach Microsofts Data Protection Addendum. Das umfasst die KI-Bereitstellungen, das in §3 beschriebene Gateway — es läuft auf Azure Functions in <strong>Westeuropa</strong>, mit den Gerätekennungen und den Absturzdiagnosen aus §2 in Azure Table Storage in derselben Region — und den <strong>Speicher hinter Ihrem Konto</strong> (§2): Ihre Mahlzeiten, Fotos und Ihr Profil liegen in Azure-Speicher in Westeuropa, innerhalb der Europäischen Union. Die E-Mails mit einem Anmeldecode oder einem Export-Link werden über <strong>Azure Communication Services</strong> versendet, konfiguriert mit Datenstandort in der Europäischen Union, von noreply@smart-backoffice.nl. Die beiden KI-Bereitstellungen unterscheiden sich darin, wo sie laufen. Die <strong>Mahlzeitenanalyse</strong> läuft auf einer Azure-Bereitstellung in der <strong>EU Data Zone</strong>; diese Fotos, Notizen und Korrekturen werden in der Europäischen Union verarbeitet. Das <strong>Diktat</strong> läuft auf einer <strong>Global-Standard-Bereitstellung</strong>, weil das Sprachmodell nicht EU-gebunden angeboten wird: Microsoft leitet jede Aufnahme an freie Kapazität in einer beliebigen Region weltweit weiter, die außerhalb der EU liegen kann (§5). Microsofts Missbrauchskontrolle prüft Anfragen automatisch im Moment der Verarbeitung, ohne sie zu speichern; nur als potenziell missbräuchlich markierte Anfragen können nach Microsofts veröffentlichtem Standardverfahren vorübergehend zur Prüfung gespeichert werden — bei EU-Bereitstellungen in der EU gespeichert und geprüft — und werden danach gelöscht. Microsoft verwendet Ihre Daten nicht zum Training von Modellen.</li>
-  <li><strong>Open Food Facts</strong> (eine französische Non-Profit-Organisation) erhält nur die Ziffern eines gescannten Barcodes und liefert öffentliche Produktinformationen zurück. Wie bei jeder Internetanfrage sehen deren Server technisch bedingt Ihre IP-Adresse.</li>
+  <li><strong>Open Food Facts</strong> (eine französische Non-Profit-Organisation) erhält nur die Ziffern eines gescannten Barcodes und liefert öffentliche Produktinformationen zurück; Ihr iPhone holt anschließend das Produktfoto dort ab. Wie bei jeder Internetanfrage sehen deren Server technisch bedingt Ihre IP-Adresse. Die Produktdaten stehen unter der Open Database License, die Fotos unter Creative Commons Attribution-ShareAlike 3.0; die App nennt die Beitragenden dort, wo sie diese anzeigt.</li>
   <li><strong>Apple</strong> verarbeitet Ihren App-Store-Kauf und Ihr Abonnement als eigenständiger Verantwortlicher nach eigenen Bedingungen. Das Lesen von Etiketten und die Barcode-Erkennung laufen vollständig auf Ihrem iPhone mit Apples On-Device-Frameworks — dafür verlässt keine Information das Gerät.</li>
 </ul>
 <p>Mit niemandem sonst teilen wir Daten. Wir verkaufen keine Daten. Die App enthält keine Analyse- oder Werbe-SDKs.</p>
