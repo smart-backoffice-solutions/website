@@ -16,86 +16,56 @@
 <body>
   <div class="noise" aria-hidden="true"></div>
 
-  <!-- Character sheet for the comic panels. Original characters: an adviser, an underwriter, and the API. -->
+  <!-- Original character sheet for the document-office comic: Noor, Bram, and Pip the API cart. -->
   <svg width="0" height="0" class="sheet" aria-hidden="true" focusable="false">
     <defs>
       <symbol id="c-adviser" viewBox="0 0 120 200">
-        <g class="ln">
-          <path d="M40 150 v38 h18 v-38"/><path d="M62 150 v38 h18 v-38"/>
-          <path d="M34 188 h26 v7 h-30 z" class="fi"/><path d="M60 188 h26 v7 h-30 z" class="fi"/>
-          <path d="M34 84 h52 l8 68 h-68 z"/>
-          <path d="M34 92 l-16 44"/><path d="M86 92 l16 44"/>
-          <circle cx="17" cy="139" r="6"/><circle cx="103" cy="139" r="6"/>
-          <path d="M60 84 l-6 8 l6 42 l6 -42 z" class="fr"/>
-          <path d="M53 70 v14 h14 v-14"/>
-          <circle cx="60" cy="44" r="28"/>
-          <path d="M33 40 q2 -26 29 -26 q24 0 29 22 q-14 -9 -30 -7 q-16 2 -28 11 z" class="fi"/>
-          <circle cx="50" cy="47" r="2.6" class="fi"/><circle cx="70" cy="47" r="2.6" class="fi"/>
-          <path d="M60 49 l4 9 h-7"/>
-          <path d="M52 63 h16"/>
+        <g class="ln character noor">
+          <path d="M43 148 l-3 39 h17 l4 -38 M65 149 l5 38 h18 l-7 -42"/>
+          <path d="M38 187 h22 q2 9 -8 9 h-20 z" class="shoe"/><path d="M68 187 h22 q5 9 -6 9 h-20 z" class="shoe"/>
+          <path d="M34 88 q26 -15 53 2 l7 59 q-34 13 -68 0 z" class="jacket"/>
+          <path d="M35 95 q-15 16 -18 43 M85 96 q15 17 18 41"/><circle cx="16" cy="141" r="6"/><circle cx="104" cy="140" r="6"/>
+          <path d="M56 88 l7 11 l-3 35 l-8 -34 z" class="fr"/>
+          <path d="M51 72 l1 15 l17 -1 l-1 -16"/>
+          <path d="M35 42 q1 -28 26 -29 q25 1 27 27 l-3 18 q-6 19 -25 20 q-20 -2 -24 -21 z" class="skin"/>
+          <path d="M34 40 q3 -28 28 -28 q20 0 29 19 q-16 -5 -25 -17 q-4 17 -32 26 z" class="hair"/>
+          <path d="M47 47 q4 -3 8 0 M69 47 q4 -3 8 0"/><circle cx="52" cy="50" r="2" class="fi"/><circle cx="72" cy="50" r="2" class="fi"/>
+          <path d="M62 51 l-2 8 h5 M54 66 q7 4 15 -1"/>
         </g>
       </symbol>
       <symbol id="c-adviser-hold" viewBox="0 0 120 200">
-        <g class="ln">
-          <path d="M40 150 v38 h18 v-38"/><path d="M62 150 v38 h18 v-38"/>
-          <path d="M34 188 h26 v7 h-30 z" class="fi"/><path d="M60 188 h26 v7 h-30 z" class="fi"/>
-          <path d="M34 84 h52 l8 68 h-68 z"/>
-          <path d="M60 84 l-6 8 l6 42 l6 -42 z" class="fr"/>
-          <path d="M34 92 l-2 34 l12 14"/><path d="M86 92 l2 34 l-12 14"/>
-          <path d="M44 118 h34 v44 h-34 z"/><path d="M50 128 h22 M50 136 h22 M50 144 h14" class="thin"/>
-          <circle cx="44" cy="140" r="5"/><circle cx="78" cy="140" r="5"/>
-          <path d="M53 70 v14 h14 v-14"/>
-          <circle cx="60" cy="44" r="28"/>
-          <path d="M33 40 q2 -26 29 -26 q24 0 29 22 q-14 -9 -30 -7 q-16 2 -28 11 z" class="fi"/>
-          <circle cx="50" cy="47" r="2.6" class="fi"/><circle cx="70" cy="47" r="2.6" class="fi"/>
-          <path d="M60 49 l4 9 h-7"/>
-          <path d="M52 63 h16"/>
-        </g>
+        <use href="#c-adviser"/>
+        <g class="ln prop-front"><path d="M42 119 q18 -4 38 0 l-2 44 q-18 4 -36 0 z" class="paper"/><path d="M49 130 h22 M49 139 h19 M49 148 h23" class="thin"/><circle cx="42" cy="142" r="5"/><circle cx="79" cy="142" r="5"/></g>
       </symbol>
       <symbol id="c-under" viewBox="0 0 120 200">
-        <g class="ln">
-          <path d="M40 150 v38 h18 v-38"/><path d="M62 150 v38 h18 v-38"/>
-          <path d="M34 188 h26 v7 h-30 z" class="fi"/><path d="M60 188 h26 v7 h-30 z" class="fi"/>
-          <path d="M34 84 h52 l6 68 h-64 z"/>
-          <path d="M66 100 h12 v10 h-12 z" class="thin"/>
-          <path d="M34 92 l-16 44"/><path d="M86 92 l16 44"/>
-          <circle cx="17" cy="139" r="6"/><circle cx="103" cy="139" r="6"/>
-          <path d="M53 70 v14 h14 v-14"/>
-          <circle cx="60" cy="42" r="30" class="fi"/>
-          <path d="M30 42 v36 h12 v-36 z" class="fi"/><path d="M78 42 v36 h12 v-36 z" class="fi"/>
-          <circle cx="60" cy="50" r="24"/>
-          <circle cx="51" cy="52" r="8"/><circle cx="70" cy="52" r="8"/><path d="M59 52 h3"/>
-          <circle cx="51" cy="52" r="2.4" class="fi"/><circle cx="70" cy="52" r="2.4" class="fi"/>
-          <path d="M53 68 h14"/>
+        <g class="ln character bram">
+          <path d="M40 151 l-5 37 h18 l7 -36 M64 152 l5 36 h18 l-7 -40"/>
+          <path d="M34 188 h22 q2 8 -7 8 h-20 z" class="shoe"/><path d="M67 188 h22 q4 8 -6 8 h-20 z" class="shoe"/>
+          <path d="M29 88 q32 -13 60 2 l5 60 q-35 12 -70 -1 z" class="vest"/>
+          <path d="M31 96 l-14 41 M87 97 l16 39"/><circle cx="16" cy="140" r="6"/><circle cx="104" cy="139" r="6"/>
+          <path d="M59 90 l0 58 M66 103 h14 v11 h-14" class="thin"/>
+          <path d="M50 73 l1 15 l17 0 l-1 -16"/>
+          <path d="M31 40 q5 -29 30 -29 q28 2 30 31 l-3 20 q-8 18 -29 18 q-21 -2 -27 -20 z" class="skin"/>
+          <path d="M30 43 q0 -33 31 -34 q30 3 32 33 q-13 -12 -30 -9 q-17 4 -33 10 z" class="hair"/>
+          <rect x="39" y="45" width="18" height="13" rx="5"/><rect x="65" y="45" width="18" height="13" rx="5"/><path d="M57 51 h8"/>
+          <circle cx="49" cy="51" r="2" class="fi"/><circle cx="74" cy="51" r="2" class="fi"/><path d="M61 52 l-3 9 h6 M51 69 q9 -3 18 0"/>
         </g>
       </symbol>
       <symbol id="c-under-hold" viewBox="0 0 120 200">
-        <g class="ln">
-          <path d="M40 150 v38 h18 v-38"/><path d="M62 150 v38 h18 v-38"/>
-          <path d="M34 188 h26 v7 h-30 z" class="fi"/><path d="M60 188 h26 v7 h-30 z" class="fi"/>
-          <path d="M34 84 h52 l6 68 h-64 z"/>
-          <path d="M34 92 l-2 34 l12 14"/><path d="M86 92 l2 34 l-12 14"/>
-          <path d="M44 118 h34 v44 h-34 z"/><path d="M50 128 h22 M50 136 h22 M50 144 h14" class="thin"/>
-          <circle cx="44" cy="140" r="5"/><circle cx="78" cy="140" r="5"/>
-          <path d="M53 70 v14 h14 v-14"/>
-          <circle cx="60" cy="42" r="30" class="fi"/>
-          <path d="M30 42 v36 h12 v-36 z" class="fi"/><path d="M78 42 v36 h12 v-36 z" class="fi"/>
-          <circle cx="60" cy="50" r="24"/>
-          <circle cx="51" cy="52" r="8"/><circle cx="70" cy="52" r="8"/><path d="M59 52 h3"/>
-          <circle cx="51" cy="52" r="2.4" class="fi"/><circle cx="70" cy="52" r="2.4" class="fi"/>
-          <path d="M53 68 h14"/>
-        </g>
+        <use href="#c-under"/>
+        <g class="ln prop-front"><path d="M41 119 q19 -5 39 1 l-3 43 q-18 5 -36 0 z" class="paper"/><path d="M48 130 h24 M48 139 h21 M48 148 h23" class="thin"/><circle cx="41" cy="142" r="5"/><circle cx="79" cy="142" r="5"/></g>
       </symbol>
       <symbol id="c-api" viewBox="0 0 160 160">
-        <g class="ln">
-          <rect x="40" y="130" width="22" height="12" class="fi"/><rect x="98" y="130" width="22" height="12" class="fi"/>
-          <rect x="20" y="34" width="120" height="98" rx="10" class="fi"/>
-          <rect x="55" y="24" width="50" height="10" rx="3"/>
-          <circle cx="60" cy="70" r="11"/><circle cx="100" cy="70" r="11"/>
-          <circle cx="62" cy="72" r="4" class="fi"/><circle cx="102" cy="72" r="4" class="fi"/>
-          <path d="M70 100 h20" class="wh"/>
-          <circle cx="128" cy="46" r="4" class="led"/>
-          <text x="80" y="124" class="apilabel">API</text>
+        <g class="ln pip">
+          <ellipse cx="80" cy="145" rx="53" ry="8" class="shadow"/>
+          <path d="M47 126 l-7 16 M113 126 l7 16"/><circle cx="38" cy="144" r="8" class="wheel"/><circle cx="122" cy="144" r="8" class="wheel"/>
+          <path d="M31 50 q0 -15 15 -18 h68 q15 3 15 18 v72 q0 13 -14 13 h-70 q-14 0 -14 -13 z" class="machine"/>
+          <path d="M53 32 l3 -19 h48 l3 19" class="paper"/><path d="M64 20 h31" class="thin"/>
+          <path d="M31 79 q49 11 98 0" class="slot"/>
+          <circle cx="58" cy="62" r="9" class="eye"/><circle cx="101" cy="62" r="9" class="eye"/>
+          <circle cx="61" cy="64" r="3" class="pupil"/><circle cx="104" cy="64" r="3" class="pupil"/>
+          <path d="M67 102 q13 9 26 0" class="screen-mouth"/>
+          <circle cx="116" cy="45" r="5" class="led"/><text x="80" y="124" class="apilabel">PIP / API</text>
         </g>
       </symbol>
       <symbol id="c-doc" viewBox="0 0 60 80">
@@ -121,8 +91,8 @@
   <main>
     <section class="hero"><div class="wrap">
       <div class="eyebrow" data-i18n="hero.eyebrow">Mortgage Documents · API</div>
-      <h1 data-i18n="hero.title">A document goes in. The facts come out.</h1>
-      <p class="hero-copy" data-i18n="hero.lead">An API for Dutch mortgage documents. Submit one document, receive every relevant field as structured data, each with its own confidence score. Seven document types. It just works.</p>
+      <h1 data-i18n="hero.title">Upload a document. Get structured data back.</h1>
+      <p class="hero-copy" data-i18n="hero.lead">Built for Dutch mortgage documents. The API returns the relevant fields in a consistent format, each with its own confidence score. Seven document types are available.</p>
       <div class="hero-actions">
         <a class="button primary" href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents" data-i18n="hero.cta">Talk to us</a>
         <a class="button ghost" href="#modules" data-i18n="hero.more">See the modules</a>
@@ -132,30 +102,36 @@
 
     <section class="hero-strip" aria-label="Comic: how it feels from the outside">
       <div class="wrap strip three">
-        <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="An adviser hands a payslip to the API and asks how long it will take.">
+        <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="An adviser uploads a PDF document to the API.">
           <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
           <use href="#c-adviser-hold" x="24" y="92" width="120" height="200"/>
           <use href="#c-api" x="212" y="160" width="132" height="132"/>
           <path d="M130 86 Q124 110 118 150" class="tail"/>
-          <foreignObject x="22" y="14" width="220" height="74"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="strip.p1a">One payslip. How long will this take?</div></foreignObject>
+          <text x="84" y="232" class="doctext small">PDF</text>
+          <path d="M138 224 h72 m-13 -12 l13 12 l-13 12" class="flowarrow"/>
+          <foreignObject x="22" y="14" width="190" height="62"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="strip.p1a">Uploading the PDF.</div></foreignObject>
         </svg>
-        <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API works on its own: it reads, cross-checks, votes and confirms.">
+        <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API rapidly reads, checks and structures the PDF.">
           <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
           <use href="#c-doc" x="158" y="70" width="44" height="58"/>
           <use href="#c-api" x="114" y="118" width="132" height="132"/>
-          <circle cx="262" cy="96" r="4" class="fi"/><circle cx="278" cy="78" r="6" class="fi"/><circle cx="300" cy="56" r="8" class="fi"/>
-          <text x="180" y="278" class="cap" data-i18n="strip.p2cap">reads · cross-checks · votes · confirms</text>
+          <path d="M77 110 h48 M69 128 h56 M80 146 h43" class="speed"/>
+          <path d="M235 66 l-14 23 h14 l-10 23 l27 -33 h-14 l10 -13 z" class="bolt"/>
+          <g class="ln output-fly"><path d="M270 120 h56 v82 h-56 z"/><path d="M280 138 h18 M280 153 h16 M280 168 h20 M280 183 h14" class="thin"/><path d="M305 138 h12 M305 153 h10 M305 168 h13 M305 183 h11" class="score"/></g>
+          <text x="180" y="278" class="cap" data-i18n="strip.p2cap">reads · checks · structures</text>
         </svg>
-        <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API reports 34 fields with confidence scores. The adviser asks whether that is it. The API says that is it.">
+        <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="Structured fields appear immediately. The impressed adviser asks whether it is already finished.">
           <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
-          <use href="#c-api" x="18" y="160" width="132" height="132"/>
-          <use href="#c-adviser" x="220" y="92" width="120" height="200"/>
+          <use href="#c-api" x="8" y="160" width="132" height="132"/>
+          <g class="ln result-sheet"><path d="M140 150 h74 v138 h-74 z"/><path d="M151 172 h26 M151 194 h22 M151 216 h28 M151 238 h24 M151 260 h27" class="thin"/><path d="M184 172 h18 M184 194 h15 M184 216 h19 M184 238 h14 M184 260 h18" class="score"/></g>
+          <use href="#c-adviser" x="226" y="92" width="120" height="200"/>
           <path d="M108 86 Q112 130 110 176" class="tail"/>
-          <path d="M258 64 Q254 100 248 150" class="tail"/>
+          <path d="M268 64 Q264 100 254 150" class="tail"/>
           <path d="M70 146 Q60 160 48 176" class="tail"/>
+          <path d="M274 88 l-4 -16 M300 86 l8 -15 M320 100 l15 -7" class="reaction"/>
           <foreignObject x="18" y="14" width="196" height="70"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="strip.p3a">Done. 34 fields, each with a confidence score.</div></foreignObject>
-          <foreignObject x="228" y="14" width="120" height="48"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="strip.p3b">That’s it?</div></foreignObject>
-          <foreignObject x="18" y="104" width="150" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="strip.p3c">That’s it.</div></foreignObject>
+          <foreignObject x="234" y="14" width="114" height="48"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="strip.p3b">Already?</div></foreignObject>
+          <foreignObject x="18" y="104" width="120" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="strip.p3c">Ready.</div></foreignObject>
         </svg>
       </div>
     </section>
@@ -163,7 +139,7 @@
     <section id="api" class="how"><div class="wrap">
       <div class="section-intro">
         <div class="eyebrow" data-i18n="how.eyebrow">How it works</div>
-        <h2 data-i18n="how.title">Three steps. Nothing to configure.</h2>
+        <h2 data-i18n="how.title">A straightforward three-step flow.</h2>
       </div>
       <div class="how-grid">
         <ol class="steps">
@@ -175,7 +151,7 @@
           <li>
             <div class="step-num">02</div>
             <h3 data-i18n="how.s2t">Wait a moment</h3>
-            <p data-i18n="how.s2c">Processing runs in the background. Correctness comes before speed: a slow, right answer beats a fast, wrong one.</p>
+            <p data-i18n="how.s2c">Processing runs in the background. The API takes the time needed to check the result before returning it.</p>
           </li>
           <li>
             <div class="step-num">03</div>
@@ -213,7 +189,7 @@
       <div class="section-intro">
         <div class="eyebrow" data-i18n="modules.eyebrow">Modules</div>
         <h2 data-i18n="modules.title">Seven document types, each with its own module.</h2>
-        <p data-i18n="modules.intro">Every document type gets the treatment it needs. Standardised forms lean on layout models; documents that look different every time lean on several language models that vote. What comes out is the same for all: a flat list of fields.</p>
+        <p data-i18n="modules.intro">The extraction approach varies by document type. Standardised forms use layout-aware models; documents with many layouts are read by several language models and compared. The result has the same simple shape: a flat list of fields.</p>
       </div>
 
       <!-- 01 Employer declaration -->
@@ -253,7 +229,7 @@
         <div class="module-body">
           <div><div class="label" data-i18n="modules.inLabel">What goes in</div><p data-i18n="m1.in">A scanned or digital employer declaration, filled in by hand or typed.</p></div>
           <div><div class="label" data-i18n="modules.outLabel">What comes out</div><p data-i18n="m1.out">Employee and employer details, contract type, probation, reorganisation, the full income table, private loans and wage garnishment, the signature block and the NHG model number.</p></div>
-          <div><div class="label" data-i18n="modules.checkLabel">Worth noticing</div><p data-i18n="m1.check">Two visual checks most people would not expect from software: are there strikethroughs or corrections, and was the form filled in with more than one ink colour.</p></div>
+          <div><div class="label" data-i18n="modules.checkLabel">Worth noticing</div><p data-i18n="m1.check">The module also performs two visual checks: whether there are strikethroughs or corrections, and whether the form was filled in with more than one ink colour.</p></div>
         </div>
       </article>
 
@@ -361,7 +337,7 @@
             <g class="thin"><path d="M202 116 h50 M202 136 h40 M202 156 h56 M202 176 h44 M202 196 h52 M202 216 h36 M202 236 h48 M202 256 h44"/></g>
             <g class="bar"><rect x="270" y="110" width="58" height="8"/><rect x="270" y="130" width="56" height="8"/><rect x="270" y="150" width="58" height="8"/><rect x="270" y="170" width="52" height="8"/><rect x="270" y="190" width="58" height="8"/><rect x="270" y="210" width="47" height="8"/><rect x="270" y="230" width="58" height="8"/><rect x="270" y="250" width="57" height="8"/></g>
             <path d="M108 82 Q112 130 110 176" class="tail"/>
-            <foreignObject x="18" y="12" width="200" height="68"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m4.b2">Same 34 fields. Every time.</div></foreignObject>
+            <foreignObject x="18" y="12" width="200" height="68"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m4.b2">One consistent set of 34 fields.</div></foreignObject>
           </svg>
         </div>
         <div class="module-body">
@@ -464,14 +440,14 @@
       <div class="section-intro">
         <div class="eyebrow" data-i18n="reliable.eyebrow">What makes it reliable</div>
         <h2 data-i18n="reliable.title">Extract first. Verify. Normalise last.</h2>
-        <p data-i18n="reliable.intro">A single model reading a document is a guess. The module around it is what turns a guess into a result you can build a process on.</p>
+        <p data-i18n="reliable.intro">A model output is a starting point. The checks around it are what make the result useful in a document process.</p>
       </div>
       <ol class="pipeline">
         <li><div class="step-num">01</div><h3 data-i18n="reliable.s1t">Extract as is</h3><p data-i18n="reliable.s1c">Values are taken exactly as they appear in the document. Nothing is interpreted yet.</p></li>
         <li><div class="step-num">02</div><h3 data-i18n="reliable.s2t">Cross-check</h3><p data-i18n="reliable.s2c">Where a document says the same thing twice, both are compared: an amount in digits and in words, a date here and a date there.</p></li>
-        <li><div class="step-num">03</div><h3 data-i18n="reliable.s3t">Vote</h3><p data-i18n="reliable.s3c">For documents with many layouts, several models read the same document with different settings. The answer is what they agree on.</p></li>
+        <li><div class="step-num">03</div><h3 data-i18n="reliable.s3t">Vote</h3><p data-i18n="reliable.s3c">For documents with many layouts, several models read the same document independently. Agreement between them contributes to confidence.</p></li>
         <li><div class="step-num">04</div><h3 data-i18n="reliable.s4t">Confirm</h3><p data-i18n="reliable.s4c">Every extracted value is searched for in the raw text of the document. A value that cannot be found there loses confidence.</p></li>
-        <li><div class="step-num">05</div><h3 data-i18n="reliable.s5t">Normalise last</h3><p data-i18n="reliable.s5c">Only at the end are dates, country codes, postcodes and names brought into a fixed format, so that you never have to.</p></li>
+        <li><div class="step-num">05</div><h3 data-i18n="reliable.s5t">Normalise last</h3><p data-i18n="reliable.s5c">Only at the end are dates, country codes, postcodes and names brought into a fixed format, giving downstream systems consistent values.</p></li>
       </ol>
       <div class="confidence">
         <h3 data-i18n="reliable.conft">One confidence per field</h3>
@@ -507,7 +483,7 @@
       <div class="approach-box">
         <div>
           <div class="eyebrow" data-i18n="practical.eyebrow">Practicalities</div>
-          <h2 data-i18n="practical.title">Built to be boring to integrate.</h2>
+          <h2 data-i18n="practical.title">A small, predictable API surface.</h2>
         </div>
         <ul class="practical-list">
           <li data-i18n="practical.p1">Hosted in the European Union.</li>
@@ -521,8 +497,8 @@
     <section id="contact" class="contact wrap">
       <div class="contact-card">
         <div class="eyebrow" data-i18n="contact.eyebrow">Try it</div>
-        <h2 data-i18n="contact.title">Want to see it with your own documents?</h2>
-        <p data-i18n="contact.copy">Send us a message. We set you up with a key and the documentation, and you can be processing documents the same week.</p>
+        <h2 data-i18n="contact.title">Would you like to try it with a few documents?</h2>
+        <p data-i18n="contact.copy">Send us a message. We can provide a key and documentation, and help you run a small test with your own material.</p>
         <p class="contact-mail-line"><a href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents">info@smart-backoffice.nl</a></p>
       </div>
     </section>
@@ -530,16 +506,22 @@
   </main>
 
   <footer class="footer wrap">
-    <div>
-      <strong>Smart Backoffice Solutions B.V.</strong><br />
-      Saal van Zwanenbergweg 11 · 5026 RM Tilburg · Nederland
+    <div class="footer-company">
+      <div class="footer-made-by">
+        <span data-i18n="footer.madeBy">Mortgage Documents is made by</span>
+        <a href="../" aria-label="Visit the Smart Backoffice Solutions website">
+          <strong data-i18n="footer.home">Smart Backoffice Solutions B.V.</strong>
+          <span class="footer-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+      <div class="footer-address">Saal van Zwanenbergweg 11 · 5026 RM Tilburg · Nederland</div>
     </div>
     <div class="footer-right">
       KvK 90141482 · BTW NL865221406B01
     </div>
   </footer>
 
-  <script src="copy.js"></script>
+  <script src="copy.js?v=20260912-2"></script>
   <script src="../i18n.js"></script>
 </body>
 </html>

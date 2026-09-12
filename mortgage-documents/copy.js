@@ -4,25 +4,25 @@ window.SBO_COPY = {
     nav: { home: 'Smart Backoffice Solutions', modules: 'Modules', api: 'API', contact: 'Contact' },
     hero: {
       eyebrow: 'Mortgage Documents · API',
-      title: 'A document goes in. The facts come out.',
-      lead: 'An API for Dutch mortgage documents. Submit one document, receive every relevant field as structured data, each with its own confidence score. Seven document types. It just works.',
+      title: 'Upload a document. Get structured data back.',
+      lead: 'Built for Dutch mortgage documents. The API returns the relevant fields in a consistent format, each with its own confidence score. Seven document types are available.',
       cta: 'Talk to us',
       more: 'See the modules'
     },
     strip: {
-      p1a: 'One payslip. How long will this take?',
-      p2cap: 'reads · cross-checks · votes · confirms',
+      p1a: 'Uploading the PDF.',
+      p2cap: 'reads · checks · structures',
       p3a: 'Done. 34 fields, each with a confidence score.',
-      p3b: 'That’s it?',
-      p3c: 'That’s it.'
+      p3b: 'Already?',
+      p3c: 'Ready.'
     },
     how: {
       eyebrow: 'How it works',
-      title: 'Three steps. Nothing to configure.',
+      title: 'A straightforward three-step flow.',
       s1t: 'Upload',
       s1c: 'One call with the document and its type. You get a document ID back immediately.',
       s2t: 'Wait a moment',
-      s2c: 'Processing runs in the background. Correctness comes before speed: a slow, right answer beats a fast, wrong one.',
+      s2c: 'Processing runs in the background. The API takes the time needed to check the result before returning it.',
       s3t: 'Collect',
       s3c: 'Poll with the ID and receive every field as a name, a value and a confidence.',
       codecap: 'Trimmed example. Field names and formats are documented per module.'
@@ -30,7 +30,7 @@ window.SBO_COPY = {
     modules: {
       eyebrow: 'Modules',
       title: 'Seven document types, each with its own module.',
-      intro: 'Every document type gets the treatment it needs. Standardised forms lean on layout models; documents that look different every time lean on several language models that vote. What comes out is the same for all: a flat list of fields.',
+      intro: 'The extraction approach varies by document type. Standardised forms use layout-aware models; documents with many layouts are read by several language models and compared. The result has the same simple shape: a flat list of fields.',
       fields: 'fields',
       inLabel: 'What goes in',
       outLabel: 'What comes out',
@@ -40,7 +40,7 @@ window.SBO_COPY = {
       name: 'Employer declaration', doc: 'Werkgeversverklaring, NHG model', code: 'wgv', count: '74',
       in: 'A scanned or digital employer declaration, filled in by hand or typed.',
       out: 'Employee and employer details, contract type, probation, reorganisation, the full income table, private loans and wage garnishment, the signature block and the NHG model number.',
-      check: 'Two visual checks most people would not expect from software: are there strikethroughs or corrections, and was the form filled in with more than one ink colour.',
+      check: 'The module also performs two visual checks: whether there are strikethroughs or corrections, and whether the form was filled in with more than one ink colour.',
       b1: 'Filled in with a blue pen. Signed with a black one. And something crossed out.',
       b2: 'Two ink colours. One strikethrough. Both flagged.',
       b3: 'You noticed?',
@@ -71,7 +71,7 @@ window.SBO_COPY = {
       out: 'Employee and employer, IBAN, hours and part-time factor, contract flags, pay period, salary components, pension contribution, end-of-year bonus, thirteenth month, individual choice budget and net paid.',
       check: 'Payslips are the least standardised document in the set. Several models read every payslip independently and vote on each field. What they agree on is then confirmed against the text of the document.',
       b1: 'Every employer has its own payslip layout.',
-      b2: 'Same 34 fields. Every time.'
+      b2: 'One consistent set of 34 fields.'
     },
     m5: {
       name: 'Appraisal report', doc: 'Taxatierapport', code: 'taxrap', count: '112',
@@ -100,17 +100,17 @@ window.SBO_COPY = {
     reliable: {
       eyebrow: 'What makes it reliable',
       title: 'Extract first. Verify. Normalise last.',
-      intro: 'A single model reading a document is a guess. The module around it is what turns a guess into a result you can build a process on.',
+      intro: 'A model output is a starting point. The checks around it are what make the result useful in a document process.',
       s1t: 'Extract as is',
       s1c: 'Values are taken exactly as they appear in the document. Nothing is interpreted yet.',
       s2t: 'Cross-check',
       s2c: 'Where a document says the same thing twice, both are compared: an amount in digits and in words, a date here and a date there.',
       s3t: 'Vote',
-      s3c: 'For documents with many layouts, several models read the same document with different settings. The answer is what they agree on.',
+      s3c: 'For documents with many layouts, several models read the same document independently. Agreement between them contributes to confidence.',
       s4t: 'Confirm',
       s4c: 'Every extracted value is searched for in the raw text of the document. A value that cannot be found there loses confidence.',
       s5t: 'Normalise last',
-      s5c: 'Only at the end are dates, country codes, postcodes and names brought into a fixed format, so that you never have to.',
+      s5c: 'Only at the end are dates, country codes, postcodes and names brought into a fixed format, giving downstream systems consistent values.',
       conft: 'One confidence per field',
       hi: '0.95 and up. Several methods agreed and the value was found in the document text.',
       mid: 'Around 0.80. Most methods agreed. Suitable for most automated workflows.',
@@ -127,7 +127,7 @@ window.SBO_COPY = {
     },
     practical: {
       eyebrow: 'Practicalities',
-      title: 'Built to be boring to integrate.',
+      title: 'A small, predictable API surface.',
       p1: 'Hosted in the European Union.',
       p2: 'One API key per client, sent as a header. Two keys are valid at any time, so a key rotation needs no maintenance window.',
       p3: 'Results are retrievable for a limited window after processing and then deleted. That limits what a leaked key would be worth.',
@@ -135,35 +135,38 @@ window.SBO_COPY = {
     },
     contact: {
       eyebrow: 'Try it',
-      title: 'Want to see it with your own documents?',
-      copy: 'Send us a message. We set you up with a key and the documentation, and you can be processing documents the same week.'
+      title: 'Would you like to try it with a few documents?',
+      copy: 'Send us a message. We can provide a key and documentation, and help you run a small test with your own material.'
     },
-    footer: { home: 'Smart Backoffice Solutions', fm: 'Food Moments' }
+    footer: {
+      madeBy: 'Mortgage Documents is made by',
+      home: 'Smart Backoffice Solutions B.V.'
+    }
   },
 
   nl: {
     nav: { home: 'Smart Backoffice Solutions', modules: 'Modules', api: 'API', contact: 'Contact' },
     hero: {
       eyebrow: 'Mortgage Documents · API',
-      title: 'Er gaat een document in. De feiten komen eruit.',
-      lead: 'Een API voor Nederlandse hypotheekdocumenten. Stuur één document in en ontvang ieder relevant veld als gestructureerde data, elk met een eigen betrouwbaarheidsscore. Zeven documenttypen. Het werkt gewoon.',
+      title: 'Document uploaden. Gestructureerde data terug.',
+      lead: 'Voor Nederlandse hypotheekdocumenten. De API geeft de relevante velden terug in een consistent formaat, elk met een eigen betrouwbaarheidsscore. Er zijn zeven documenttypen beschikbaar.',
       cta: 'Neem contact op',
       more: 'Bekijk de modules'
     },
     strip: {
-      p1a: 'Eén loonstrook. Hoe lang gaat dit duren?',
-      p2cap: 'leest · controleert · stemt · bevestigt',
+      p1a: 'Ik upload de pdf.',
+      p2cap: 'leest · controleert · structureert',
       p3a: 'Klaar. 34 velden, elk met een betrouwbaarheidsscore.',
-      p3b: 'Is dat alles?',
-      p3c: 'Dat is alles.'
+      p3b: 'Nu al?',
+      p3c: 'Klaar.'
     },
     how: {
       eyebrow: 'Hoe het werkt',
-      title: 'Drie stappen. Niets in te stellen.',
+      title: 'Een overzichtelijke flow in drie stappen.',
       s1t: 'Insturen',
       s1c: 'Eén aanroep met het document en het documenttype. U krijgt direct een document-ID terug.',
       s2t: 'Even wachten',
-      s2c: 'De verwerking draait op de achtergrond. Juistheid gaat voor snelheid: een langzaam, juist antwoord wint van een snel, fout antwoord.',
+      s2c: 'De verwerking draait op de achtergrond. De API neemt de tijd om het resultaat te controleren voordat het wordt teruggestuurd.',
       s3t: 'Ophalen',
       s3c: 'Vraag het resultaat op met het ID en ontvang ieder veld als naam, waarde en betrouwbaarheid.',
       codecap: 'Ingekort voorbeeld. Veldnamen en formaten zijn per module gedocumenteerd.'
@@ -171,7 +174,7 @@ window.SBO_COPY = {
     modules: {
       eyebrow: 'Modules',
       title: 'Zeven documenttypen, elk met een eigen module.',
-      intro: 'Ieder documenttype krijgt de behandeling die het nodig heeft. Gestandaardiseerde formulieren leunen op layoutmodellen; documenten die er iedere keer anders uitzien leunen op meerdere taalmodellen die stemmen. Wat eruit komt is voor allemaal hetzelfde: een platte lijst velden.',
+      intro: 'De manier van uitlezen verschilt per documenttype. Gestandaardiseerde formulieren gebruiken layoutmodellen; documenten met veel opmaakvarianten worden door meerdere taalmodellen gelezen en vergeleken. Het resultaat heeft steeds dezelfde eenvoudige vorm: een platte lijst velden.',
       fields: 'velden',
       inLabel: 'Wat erin gaat',
       outLabel: 'Wat eruit komt',
@@ -181,7 +184,7 @@ window.SBO_COPY = {
       name: 'Werkgeversverklaring', doc: 'NHG-model', code: 'wgv', count: '74',
       in: 'Een gescande of digitale werkgeversverklaring, met de hand ingevuld of getypt.',
       out: 'Gegevens van werknemer en werkgever, aard van het dienstverband, proeftijd, reorganisatie, de volledige inkomenstabel, onderhandse leningen en loonbeslag, het ondertekeningsblok en het NHG-modelnummer.',
-      check: 'Twee visuele controles die je niet van software verwacht: zijn er doorhalingen of correcties, en is het formulier met meer dan één inktkleur ingevuld.',
+      check: 'De module voert ook twee visuele controles uit: of er doorhalingen of correcties zijn, en of het formulier met meer dan één inktkleur is ingevuld.',
       b1: 'Ingevuld met een blauwe pen. Ondertekend met een zwarte. En iets doorgestreept.',
       b2: 'Twee inktkleuren. Eén doorhaling. Allebei gemarkeerd.',
       b3: 'Dat zag je?',
@@ -212,7 +215,7 @@ window.SBO_COPY = {
       out: 'Werknemer en werkgever, IBAN, uren en deeltijdfactor, contractkenmerken, periode, salariscomponenten, pensioenpremie, eindejaarsuitkering, dertiende maand, individueel keuzebudget en netto uitbetaald.',
       check: 'Loonstroken zijn het minst gestandaardiseerde document in de set. Meerdere modellen lezen iedere loonstrook onafhankelijk en stemmen per veld. Waar ze het over eens zijn wordt vervolgens bevestigd in de tekst van het document.',
       b1: 'Iedere werkgever heeft zijn eigen loonstrook.',
-      b2: 'Dezelfde 34 velden. Iedere keer.'
+      b2: 'Eén consistente set van 34 velden.'
     },
     m5: {
       name: 'Taxatierapport', doc: 'Woningtaxatie', code: 'taxrap', count: '112',
@@ -241,17 +244,17 @@ window.SBO_COPY = {
     reliable: {
       eyebrow: 'Wat het betrouwbaar maakt',
       title: 'Eerst uitlezen. Dan verifiëren. Als laatste normaliseren.',
-      intro: 'Eén model dat een document leest, is een gok. De module eromheen maakt van die gok een resultaat waar u een proces op kunt bouwen.',
+      intro: 'De uitvoer van een model is een beginpunt. De controles eromheen maken het resultaat bruikbaar in een documentproces.',
       s1t: 'Letterlijk uitlezen',
       s1c: 'Waarden worden overgenomen precies zoals ze in het document staan. Er wordt nog niets geïnterpreteerd.',
       s2t: 'Kruiselings controleren',
       s2c: 'Waar een document hetzelfde twee keer zegt, worden beide vergeleken: een bedrag in cijfers en in woorden, een datum hier en een datum daar.',
       s3t: 'Stemmen',
-      s3c: 'Bij documenten met veel opmaakvarianten lezen meerdere modellen hetzelfde document met verschillende instellingen. Het antwoord is waar ze het over eens zijn.',
+      s3c: 'Bij documenten met veel opmaakvarianten lezen meerdere modellen hetzelfde document onafhankelijk. De mate van overeenstemming telt mee in de betrouwbaarheid.',
       s4t: 'Bevestigen',
       s4c: 'Iedere uitgelezen waarde wordt teruggezocht in de ruwe tekst van het document. Een waarde die daar niet te vinden is, verliest betrouwbaarheid.',
       s5t: 'Als laatste normaliseren',
-      s5c: 'Pas aan het eind worden datums, landcodes, postcodes en namen in een vast formaat gezet, zodat u dat nooit hoeft te doen.',
+      s5c: 'Pas aan het eind worden datums, landcodes, postcodes en namen in een vast formaat gezet, zodat vervolgsystemen consistente waarden ontvangen.',
       conft: 'Eén betrouwbaarheidsscore per veld',
       hi: '0,95 en hoger. Meerdere methoden waren het eens en de waarde is in de documenttekst teruggevonden.',
       mid: 'Rond 0,80. De meeste methoden waren het eens. Geschikt voor de meeste geautomatiseerde processen.',
@@ -268,7 +271,7 @@ window.SBO_COPY = {
     },
     practical: {
       eyebrow: 'Praktisch',
-      title: 'Gebouwd om saai te integreren.',
+      title: 'Een kleine, voorspelbare API.',
       p1: 'Gehost in de Europese Unie.',
       p2: 'Eén API-sleutel per klant, meegestuurd als header. Er zijn altijd twee sleutels geldig, dus een sleutelrotatie vraagt geen onderhoudsvenster.',
       p3: 'Resultaten zijn een beperkte tijd na verwerking op te halen en worden daarna verwijderd. Dat beperkt wat een gelekte sleutel waard zou zijn.',
@@ -276,35 +279,38 @@ window.SBO_COPY = {
     },
     contact: {
       eyebrow: 'Probeer het',
-      title: 'Wilt u het zien met uw eigen documenten?',
-      copy: 'Stuur ons een bericht. We zorgen voor een sleutel en de documentatie, en u kunt dezelfde week nog documenten verwerken.'
+      title: 'Wilt u het met een paar documenten proberen?',
+      copy: 'Stuur ons een bericht. We kunnen een sleutel en documentatie beschikbaar stellen en helpen met een kleine test op eigen materiaal.'
     },
-    footer: { home: 'Smart Backoffice Solutions', fm: 'Food Moments' }
+    footer: {
+      madeBy: 'Mortgage Documents wordt gemaakt door',
+      home: 'Smart Backoffice Solutions B.V.'
+    }
   },
 
   de: {
     nav: { home: 'Smart Backoffice Solutions', modules: 'Module', api: 'API', contact: 'Kontakt' },
     hero: {
       eyebrow: 'Mortgage Documents · API',
-      title: 'Ein Dokument geht hinein. Die Fakten kommen heraus.',
-      lead: 'Eine API für niederländische Hypothekendokumente. Ein Dokument einreichen, jedes relevante Feld als strukturierte Daten zurückerhalten, jedes mit eigenem Konfidenzwert. Sieben Dokumenttypen. Es funktioniert einfach.',
+      title: 'Dokument hochladen. Strukturierte Daten erhalten.',
+      lead: 'Für niederländische Hypothekendokumente. Die API gibt die relevanten Felder in einem einheitlichen Format zurück, jedes mit eigenem Konfidenzwert. Sieben Dokumenttypen sind verfügbar.',
       cta: 'Kontakt aufnehmen',
       more: 'Die Module ansehen'
     },
     strip: {
-      p1a: 'Eine Gehaltsabrechnung. Wie lange dauert das?',
-      p2cap: 'liest · prüft · stimmt ab · bestätigt',
+      p1a: 'Ich lade das PDF hoch.',
+      p2cap: 'liest · prüft · strukturiert',
       p3a: 'Fertig. 34 Felder, jedes mit Konfidenzwert.',
-      p3b: 'Das ist alles?',
-      p3c: 'Das ist alles.'
+      p3b: 'Schon fertig?',
+      p3c: 'Fertig.'
     },
     how: {
       eyebrow: 'So funktioniert es',
-      title: 'Drei Schritte. Nichts zu konfigurieren.',
+      title: 'Ein übersichtlicher Ablauf in drei Schritten.',
       s1t: 'Hochladen',
       s1c: 'Ein Aufruf mit dem Dokument und seinem Typ. Sie erhalten sofort eine Dokument-ID zurück.',
       s2t: 'Kurz warten',
-      s2c: 'Die Verarbeitung läuft im Hintergrund. Richtigkeit geht vor Geschwindigkeit: eine langsame, richtige Antwort schlägt eine schnelle, falsche.',
+      s2c: 'Die Verarbeitung läuft im Hintergrund. Die API nimmt sich die nötige Zeit, das Ergebnis vor der Rückgabe zu prüfen.',
       s3t: 'Abholen',
       s3c: 'Mit der ID abfragen und jedes Feld als Name, Wert und Konfidenz erhalten.',
       codecap: 'Gekürztes Beispiel. Feldnamen und Formate sind je Modul dokumentiert.'
@@ -312,7 +318,7 @@ window.SBO_COPY = {
     modules: {
       eyebrow: 'Module',
       title: 'Sieben Dokumenttypen, jeder mit eigenem Modul.',
-      intro: 'Jeder Dokumenttyp bekommt die Behandlung, die er braucht. Standardisierte Formulare stützen sich auf Layoutmodelle; Dokumente, die jedes Mal anders aussehen, auf mehrere Sprachmodelle, die abstimmen. Heraus kommt bei allen dasselbe: eine flache Liste von Feldern.',
+      intro: 'Der Extraktionsansatz unterscheidet sich je nach Dokumenttyp. Standardisierte Formulare nutzen Layoutmodelle; Dokumente mit vielen Layoutvarianten werden von mehreren Sprachmodellen gelesen und verglichen. Das Ergebnis hat immer dieselbe einfache Form: eine flache Liste von Feldern.',
       fields: 'Felder',
       inLabel: 'Was hineingeht',
       outLabel: 'Was herauskommt',
@@ -322,7 +328,7 @@ window.SBO_COPY = {
       name: 'Arbeitgeberbescheinigung', doc: 'Werkgeversverklaring, NHG-Modell', code: 'wgv', count: '74',
       in: 'Eine gescannte oder digitale Arbeitgeberbescheinigung, handschriftlich ausgefüllt oder getippt.',
       out: 'Angaben zu Arbeitnehmer und Arbeitgeber, Vertragsart, Probezeit, Umstrukturierung, die vollständige Einkommenstabelle, Privatdarlehen und Lohnpfändung, der Unterschriftenblock und die NHG-Modellnummer.',
-      check: 'Zwei visuelle Prüfungen, die man von Software nicht erwartet: Gibt es Durchstreichungen oder Korrekturen, und wurde das Formular mit mehr als einer Tintenfarbe ausgefüllt.',
+      check: 'Das Modul führt außerdem zwei visuelle Prüfungen durch: ob es Durchstreichungen oder Korrekturen gibt und ob das Formular mit mehr als einer Tintenfarbe ausgefüllt wurde.',
       b1: 'Mit blauem Stift ausgefüllt. Mit schwarzem unterschrieben. Und etwas durchgestrichen.',
       b2: 'Zwei Tintenfarben. Eine Durchstreichung. Beides markiert.',
       b3: 'Das ist dir aufgefallen?',
@@ -353,7 +359,7 @@ window.SBO_COPY = {
       out: 'Arbeitnehmer und Arbeitgeber, IBAN, Stunden und Teilzeitfaktor, Vertragsmerkmale, Abrechnungszeitraum, Gehaltsbestandteile, Pensionsbeitrag, Jahresendzulage, dreizehntes Gehalt, individuelles Wahlbudget und Nettoauszahlung.',
       check: 'Gehaltsabrechnungen sind das am wenigsten standardisierte Dokument der Reihe. Mehrere Modelle lesen jede Abrechnung unabhängig und stimmen je Feld ab. Worin sie sich einig sind, wird anschließend im Text des Dokuments bestätigt.',
       b1: 'Jeder Arbeitgeber hat sein eigenes Abrechnungslayout.',
-      b2: 'Dieselben 34 Felder. Jedes Mal.'
+      b2: 'Ein einheitlicher Satz von 34 Feldern.'
     },
     m5: {
       name: 'Wertgutachten', doc: 'Taxatierapport', code: 'taxrap', count: '112',
@@ -382,17 +388,17 @@ window.SBO_COPY = {
     reliable: {
       eyebrow: 'Was es zuverlässig macht',
       title: 'Erst extrahieren. Dann prüfen. Zuletzt normalisieren.',
-      intro: 'Ein einzelnes Modell, das ein Dokument liest, ist eine Vermutung. Das Modul darum herum macht aus der Vermutung ein Ergebnis, auf das Sie einen Prozess bauen können.',
+      intro: 'Die Ausgabe eines Modells ist ein Ausgangspunkt. Die Prüfungen darum herum machen das Ergebnis für einen Dokumentprozess brauchbar.',
       s1t: 'Wörtlich extrahieren',
       s1c: 'Werte werden genau so übernommen, wie sie im Dokument stehen. Noch wird nichts interpretiert.',
       s2t: 'Gegenprüfen',
       s2c: 'Wo ein Dokument dasselbe zweimal sagt, werden beide verglichen: ein Betrag in Ziffern und in Worten, ein Datum hier und ein Datum dort.',
       s3t: 'Abstimmen',
-      s3c: 'Bei Dokumenten mit vielen Layouts lesen mehrere Modelle dasselbe Dokument mit verschiedenen Einstellungen. Die Antwort ist das, worin sie sich einig sind.',
+      s3c: 'Bei Dokumenten mit vielen Layouts lesen mehrere Modelle dasselbe Dokument unabhängig voneinander. Der Grad ihrer Übereinstimmung fließt in die Konfidenz ein.',
       s4t: 'Bestätigen',
       s4c: 'Jeder extrahierte Wert wird im Rohtext des Dokuments gesucht. Ein Wert, der dort nicht zu finden ist, verliert Konfidenz.',
       s5t: 'Zuletzt normalisieren',
-      s5c: 'Erst am Ende werden Daten, Ländercodes, Postleitzahlen und Namen in ein festes Format gebracht, damit Sie es nie tun müssen.',
+      s5c: 'Erst am Ende werden Daten, Ländercodes, Postleitzahlen und Namen in ein festes Format gebracht, damit nachgelagerte Systeme konsistente Werte erhalten.',
       conft: 'Ein Konfidenzwert je Feld',
       hi: '0,95 und höher. Mehrere Methoden waren sich einig und der Wert wurde im Dokumenttext gefunden.',
       mid: 'Um 0,80. Die meisten Methoden waren sich einig. Für die meisten automatisierten Abläufe geeignet.',
@@ -409,7 +415,7 @@ window.SBO_COPY = {
     },
     practical: {
       eyebrow: 'Praktisches',
-      title: 'Gebaut, um langweilig zu integrieren.',
+      title: 'Eine kleine, vorhersehbare API.',
       p1: 'Gehostet in der Europäischen Union.',
       p2: 'Ein API-Schlüssel je Kunde, als Header gesendet. Zwei Schlüssel sind jederzeit gültig, sodass eine Schlüsselrotation kein Wartungsfenster braucht.',
       p3: 'Ergebnisse sind nach der Verarbeitung für ein begrenztes Zeitfenster abrufbar und werden dann gelöscht. Das begrenzt, was ein geleakter Schlüssel wert wäre.',
@@ -417,9 +423,12 @@ window.SBO_COPY = {
     },
     contact: {
       eyebrow: 'Ausprobieren',
-      title: 'Möchten Sie es mit Ihren eigenen Dokumenten sehen?',
-      copy: 'Schreiben Sie uns. Wir richten einen Schlüssel und die Dokumentation ein, und Sie können noch in derselben Woche Dokumente verarbeiten.'
+      title: 'Möchten Sie es mit einigen Dokumenten ausprobieren?',
+      copy: 'Schreiben Sie uns. Wir können einen Schlüssel und die Dokumentation bereitstellen und Sie bei einem kleinen Test mit eigenem Material unterstützen.'
     },
-    footer: { home: 'Smart Backoffice Solutions', fm: 'Food Moments' }
+    footer: {
+      madeBy: 'Mortgage Documents wird entwickelt von',
+      home: 'Smart Backoffice Solutions B.V.'
+    }
   }
 };

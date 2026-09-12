@@ -9,7 +9,7 @@ const copy = {
     },
     work: {
       eyebrow: 'Van hypotheekacceptatie tot economisch en econometrisch advies',
-      title: 'Een klein team met een ongewoon brede combinatie van expertise.',
+      title: 'Goede oplossingen vragen om expertise uit meerdere vakgebieden.',
       intro: 'We werken vooral aan complexe vraagstukken in en rond de hypotheek- en bankensector, maar onze expertise is breder. We combineren domeinkennis, software engineering, economie en econometrie — om uit data te halen wat er werkelijk in zit en vervolgens te bouwen wat nodig is.'
     },
     mortgage: {
@@ -28,10 +28,10 @@ const copy = {
     },
     consulting: {
       title: 'Economie & Econometrie',
-      copy: 'Niet ieder moeilijk probleem vraagt om software. We ondersteunen bedrijven, advocaten en rechtbanken met economie en econometrie: betrouwbare conclusies uit data halen en die vertalen naar analyses die helder, degelijk en verdedigbaar zijn.',
-      li1: 'Competition economics en merger analysis',
-      li2: 'Damages estimation en econometrische analyse',
-      li3: 'Expert witness en ondersteuning in procedures'
+      copy: 'We combineren economie en econometrie met AI-expertise om praktische oplossingen voor klanten te bouwen — van applicaties die mensen direct gebruiken tot systemen die op de achtergrond draaien. Daarnaast ondersteunen we bedrijven, advocaten en rechtbanken met heldere, degelijke en verdedigbare analyses.',
+      li1: 'AI-toepassingen op basis van economie en econometrie',
+      li2: 'Datagedreven hulpmiddelen en backendsystemen',
+      li3: 'Mededinging, schadeberekeningen en deskundigenwerk'
     },
     origin: {
       eyebrow: 'Waarom “Backoffice”?',
@@ -77,8 +77,8 @@ const copy = {
     },
     work: {
       eyebrow: 'From mortgage underwriting to economic and econometric advice',
-      title: 'A small team with an unusually broad combination of expertise.',
-      intro: 'We mainly work on complex problems in and around mortgages and banking, but our expertise is broader. We combine domain knowledge, software engineering, economics and econometrics — using data to understand what is happening and technology to build what is needed.'
+      title: 'Good solutions require expertise across multiple domains.',
+      intro: 'We started by working on complex problems in and around mortgages and banking, but our expertise is broader. We combine domain knowledge, software engineering, economics and econometrics — using data to understand what is happening and technology to build what is needed.'
     },
     mortgage: {
       title: 'Mortgages & Banking',
@@ -96,10 +96,10 @@ const copy = {
     },
     consulting: {
       title: 'Economics & Econometrics',
-      copy: 'Not every hard problem requires software. We support companies, lawyers and courts with economics and econometrics: extracting credible conclusions from data and turning them into analysis that is clear, rigorous and defensible.',
-      li1: 'Competition economics and merger analysis',
-      li2: 'Damages estimation and econometric analysis',
-      li3: 'Expert witness work and litigation support'
+      copy: 'We combine economics and econometrics with AI expertise to build practical solutions for clients — from applications people use directly to systems that run in the background. We also support companies, lawyers and courts with clear, rigorous and defensible analysis.',
+      li1: 'AI applications informed by economics and econometrics',
+      li2: 'Data-driven tools and backend systems',
+      li3: 'Competition economics, damages and expert work'
     },
     origin: {
       eyebrow: 'Why “Backoffice”?',
@@ -145,7 +145,7 @@ const copy = {
     },
     work: {
       eyebrow: 'Von der Kreditprüfung bis zur ökonomischen und ökonometrischen Beratung',
-      title: 'Ein kleines Team mit einer ungewöhnlich breiten Kombination von Expertise.',
+      title: 'Gute Lösungen erfordern Expertise aus mehreren Fachgebieten.',
       intro: 'Wir arbeiten vor allem an komplexen Fragestellungen im Hypotheken- und Bankenumfeld, unsere Expertise reicht jedoch weiter. Wir verbinden Domänenwissen, Software Engineering, Ökonomie und Ökonometrie — um aus Daten belastbare Erkenntnisse zu gewinnen und anschließend zu entwickeln, was benötigt wird.'
     },
     mortgage: {
@@ -164,10 +164,10 @@ const copy = {
     },
     consulting: {
       title: 'Ökonomie & Ökonometrie',
-      copy: 'Nicht jedes schwierige Problem erfordert Software. Wir unterstützen Unternehmen, Rechtsanwälte und Gerichte mit Ökonomie und Ökonometrie: Wir gewinnen belastbare Schlussfolgerungen aus Daten und übersetzen sie in klare, fundierte und nachvollziehbare Analysen.',
-      li1: 'Wettbewerbsökonomie und Fusionsanalyse',
-      li2: 'Schadensschätzung und ökonometrische Analyse',
-      li3: 'Sachverständigentätigkeit und Prozessunterstützung'
+      copy: 'Wir verbinden Ökonomie und Ökonometrie mit KI-Expertise, um praktische Lösungen für unsere Kunden zu entwickeln — von Anwendungen, die Menschen direkt nutzen, bis zu Systemen, die im Hintergrund laufen. Außerdem unterstützen wir Unternehmen, Rechtsanwälte und Gerichte mit klaren, fundierten und nachvollziehbaren Analysen.',
+      li1: 'KI-Anwendungen auf Basis von Ökonomie und Ökonometrie',
+      li2: 'Datenbasierte Werkzeuge und Backend-Systeme',
+      li3: 'Wettbewerbsökonomie, Schadensberechnung und Gutachten'
     },
     origin: {
       eyebrow: 'Warum „Backoffice“?',
