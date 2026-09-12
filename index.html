@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Smart Backoffice Solutions B.V. combines deep expertise in Dutch mortgages and banking with technology, economics and econometrics to solve hard problems." />
+  <meta name="description" content="Smart Backoffice Solutions B.V. builds back offices where AI does the work: several AI systems combined, checked and wired into real processes. Engineering, economics, econometrics and finance domain knowledge in one small team in Tilburg." />
   <title>Smart Backoffice Solutions B.V.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,114 +18,162 @@
     <a class="brand" href="#top" aria-label="Smart Backoffice Solutions home">
       <img src="logo.png" alt="Smart Backoffice Solutions" />
     </a>
-    <nav class="lang-switch" aria-label="Language">
-      <button data-lang="nl">NL</button>
-      <button data-lang="en" class="active">EN</button>
-      <button data-lang="de">DE</button>
-    </nav>
+    <div class="header-right">
+      <nav class="site-nav" aria-label="Sections">
+        <a href="#work" data-i18n="nav.build">What we build</a>
+        <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <nav class="lang-switch" aria-label="Language">
+        <button data-lang="nl">NL</button>
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="de">DE</button>
+      </nav>
+    </div>
   </header>
 
   <main id="top">
     <section class="hero wrap">
-      <div class="eyebrow" data-i18n="hero.eyebrow">Mortgages × Technology × Economics × Econometrics</div>
-      <h1 data-i18n="hero.title">Hard problems. Solutions that fit.</h1>
-      <p class="hero-copy" data-i18n="hero.copy">
-        Smart Backoffice Solutions combines deep expertise in the Dutch mortgage market with technology, economics and econometrics. Econometrics helps us turn data into reliable knowledge; engineering lets us turn that knowledge into systems that work. We build what the problem calls for — often involving AI, never technology for its own sake.
-      </p>
+      <div class="eyebrow" data-i18n="hero.eyebrow">AI × Back-end engineering × Economics × Econometrics</div>
+      <h1 data-i18n="hero.title">AI can do far more than chat. We make it do the work.</h1>
+      <p class="hero-copy" data-i18n="hero.copy1">AI has become part of everyday life. Most people meet it as an assistant they talk to. That is only the front of it.</p>
+      <p class="hero-copy secondary" data-i18n="hero.copy2">The real gains come when several AI systems are combined, checked against each other and wired into a real process. That is what we build: back offices where AI does the work, so that on the outside things are simply easy.</p>
       <div class="hero-actions">
-        <a class="button primary" href="mailto:info@smart-backoffice.nl" data-i18n="hero.cta">Neem contact op</a>
-        <a class="button ghost" href="#work" data-i18n="hero.more">Wat we doen</a>
+        <a class="button primary" href="mailto:info@smart-backoffice.nl" data-i18n="hero.cta">Get in touch</a>
+        <a class="button ghost" href="#work" data-i18n="hero.more">See what we build</a>
       </div>
     </section>
 
     <section class="signal wrap" aria-label="Expertise">
       <div class="signal-line"></div>
       <div class="signal-items">
-        <span>Dutch Mortgages</span><span>Banking</span><span>Technology</span><span>AI</span><span>Python</span><span>Full Stack</span><span>Economics</span><span>Econometrics</span><span>Competition Economics</span>
+        <span data-i18n="signal.s1">AI</span><span data-i18n="signal.s2">Back-end</span><span data-i18n="signal.s3">Full stack</span><span data-i18n="signal.s4">Document AI</span><span data-i18n="signal.s5">iOS</span><span data-i18n="signal.s6">Economics</span><span data-i18n="signal.s7">Econometrics</span><span data-i18n="signal.s8">Competition economics</span><span data-i18n="signal.s9">Compliance</span><span data-i18n="signal.s10">Dutch mortgages</span>
       </div>
     </section>
 
-    <section id="work" class="work wrap">
+    <section class="office wrap">
+      <div class="office-label">
+        <div class="eyebrow" data-i18n="office.eyebrow">Why “Backoffice”?</div>
+      </div>
+      <div class="office-copy">
+        <h2 data-i18n="office.title">The smart part happens where you don’t see it.</h2>
+        <p data-i18n="office.copy1">A chat window is a front office: one question, one answer. A back office is where the work gets done. Vision models read documents and photos, language models interpret them, OCR confirms what was read, and checks and domain rules catch what a single model gets wrong.</p>
+        <p data-i18n="office.copy2">Combine those well and the result is something that works surprisingly well and is easy to use. A document goes in and every field comes out. A photo of a meal goes in and the meal is understood.</p>
+        <p data-i18n="office.copy3">That is how we started, with a back office for mortgage documents, and it is still how we look at every problem.</p>
+      </div>
+    </section>
+
+    <section id="work" class="live wrap">
       <div class="section-intro">
-        <div class="eyebrow" data-i18n="work.eyebrow">From mortgage underwriting to economic and econometric advice</div>
+        <div class="eyebrow" data-i18n="live.eyebrow">Live today</div>
+        <h2 data-i18n="live.title">Two examples of what that looks like.</h2>
+        <p data-i18n="live.intro">Different users, different technology under the hood, the same idea: a lot happens in the back office so that very little is asked of the person in front.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product">
+          <div class="product-head">
+            <div class="product-label" data-i18n="md.label">API · Dutch mortgage documents</div>
+            <div class="product-visual api" aria-hidden="true">
+              <span class="api-in">PDF</span>
+              <span class="api-arrow">→</span>
+              <span class="api-box">API</span>
+              <span class="api-arrow">→</span>
+              <span class="api-out">{ }</span>
+            </div>
+          </div>
+          <h3 data-i18n="md.title">Mortgage Documents</h3>
+          <p data-i18n="md.copy">Submit a mortgage document and receive every relevant field back as structured data, each with its own confidence score. Seven document types, one call per document, and it just works.</p>
+          <div class="product-types" data-i18n="md.types">ID document · Employer declaration · Payslip · Purchase agreement · Appraisal report · DUO statement · KVK extract</div>
+          <a class="product-link" href="mortgage-documents/"><span data-i18n="md.link">How it works</span> <span class="arrow">→</span></a>
+        </article>
+
+        <article class="product">
+          <div class="product-head">
+            <div class="product-label" data-i18n="fm.label">iOS app</div>
+            <div class="product-visual app">
+              <img class="appicon" src="foodmoments/appicon.png" alt="Food Moments app icon" width="88" height="88" />
+              <span class="badge"><svg class="applemark" viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span data-i18n="fm.badge">Coming soon to the App Store</span></span>
+            </div>
+          </div>
+          <h3 data-i18n="fm.title">Food Moments</h3>
+          <p data-i18n="fm.copy">Take a photo of what you eat, say a few words if you like, and see what is in it. It feels like a personal feed, not a food ledger. Underneath, vision models, speech recognition, barcode lookup and the context of your recent meals do the work.</p>
+          <a class="product-link" href="foodmoments/"><span data-i18n="fm.link">About the app</span> <span class="arrow">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="expertise" class="work wrap">
+      <div class="section-intro">
+        <div class="eyebrow" data-i18n="work.eyebrow">What we bring</div>
         <h2 data-i18n="work.title">A small team with an unusually broad combination of expertise.</h2>
-        <p data-i18n="work.intro">We mainly work on complex problems in and around mortgages and banking, but our expertise is broader. We combine domain knowledge, software engineering, economics and econometrics — using data to understand what is happening and technology to build what is needed.</p>
+        <p data-i18n="work.intro">Building AI that does real work takes three things at once: engineering, a serious approach to data, and knowing the domain. We have all three in one team.</p>
       </div>
 
       <div class="work-grid three">
         <article class="panel">
           <div class="panel-index">01</div>
-          <h3 data-i18n="mortgage.title">Mortgages & Banking</h3>
-          <p data-i18n="mortgage.copy">We kennen de Nederlandse hypotheekketen van advies en aanvraag tot hypotheekacceptatie en beheer. Aan de bankzijde combineren we dit met ervaring in risk management en relevante Nederlandse en Europese regelgeving.</p>
+          <h3 data-i18n="ai.title">AI &amp; back-end engineering</h3>
+          <p data-i18n="ai.copy">We build the whole stack, but our strength is the part most developers avoid: the back end. Python services, pipelines that orchestrate several models and let them check each other, APIs that others build on, and the iOS apps and speech interfaces in front of them.</p>
           <ul>
-            <li data-i18n="mortgage.li1">Hypotheekadvies, aanvraag en acceptatie</li>
-            <li data-i18n="mortgage.li2">Documenten, controles en kredietbeoordeling</li>
-            <li data-i18n="mortgage.li3">Risk management en regelgeving</li>
+            <li data-i18n="ai.li1">Python back ends, pipelines and APIs</li>
+            <li data-i18n="ai.li2">Document AI, vision and information extraction</li>
+            <li data-i18n="ai.li3">Full stack: iOS, desktop, speech</li>
           </ul>
         </article>
 
         <article class="panel">
           <div class="panel-index">02</div>
-          <h3 data-i18n="tech.title">Software & AI</h3>
-          <p data-i18n="tech.copy">We ontwerpen en bouwen complete oplossingen: van modulaire backends en informatie-extractie uit documenten tot full-stack toepassingen, mobiele apps en AI-ondersteunde workflows.</p>
+          <h3 data-i18n="econ.title">Economics &amp; econometrics</h3>
+          <p data-i18n="econ.copy">Economics is about how people, firms and markets behave, and what that means for a decision. We work in two of its areas: extracting credible conclusions from data, and competition economics: how markets and platforms function, mergers and acquisitions, and the estimation of damages. We also help with compliance, and with using AI to make compliance better.</p>
           <ul>
-            <li data-i18n="tech.li1">Python, backends en full-stack development</li>
-            <li data-i18n="tech.li2">Document AI, informatie-extractie en automatisering</li>
-            <li data-i18n="tech.li3">Swift/iOS, desktop apps, AI en spraaktranscriptie</li>
+            <li data-i18n="econ.li1">Competition economics, platforms, mergers and acquisitions</li>
+            <li data-i18n="econ.li2">Damages estimation and econometric analysis</li>
+            <li data-i18n="econ.li3">Expert work, compliance and litigation support</li>
           </ul>
         </article>
 
         <article class="panel">
           <div class="panel-index">03</div>
-          <h3 data-i18n="consulting.title">Economics & Econometrics</h3>
-          <p data-i18n="consulting.copy">Not every hard problem requires software. We support companies, lawyers and courts with economics and econometrics: extracting credible conclusions from data and turning them into analysis that is clear, rigorous and defensible.</p>
+          <h3 data-i18n="fin.title">Finance &amp; banking</h3>
+          <p data-i18n="fin.copy">We know the Dutch mortgage chain from advice and application through underwriting, acceptance and servicing. On the lender side we add experience with risk management, Dutch and European regulation and compliance.</p>
           <ul>
-            <li data-i18n="consulting.li1">Competition economics en merger analysis</li>
-            <li data-i18n="consulting.li2">Damages estimation en econometrische analyse</li>
-            <li data-i18n="consulting.li3">Expert witness en ondersteuning in procedures</li>
+            <li data-i18n="fin.li1">Mortgage advice, applications and underwriting</li>
+            <li data-i18n="fin.li2">Documents, controls and credit assessment</li>
+            <li data-i18n="fin.li3">Risk management, regulation and compliance</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <section class="origin wrap">
-      <div class="origin-label">
-        <div class="eyebrow" data-i18n="origin.eyebrow">Waarom “Backoffice”?</div>
+    <section class="metrics wrap">
+      <div class="metrics-copy">
+        <div class="eyebrow" data-i18n="metrics.eyebrow">Econometrics</div>
+        <h2 data-i18n="metrics.title">Being serious about what data can tell you.</h2>
       </div>
-      <div class="origin-copy">
-        <h2 data-i18n="origin.title">Het begon met een hypotheek-backoffice die slimmer kon.</h2>
-        <p data-i18n="origin.copy1">Smart Backoffice Solutions is ontstaan vanuit de ontwikkeling van een modulaire pipeline voor informatie-extractie uit hypotheekdocumenten. Die technologie kan hypotheekadviseurs en ketens helpen aanvragen efficiënter voor te bereiden, en hypotheekaanbieders ondersteunen bij controles en de beoordeling en acceptatie van aanvragen.</p>
-        <p data-i18n="origin.copy2">From there, the company broadened: the same combination of domain knowledge, software engineering, economics and econometrics is valuable for many other complex problems as well.</p>
-      </div>
-    </section>
-
-    <section class="expertise wrap">
-      <div class="expertise-copy">
-        <div class="eyebrow" data-i18n="expertise.eyebrow">Domeinkennis telt</div>
-        <h2 data-i18n="expertise.title">Good solutions start with understanding the problem.</h2>
-      </div>
-      <div class="expertise-text">
-        <p data-i18n="expertise.copy1">Our strength is not only what we can build, but understanding the substance behind it — from mortgage processes and banking risk to economics and econometrics. We use data to establish what can actually be learned, measured and defended.</p>
-        <p data-i18n="expertise.copy2">Ons werk is bovendien stevig verankerd in academische expertise. Een van onze teamleden is hoogleraar aan Tilburg University.</p>
+      <div class="metrics-text">
+        <p data-i18n="metrics.copy1">Econometrics is the data side of economics: the discipline of extracting value from data without fooling yourself about what the data supports.</p>
+        <p data-i18n="metrics.copy2">The same discipline is what makes a smart back end work. Measure, validate, let models check each other, and only trust what has been confirmed. Solving hard problems with AI is, to a surprising degree, an econometrics problem.</p>
+        <p data-i18n="metrics.copy3">The Netherlands has a strong tradition here, going back to Jan Tinbergen. One of our team members is a full professor in the Department of Econometrics and Operations Research at Tilburg University.</p>
       </div>
     </section>
 
     <section class="approach wrap">
       <div class="approach-box">
         <div>
-          <div class="eyebrow" data-i18n="approach.eyebrow">Hoe we werken</div>
+          <div class="eyebrow" data-i18n="approach.eyebrow">How we work</div>
           <h2 data-i18n="approach.title">Small team. Short lines. Built around the problem.</h2>
         </div>
-        <p data-i18n="approach.copy">We are based in the Netherlands and work closely with our clients. We do not start from a standard package or a preferred technology. We work out what the problem actually requires and build or analyse accordingly — no more complicated than needed, but no simpler than the problem allows.</p>
+        <p data-i18n="approach.copy">We are based in the Netherlands and work closely with our clients. We do not start from a standard package or a favourite technology. We work out what the problem actually requires and build or analyse exactly that. From the outside it should look easy. That is the point.</p>
       </div>
     </section>
 
-    <section class="contact wrap">
+    <section id="contact" class="contact wrap">
       <div class="contact-card">
         <div>
-          <div class="eyebrow" data-i18n="contact.eyebrow">Een vraagstuk?</div>
-          <h2 data-i18n="contact.title">Vertel ons waar u aan werkt.</h2>
-          <p data-i18n="contact.copy">From mortgage processes to AI, software, economics and econometrics: if our combination of expertise could be useful, we would be happy to hear from you.</p>
+          <div class="eyebrow" data-i18n="contact.eyebrow">A problem to solve?</div>
+          <h2 data-i18n="contact.title">Tell us what you are working on.</h2>
+          <p data-i18n="contact.copy">From AI and software to economics, econometrics and compliance: if our combination of expertise could be useful, we would be happy to hear from you.</p>
         </div>
         <a class="contact-mail" href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl <span>↗</span></a>
       </div>
@@ -137,11 +185,16 @@
       <strong>Smart Backoffice Solutions B.V.</strong><br />
       Saal van Zwanenbergweg 11 · 5026 RM Tilburg · Nederland
     </div>
+    <div class="footer-links">
+      <a href="mortgage-documents/" data-i18n="footer.md">Mortgage Documents</a>
+      <a href="foodmoments/" data-i18n="footer.fm">Food Moments</a>
+    </div>
     <div class="footer-right">
       KvK 90141482 · BTW NL865221406B01
     </div>
   </footer>
 
   <script src="script.js"></script>
+  <script src="i18n.js"></script>
 </body>
 </html>
