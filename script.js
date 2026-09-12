@@ -50,6 +50,17 @@ const copy = {
       title: 'Klein team. Korte lijnen. Het vraagstuk staat centraal.',
       copy: 'We zijn gevestigd in Nederland en werken nauw met onze klanten samen. We beginnen niet met een standaardpakket of favoriete technologie. We bepalen wat het vraagstuk werkelijk vraagt en bouwen of analyseren precies dat — niet ingewikkelder dan nodig, maar ook niet eenvoudiger dan het probleem toelaat.'
     },
+    examples: {
+      eyebrow: 'Dit doen we',
+      title: 'Twee voorbeelden',
+      intro: 'Beide begonnen als een moeilijk vraagstuk en eindigden als iets dat gewoon werkt. Het ene is infrastructuur waar andere software mee praat; het andere is een app die je in je hand houdt.',
+      mdTitle: 'Mortgage Documents',
+      mdCopy: 'We bouwden een complete extractiepipeline voor de documenten die bij een hypotheekaanvraag horen: loonstroken, werkgeversverklaringen, legitimaties, koopovereenkomsten, taxatierapporten, DUO-overzichten en KVK-uittreksels. Er gaat een document in en ieder relevant veld komt terug als gestructureerde data, elk met een eigen betrouwbaarheidsscore. Het is een voorbeeld van een back-endoplossing als onderdeel van een backoffice: adviseurs bereiden een aanvraag sneller voor, geldverstrekkers krijgen de gegevens die ze nodig hebben voor hun controles, en de complexiteit blijft waar niemand ernaar hoeft te kijken.',
+      mdLink: 'Lees meer',
+      fmTitle: 'Food Moments',
+      fmCopy: 'Food Moments laat zien wat AI kan zodra het goed is ingebouwd. Fotografeer een maaltijd, zeg er eventueel iets bij, en de app vertelt wat erin zit: de gerechten, de voedingswaarden en hoe de dag tot nu toe optelt. Daarachter zit een krachtige AI-back-end die vision-modellen, spraakherkenning en barcodes combineert; ervoor zit een iOS-app die een plezier moet zijn om te gebruiken. Juist die combinatie is het punt.',
+      fmLink: 'Lees meer'
+    },
     contact: {
       eyebrow: 'Een vraagstuk?',
       title: 'Vertel ons waar u aan werkt.',
@@ -107,6 +118,17 @@ const copy = {
       title: 'Small team. Short lines. Built around the problem.',
       copy: 'We are based in the Netherlands and work closely with our clients. We do not start from a standard package or a preferred technology. We work out what the problem actually requires and build or analyse accordingly — no more complicated than needed, but no simpler than the problem allows.'
     },
+    examples: {
+      eyebrow: 'This is what we do',
+      title: 'Two examples',
+      intro: 'Both began as a hard problem and ended as something that simply works. One is infrastructure that other software talks to; the other is an app you hold in your hand.',
+      mdTitle: 'Mortgage Documents',
+      mdCopy: 'We built a complete extraction pipeline for the documents used in a mortgage application: payslips, employer declarations, identity documents, purchase agreements, appraisal reports, DUO statements and Chamber of Commerce extracts. A document goes in and every relevant field comes back as structured data, each with its own confidence score. It is an example of a back-end solution working as part of a back office: advisers prepare an application faster, lenders get the facts they need for their checks, and the complexity stays where nobody has to look at it.',
+      mdLink: 'Read more',
+      fmTitle: 'Food Moments',
+      fmCopy: 'Food Moments shows what AI can do once it is properly built in. Photograph a meal, say a few words if you like, and the app tells you what is in it: the dishes, the nutrients, and how the day adds up so far. Behind it sits a powerful AI back end combining vision models, speech recognition and barcode lookup; in front of it sits an iOS app that is meant to be a pleasure to use. That combination is the point.',
+      fmLink: 'Read more'
+    },
     contact: {
       eyebrow: 'A problem to solve?',
       title: 'Tell us what you are working on.',
@@ -163,6 +185,17 @@ const copy = {
       eyebrow: 'Wie wir arbeiten',
       title: 'Kleines Team. Kurze Wege. Das Problem steht im Mittelpunkt.',
       copy: 'Wir sind in den Niederlanden ansässig und arbeiten eng mit unseren Kunden zusammen. Wir beginnen weder mit einem Standardpaket noch mit einer bevorzugten Technologie. Wir bestimmen, was das Problem tatsächlich erfordert, und entwickeln oder analysieren genau das — nicht komplizierter als nötig, aber auch nicht einfacher, als das Problem erlaubt.'
+    },
+    examples: {
+      eyebrow: 'Das tun wir',
+      title: 'Zwei Beispiele',
+      intro: 'Beide begannen als schwieriges Problem und endeten als etwas, das einfach funktioniert. Das eine ist Infrastruktur, mit der andere Software spricht; das andere eine App, die man in der Hand hält.',
+      mdTitle: 'Mortgage Documents',
+      mdCopy: 'Wir haben eine vollständige Extraktions-Pipeline für die Dokumente eines Hypothekenantrags gebaut: Gehaltsabrechnungen, Arbeitgeberbescheinigungen, Ausweise, Kaufverträge, Wertgutachten, DUO-Übersichten und Handelsregisterauszüge. Ein Dokument geht hinein, und jedes relevante Feld kommt als strukturierte Daten zurück, jeweils mit eigenem Konfidenzwert. Es ist ein Beispiel für eine Back-end-Lösung als Teil eines Backoffice: Berater bereiten einen Antrag schneller vor, Kreditgeber erhalten die Angaben, die sie für ihre Kontrollen brauchen, und die Komplexität bleibt dort, wo niemand hinsehen muss.',
+      mdLink: 'Mehr erfahren',
+      fmTitle: 'Food Moments',
+      fmCopy: 'Food Moments zeigt, was KI kann, sobald sie richtig eingebaut ist. Fotografieren Sie eine Mahlzeit, sagen Sie ein paar Worte dazu, und die App sagt Ihnen, was drin ist: die Gerichte, die Nährwerte und wie sich der Tag bisher summiert. Dahinter steht ein leistungsfähiges KI-Back-end aus Vision-Modellen, Spracherkennung und Barcode-Abfrage; davor eine iOS-App, die Freude machen soll. Genau diese Kombination ist der Punkt.',
+      fmLink: 'Mehr erfahren'
     },
     contact: {
       eyebrow: 'Eine Fragestellung?',
