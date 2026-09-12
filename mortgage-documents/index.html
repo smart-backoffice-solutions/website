@@ -107,25 +107,27 @@
   </svg>
 
   <header class="site-header">
-    <a class="brand" href="../" aria-label="Smart Backoffice Solutions home">
-      <img src="../logo.png" alt="Smart Backoffice Solutions" />
-    </a>
-    <div class="header-right">
-      <nav class="site-nav" aria-label="Sections">
-        <a href="#modules" data-i18n="nav.modules">Modules</a>
-        <a href="#api" data-i18n="nav.api">API</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
-      </nav>
-      <nav class="lang-switch" aria-label="Language">
-        <button data-lang="nl">NL</button>
-        <button data-lang="en" class="active">EN</button>
-        <button data-lang="de">DE</button>
-      </nav>
+    <div class="wrap header-inner">
+      <a class="brand" href="../" aria-label="Smart Backoffice Solutions home">
+        <img src="../logo.png" alt="Smart Backoffice Solutions" />
+      </a>
+      <div class="header-right">
+        <nav class="site-nav" aria-label="Sections">
+          <a href="#api" data-i18n="nav.api">API</a>
+          <a href="#modules" data-i18n="nav.modules">Modules</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <nav class="lang-switch" aria-label="Language">
+          <button data-lang="nl">NL</button>
+          <button data-lang="en" class="active">EN</button>
+          <button data-lang="de">DE</button>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero wrap">
+    <section class="hero"><div class="wrap">
       <div class="eyebrow" data-i18n="hero.eyebrow">Mortgage Documents · API</div>
       <h1 data-i18n="hero.title">A document goes in. The facts come out.</h1>
       <p class="hero-copy" data-i18n="hero.lead">An API for Dutch mortgage documents. Submit one document, receive every relevant field as structured data, each with its own confidence score. Seven document types. It just works.</p>
@@ -133,26 +135,27 @@
         <a class="button primary" href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents" data-i18n="hero.cta">Talk to us</a>
         <a class="button ghost" href="#modules" data-i18n="hero.more">See the modules</a>
       </div>
+      </div>
     </section>
 
-    <section class="wrap hero-strip" aria-label="Comic: how it feels from the outside">
-      <div class="strip three">
-        <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="An adviser hands a payslip to the API and asks how long it will take.">
-          <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+    <section class="hero-strip" aria-label="Comic: how it feels from the outside">
+      <div class="wrap strip three">
+        <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="An adviser hands a payslip to the API and asks how long it will take.">
+          <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
           <use href="#c-adviser-hold" x="24" y="92" width="120" height="200"/>
           <use href="#c-api" x="212" y="160" width="132" height="132"/>
           <path d="M130 86 Q124 110 118 150" class="tail"/>
           <foreignObject x="22" y="14" width="220" height="74"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="strip.p1a">One payslip. How long will this take?</div></foreignObject>
         </svg>
-        <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="The API works on its own: it reads, cross-checks, votes and confirms.">
-          <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+        <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API works on its own: it reads, cross-checks, votes and confirms.">
+          <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
           <use href="#c-doc" x="158" y="70" width="44" height="58"/>
           <use href="#c-api" x="114" y="118" width="132" height="132"/>
           <circle cx="262" cy="96" r="4" class="fi"/><circle cx="278" cy="78" r="6" class="fi"/><circle cx="300" cy="56" r="8" class="fi"/>
           <text x="180" y="278" class="cap" data-i18n="strip.p2cap">reads · cross-checks · votes · confirms</text>
         </svg>
-        <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="The API reports 34 fields with confidence scores. The adviser asks whether that is it. The API says that is it.">
-          <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+        <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API reports 34 fields with confidence scores. The adviser asks whether that is it. The API says that is it.">
+          <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
           <use href="#c-api" x="18" y="160" width="132" height="132"/>
           <use href="#c-adviser" x="220" y="92" width="120" height="200"/>
           <path d="M108 86 Q112 130 110 176" class="tail"/>
@@ -165,7 +168,7 @@
       </div>
     </section>
 
-    <section id="api" class="how wrap">
+    <section id="api" class="how"><div class="wrap">
       <div class="section-intro">
         <div class="eyebrow" data-i18n="how.eyebrow">How it works</div>
         <h2 data-i18n="how.title">Three steps. Nothing to configure.</h2>
@@ -211,9 +214,10 @@
           <div class="code-cap" data-i18n="how.codecap">Trimmed example. Field names and formats are documented per module.</div>
         </div>
       </div>
+      </div>
     </section>
 
-    <section id="modules" class="modules wrap">
+    <section id="modules" class="band-surface modules"><div class="wrap">
       <div class="section-intro">
         <div class="eyebrow" data-i18n="modules.eyebrow">Modules</div>
         <h2 data-i18n="modules.title">Seven document types, each with its own module.</h2>
@@ -231,8 +235,8 @@
           <div class="module-meta"><span class="pill code" data-i18n="m1.code">wgv</span><span class="pill"><b data-i18n="m1.count">74</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
         </header>
         <div class="strip two">
-          <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="The underwriter looks at a form filled in with a blue pen, signed in black, with something crossed out.">
-            <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The underwriter looks at a form filled in with a blue pen, signed in black, with something crossed out.">
+            <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-under" x="14" y="92" width="120" height="200"/>
             <g class="ln"><path d="M186 112 h150 v176 h-150 z"/></g>
             <g class="thin"><path d="M200 132 h60 M200 146 h60 M200 160 h60 M200 174 h60 M200 202 h60 M200 216 h60 M200 244 h60"/></g>
@@ -242,8 +246,8 @@
             <path d="M124 88 Q118 118 108 150" class="tail"/>
             <foreignObject x="18" y="12" width="326" height="74"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m1.b1">Filled in with a blue pen. Signed with a black one. And something crossed out.</div></foreignObject>
           </svg>
-          <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="The API reports two ink colours and one strikethrough, both flagged, in fields 73 and 74.">
-            <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API reports two ink colours and one strikethrough, both flagged, in fields 73 and 74.">
+            <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-api" x="18" y="160" width="132" height="132"/>
             <use href="#c-under" x="220" y="92" width="120" height="200"/>
             <path d="M108 86 Q112 130 110 176" class="tail"/>
@@ -272,15 +276,15 @@
           <div class="module-meta"><span class="pill code" data-i18n="m2.code">legi</span><span class="pill"><b data-i18n="m2.count">17</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
         </header>
         <div class="strip two">
-          <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="The adviser hands over a black-and-white passport scan.">
-            <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The adviser hands over a black-and-white passport scan.">
+            <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-adviser" x="14" y="92" width="120" height="200"/>
             <g class="ln"><path d="M176 150 h160 v112 h-160 z"/><rect x="190" y="166" width="46" height="58" class="fg"/><path d="M250 172 h70 M250 186 h56 M250 200 h70 M250 214 h40" class="thin"/><path d="M190 240 h130 M190 250 h130" class="mrz"/></g>
             <path d="M124 78 Q118 114 108 150" class="tail"/>
             <foreignObject x="18" y="12" width="230" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m2.b1">Passport scan, as requested.</div></foreignObject>
           </svg>
-          <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="The API says the scan is black and white and the page with the perforated number is missing. The adviser will ask for a new one.">
-            <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API says the scan is black and white and the page with the perforated number is missing. The adviser will ask for a new one.">
+            <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-api" x="18" y="160" width="132" height="132"/>
             <use href="#c-adviser" x="220" y="92" width="120" height="200"/>
             <path d="M108 102 Q112 140 110 176" class="tail"/>
@@ -307,8 +311,8 @@
           <div class="module-meta"><span class="pill code" data-i18n="m3.code">kovk</span><span class="pill"><b data-i18n="m3.count">43</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
         </header>
         <div class="strip two">
-          <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="The underwriter reads the purchase price out loud, in digits and in words.">
-            <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The underwriter reads the purchase price out loud, in digits and in words.">
+            <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-under-hold" x="14" y="92" width="120" height="200"/>
             <g class="ln"><path d="M186 120 h150 v168 h-150 z"/></g>
             <g class="thin"><path d="M200 138 h120 M200 150 h120 M200 162 h80 M200 220 h120 M200 232 h120 M200 244 h60 M200 256 h120"/></g>
@@ -317,8 +321,8 @@
             <path d="M124 82 Q118 116 108 150" class="tail"/>
             <foreignObject x="18" y="12" width="326" height="68"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m3.b1">Purchase price € 407.000. In words: vierhonderdzevenduizend.</div></foreignObject>
           </svg>
-          <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="The API says digits and words agree with confidence 0.99. The underwriter asks whether it reads the words too. Always.">
-            <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API says digits and words agree with confidence 0.99. The underwriter asks whether it reads the words too. Always.">
+            <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-api" x="18" y="160" width="132" height="132"/>
             <use href="#c-under" x="220" y="92" width="120" height="200"/>
             <path d="M108 86 Q112 130 110 176" class="tail"/>
@@ -347,8 +351,8 @@
           <div class="module-meta"><span class="pill code" data-i18n="m4.code">ls</span><span class="pill"><b data-i18n="m4.count">34</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
         </header>
         <div class="strip two">
-          <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="The adviser stands next to three payslips that all look different.">
-            <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The adviser stands next to three payslips that all look different.">
+            <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-adviser" x="10" y="92" width="120" height="200"/>
             <g class="ln">
               <path d="M150 128 h64 v150 h-64 z"/><rect x="150" y="128" width="64" height="16" class="fi"/><path d="M158 156 h48 M158 168 h48 M158 180 h30 M158 204 h48 M158 216 h48 M158 240 h48" class="thin"/>
@@ -358,8 +362,8 @@
             <path d="M120 76 Q114 112 104 150" class="tail"/>
             <foreignObject x="18" y="12" width="326" height="62"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m4.b1">Every employer has its own payslip layout.</div></foreignObject>
           </svg>
-          <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="The API returns the same 34 fields every time, shown as a neat list with confidence bars.">
-            <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API returns the same 34 fields every time, shown as a neat list with confidence bars.">
+            <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-api" x="18" y="160" width="132" height="132"/>
             <g class="ln"><path d="M190 96 h150 v190 h-150 z"/></g>
             <g class="thin"><path d="M202 116 h50 M202 136 h40 M202 156 h56 M202 176 h44 M202 196 h52 M202 216 h36 M202 236 h48 M202 256 h44"/></g>
@@ -386,8 +390,8 @@
           <div class="module-meta"><span class="pill code" data-i18n="m5.code">taxrap</span><span class="pill"><b data-i18n="m5.count">112</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
         </header>
         <div class="spot-grid">
-          <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="The underwriter stands behind a sixty-page report. The API says the energy label is on page 12, the foundation on page 58, 112 fields in total.">
-            <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The underwriter stands behind a sixty-page report. The API says the energy label is on page 12, the foundation on page 58, 112 fields in total.">
+            <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-under" x="14" y="92" width="120" height="200"/>
             <g class="ln"><path d="M126 222 h96 v66 h-96 z"/><path d="M126 232 h96 M126 242 h96 M126 252 h96 M126 262 h96 M126 272 h96" class="thin"/><path d="M118 214 h96 v8 h-96 z"/></g>
             <use href="#c-api" x="218" y="160" width="132" height="132"/>
@@ -415,8 +419,8 @@
           <div class="module-meta"><span class="pill code" data-i18n="m6.code">duo</span><span class="pill"><b data-i18n="m6.count">51</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
         </header>
         <div class="spot-grid">
-          <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="The adviser asks about student debt. The API answers: two loans, with balance, interest and term for each.">
-            <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The adviser asks about student debt. The API answers: two loans, with balance, interest and term for each.">
+            <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-adviser" x="14" y="92" width="120" height="200"/>
             <g class="ln"><path d="M152 222 h64 v56 h-64 z"/><path d="M162 236 h44 M162 248 h30 M162 260 h44" class="thin"/><path d="M164 208 h64 v56 h-64 z"/><path d="M174 222 h44 M174 234 h30 M174 246 h44" class="thin"/></g>
             <use href="#c-api" x="218" y="160" width="132" height="132"/>
@@ -444,8 +448,8 @@
           <div class="module-meta"><span class="pill code" data-i18n="m7.code">kvk</span><span class="pill"><b data-i18n="m7.count">29</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
         </header>
         <div class="spot-grid">
-          <svg class="panel" viewBox="0 0 360 300" role="img" aria-label="The underwriter asks who may sign for the company. The API answers: three persons, each with their role.">
-            <rect x="1.5" y="1.5" width="357" height="297" class="frame"/>
+          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The underwriter asks who may sign for the company. The API answers: three persons, each with their role.">
+            <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-under" x="14" y="92" width="120" height="200"/>
             <g class="ln"><circle cx="156" cy="232" r="10"/><path d="M142 288 q0 -30 14 -30 q14 0 14 30 z"/><circle cx="186" cy="232" r="10"/><path d="M172 288 q0 -30 14 -30 q14 0 14 30 z"/><circle cx="216" cy="232" r="10"/><path d="M202 288 q0 -30 14 -30 q14 0 14 30 z"/></g>
             <use href="#c-api" x="218" y="160" width="132" height="132"/>
@@ -461,9 +465,10 @@
           </div>
         </div>
       </article>
+      </div>
     </section>
 
-    <section class="reliable wrap">
+    <section class="reliable"><div class="wrap">
       <div class="section-intro">
         <div class="eyebrow" data-i18n="reliable.eyebrow">What makes it reliable</div>
         <h2 data-i18n="reliable.title">Extract first. Verify. Normalise last.</h2>
@@ -484,9 +489,10 @@
           <li><span class="tier-bar low" style="--w: 60%"></span><span data-i18n="reliable.low">0.60 and below. Methods disagreed. Have a person look.</span></li>
         </ul>
       </div>
+      </div>
     </section>
 
-    <section class="who wrap">
+    <section class="who"><div class="wrap">
       <div class="section-intro">
         <div class="eyebrow" data-i18n="who.eyebrow">Who it is for</div>
         <h2 data-i18n="who.title">Advisers, intermediaries and lenders.</h2>
@@ -502,46 +508,50 @@
         </div>
       </div>
       <p class="who-note" data-i18n="who.note">The API processes one document at a time and returns what that document says. Comparing documents with each other and with the application stays in your process, where your business rules live.</p>
-    </section>
-
-    <section class="practical wrap">
-      <div class="practical-box">
-        <div>
-          <div class="eyebrow" data-i18n="practical.eyebrow">Practicalities</div>
-          <h2 data-i18n="practical.title">Built to be boring to integrate.</h2>
-        </div>
-        <ul>
-          <li data-i18n="practical.p1">Hosted in the European Union.</li>
-          <li data-i18n="practical.p2">One API key per client, sent as a header. Two keys are valid at any time, so a key rotation needs no maintenance window.</li>
-          <li data-i18n="practical.p3">Results are retrievable for a limited window after processing and then deleted. That limits what a leaked key would be worth.</li>
-          <li data-i18n="practical.p4">Volumes by agreement. Terms and a service level agreement are available on request.</li>
-        </ul>
       </div>
     </section>
 
-    <section id="contact" class="contact wrap">
-      <div class="contact-card">
-        <div>
-          <div class="eyebrow" data-i18n="contact.eyebrow">Try it</div>
-          <h2 data-i18n="contact.title">Want to see it with your own documents?</h2>
-          <p data-i18n="contact.copy">Send us a message. We set you up with a key and the documentation, and you can be processing documents the same week.</p>
+    <section class="band band-dark closing">
+      <div class="wrap">
+        <div class="practical-grid">
+          <div>
+            <div class="eyebrow" data-i18n="practical.eyebrow">Practicalities</div>
+            <h2 data-i18n="practical.title">Built to be boring to integrate.</h2>
+          </div>
+          <ul class="practical-list">
+            <li data-i18n="practical.p1">Hosted in the European Union.</li>
+            <li data-i18n="practical.p2">One API key per client, sent as a header. Two keys are valid at any time, so a key rotation needs no maintenance window.</li>
+            <li data-i18n="practical.p3">Results are retrievable for a limited window after processing and then deleted. That limits what a leaked key would be worth.</li>
+            <li data-i18n="practical.p4">Volumes by agreement. Terms and a service level agreement are available on request.</li>
+          </ul>
         </div>
-        <a class="contact-mail" href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents">info@smart-backoffice.nl <span>↗</span></a>
+
+        <div id="contact" class="contact-card">
+          <div>
+            <div class="eyebrow" data-i18n="contact.eyebrow">Try it</div>
+            <h3 data-i18n="contact.title">Want to see it with your own documents?</h3>
+            <p data-i18n="contact.copy">Send us a message. We set you up with a key and the documentation, and you can be processing documents the same week.</p>
+          </div>
+          <a class="contact-mail" href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents">info@smart-backoffice.nl <span>↗</span></a>
+        </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="footer wrap">
-    <div>
-      <strong>Smart Backoffice Solutions B.V.</strong><br />
-      Saal van Zwanenbergweg 11 · 5026 RM Tilburg · Nederland
-    </div>
-    <div class="footer-links">
-      <a href="../" data-i18n="footer.home">Smart Backoffice Solutions</a>
-      <a href="../foodmoments/" data-i18n="footer.fm">Food Moments</a>
-    </div>
-    <div class="footer-right">
-      KvK 90141482 · BTW NL865221406B01
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <strong>Smart Backoffice Solutions B.V.</strong><br />
+        Saal van Zwanenbergweg 11 · 5026 RM Tilburg · Nederland
+      </div>
+      <div class="footer-links">
+        <a href="../" data-i18n="footer.home">Smart Backoffice Solutions</a>
+        <a href="../foodmoments/" data-i18n="footer.fm">Food Moments</a>
+      </div>
+      <div class="footer-right">
+        KvK 90141482 · BTW NL865221406B01
+      </div>
     </div>
   </footer>
 
