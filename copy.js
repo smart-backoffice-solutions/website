@@ -1,5 +1,10 @@
-const copy = {
+// Landing page copy. tools/render-languages.mjs renders it into /, /nl/ and /de/.
+window.SBO_COPY = {
   nl: {
+    meta: {
+      title: 'Hypotheektechnologie, AI en econometrie - Smart Backoffice',
+      description: 'Team uit Tilburg voor hypotheekdocumenten, software en AI, en economische en econometrische analyses voor bedrijven, advocaten en rechtbanken.'
+    },
     hero: {
       eyebrow: 'Hypotheken × Technologie × Economie × Econometrie',
       title: 'Moeilijke vraagstukken. Passende oplossingen.',
@@ -68,6 +73,10 @@ const copy = {
     }
   },
   en: {
+    meta: {
+      title: 'Mortgage technology, AI and econometrics - Smart Backoffice',
+      description: 'Tilburg team for Dutch mortgage documents, software and AI, and economic and econometric analysis for companies, lawyers and courts.'
+    },
     hero: {
       eyebrow: 'Mortgages × Technology × Economics × Econometrics',
       title: 'Hard problems. Solutions that fit.',
@@ -136,6 +145,10 @@ const copy = {
     }
   },
   de: {
+    meta: {
+      title: 'Hypothekentechnologie, KI und Ökonometrie - Smart Backoffice',
+      description: 'Team aus Tilburg für niederländische Hypothekendokumente, Software und KI sowie ökonometrische Analysen für Unternehmen, Kanzleien und Gerichte.'
+    },
     hero: {
       eyebrow: 'Hypotheken × Technologie × Ökonomie × Ökonometrie',
       title: 'Komplexe Fragen. Passende Lösungen.',
@@ -204,23 +217,3 @@ const copy = {
     }
   }
 };
-
-function setLanguage(lang) {
-  const selected = copy[lang] ? lang : 'en';
-  document.documentElement.lang = selected;
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const [section, key] = el.dataset.i18n.split('.');
-    el.textContent = copy[selected][section][key];
-  });
-  document.querySelectorAll('[data-lang]').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === selected);
-  });
-  localStorage.setItem('sbo-lang', selected);
-}
-
-document.querySelectorAll('[data-lang]').forEach(btn => {
-  btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
-});
-
-const stored = localStorage.getItem('sbo-lang');
-setLanguage(stored || 'en');

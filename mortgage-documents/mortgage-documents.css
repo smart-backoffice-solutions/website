@@ -44,7 +44,7 @@
 .hero .button { border-radius: 999px; padding-inline: 22px; }
 
 .hero .button:focus-visible,
-.lang-switch button:focus-visible,
+.lang-switch a:focus-visible,
 .contact-mail-line a:focus-visible,
 .footer-made-by a:focus-visible {
   outline: 3px solid color-mix(in srgb, var(--accent) 45%, transparent);
@@ -232,7 +232,7 @@
   .brand { margin-left: 0; }
   .brand img { width: min(260px, 56vw); }
   .lang-switch { gap: 0; }
-  .lang-switch button { padding-inline: 6px; }
+  .lang-switch a { padding-inline: 6px; }
   .strip.three, .strip.two { grid-template-columns: 1fr; max-width: 420px; }
   .who-grid, .confidence, .practical-grid { grid-template-columns: 1fr; }
   .code-card { padding: 22px 18px 18px; }

@@ -1,6 +1,10 @@
-// Mortgage Documents page copy. The mechanism that applies it lives in ../i18n.js.
+// Mortgage Documents page copy. tools/render-languages.mjs renders it into /mortgage-documents/, /nl/mortgage-documents/ and /de/mortgage-documents/.
 window.SBO_COPY = {
   en: {
+    meta: {
+      title: 'Dutch mortgage document extraction API - Smart Backoffice',
+      description: 'API for Dutch payslips, employer declarations, IDs, purchase agreements, appraisal reports, DUO and KVK extracts. Every field has a confidence score.'
+    },
     nav: { home: 'Smart Backoffice Solutions', modules: 'Modules', api: 'API', contact: 'Contact' },
     hero: {
       eyebrow: 'Mortgage Documents · API',
@@ -145,6 +149,10 @@ window.SBO_COPY = {
   },
 
   nl: {
+    meta: {
+      title: 'Hypotheekdocumenten uitlezen via API - Smart Backoffice',
+      description: 'API voor loonstroken, werkgeversverklaringen, ID\'s, koopovereenkomsten, taxatierapporten, DUO- en KVK-uittreksels. Elk veld met betrouwbaarheidsscore.'
+    },
     nav: { home: 'Smart Backoffice Solutions', modules: 'Modules', api: 'API', contact: 'Contact' },
     hero: {
       eyebrow: 'Mortgage Documents · API',
@@ -289,6 +297,10 @@ window.SBO_COPY = {
   },
 
   de: {
+    meta: {
+      title: 'Hypothekendokumente per API auslesen - Smart Backoffice',
+      description: 'API für Gehaltsabrechnungen, Arbeitgeberbescheinigungen, Ausweise, Kaufverträge, Wertgutachten, DUO- und KVK-Auszüge. Jedes Feld mit Konfidenzwert.'
+    },
     nav: { home: 'Smart Backoffice Solutions', modules: 'Module', api: 'API', contact: 'Kontakt' },
     hero: {
       eyebrow: 'Mortgage Documents · API',
