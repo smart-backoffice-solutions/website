@@ -1,3 +1,25 @@
+/* Tokens this page needs on top of the site stylesheet, in the site's own palette. */
+:root {
+  --sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --ink-2: #373737;
+  --line-strong: #bdbdbd;
+  --dark: #171717;
+  --dark-2: #1f1f1f;
+  --dark-line: #333333;
+  --dark-text: #bdbdbd;
+  --measure: 62ch;
+  --section: 100px;
+  --r: 14px;
+  --r-lg: 20px;
+}
+
+/* Full-width bands, matching the landing page's section rhythm. */
+.band { padding: var(--section) 0; }
+.band-surface { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.band-dark { background: var(--dark); color: #fff; }
+.band-dark h2, .band-dark h3 { color: #fff; }
+
 /* Mortgage Documents. Builds on ../styles.css; adds the comic framing and the module layout. */
 
 .sheet { position: absolute; width: 0; height: 0; overflow: hidden; }
@@ -105,10 +127,8 @@
 .who-note { margin: 28px 0 0; color: var(--muted); font-size: 15px; max-width: var(--measure); padding-left: 20px; border-left: 2px solid var(--accent); }
 
 /* ---------- Practicalities (dark) ---------- */
-.practical-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
-.practical-grid h2 { max-width: 14ch; }
 .practical-list { list-style: none; margin: 0; padding: 0; }
-.practical-list li { color: var(--dark-text); font-size: 16px; padding: 16px 0; border-bottom: 1px solid var(--dark-line); display: flex; gap: 12px; align-items: baseline; }
+.practical-list li { color: #bdbdbd; font-size: 15.5px; padding: 14px 0; border-bottom: 1px solid #333; display: flex; gap: 12px; align-items: baseline; }
 .practical-list li:first-child { padding-top: 0; }
 .practical-list li::before { content: "→"; color: var(--accent); flex: none; }
 
@@ -132,5 +152,11 @@
   .pipeline { grid-template-columns: 1fr; }
   .confidence { padding: 28px 24px 30px; gap: 28px; }
   .tiers li { grid-template-columns: 100px 1fr; gap: 16px; }
-  .practical-grid { gap: 32px; }
 }
+
+@media (max-width: 760px) {
+  :root { --section: 64px; }
+}
+
+/* The practicalities list is taller than its heading, so the box reads better from the top. */
+.approach-box { align-items: start; }

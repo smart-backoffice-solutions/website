@@ -7,7 +7,7 @@
   <title>Mortgage Documents · Smart Backoffice Solutions</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Patrick+Hand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="mortgage-documents.css" />
   <link rel="icon" type="image/png" href="../favicon.png">
@@ -106,27 +106,18 @@
     </defs>
   </svg>
 
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="../" aria-label="Smart Backoffice Solutions home">
-        <img src="../logo.png" alt="Smart Backoffice Solutions" />
-      </a>
-      <div class="header-right">
-        <nav class="site-nav" aria-label="Sections">
-          <a href="#api" data-i18n="nav.api">API</a>
-          <a href="#modules" data-i18n="nav.modules">Modules</a>
-          <a href="#contact" data-i18n="nav.contact">Contact</a>
-        </nav>
-        <nav class="lang-switch" aria-label="Language">
-          <button data-lang="nl">NL</button>
-          <button data-lang="en" class="active">EN</button>
-          <button data-lang="de">DE</button>
-        </nav>
-      </div>
-    </div>
+  <header class="site-header" id="top">
+    <a class="brand" href="../" aria-label="Smart Backoffice Solutions home">
+      <img src="../logo.png" alt="Smart Backoffice Solutions" />
+    </a>
+    <nav class="lang-switch" aria-label="Language">
+      <button data-lang="nl">NL</button>
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="de">DE</button>
+    </nav>
   </header>
 
-  <main id="top">
+  <main>
     <section class="hero"><div class="wrap">
       <div class="eyebrow" data-i18n="hero.eyebrow">Mortgage Documents · API</div>
       <h1 data-i18n="hero.title">A document goes in. The facts come out.</h1>
@@ -511,47 +502,39 @@
       </div>
     </section>
 
-    <section class="band band-dark closing">
-      <div class="wrap">
-        <div class="practical-grid">
-          <div>
-            <div class="eyebrow" data-i18n="practical.eyebrow">Practicalities</div>
-            <h2 data-i18n="practical.title">Built to be boring to integrate.</h2>
-          </div>
-          <ul class="practical-list">
-            <li data-i18n="practical.p1">Hosted in the European Union.</li>
-            <li data-i18n="practical.p2">One API key per client, sent as a header. Two keys are valid at any time, so a key rotation needs no maintenance window.</li>
-            <li data-i18n="practical.p3">Results are retrievable for a limited window after processing and then deleted. That limits what a leaked key would be worth.</li>
-            <li data-i18n="practical.p4">Volumes by agreement. Terms and a service level agreement are available on request.</li>
-          </ul>
+    <section class="approach wrap">
+      <div class="approach-box">
+        <div>
+          <div class="eyebrow" data-i18n="practical.eyebrow">Practicalities</div>
+          <h2 data-i18n="practical.title">Built to be boring to integrate.</h2>
         </div>
+        <ul class="practical-list">
+          <li data-i18n="practical.p1">Hosted in the European Union.</li>
+          <li data-i18n="practical.p2">One API key per client, sent as a header. Two keys are valid at any time, so a key rotation needs no maintenance window.</li>
+          <li data-i18n="practical.p3">Results are retrievable for a limited window after processing and then deleted. That limits what a leaked key would be worth.</li>
+          <li data-i18n="practical.p4">Volumes by agreement. Terms and a service level agreement are available on request.</li>
+        </ul>
+      </div>
+    </section>
 
-        <div id="contact" class="contact-card">
-          <div>
-            <div class="eyebrow" data-i18n="contact.eyebrow">Try it</div>
-            <h3 data-i18n="contact.title">Want to see it with your own documents?</h3>
-            <p data-i18n="contact.copy">Send us a message. We set you up with a key and the documentation, and you can be processing documents the same week.</p>
-          </div>
-          <a class="contact-mail" href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents">info@smart-backoffice.nl <span>↗</span></a>
-        </div>
+    <section id="contact" class="contact wrap">
+      <div class="contact-card">
+        <div class="eyebrow" data-i18n="contact.eyebrow">Try it</div>
+        <h2 data-i18n="contact.title">Want to see it with your own documents?</h2>
+        <p data-i18n="contact.copy">Send us a message. We set you up with a key and the documentation, and you can be processing documents the same week.</p>
+        <p class="contact-mail-line"><a href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents">info@smart-backoffice.nl</a></p>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <div>
-        <strong>Smart Backoffice Solutions B.V.</strong><br />
-        Saal van Zwanenbergweg 11 · 5026 RM Tilburg · Nederland
-      </div>
-      <div class="footer-links">
-        <a href="../" data-i18n="footer.home">Smart Backoffice Solutions</a>
-        <a href="../foodmoments/" data-i18n="footer.fm">Food Moments</a>
-      </div>
-      <div class="footer-right">
-        KvK 90141482 · BTW NL865221406B01
-      </div>
+  <footer class="footer wrap">
+    <div>
+      <strong>Smart Backoffice Solutions B.V.</strong><br />
+      Saal van Zwanenbergweg 11 · 5026 RM Tilburg · Nederland
+    </div>
+    <div class="footer-right">
+      KvK 90141482 · BTW NL865221406B01
     </div>
   </footer>
 
