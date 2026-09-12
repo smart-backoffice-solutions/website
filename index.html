@@ -3,25 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Smart Backoffice Solutions B.V. builds the back ends that make AI do real work: several models combined, checked against each other and wired into processes that have to be right. Dutch mortgage and banking domain knowledge, engineering, econometrics and competition economics, in one small team in Tilburg." />
+  <meta name="description" content="Smart Backoffice Solutions B.V. builds back offices where AI does the work: several AI systems combined, checked and wired into real processes. Engineering, economics, econometrics and finance domain knowledge in one small team in Tilburg." />
   <title>Smart Backoffice Solutions B.V.</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-  <header class="masthead">
-    <div class="shell masthead-in">
-      <a class="wordmark" href="#top" aria-label="Smart Backoffice Solutions home">
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Smart Backoffice Solutions home">
         <img src="logo.png" alt="Smart Backoffice Solutions" />
       </a>
-      <div class="masthead-right">
-        <nav class="mainnav" aria-label="Sections">
-          <a href="#built" data-i18n="nav.build">What we built</a>
-          <a href="#know" data-i18n="nav.expertise">What we know</a>
-          <a href="#start" data-i18n="nav.approach">Working with us</a>
+      <div class="header-right">
+        <nav class="site-nav" aria-label="Sections">
+          <a href="#work" data-i18n="nav.build">Examples</a>
+          <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+          <a href="#approach" data-i18n="nav.approach">How we work</a>
           <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
-        <nav class="langs" aria-label="Language">
+        <nav class="lang-switch" aria-label="Language">
           <button data-lang="nl">NL</button>
           <button data-lang="en" class="active">EN</button>
           <button data-lang="de">DE</button>
@@ -31,288 +33,275 @@
   </header>
 
   <main id="top">
-    <section class="shell hero">
-      <div class="hero-text">
-        <h1 data-i18n="hero.title">AI can do far more than chat. We make it do the work.</h1>
-        <p class="lead" data-i18n="hero.lead1">Most people meet AI as an assistant they talk to. That is the front of it. The work starts when several models are combined, made to check each other, and wired into a process that has to be right.</p>
-        <p class="lead sub" data-i18n="hero.lead2">We build those back ends, and the domain knowledge that tells them what right means. Submit a payslip and every field comes back, each one carrying how far it can be trusted.</p>
-        <div class="actions">
-          <a class="btn btn-solid" href="mailto:info@smart-backoffice.nl" data-i18n="hero.cta">Get in touch</a>
-          <a class="btn btn-line" href="#built" data-i18n="hero.more">See what we built</a>
-        </div>
-      </div>
-
-      <figure class="readout">
-        <figcaption class="readout-head">
-          <span class="doc" data-i18n="readout.doc">payslip.pdf</span>
-          <span class="count" data-i18n="readout.count">34 fields returned</span>
-        </figcaption>
-        <ol class="readout-rows">
-          <li class="readout-row" style="--i:0">
-            <span class="k" data-i18n="readout.k1">Employee</span><span class="v">De Vries</span>
-            <span class="meter"><i style="--v:98%"></i></span><span class="c">0.98</span>
-          </li>
-          <li class="readout-row" style="--i:1">
-            <span class="k" data-i18n="readout.k2">Employer</span><span class="v">Voorbeeld B.V.</span>
-            <span class="meter"><i style="--v:97%"></i></span><span class="c">0.97</span>
-          </li>
-          <li class="readout-row" style="--i:2">
-            <span class="k" data-i18n="readout.k3">Part-time factor</span><span class="v">0,80</span>
-            <span class="meter"><i style="--v:99%"></i></span><span class="c">0.99</span>
-          </li>
-          <li class="readout-row" style="--i:3">
-            <span class="k" data-i18n="readout.k4">Gross salary</span><span class="v">4.667,00</span>
-            <span class="meter"><i style="--v:97%"></i></span><span class="c">0.97</span>
-          </li>
-          <li class="readout-row" style="--i:4">
-            <span class="k" data-i18n="readout.k5">Net paid</span><span class="v">3.892,50</span>
-            <span class="meter"><i style="--v:99%"></i></span><span class="c">0.99</span>
-          </li>
-          <li class="readout-row" style="--i:5">
-            <span class="k" data-i18n="readout.k6">Individual choice budget</span><span class="v">125,50</span>
-            <span class="meter low"><i style="--v:62%"></i></span><span class="c">0.62</span>
-          </li>
-        </ol>
-        <p class="readout-foot" data-i18n="readout.note">Every value is searched for in the document text, compared against the other methods that read it, and returned with a confidence. A field the methods disagree on says so.</p>
-      </figure>
-    </section>
-
-    <section class="shell range">
-      <p data-i18n="range.line">Smart Backoffice Solutions works on Dutch mortgage and banking processes, information extraction from documents, iOS and desktop applications, and on economic, econometric and competition analysis for companies, lawyers and courts. Based in Tilburg, the Netherlands.</p>
-    </section>
-
-    <section class="band band-deep">
-      <div class="shell">
-      <div class="split">
-        <div class="split-title">
-          <p class="kicker" data-i18n="ends.kicker">Why we are called Backoffice</p>
-          <h2 data-i18n="ends.title">The smart part happens where you don’t see it.</h2>
-        </div>
-        <div>
-          <div class="prose">
-            <p data-i18n="ends.copy1">The app, the website, the whole software package someone works with is the front end. What it can offer them depends entirely on the back end behind it. The smarter the back end, the more the front end can do and the better the experience for the person using it.</p>
-            <p data-i18n="ends.copy2">In the back end, vision models read documents and photos, language models interpret them, OCR confirms what was read, and checks and domain rules catch what a single model gets wrong. Combine those well and the front end can stay simple: one call, one photo, one question.</p>
-            <p data-i18n="ends.copy3">We build both ends, and the back end is the unusual part. Most developers work on the front end. This company began by building a back office for mortgage documents that could work smarter, and the same combination of domain knowledge, engineering, economics and econometrics has since proved useful well beyond it.</p>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <div class="eyebrow" data-i18n="hero.eyebrow">Economics × Econometrics × Banking × AI engineering</div>
+          <h1 data-i18n="hero.title">A combination of skills you rarely find in one team.</h1>
+          <p class="hero-copy" data-i18n="hero.copy1">We work across economics and econometrics, competition economics and marketing, the Dutch mortgage and banking sector with its risk management and compliance, and full-stack software engineering with the emphasis on the back end. Few teams cover that range.</p>
+          <p class="hero-copy secondary" data-i18n="hero.copy2">The combination is the point. It lets us judge a problem from the business side and build the answer on the technical side, with nothing lost in between.</p>
+          <p class="hero-copy secondary" data-i18n="hero.copy3">What we do with it runs from economic and econometric advice, competition analysis and compliance work, through to full-stack development in which the back end carries real domain knowledge. Often that involves AI. Never technology for its own sake.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="mailto:info@smart-backoffice.nl" data-i18n="hero.cta">Get in touch</a>
+            <a class="button ghost" href="#work" data-i18n="hero.more">Examples</a>
           </div>
         </div>
-      </div>
-          <div class="ends">
-            <div class="front">
-              <h3 data-i18n="ends.frontT">Front end</h3>
-              <p data-i18n="ends.frontC">The app, the website, the screen in the process. What someone sees and works with.</p>
-            </div>
-            <div class="back">
-              <h3 data-i18n="ends.backT">Back end</h3>
-              <p data-i18n="ends.backC">Models, checks, rules and data working together out of sight. What decides how much the front end can offer, and whether its answers hold up.</p>
-            </div>
-          </div>
+
+        <figure class="diagram" aria-label="Diagram: documents, photos and speech go into a back office of vision models, language models, OCR and domain rules, which cross-check and vote, and a structured result with a confidence per field comes out.">
+          <svg viewBox="-12 6 600 430" class="dg">
+            <defs>
+              <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="dg-arrow"/></marker>
+            </defs>
+            <!-- inputs -->
+            <g class="dg-input">
+              <rect x="0" y="52" width="132" height="70" rx="12"/>
+              <path d="M20 70 h16 l8 8 v22 h-24 z M36 70 v8 h8" class="dg-icon"/>
+              <path d="M25 88 h14 M25 94 h14" class="dg-icon thin"/>
+              <text x="58" y="92" class="dg-label" data-i18n="dg.in1">Documents</text>
+            </g>
+            <g class="dg-input">
+              <rect x="0" y="185" width="132" height="70" rx="12"/>
+              <path d="M18 204 h28 v26 h-28 z" class="dg-icon"/>
+              <path d="M20 226 l8 -9 l6 6 l6 -8 l8 11" class="dg-icon thin"/>
+              <circle cx="39" cy="210" r="2.2" class="dg-icon thin"/>
+              <text x="58" y="225" class="dg-label" data-i18n="dg.in2">Photos</text>
+            </g>
+            <g class="dg-input">
+              <rect x="0" y="318" width="132" height="70" rx="12"/>
+              <path d="M20 356 v-8 M27 361 v-18 M34 366 v-28 M41 360 v-16 M48 357 v-10" class="dg-icon wave"/>
+              <text x="58" y="358" class="dg-label" data-i18n="dg.in3">Speech</text>
+            </g>
+            <!-- flows in -->
+            <path d="M132 87 C166 87 158 220 190 220" class="dg-flow"/>
+            <path d="M132 220 L190 220" class="dg-flow"/>
+            <path d="M132 353 C166 353 158 220 190 220" class="dg-flow"/>
+            <!-- back office box -->
+            <rect x="190" y="24" width="222" height="392" rx="18" class="dg-box"/>
+            <text x="301" y="52" class="dg-boxlabel" data-i18n="dg.box">Back office</text>
+            <g class="dg-node"><rect x="208" y="72" width="186" height="42" rx="9"/><circle cx="224" cy="93" r="4" class="dg-led"/><text x="238" y="98" data-i18n="dg.n1">Vision model</text></g>
+            <g class="dg-node"><rect x="208" y="126" width="186" height="42" rx="9"/><circle cx="224" cy="147" r="4" class="dg-led d1"/><text x="238" y="152" data-i18n="dg.n2">Language model</text></g>
+            <g class="dg-node"><rect x="208" y="180" width="186" height="42" rx="9"/><circle cx="224" cy="201" r="4" class="dg-led d2"/><text x="238" y="206" data-i18n="dg.n3">OCR</text></g>
+            <g class="dg-node"><rect x="208" y="234" width="186" height="42" rx="9"/><circle cx="224" cy="255" r="4" class="dg-led d3"/><text x="238" y="260" data-i18n="dg.n4">Domain rules</text></g>
+            <path d="M301 276 L301 322" class="dg-flow in-box" marker-end="url(#arr)"/>
+            <g class="dg-node vote"><rect x="208" y="326" width="186" height="54" rx="9"/><text x="301" y="358" class="center vote-label" data-i18n="dg.n5">Cross-check · vote · confirm</text></g>
+            <!-- flow out -->
+            <path d="M412 220 L448 220" class="dg-flow" marker-end="url(#arr)"/>
+            <!-- output -->
+            <g class="dg-output">
+              <rect x="448" y="118" width="108" height="204" rx="12"/>
+              <path d="M462 146 h30 M462 172 h24 M462 198 h34 M462 224 h22 M462 250 h30 M462 276 h26" class="dg-fieldline"/>
+              <rect x="504" y="141" width="40" height="7" rx="2" class="dg-bar"/>
+              <rect x="504" y="167" width="38" height="7" rx="2" class="dg-bar"/>
+              <rect x="504" y="193" width="40" height="7" rx="2" class="dg-bar"/>
+              <rect x="504" y="219" width="33" height="7" rx="2" class="dg-bar"/>
+              <rect x="504" y="245" width="40" height="7" rx="2" class="dg-bar"/>
+              <rect x="504" y="271" width="26" height="7" rx="2" class="dg-bar low"/>
+              <text x="502" y="345" class="dg-label center" data-i18n="dg.out">Structured result</text>
+              <text x="502" y="364" class="dg-sub center" data-i18n="dg.conf">confidence per field</text>
+            </g>
+          </svg>
+        </figure>
       </div>
     </section>
 
-    <section id="built" class="band band-ledger">
-      <div class="shell">
-        <div class="split" style="margin-bottom: 18px">
-          <div class="split-title">
-            <p class="kicker" data-i18n="built.kicker">In use today</p>
-            <h2 data-i18n="built.title">Two things we built, at opposite ends of the spectrum.</h2>
-          </div>
-          <div class="prose">
-            <p data-i18n="built.intro">One is an interface for other software, used inside a regulated process. The other is a consumer app that has to feel effortless. Both are mostly back end.</p>
+    <section class="signal" aria-label="Expertise">
+      <div class="wrap signal-items">
+        <span data-i18n="signal.s1">AI</span><span data-i18n="signal.s2">Back-end</span><span data-i18n="signal.s3">Full stack</span><span data-i18n="signal.s4">Document AI</span><span data-i18n="signal.s5">iOS</span><span data-i18n="signal.s6">Economics</span><span data-i18n="signal.s7">Econometrics</span><span data-i18n="signal.s8">Competition economics</span><span data-i18n="signal.s9">Marketing</span><span data-i18n="signal.s10">Compliance</span><span data-i18n="signal.s11">Dutch mortgages</span>
+      </div>
+    </section>
+
+    <section class="band band-dark office">
+      <div class="wrap office-grid">
+        <div class="office-lead">
+          <div class="eyebrow" data-i18n="office.eyebrow">Why “Backoffice”?</div>
+          <h2 data-i18n="office.title">The smart part happens where you don’t see it.</h2>
+          <div class="compare">
+            <div class="compare-card">
+              <div class="compare-label" data-i18n="office.front">Front end</div>
+              <p data-i18n="office.frontc">The app, the website, the screen in the process. What the user sees and works with.</p>
+            </div>
+            <div class="compare-card strong">
+              <div class="compare-label" data-i18n="office.back">Back end</div>
+              <p data-i18n="office.backc">Models, checks, rules and data working together out of sight. What decides how much the front end can offer.</p>
+            </div>
           </div>
         </div>
+        <div class="office-copy">
+          <p data-i18n="office.copy1">The app, the website, the whole software package someone works with is the front end. What that front end can offer depends entirely on the back end behind it. The smarter the back end, the more the front end can do and the better the experience for the person using it.</p>
+          <p data-i18n="office.copy2">In the back end, vision models read documents and photos, language models interpret them, OCR confirms what was read, and checks and domain rules catch what a single model gets wrong. Combine those well and the front end can stay simple: one call, one photo, one question. Everything else happens behind it.</p>
+          <p data-i18n="office.copy3">We build both ends, and the back end is where we are unusual. Most developers work on the front end. The hard part, combining several models, letting them check each other and wiring them into a real process, happens out of sight.</p>
+        <p data-i18n="office.copy4">Smart Backoffice Solutions grew out of the development of a modular information-extraction pipeline for mortgage documents: a back office that could work smarter. From there the company broadened. The same combination of domain knowledge, software engineering, economics and econometrics turned out to be valuable for many other complex problems as well.</p>
+        </div>
+      </div>
+    </section>
 
-        <div class="builds">
-          <article class="build">
-            <div class="build-side">
-              <p class="role" data-i18n="md.role">API for Dutch mortgage documents</p>
-              <h3 data-i18n="md.title">Mortgage Documents</h3>
+    <section id="work" class="band band-surface live">
+      <div class="wrap">
+        <div class="section-intro">
+          <div class="eyebrow" data-i18n="live.eyebrow">Examples</div>
+          <h2 data-i18n="live.title">Two examples of what that combination produces.</h2>
+          <p data-i18n="live.intro">Different users, different technology under the hood, the same idea: a lot happens in the back office so that very little is asked of the person in front.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product">
+            <div class="product-visual api" aria-hidden="true">
+              <span class="api-in">PDF</span>
+              <span class="api-arrow">→</span>
+              <span class="api-box">API</span>
+              <span class="api-arrow">→</span>
+              <span class="api-out">{ }</span>
             </div>
-            <div>
-              <div class="prose">
-                <p data-i18n="md.copy1">Submit one document and receive every relevant field as structured data, each with its own confidence. Payslips, employer declarations, identity documents, purchase agreements, appraisal reports, DUO statements and Chamber of Commerce extracts.</p>
-                <p data-i18n="md.copy2">It helps advisers and intermediaries prepare a complete application faster, and supports lenders with controls, assessment and acceptance. Each document type has its own module, because a payslip that looks different at every employer needs different treatment from a standardised form.</p>
-              </div>
-              <ul class="specs">
-                <li><b>7</b><span data-i18n="md.s1l">document types</span></li>
-                <li><b>360</b><span data-i18n="md.s2l">fields defined across them</span></li>
-                <li><b>1</b><span data-i18n="md.s3l">call per document</span></li>
-              </ul>
-              <a class="link buildlink" href="mortgage-documents/" data-i18n="md.link">How it works</a>
+            <div class="product-label" data-i18n="md.label">API for Dutch mortgage documents</div>
+            <h3 data-i18n="md.title">Mortgage Documents</h3>
+            <p data-i18n="md.copy">Submit a mortgage document and receive every relevant field back as structured data, each with its own confidence score. One call per document, and it just works.</p>
+            <p data-i18n="md.copy2">The technology helps mortgage advisers and intermediaries prepare applications more efficiently, and supports lenders with controls, assessment and acceptance. Payslips, employer declarations, identity documents, purchase agreements, appraisal reports, DUO statements and KVK extracts.</p>
+            <div class="facts">
+              <div><b>7</b><span data-i18n="md.f1">document types</span></div>
+              <div><b>360</b><span data-i18n="md.f2">fields extracted</span></div>
+              <div><b>1</b><span data-i18n="md.f3">call per document</span></div>
             </div>
+            <a class="product-link" href="mortgage-documents/"><span data-i18n="md.link">How it works</span> <span class="arrow">→</span></a>
           </article>
 
-          <article class="build">
-            <div class="build-side">
-              <img class="appicon" src="foodmoments/appicon.png" alt="" width="76" height="76" />
-              <p class="role" data-i18n="fm.role">iPhone app</p>
-              <h3 data-i18n="fm.title">Food Moments</h3>
-              <span class="storeline"><svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span data-i18n="fm.store">Coming soon to the App Store</span></span>
+          <article class="product">
+            <div class="product-visual app">
+              <img class="appicon" src="foodmoments/appicon.png" alt="Food Moments app icon" width="88" height="88" />
+              <span class="badge"><svg class="applemark" viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span data-i18n="fm.badge">Coming soon to the App Store</span></span>
             </div>
-            <div>
-              <div class="prose">
-                <p data-i18n="fm.copy1">Photograph what you eat, say a few words if you like, and see what is in it. It reads like a personal feed rather than a food ledger, which is the whole point: almost no effort in, a lot of understanding out.</p>
-                <p data-i18n="fm.copy2">Underneath it are vision models reading up to ten photos of one meal, speech transcription that streams in while you talk, nutrition labels and barcodes read straight from the shot, and the context of your recent meals so that “my usual shake” resolves to yours. Estimates carry a confidence here too.</p>
-              </div>
-              <ul class="specs">
-                <li><b>6</b><span data-i18n="fm.s1l">languages</span></li>
-                <li><b>10</b><span data-i18n="fm.s2l">photos per meal</span></li>
-                <li><b>0</b><span data-i18n="fm.s3l">trackers or ads</span></li>
-              </ul>
-              <a class="link buildlink" href="foodmoments/" data-i18n="fm.link">About the app</a>
-            </div>
+            <div class="product-label" data-i18n="fm.label">iOS app</div>
+            <h3 data-i18n="fm.title">Food Moments</h3>
+            <p data-i18n="fm.copy">Take a photo of what you eat, say a few words if you like, and see what is in it. It feels like a personal feed, not a food ledger. Underneath, vision models, speech recognition, barcode lookup and the context of your recent meals do the work.</p>
+            <p data-i18n="fm.copy2">Photos come first: up to ten per meal, with nutrition labels and barcodes read from the shot. Dictate a note and it is transcribed while you talk. The result is a per-dish breakdown with an honest confidence rating, and a day view that shows where you stand before the next meal.</p>
+            <a class="product-link" href="foodmoments/"><span data-i18n="fm.link">About the app</span> <span class="arrow">→</span></a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="know" class="band">
-      <div class="shell">
-        <div class="split" style="margin-bottom: 52px">
-          <div class="split-title">
-            <p class="kicker" data-i18n="know.kicker">What we know</p>
-            <h2 data-i18n="know.title">Knowing how to build something is not enough.</h2>
-          </div>
-          <div class="prose">
-            <p data-i18n="know.intro">It gets much better when you also understand what you are building and why. Domain knowledge is what tells a system what a right answer looks like, and it is what tells us which problem is worth solving at all. Building AI that does real work takes engineering that holds up in production, a serious approach to data, and enough domain knowledge to recognise a wrong answer. Most teams have one of the three.</p>
-          </div>
+    <section id="expertise" class="band work">
+      <div class="wrap">
+        <div class="section-intro">
+          <div class="eyebrow" data-i18n="work.eyebrow">What we bring</div>
+          <h2 data-i18n="work.title">Knowing how to build something is not enough.</h2>
+          <p data-i18n="work.intro">It gets much better when you also understand what you are building and why. Domain knowledge is what tells a system what a right answer looks like, and it is what tells us which problem is worth solving at all.</p>
         </div>
+
 
         <dl class="mapping">
           <div class="mapping-head">
-            <span data-i18n="know.head1">What we understand</span>
-            <span data-i18n="know.head2">Where it makes the difference</span>
+            <span data-i18n="map.head1">What we understand</span>
+            <span data-i18n="map.head2">Where it makes the difference</span>
           </div>
           <div class="mapping-row">
-            <dt data-i18n="know.a1">Econometrics</dt>
-            <dd data-i18n="know.b1">Work where data analysis is involved, and any number that has to survive being checked.</dd>
+            <dt data-i18n="map.a1">Econometrics</dt>
+            <dd data-i18n="map.b1">Work where data analysis is involved, and any number that has to survive being checked.</dd>
           </div>
           <div class="mapping-row">
-            <dt data-i18n="know.a2">The mortgage industry, and risk management in banking</dt>
-            <dd data-i18n="know.b2">Anything to do with mortgages: what a document has to prove, and what a lender needs to see before saying yes.</dd>
+            <dt data-i18n="map.a2">The mortgage industry, and risk management in banking</dt>
+            <dd data-i18n="map.b2">Anything to do with mortgages: what a document has to prove, and what a lender needs to see before saying yes.</dd>
           </div>
           <div class="mapping-row">
-            <dt data-i18n="know.a3">Competition economics and regulation</dt>
-            <dd data-i18n="know.b3">Compliance, where the rules and the incentives behind them both matter.</dd>
+            <dt data-i18n="map.a3">Competition economics and regulation</dt>
+            <dd data-i18n="map.b3">Compliance, where the rules and the incentives behind them both matter.</dd>
           </div>
           <div class="mapping-row">
-            <dt data-i18n="know.a4">Marketing</dt>
-            <dd data-i18n="know.b4">Front ends that work for the people using them, because we know what they came to do.</dd>
+            <dt data-i18n="map.a4">Marketing</dt>
+            <dd data-i18n="map.b4">Front ends that work for the people using them, because we know what they came to do.</dd>
           </div>
         </dl>
 
-        <div class="knows">
-          <article class="know">
-            <h3 data-i18n="ai.title">AI and back-end engineering</h3>
-            <div>
-              <div class="prose">
-                <p data-i18n="ai.copy">We build the whole stack, but our strength is the part most developers avoid. Python services, pipelines that run several models and let them check each other, APIs other systems depend on, and the applications in front of them. The interesting problems are rarely in the interface.</p>
-              </div>
-              <p class="know-tags" data-i18n="ai.tags">Python and back ends / Document AI and vision / Information extraction / Combining and checking models / APIs / iOS and desktop / Speech transcription</p>
-            </div>
+        <div class="work-grid three">
+          <article class="panel">
+            <h3 data-i18n="ai.title">AI &amp; back-end engineering</h3>
+            <p data-i18n="ai.copy">We build the whole stack, but our strength is the part most developers avoid: the back end. Python services, pipelines that orchestrate several models and let them check each other, APIs that others build on, and the iOS apps, desktop tools and speech interfaces in front of them.</p>
+            <ul>
+              <li data-i18n="ai.li1">Python back ends, pipelines and APIs</li>
+              <li data-i18n="ai.li2">Document AI, vision and information extraction</li>
+              <li data-i18n="ai.li3">Combining and checking multiple models</li>
+              <li data-i18n="ai.li4">Full stack: iOS, desktop, speech transcription</li>
+            </ul>
           </article>
 
-          <article class="know">
-            <h3 data-i18n="econ.title">Economics, econometrics and marketing</h3>
-            <div>
-              <div class="prose">
-                <p data-i18n="econ.copy">Economics is about how people, firms and markets behave and what that means for a decision. We work on credible conclusions from data, and on competition economics: how markets and platforms function, mergers and acquisitions, and the estimation of damages. We support companies, lawyers and courts with analysis that has to survive scrutiny. Marketing expertise sits alongside it, which is what keeps a solution pointed at something a customer actually needs.</p>
-              </div>
-              <p class="know-tags" data-i18n="econ.tags">Competition economics / Platform economics / Mergers and acquisitions / Damages estimation / Econometric analysis / Expert witness work / Marketing and customer needs / Compliance, and AI for compliance</p>
-            </div>
+          <article class="panel">
+            <h3 data-i18n="econ.title">Economics &amp; econometrics</h3>
+            <p data-i18n="econ.copy">Economics is about how people, firms and markets behave, and what that means for a decision. We work in two of its areas. The first is extracting credible conclusions from data. The second is competition economics: how markets and platforms function, mergers and acquisitions, and the estimation of damages. We support companies, lawyers and courts with analysis that is clear, rigorous and defensible, and we help with compliance, including using AI to make compliance better. Marketing expertise sits alongside it, so that the question of what a customer actually needs stays in view.</p>
+            <ul>
+              <li data-i18n="econ.li1">Competition economics, platforms, mergers and acquisitions</li>
+              <li data-i18n="econ.li2">Damages estimation and econometric analysis</li>
+              <li data-i18n="econ.li3">Expert witness work and litigation support</li>
+              <li data-i18n="econ.li4">Compliance, and AI for compliance</li>
+              <li data-i18n="econ.li5">Marketing, customer needs and value creation</li>
+            </ul>
           </article>
 
-          <article class="know">
-            <h3 data-i18n="fin.title">Finance, banking and mortgages</h3>
-            <div>
-              <div class="prose">
-                <p data-i18n="fin.copy">We know the Dutch mortgage chain from advice and application through underwriting, acceptance and servicing, and the lender side with it: risk management, Dutch and European regulation, compliance. That is why our software knows that an employer declaration filled in with two ink colours is worth flagging.</p>
-              </div>
-              <p class="know-tags" data-i18n="fin.tags">Mortgage advice and applications / Underwriting and acceptance / Document controls / Credit assessment / Risk management / Regulation and compliance</p>
-            </div>
+          <article class="panel">
+            <h3 data-i18n="fin.title">Finance &amp; banking</h3>
+            <p data-i18n="fin.copy">We know the Dutch mortgage chain from advice and application through underwriting, acceptance and servicing. On the lender side we add experience with risk management, relevant Dutch and European regulation and compliance. That is why we understand what a document check has to catch, and what a lender needs to see.</p>
+            <ul>
+              <li data-i18n="fin.li1">Mortgage advice, applications and underwriting</li>
+              <li data-i18n="fin.li2">Documents, controls and credit assessment</li>
+              <li data-i18n="fin.li3">Risk management and regulation</li>
+              <li data-i18n="fin.li4">Compliance in banking processes</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="band band-ledger">
-      <div class="shell split">
-        <div class="split-title">
-          <p class="kicker" data-i18n="metrics.kicker">Where the confidence comes from</p>
-          <h2 data-i18n="metrics.title">Extracting value from data, and standing behind the result.</h2>
+    <section class="band band-surface metrics">
+      <div class="wrap metrics-grid">
+        <div class="metrics-lead">
+          <div class="eyebrow" data-i18n="metrics.eyebrow">Econometrics</div>
+          <h2 data-i18n="metrics.title">Being serious about what data can tell you.</h2>
         </div>
-        <div>
-          <div class="prose">
-            <p data-i18n="metrics.copy1">Econometrics is the data side of economics: the discipline of extracting value from data without fooling yourself about what the data supports. It is the habit of asking how wrong a number could be before acting on it.</p>
-            <p data-i18n="metrics.copy2">That habit is also what makes a back end trustworthy. Measure, validate, let several methods read the same document and compare them, confirm each value against the source, and report what could not be confirmed. Solving hard problems with AI turns out, to a surprising degree, to be an econometrics problem.</p>
-            <p data-i18n="metrics.market">Economics and marketing shape what gets built in the first place, so that a solution addresses a real need and works in practice. Econometric technique and current AI technology are how we then create value from the data itself.</p>
-          </div>
-          <p class="chair" data-i18n="metrics.chair">The Netherlands has a long tradition here, going back to Jan Tinbergen. One of our team members is a full professor in the Department of Econometrics and Operations Research at Tilburg University.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="start" class="band">
-      <div class="shell split">
-        <div class="split-title">
-          <p class="kicker" data-i18n="start.kicker">Working with us</p>
-          <h2 data-i18n="start.title">Small team. Short lines. Built around the problem.</h2>
-        </div>
-        <div>
-          <div class="prose" style="margin-bottom: 38px">
-            <p data-i18n="start.copy">We are based in the Netherlands and work closely with our clients. We do not start from a standard package or a preferred technology; we work out what the problem actually requires and build or analyse exactly that. No more complicated than it needs to be, and no simpler than the problem allows.</p>
-          </div>
-          <ol class="steps">
-            <li>
-              <div>
-                <h3 data-i18n="start.t1">A conversation</h3>
-                <p data-i18n="start.c1">You describe the problem. We say what we think it really is, what we would build, and what we would not. If we are the wrong firm for it, that is a useful hour for both of us.</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h3 data-i18n="start.t2">A trial on your own material</h3>
-                <p data-i18n="start.c2">For document work, we run your documents and show you the fields and the confidences. You see the failure cases, not a demo that was chosen to succeed.</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h3 data-i18n="start.t3">Into production</h3>
-                <p data-i18n="start.c3">A key, documentation, and an interface that stays stable. We keep working on the part behind it, which is where the improvements come from.</p>
-              </div>
-            </li>
-          </ol>
+        <div class="metrics-text">
+          <p data-i18n="metrics.copy1">Econometrics is the data side of economics: the discipline of extracting value from data without fooling yourself about what the data supports. We use data to establish what can actually be learned, measured and defended.</p>
+          <p data-i18n="metrics.copy2">The same discipline is what makes a smart back end work. Measure, validate, let models check each other, and only trust what has been confirmed. Solving hard problems with AI is, to a surprising degree, an econometrics problem.</p>
+          <p data-i18n="metrics.copy3">Our strength is not only what we can build, but understanding the substance behind it, from mortgage processes and banking risk to markets and competition. Our work is firmly grounded in academic expertise.</p>
+          <p data-i18n="metrics.market">We also have substantial expertise in economics and marketing. That is what helps us build solutions that address a real customer need and work well in practice, and it is how we create value with data: techniques from econometrics coupled with the most recent AI technology.</p>
+          <p class="highlight" data-i18n="metrics.copy4">The Netherlands has a strong tradition in econometrics, going back to Jan Tinbergen. One of our team members is a full professor in the Department of Econometrics and Operations Research at Tilburg University.</p>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="band band-deep">
-      <div class="shell contact">
-        <div class="split-title">
-          <p class="kicker" data-i18n="contact.kicker">Contact</p>
-          <h2 data-i18n="contact.title">Tell us what you are working on.</h2>
+    <section id="approach" class="band band-dark approach">
+      <div class="wrap">
+        <div class="approach-grid">
+          <div>
+            <div class="eyebrow" data-i18n="approach.eyebrow">How we work</div>
+            <h2 data-i18n="approach.title">Small team. Short lines. Built around the problem.</h2>
+          </div>
+          <div class="approach-copy">
+            <p data-i18n="approach.copy1">We are based in the Netherlands and work closely with our clients. We do not start from a standard package or a preferred technology. We work out what the problem actually requires and build or analyse accordingly: no more complicated than needed, but no simpler than the problem allows.</p>
+            <p data-i18n="approach.copy2">From the outside the result should look easy. That is the point.</p>
+          </div>
         </div>
-        <div>
-          <div class="prose">
-            <p data-i18n="contact.copy">From mortgage processes and AI to economics, econometrics and compliance: if this combination of expertise could be useful, we would like to hear about it.</p>
+        <div id="contact" class="contact-card">
+          <div>
+            <div class="eyebrow" data-i18n="contact.eyebrow">A problem to solve?</div>
+            <h3 data-i18n="contact.title">Tell us what you are working on.</h3>
+            <p data-i18n="contact.copy">From AI and software to economics, econometrics and compliance: if our combination of expertise could be useful, we would be happy to hear from you.</p>
           </div>
-          <div class="contact-lines">
-            <a class="link" href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a>
-            <span>Saal van Zwanenbergweg 11, 5026 RM Tilburg</span>
-          </div>
-          <p class="contact-note" data-i18n="contact.note">Smart Backoffice Solutions B.V. is registered in Tilburg, the Netherlands.</p>
+          <a class="contact-mail" href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl <span>↗</span></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="colophon">
-    <div class="shell colophon-in">
-      <div><strong>Smart Backoffice Solutions B.V.</strong></div>
-      <div class="colophon-links">
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <strong>Smart Backoffice Solutions B.V.</strong><br />
+        Saal van Zwanenbergweg 11 · 5026 RM Tilburg · Nederland
+      </div>
+      <div class="footer-links">
         <a href="mortgage-documents/" data-i18n="footer.md">Mortgage Documents</a>
         <a href="foodmoments/" data-i18n="footer.fm">Food Moments</a>
       </div>
-      <div>KvK 90141482 &nbsp; BTW NL865221406B01</div>
+      <div class="footer-right">
+        KvK 90141482 · BTW NL865221406B01
+      </div>
     </div>
   </footer>
 
