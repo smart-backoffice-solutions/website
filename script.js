@@ -78,12 +78,11 @@ window.SBO_COPY = {
       tags: 'Mortgage advice and applications / Underwriting and acceptance / Document controls / Credit assessment / Risk management / Regulation and compliance'
     },
     metrics: {
-      kicker: 'Where the confidence comes from',
-      title: 'An estimate without an interval is an opinion.',
-      copy1: 'Econometrics is the data side of economics: the discipline of extracting value from data without fooling yourself about what the data supports. It is the habit of asking how wrong a number could be before acting on it.',
-      copy2: 'That habit is also what makes a back end trustworthy. Measure, validate, let several methods read the same document and compare them, confirm each value against the source, and report what could not be confirmed. Solving hard problems with AI turns out, to a surprising degree, to be an econometrics problem.',
+      kicker: 'Econometrics',
+      title: 'Extracting value from data, and standing behind the result.',
+      copy1: 'Econometrics is the data side of economics: the discipline of getting value out of data and being honest about what it supports. It is what turns a pile of records into something a decision can rest on.',
+      copy2: 'The same discipline is what makes a back end trustworthy. Measure, validate, let several methods read the same document and compare what they return, confirm each value against the source. Solving hard problems with AI turns out, to a surprising degree, to be an econometrics problem.',
       market: 'Economics and marketing shape what gets built in the first place, so that a solution addresses a real need and works in practice. Econometric technique and current AI technology are how we then create value from the data itself.',
-      ivcap: 'point estimate and interval',
       chair: 'The Netherlands has a long tradition here, going back to Jan Tinbergen. One of our team members is a full professor in the Department of Econometrics and Operations Research at Tilburg University.'
     },
     start: {
@@ -180,12 +179,11 @@ window.SBO_COPY = {
       tags: 'Hypotheekadvies en aanvraag / Acceptatie / Documentcontroles / Kredietbeoordeling / Risk management / Regelgeving en compliance'
     },
     metrics: {
-      kicker: 'Waar de betrouwbaarheid vandaan komt',
-      title: 'Een schatting zonder interval is een mening.',
-      copy1: 'Econometrie is de datakant van de economie: de discipline om waarde uit data te halen zonder jezelf voor de gek te houden over wat die data onderbouwt. Het is de gewoonte om te vragen hoe fout een getal kan zijn voordat je ernaar handelt.',
-      copy2: 'Diezelfde gewoonte maakt een back-end betrouwbaar. Meten, valideren, meerdere methoden hetzelfde document laten lezen en vergelijken, iedere waarde bevestigen in de bron, en melden wat niet bevestigd kon worden. Moeilijke problemen oplossen met AI blijkt in verrassende mate een econometrisch probleem.',
+      kicker: 'Econometrie',
+      title: 'Waarde uit data halen, en achter het resultaat staan.',
+      copy1: 'Econometrie is de datakant van de economie: de discipline om waarde uit data te halen en eerlijk te zijn over wat die data onderbouwt. Het maakt van een stapel gegevens iets waarop een beslissing kan rusten.',
+      copy2: 'Diezelfde discipline maakt een back-end betrouwbaar. Meten, valideren, meerdere methoden hetzelfde document laten lezen en vergelijken wat ze teruggeven, iedere waarde bevestigen in de bron. Moeilijke problemen oplossen met AI blijkt in verrassende mate een econometrisch probleem.',
       market: 'Economie en marketing bepalen allereerst wát er gebouwd wordt, zodat een oplossing aansluit bij een echte behoefte en in de praktijk werkt. Econometrische technieken en de nieuwste AI-technologie zijn vervolgens hoe we waarde creëren uit de data zelf.',
-      ivcap: 'puntschatting en interval',
       chair: 'Nederland heeft hierin een lange traditie, die teruggaat tot Jan Tinbergen. Een van onze teamleden is hoogleraar bij het departement Econometrie en Operations Research van Tilburg University.'
     },
     start: {
@@ -282,12 +280,11 @@ window.SBO_COPY = {
       tags: 'Hypothekenberatung und Antrag / Kreditprüfung / Dokumentkontrollen / Bonitätsbeurteilung / Risikomanagement / Regulierung und Compliance'
     },
     metrics: {
-      kicker: 'Woher die Konfidenz kommt',
-      title: 'Eine Schätzung ohne Intervall ist eine Meinung.',
-      copy1: 'Ökonometrie ist die Datenseite der Ökonomie: die Disziplin, Wert aus Daten zu gewinnen, ohne sich darüber zu täuschen, was diese Daten belegen. Es ist die Gewohnheit zu fragen, wie falsch eine Zahl sein kann, bevor man danach handelt.',
-      copy2: 'Dieselbe Gewohnheit macht ein Back-end vertrauenswürdig. Messen, validieren, mehrere Methoden dasselbe Dokument lesen lassen und vergleichen, jeden Wert an der Quelle bestätigen und melden, was sich nicht bestätigen ließ. Schwierige Probleme mit KI zu lösen ist in überraschendem Maß ein ökonometrisches Problem.',
+      kicker: 'Ökonometrie',
+      title: 'Wert aus Daten gewinnen und für das Ergebnis einstehen.',
+      copy1: 'Ökonometrie ist die Datenseite der Ökonomie: die Disziplin, Wert aus Daten zu gewinnen und ehrlich zu sein über das, was sie belegen. Sie macht aus einem Stapel Daten etwas, worauf eine Entscheidung ruhen kann.',
+      copy2: 'Dieselbe Disziplin macht ein Back-end vertrauenswürdig. Messen, validieren, mehrere Methoden dasselbe Dokument lesen lassen und vergleichen, was sie zurückgeben, jeden Wert an der Quelle bestätigen. Schwierige Probleme mit KI zu lösen ist in überraschendem Maß ein ökonometrisches Problem.',
       market: 'Ökonomie und Marketing bestimmen zuerst, was überhaupt gebaut wird, damit eine Lösung einem echten Bedürfnis entspricht und in der Praxis funktioniert. Ökonometrische Technik und aktuelle KI-Technologie sind dann der Weg, auf dem wir aus den Daten selbst Wert schaffen.',
-      ivcap: 'Punktschätzung und Intervall',
       chair: 'Die Niederlande haben hier eine lange Tradition, die bis auf Jan Tinbergen zurückgeht. Eines unserer Teammitglieder ist ordentlicher Professor am Department of Econometrics and Operations Research der Tilburg University.'
     },
     start: {
