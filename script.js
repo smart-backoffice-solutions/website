@@ -18,17 +18,18 @@ window.SBO_COPY = {
       out: 'Structured result', conf: 'confidence per field'
     },
     signal: {
-      s1: 'AI', s2: 'Back-end', s3: 'Full stack', s4: 'Document AI', s5: 'iOS',
-      s6: 'Economics', s7: 'Econometrics', s8: 'Competition economics', s9: 'Compliance', s10: 'Dutch mortgages'
+      s1: 'AI', s2: 'Back-end', s3: 'Full stack', s4: 'Document AI', s5: 'iOS', s6: 'Economics',
+      s7: 'Econometrics', s8: 'Competition economics', s9: 'Marketing', s10: 'Compliance', s11: 'Dutch mortgages'
     },
     office: {
       eyebrow: 'Why “Backoffice”?',
       title: 'The smart part happens where you don’t see it.',
-      copy1: 'A chat window is a front office: one question, one answer. A back office is where the work gets done. Vision models read documents and photos, language models interpret them, OCR confirms what was read, and checks and domain rules catch what a single model gets wrong.',
-      copy2: 'Combine those well and the result is something that works surprisingly well and is easy to use. From the user’s side there is one call, one photo, one question. Everything else happens behind it.',
-      copy3: 'Smart Backoffice Solutions grew out of the development of a modular information-extraction pipeline for mortgage documents: a back office that could work smarter. From there the company broadened. The same combination of domain knowledge, software engineering, economics and econometrics turned out to be valuable for many other complex problems as well.',
-      front: 'Front office', frontc: 'One question, one answer. Easy to use, easy to fool.',
-      back: 'Back office', backc: 'Several models, checks and rules working together. Easy to use, hard to fool.'
+      copy1: 'The app, the website, the whole software package someone works with is the front end. What that front end can offer depends entirely on the back end behind it. The smarter the back end, the more the front end can do and the better the experience for the person using it.',
+      copy2: 'In the back end, vision models read documents and photos, language models interpret them, OCR confirms what was read, and checks and domain rules catch what a single model gets wrong. Combine those well and the front end can stay simple: one call, one photo, one question. Everything else happens behind it.',
+      copy3: 'We build both ends, and the back end is where we are unusual. Most developers work on the front end. The hard part, combining several models, letting them check each other and wiring them into a real process, happens out of sight.',
+      copy4: 'Smart Backoffice Solutions grew out of the development of a modular information-extraction pipeline for mortgage documents: a back office that could work smarter. From there the company broadened. The same combination of domain knowledge, software engineering, economics and econometrics turned out to be valuable for many other complex problems as well.',
+      front: 'Front end', frontc: 'The app, the website, the screen in the process. What the user sees and works with.',
+      back: 'Back end', backc: 'Models, checks, rules and data working together out of sight. What decides how much the front end can offer.'
     },
     live: {
       eyebrow: 'Live today',
@@ -66,11 +67,12 @@ window.SBO_COPY = {
     },
     econ: {
       title: 'Economics & econometrics',
-      copy: 'Economics is about how people, firms and markets behave, and what that means for a decision. We work in two of its areas. The first is extracting credible conclusions from data. The second is competition economics: how markets and platforms function, mergers and acquisitions, and the estimation of damages. We support companies, lawyers and courts with analysis that is clear, rigorous and defensible, and we help with compliance, including using AI to make compliance better.',
+      copy: 'Economics is about how people, firms and markets behave, and what that means for a decision. We work in two of its areas. The first is extracting credible conclusions from data. The second is competition economics: how markets and platforms function, mergers and acquisitions, and the estimation of damages. We support companies, lawyers and courts with analysis that is clear, rigorous and defensible, and we help with compliance, including using AI to make compliance better. Marketing expertise sits alongside it, so that the question of what a customer actually needs stays in view.',
       li1: 'Competition economics, platforms, mergers and acquisitions',
       li2: 'Damages estimation and econometric analysis',
       li3: 'Expert witness work and litigation support',
-      li4: 'Compliance, and AI for compliance'
+      li4: 'Compliance, and AI for compliance',
+      li5: 'Marketing, customer needs and value creation'
     },
     fin: {
       title: 'Finance & banking',
@@ -86,6 +88,7 @@ window.SBO_COPY = {
       copy1: 'Econometrics is the data side of economics: the discipline of extracting value from data without fooling yourself about what the data supports. We use data to establish what can actually be learned, measured and defended.',
       copy2: 'The same discipline is what makes a smart back end work. Measure, validate, let models check each other, and only trust what has been confirmed. Solving hard problems with AI is, to a surprising degree, an econometrics problem.',
       copy3: 'Our strength is not only what we can build, but understanding the substance behind it, from mortgage processes and banking risk to markets and competition. Our work is firmly grounded in academic expertise.',
+      market: 'We also have substantial expertise in economics and marketing. That is what helps us build solutions that address a real customer need and work well in practice, and it is how we create value with data: techniques from econometrics coupled with the most recent AI technology.',
       copy4: 'The Netherlands has a strong tradition in econometrics, going back to Jan Tinbergen. One of our team members is a full professor in the Department of Econometrics and Operations Research at Tilburg University.'
     },
     approach: {
@@ -120,17 +123,18 @@ window.SBO_COPY = {
       out: 'Gestructureerd resultaat', conf: 'betrouwbaarheid per veld'
     },
     signal: {
-      s1: 'AI', s2: 'Back-end', s3: 'Full stack', s4: 'Document-AI', s5: 'iOS',
-      s6: 'Economie', s7: 'Econometrie', s8: 'Mededingingseconomie', s9: 'Compliance', s10: 'Nederlandse hypotheken'
+      s1: 'AI', s2: 'Back-end', s3: 'Full stack', s4: 'Document-AI', s5: 'iOS', s6: 'Economie',
+      s7: 'Econometrie', s8: 'Mededingingseconomie', s9: 'Marketing', s10: 'Compliance', s11: 'Nederlandse hypotheken'
     },
     office: {
       eyebrow: 'Waarom “Backoffice”?',
       title: 'Het slimme deel gebeurt waar je het niet ziet.',
-      copy1: 'Een chatvenster is een frontoffice: één vraag, één antwoord. Een backoffice is waar het werk wordt gedaan. Vision-modellen lezen documenten en foto’s, taalmodellen interpreteren ze, OCR bevestigt wat er is gelezen, en controles en domeinregels vangen op wat één model verkeerd doet.',
-      copy2: 'Combineer dat goed en het resultaat is iets dat verrassend goed werkt en eenvoudig te gebruiken is. Vanuit de gebruiker gezien is er één aanroep, één foto, één vraag. Al het andere gebeurt erachter.',
-      copy3: 'Smart Backoffice Solutions is ontstaan vanuit de ontwikkeling van een modulaire pipeline voor informatie-extractie uit hypotheekdocumenten: een backoffice die slimmer kon. Daaruit groeide een bredere onderneming. Dezelfde combinatie van domeinkennis, software engineering, economie en econometrie bleek ook waardevol voor veel andere complexe vraagstukken.',
-      front: 'Frontoffice', frontc: 'Eén vraag, één antwoord. Makkelijk te gebruiken, makkelijk te misleiden.',
-      back: 'Backoffice', backc: 'Meerdere modellen, controles en regels die samenwerken. Makkelijk te gebruiken, moeilijk te misleiden.'
+      copy1: 'De app, de website, het hele softwarepakket waarmee iemand werkt: dat is de front-end. Wat die front-end kan bieden hangt volledig af van de back-end erachter. Hoe slimmer de back-end, hoe meer de front-end kan en hoe beter de ervaring voor degene die ermee werkt.',
+      copy2: 'In de back-end lezen vision-modellen documenten en foto’s, interpreteren taalmodellen ze, bevestigt OCR wat er is gelezen, en vangen controles en domeinregels op wat één model verkeerd doet. Combineer dat goed en de front-end kan eenvoudig blijven: één aanroep, één foto, één vraag. Al het andere gebeurt erachter.',
+      copy3: 'We bouwen beide kanten, en in de back-end zijn we ongewoon. De meeste ontwikkelaars werken aan de front-end. Het moeilijke deel, meerdere modellen combineren, ze elkaar laten controleren en ze in een echt proces inbouwen, gebeurt uit het zicht.',
+      copy4: 'Smart Backoffice Solutions is ontstaan vanuit de ontwikkeling van een modulaire pipeline voor informatie-extractie uit hypotheekdocumenten: een backoffice die slimmer kon. Daaruit groeide een bredere onderneming. Dezelfde combinatie van domeinkennis, software engineering, economie en econometrie bleek ook waardevol voor veel andere complexe vraagstukken.',
+      front: 'Front-end', frontc: 'De app, de website, het scherm in het proces. Wat de gebruiker ziet en gebruikt.',
+      back: 'Back-end', backc: 'Modellen, controles, regels en data die uit het zicht samenwerken. Wat bepaalt hoeveel de front-end kan bieden.'
     },
     live: {
       eyebrow: 'Nu in gebruik',
@@ -168,11 +172,12 @@ window.SBO_COPY = {
     },
     econ: {
       title: 'Economie & econometrie',
-      copy: 'Economie gaat over hoe mensen, bedrijven en markten zich gedragen, en wat dat betekent voor een beslissing. We werken op twee terreinen. Het eerste is betrouwbare conclusies halen uit data. Het tweede is mededingingseconomie: de werking van markten en platforms, fusies en overnames, en het schatten van schade. We ondersteunen bedrijven, advocaten en rechtbanken met analyses die helder, degelijk en verdedigbaar zijn, en we helpen met compliance, ook door AI in te zetten om compliance beter te maken.',
+      copy: 'Economie gaat over hoe mensen, bedrijven en markten zich gedragen, en wat dat betekent voor een beslissing. We werken op twee terreinen. Het eerste is betrouwbare conclusies halen uit data. Het tweede is mededingingseconomie: de werking van markten en platforms, fusies en overnames, en het schatten van schade. We ondersteunen bedrijven, advocaten en rechtbanken met analyses die helder, degelijk en verdedigbaar zijn, en we helpen met compliance, ook door AI in te zetten om compliance beter te maken. Daarnaast brengen we marketingexpertise mee, zodat de vraag wat een klant werkelijk nodig heeft in beeld blijft.',
       li1: 'Mededingingseconomie, platforms, fusies en overnames',
       li2: 'Schadeberekening en econometrische analyse',
       li3: 'Deskundigenwerk en ondersteuning in procedures',
-      li4: 'Compliance, en AI voor compliance'
+      li4: 'Compliance, en AI voor compliance',
+      li5: 'Marketing, klantbehoefte en waardecreatie'
     },
     fin: {
       title: 'Financiële sector & banken',
@@ -188,6 +193,7 @@ window.SBO_COPY = {
       copy1: 'Econometrie is de datakant van de economie: de discipline om waarde uit data te halen zonder jezelf voor de gek te houden over wat die data onderbouwt. We gebruiken data om vast te stellen wat er werkelijk te leren, meten en onderbouwen valt.',
       copy2: 'Diezelfde discipline maakt een slimme back-end mogelijk. Meten, valideren, modellen elkaar laten controleren, en alleen vertrouwen op wat is bevestigd. Moeilijke problemen oplossen met AI is, in verrassende mate, een econometrisch probleem.',
       copy3: 'Onze kracht zit niet alleen in wat we kunnen bouwen, maar in het begrijpen van de inhoud erachter, van hypotheekprocessen en bankrisico tot markten en mededinging. Ons werk is stevig verankerd in academische expertise.',
+      market: 'We hebben daarnaast substantiële expertise in economie en marketing. Dat helpt ons oplossingen te bouwen die aansluiten bij wat een klant werkelijk nodig heeft en die in de praktijk goed werken, en het is hoe we waarde creëren met data: technieken uit de econometrie gecombineerd met de nieuwste AI-technologie.',
       copy4: 'Nederland heeft een sterke traditie in de econometrie, die teruggaat tot Jan Tinbergen. Een van onze teamleden is hoogleraar bij het departement Econometrie en Operations Research van Tilburg University.'
     },
     approach: {
@@ -222,17 +228,18 @@ window.SBO_COPY = {
       out: 'Strukturiertes Ergebnis', conf: 'Konfidenz je Feld'
     },
     signal: {
-      s1: 'KI', s2: 'Back-end', s3: 'Full Stack', s4: 'Dokumenten-KI', s5: 'iOS',
-      s6: 'Ökonomie', s7: 'Ökonometrie', s8: 'Wettbewerbsökonomie', s9: 'Compliance', s10: 'Niederländische Hypotheken'
+      s1: 'KI', s2: 'Back-end', s3: 'Full Stack', s4: 'Dokumenten-KI', s5: 'iOS', s6: 'Ökonomie',
+      s7: 'Ökonometrie', s8: 'Wettbewerbsökonomie', s9: 'Marketing', s10: 'Compliance', s11: 'Niederländische Hypotheken'
     },
     office: {
       eyebrow: 'Warum „Backoffice“?',
       title: 'Der kluge Teil passiert dort, wo man ihn nicht sieht.',
-      copy1: 'Ein Chatfenster ist ein Frontoffice: eine Frage, eine Antwort. Ein Backoffice ist der Ort, an dem die Arbeit erledigt wird. Vision-Modelle lesen Dokumente und Fotos, Sprachmodelle interpretieren sie, OCR bestätigt das Gelesene, und Prüfungen und Fachregeln fangen auf, was ein einzelnes Modell falsch macht.',
-      copy2: 'Kombiniert man das gut, entsteht etwas, das überraschend gut funktioniert und einfach zu bedienen ist. Aus Sicht des Nutzers gibt es einen Aufruf, ein Foto, eine Frage. Alles andere passiert dahinter.',
-      copy3: 'Smart Backoffice Solutions entstand aus der Entwicklung einer modularen Pipeline zur Informationsextraktion aus Hypothekendokumenten: ein Backoffice, das intelligenter arbeiten konnte. Daraus wuchs ein breiter aufgestelltes Unternehmen. Dieselbe Kombination aus Fachwissen, Software Engineering, Ökonomie und Ökonometrie erwies sich auch bei vielen anderen komplexen Problemen als wertvoll.',
-      front: 'Frontoffice', frontc: 'Eine Frage, eine Antwort. Leicht zu bedienen, leicht zu täuschen.',
-      back: 'Backoffice', backc: 'Mehrere Modelle, Prüfungen und Regeln, die zusammenarbeiten. Leicht zu bedienen, schwer zu täuschen.'
+      copy1: 'Die App, die Website, das ganze Softwarepaket, mit dem jemand arbeitet: das ist das Front-end. Was dieses Front-end bieten kann, hängt vollständig vom Back-end dahinter ab. Je klüger das Back-end, desto mehr kann das Front-end und desto besser die Erfahrung für den Menschen davor.',
+      copy2: 'Im Back-end lesen Vision-Modelle Dokumente und Fotos, Sprachmodelle interpretieren sie, OCR bestätigt das Gelesene, und Prüfungen und Fachregeln fangen auf, was ein einzelnes Modell falsch macht. Kombiniert man das gut, kann das Front-end einfach bleiben: ein Aufruf, ein Foto, eine Frage. Alles andere passiert dahinter.',
+      copy3: 'Wir bauen beide Seiten, und im Back-end sind wir ungewöhnlich. Die meisten Entwickler arbeiten am Front-end. Der schwierige Teil, mehrere Modelle zu kombinieren, sie sich gegenseitig prüfen zu lassen und in einen echten Prozess einzubauen, passiert im Verborgenen.',
+      copy4: 'Smart Backoffice Solutions entstand aus der Entwicklung einer modularen Pipeline zur Informationsextraktion aus Hypothekendokumenten: ein Backoffice, das intelligenter arbeiten konnte. Daraus wuchs ein breiter aufgestelltes Unternehmen. Dieselbe Kombination aus Fachwissen, Software Engineering, Ökonomie und Ökonometrie erwies sich auch bei vielen anderen komplexen Problemen als wertvoll.',
+      front: 'Front-end', frontc: 'Die App, die Website, der Bildschirm im Prozess. Was der Nutzer sieht und bedient.',
+      back: 'Back-end', backc: 'Modelle, Prüfungen, Regeln und Daten, die im Verborgenen zusammenarbeiten. Was bestimmt, wie viel das Front-end bieten kann.'
     },
     live: {
       eyebrow: 'Heute im Einsatz',
@@ -270,11 +277,12 @@ window.SBO_COPY = {
     },
     econ: {
       title: 'Ökonomie & Ökonometrie',
-      copy: 'Ökonomie handelt davon, wie sich Menschen, Unternehmen und Märkte verhalten und was das für eine Entscheidung bedeutet. Wir arbeiten in zwei ihrer Bereiche. Der erste: belastbare Schlussfolgerungen aus Daten ziehen. Der zweite: Wettbewerbsökonomie, also wie Märkte und Plattformen funktionieren, Fusionen und Übernahmen und die Schätzung von Schäden. Wir unterstützen Unternehmen, Rechtsanwälte und Gerichte mit klaren, fundierten und nachvollziehbaren Analysen und helfen bei Compliance, auch mit KI, die Compliance besser macht.',
+      copy: 'Ökonomie handelt davon, wie sich Menschen, Unternehmen und Märkte verhalten und was das für eine Entscheidung bedeutet. Wir arbeiten in zwei ihrer Bereiche. Der erste: belastbare Schlussfolgerungen aus Daten ziehen. Der zweite: Wettbewerbsökonomie, also wie Märkte und Plattformen funktionieren, Fusionen und Übernahmen und die Schätzung von Schäden. Wir unterstützen Unternehmen, Rechtsanwälte und Gerichte mit klaren, fundierten und nachvollziehbaren Analysen und helfen bei Compliance, auch mit KI, die Compliance besser macht. Daneben bringen wir Marketing-Expertise mit, damit die Frage, was ein Kunde tatsächlich braucht, im Blick bleibt.',
       li1: 'Wettbewerbsökonomie, Plattformen, Fusionen und Übernahmen',
       li2: 'Schadensschätzung und ökonometrische Analyse',
       li3: 'Sachverständigentätigkeit und Prozessunterstützung',
-      li4: 'Compliance, und KI für Compliance'
+      li4: 'Compliance, und KI für Compliance',
+      li5: 'Marketing, Kundenbedürfnisse und Wertschöpfung'
     },
     fin: {
       title: 'Finanzen & Banken',
@@ -290,6 +298,7 @@ window.SBO_COPY = {
       copy1: 'Ökonometrie ist die Datenseite der Ökonomie: die Disziplin, Wert aus Daten zu gewinnen, ohne sich darüber zu täuschen, was diese Daten tatsächlich belegen. Wir nutzen Daten, um festzustellen, was sich tatsächlich erkennen, messen und belastbar begründen lässt.',
       copy2: 'Dieselbe Disziplin macht ein kluges Back-end möglich. Messen, validieren, Modelle sich gegenseitig prüfen lassen und nur dem vertrauen, was bestätigt wurde. Schwierige Probleme mit KI zu lösen ist in überraschendem Maß ein ökonometrisches Problem.',
       copy3: 'Unsere Stärke liegt nicht nur darin, was wir entwickeln können, sondern darin, die fachlichen Zusammenhänge zu verstehen, von Hypothekenprozessen und Bankrisiken bis zu Märkten und Wettbewerb. Unsere Arbeit ist fest in akademischer Expertise verankert.',
+      market: 'Hinzu kommt substanzielle Expertise in Ökonomie und Marketing. Sie hilft uns, Lösungen zu bauen, die einem echten Kundenbedürfnis entsprechen und in der Praxis gut funktionieren, und sie ist der Weg, auf dem wir mit Daten Wert schaffen: Techniken aus der Ökonometrie kombiniert mit der neuesten KI-Technologie.',
       copy4: 'Die Niederlande haben eine starke Tradition in der Ökonometrie, die bis auf Jan Tinbergen zurückgeht. Eines unserer Teammitglieder ist ordentlicher Professor am Department of Econometrics and Operations Research der Tilburg University.'
     },
     approach: {
