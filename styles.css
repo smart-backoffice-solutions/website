@@ -146,7 +146,7 @@ h3 { font-size: 24px; letter-spacing: -.025em; }
 
 /* ---------- Why Backoffice (dark) ---------- */
 .office-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 72px; align-items: start; }
-.office-lead h2 { max-width: 15ch; }
+.office-lead h2 { max-width: 20ch; }
 .office-copy { display: flex; flex-direction: column; gap: 20px; padding-top: 8px; }
 .office-copy p { margin: 0; font-size: 17px; max-width: var(--measure); }
 .compare { display: grid; gap: 12px; margin-top: 40px; max-width: 460px; }
@@ -199,14 +199,14 @@ h3 { font-size: 24px; letter-spacing: -.025em; }
 /* ---------- Econometrics ---------- */
 .metrics-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 72px; }
 .metrics-lead { position: sticky; top: 110px; align-self: start; }
-.metrics-lead h2 { max-width: 13ch; }
+.metrics-lead h2 { max-width: 18ch; }
 .metrics-text { display: flex; flex-direction: column; gap: 22px; }
 .metrics-text p { color: var(--muted); font-size: 17px; margin: 0; max-width: var(--measure); }
 .metrics-text .highlight { color: var(--ink); border-left: 2px solid var(--accent); padding-left: 20px; }
 
 /* ---------- Approach + contact (dark) ---------- */
 .approach-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 72px; align-items: start; }
-.approach-grid h2 { max-width: 14ch; }
+.approach-grid h2 { max-width: 18ch; }
 .approach-copy { display: flex; flex-direction: column; gap: 18px; padding-top: 8px; }
 .approach-copy p { margin: 0; font-size: 17px; max-width: var(--measure); }
 .contact-card {
@@ -276,3 +276,10 @@ h3 { font-size: 24px; letter-spacing: -.025em; }
   .mapping-head { display: none; }
   .mapping-row { grid-template-columns: 1fr; gap: 6px; padding: 15px 0; }
 }
+
+/* ---------- hero without an illustration ---------- */
+.hero-single { max-width: 860px; }
+.hero-single h1 { max-width: 16ch; }
+.hero-single .hero-copy { max-width: 68ch; }
+.product-note { margin: 10px 0 0 !important; font-size: 13.5px !important; color: var(--ink-2) !important; }
+.product-note::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-right: 8px; vertical-align: 2px; }
