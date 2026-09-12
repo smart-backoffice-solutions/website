@@ -3,19 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Mortgage Documents: an API for Dutch mortgage documents by Smart Backoffice Solutions. Submit a payslip, employer declaration, ID, purchase agreement, appraisal report, DUO statement or KVK extract and receive every field as structured data with a confidence score." />
-  <title>Mortgage Documents · Smart Backoffice Solutions</title>
+  <meta name="description" content="Mortgage Documents is an API by Smart Backoffice Solutions for Dutch mortgage documents. Submit a payslip, employer declaration, identity document, purchase agreement, appraisal report, DUO statement or Chamber of Commerce extract and receive every field as structured data with a confidence." />
+  <title>Mortgage Documents &mdash; Smart Backoffice Solutions</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Patrick+Hand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="mortgage-documents.css" />
   <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-
-  <!-- Character sheet for the comic panels. Original characters: an adviser, an underwriter, and the API. -->
   <svg width="0" height="0" class="sheet" aria-hidden="true" focusable="false">
     <defs>
       <symbol id="c-adviser" viewBox="0 0 120 200">
@@ -106,18 +103,18 @@
     </defs>
   </svg>
 
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="../" aria-label="Smart Backoffice Solutions home">
+  <header class="masthead">
+    <div class="shell masthead-in">
+      <a class="wordmark" href="../" aria-label="Smart Backoffice Solutions home">
         <img src="../logo.png" alt="Smart Backoffice Solutions" />
       </a>
-      <div class="header-right">
-        <nav class="site-nav" aria-label="Sections">
+      <div class="masthead-right">
+        <nav class="mainnav" aria-label="Sections">
           <a href="#api" data-i18n="nav.api">API</a>
           <a href="#modules" data-i18n="nav.modules">Modules</a>
           <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
-        <nav class="lang-switch" aria-label="Language">
+        <nav class="langs" aria-label="Language">
           <button data-lang="nl">NL</button>
           <button data-lang="en" class="active">EN</button>
           <button data-lang="de">DE</button>
@@ -127,34 +124,33 @@
   </header>
 
   <main id="top">
-    <section class="hero"><div class="wrap">
-      <div class="eyebrow" data-i18n="hero.eyebrow">Mortgage Documents · API</div>
+    <section class="shell hero">
+      <p class="kicker" data-i18n="hero.eyebrow">An API by Smart Backoffice Solutions</p>
       <h1 data-i18n="hero.title">A document goes in. The facts come out.</h1>
-      <p class="hero-copy" data-i18n="hero.lead">An API for Dutch mortgage documents. Submit one document, receive every relevant field as structured data, each with its own confidence score. Seven document types. It just works.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents" data-i18n="hero.cta">Talk to us</a>
-        <a class="button ghost" href="#modules" data-i18n="hero.more">See the modules</a>
-      </div>
+      <p class="lead" data-i18n="hero.lead">An API for Dutch mortgage documents. Submit one document, receive every relevant field as structured data, each with its own confidence score. Seven document types. It just works.</p>
+      <div class="actions">
+        <a class="btn btn-solid" href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents" data-i18n="hero.cta">Talk to us</a>
+        <a class="btn btn-line" href="#modules" data-i18n="hero.more">See the modules</a>
       </div>
     </section>
 
-    <section class="hero-strip" aria-label="Comic: how it feels from the outside">
-      <div class="wrap strip three">
-        <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="An adviser hands a payslip to the API and asks how long it will take.">
+    <section class="shell herostrip" aria-label="How it looks from the outside">
+          <div class="strip three">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="An adviser hands a payslip to the API and asks how long it will take.">
           <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
           <use href="#c-adviser-hold" x="24" y="92" width="120" height="200"/>
           <use href="#c-api" x="212" y="160" width="132" height="132"/>
           <path d="M130 86 Q124 110 118 150" class="tail"/>
           <foreignObject x="22" y="14" width="220" height="74"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="strip.p1a">One payslip. How long will this take?</div></foreignObject>
         </svg>
-        <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API works on its own: it reads, cross-checks, votes and confirms.">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API works on its own: it reads, cross-checks, votes and confirms.">
           <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
           <use href="#c-doc" x="158" y="70" width="44" height="58"/>
           <use href="#c-api" x="114" y="118" width="132" height="132"/>
           <circle cx="262" cy="96" r="4" class="fi"/><circle cx="278" cy="78" r="6" class="fi"/><circle cx="300" cy="56" r="8" class="fi"/>
           <text x="180" y="278" class="cap" data-i18n="strip.p2cap">reads · cross-checks · votes · confirms</text>
         </svg>
-        <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API reports 34 fields with confidence scores. The adviser asks whether that is it. The API says that is it.">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API reports 34 fields with confidence scores. The adviser asks whether that is it. The API says that is it.">
           <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
           <use href="#c-api" x="18" y="160" width="132" height="132"/>
           <use href="#c-adviser" x="220" y="92" width="120" height="200"/>
@@ -165,42 +161,31 @@
           <foreignObject x="228" y="14" width="120" height="48"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="strip.p3b">That’s it?</div></foreignObject>
           <foreignObject x="18" y="104" width="150" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="strip.p3c">That’s it.</div></foreignObject>
         </svg>
-      </div>
+          </div>
     </section>
 
-    <section id="api" class="how"><div class="wrap">
-      <div class="section-intro">
-        <div class="eyebrow" data-i18n="how.eyebrow">How it works</div>
-        <h2 data-i18n="how.title">Three steps. Nothing to configure.</h2>
-      </div>
-      <div class="how-grid">
-        <ol class="steps">
-          <li>
-            <div class="step-num">01</div>
-            <h3 data-i18n="how.s1t">Upload</h3>
-            <p data-i18n="how.s1c">One call with the document and its type. You get a document ID back immediately.</p>
-          </li>
-          <li>
-            <div class="step-num">02</div>
-            <h3 data-i18n="how.s2t">Wait a moment</h3>
-            <p data-i18n="how.s2c">Processing runs in the background. Correctness comes before speed: a slow, right answer beats a fast, wrong one.</p>
-          </li>
-          <li>
-            <div class="step-num">03</div>
-            <h3 data-i18n="how.s3t">Collect</h3>
-            <p data-i18n="how.s3c">Poll with the ID and receive every field as a name, a value and a confidence.</p>
-          </li>
-        </ol>
-        <div class="code-card">
+    <section id="api" class="band band-ledger">
+      <div class="shell split">
+        <div class="split-title">
+          <p class="kicker" data-i18n="how.eyebrow">How it works</p>
+          <h2 data-i18n="how.title">Three steps. Nothing to configure.</h2>
+        </div>
+        <div>
+          <ol class="steps">
+            <li><div><h3 data-i18n="how.s1t">Upload</h3><p data-i18n="how.s1c">One call with the document and its type. You get a document ID back immediately.</p></div></li>
+            <li><div><h3 data-i18n="how.s2t">Wait a moment</h3><p data-i18n="how.s2c">Processing runs in the background. Correctness comes before speed: a slow, right answer beats a fast, wrong one.</p></div></li>
+            <li><div><h3 data-i18n="how.s3t">Collect</h3><p data-i18n="how.s3c">Poll with the ID and receive every field as a name, a value and a confidence.</p></div></li>
+          </ol>
+          <div class="code-card">
 <pre><code><span class="c-m">POST</span> /documents/DocumentsSend
 <span class="c-k">document-type:</span> ls
 <span class="c-k">document-data:</span> loonstrook.pdf
 
-<span class="c-r">→ { "DocumentID": "f47ac10b-58cc-4372-a567-0e02b2c3d479" }</span>
+<span class="c-r">&rarr; { "DocumentID": "f47ac10b-58cc-4372-a567-0e02b2c3d479" }</span>
 
-<span class="c-m">GET</span>  /documents/GetResults?document-id=f47ac10b-…
+<span class="c-m">GET</span>  /documents/GetResults?document-id=f47ac10b-&hellip;
 
-<span class="c-r">→ {
+<span class="c-r">&rarr; {
     "Status": "Finished",
     "DocumentType": "ls",
     "FlowData": [
@@ -211,31 +196,56 @@
       { "name": "netto_uitbetaald", "value": 3892.5, "confidence": 0.99 }
     ]
   }</span></code></pre>
-          <div class="code-cap" data-i18n="how.codecap">Trimmed example. Field names and formats are documented per module.</div>
+            <p class="code-cap" data-i18n="how.codecap">Trimmed example. Field names and formats are documented per module.</p>
+          </div>
         </div>
-      </div>
       </div>
     </section>
 
-    <section id="modules" class="band-surface modules"><div class="wrap">
-      <div class="section-intro">
-        <div class="eyebrow" data-i18n="modules.eyebrow">Modules</div>
-        <h2 data-i18n="modules.title">Seven document types, each with its own module.</h2>
-        <p data-i18n="modules.intro">Every document type gets the treatment it needs. Standardised forms lean on layout models; documents that look different every time lean on several language models that vote. What comes out is the same for all: a flat list of fields.</p>
+    <section id="modules" class="band">
+      <div class="shell">
+        <div class="split" style="margin-bottom: 52px">
+          <div class="split-title">
+            <p class="kicker" data-i18n="modules.eyebrow">Modules</p>
+            <h2 data-i18n="modules.title">Seven document types, each with its own module.</h2>
+          </div>
+          <div class="prose">
+            <p data-i18n="modules.intro">Every document type gets the treatment it needs. Standardised forms lean on layout models; documents that look different every time lean on several language models that vote. What comes out is the same for all: a flat list of fields.</p>
+          </div>
+        </div>
+
+        <div class="overview-wrap">
+        <table class="overview">
+          <thead>
+            <tr>
+              <th data-i18n="tbl.doc">Document</th>
+              <th data-i18n="tbl.code">Type</th>
+              <th class="num" data-i18n="tbl.fields">Fields</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><a href="#m1" data-i18n="m1.name">Employer declaration</a></td><td class="mono" data-i18n="m1.code">wgv</td><td class="num" data-i18n="m1.count">74</td></tr>
+            <tr><td><a href="#m2" data-i18n="m2.name">Identity document</a></td><td class="mono" data-i18n="m2.code">legi</td><td class="num" data-i18n="m2.count">17</td></tr>
+            <tr><td><a href="#m3" data-i18n="m3.name">Purchase agreement</a></td><td class="mono" data-i18n="m3.code">kovk</td><td class="num" data-i18n="m3.count">43</td></tr>
+            <tr><td><a href="#m4" data-i18n="m4.name">Payslip</a></td><td class="mono" data-i18n="m4.code">ls</td><td class="num" data-i18n="m4.count">34</td></tr>
+            <tr><td><a href="#m5" data-i18n="m5.name">Appraisal report</a></td><td class="mono" data-i18n="m5.code">taxrap</td><td class="num" data-i18n="m5.count">112</td></tr>
+            <tr><td><a href="#m6" data-i18n="m6.name">DUO student loan statement</a></td><td class="mono" data-i18n="m6.code">duo</td><td class="num" data-i18n="m6.count">51</td></tr>
+            <tr><td><a href="#m7" data-i18n="m7.name">Chamber of Commerce extract</a></td><td class="mono" data-i18n="m7.code">kvk</td><td class="num" data-i18n="m7.count">29</td></tr>
+          </tbody>
+        </table>
+        </div>
       </div>
 
-      <!-- 01 Employer declaration -->
-      <article class="module">
-        <header class="module-head">
-          <div class="module-index">01</div>
-          <div class="module-title">
-            <h3 data-i18n="m1.name">Employer declaration</h3>
-            <div class="module-doc" data-i18n="m1.doc">Werkgeversverklaring, NHG model</div>
-          </div>
-          <div class="module-meta"><span class="pill code" data-i18n="m1.code">wgv</span><span class="pill"><b data-i18n="m1.count">74</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
-        </header>
-        <div class="strip two">
-          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The underwriter looks at a form filled in with a blue pen, signed in black, with something crossed out.">
+      <div class="shell modules">
+      <article class="module" id="m1">
+        <div class="module-id">
+          <h3 data-i18n="m1.name">Employer declaration</h3>
+          <p class="module-doc" data-i18n="m1.doc">Werkgeversverklaring, NHG model</p>
+          <p class="module-meta"><span class="mono" data-i18n="m1.code">wgv</span><span><span data-i18n="m1.count">74</span> <span data-i18n="modules.fields">fields</span></span></p>
+        </div>
+        <div class="module-main">
+          <div class="strip two">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The underwriter looks at a form filled in with a blue pen, signed in black, with something crossed out.">
             <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-under" x="14" y="92" width="120" height="200"/>
             <g class="ln"><path d="M186 112 h150 v176 h-150 z"/></g>
@@ -246,7 +256,7 @@
             <path d="M124 88 Q118 118 108 150" class="tail"/>
             <foreignObject x="18" y="12" width="326" height="74"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m1.b1">Filled in with a blue pen. Signed with a black one. And something crossed out.</div></foreignObject>
           </svg>
-          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API reports two ink colours and one strikethrough, both flagged, in fields 73 and 74.">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API reports two ink colours and one strikethrough, both flagged, in fields 73 and 74.">
             <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-api" x="18" y="160" width="132" height="132"/>
             <use href="#c-under" x="220" y="92" width="120" height="200"/>
@@ -257,33 +267,31 @@
             <foreignObject x="228" y="14" width="120" height="56"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m1.b3">You noticed?</div></foreignObject>
             <foreignObject x="18" y="108" width="150" height="42"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m1.b4">Fields 73 and 74.</div></foreignObject>
           </svg>
-        </div>
-        <div class="module-body">
-          <div><div class="label" data-i18n="modules.inLabel">What goes in</div><p data-i18n="m1.in">A scanned or digital employer declaration, filled in by hand or typed.</p></div>
-          <div><div class="label" data-i18n="modules.outLabel">What comes out</div><p data-i18n="m1.out">Employee and employer details, contract type, probation, reorganisation, the full income table, private loans and wage garnishment, the signature block and the NHG model number.</p></div>
-          <div><div class="label" data-i18n="modules.checkLabel">Worth noticing</div><p data-i18n="m1.check">Two visual checks most people would not expect from software: are there strikethroughs or corrections, and was the form filled in with more than one ink colour.</p></div>
+          </div>
+          <div class="module-body">
+            <div><h4 data-i18n="modules.inLabel">What goes in</h4><p data-i18n="m1.in">A scanned or digital employer declaration, filled in by hand or typed.</p></div>
+            <div><h4 data-i18n="modules.outLabel">What comes out</h4><p data-i18n="m1.out">Employee and employer details, contract type, probation, reorganisation, the full income table, private loans and wage garnishment, the signature block and the NHG model number.</p></div>
+            <div><h4 data-i18n="modules.checkLabel">Worth noticing</h4><p data-i18n="m1.check">Two visual checks most people would not expect from software: are there strikethroughs or corrections, and was the form filled in with more than one ink colour.</p></div>
+          </div>
         </div>
       </article>
 
-      <!-- 02 Identity document -->
-      <article class="module">
-        <header class="module-head">
-          <div class="module-index">02</div>
-          <div class="module-title">
-            <h3 data-i18n="m2.name">Identity document</h3>
-            <div class="module-doc" data-i18n="m2.doc">Passport or identity card</div>
-          </div>
-          <div class="module-meta"><span class="pill code" data-i18n="m2.code">legi</span><span class="pill"><b data-i18n="m2.count">17</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
-        </header>
-        <div class="strip two">
-          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The adviser hands over a black-and-white passport scan.">
+      <article class="module" id="m2">
+        <div class="module-id">
+          <h3 data-i18n="m2.name">Identity document</h3>
+          <p class="module-doc" data-i18n="m2.doc">Passport or identity card</p>
+          <p class="module-meta"><span class="mono" data-i18n="m2.code">legi</span><span><span data-i18n="m2.count">17</span> <span data-i18n="modules.fields">fields</span></span></p>
+        </div>
+        <div class="module-main">
+          <div class="strip two">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The adviser hands over a black-and-white passport scan.">
             <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-adviser" x="14" y="92" width="120" height="200"/>
             <g class="ln"><path d="M176 150 h160 v112 h-160 z"/><rect x="190" y="166" width="46" height="58" class="fg"/><path d="M250 172 h70 M250 186 h56 M250 200 h70 M250 214 h40" class="thin"/><path d="M190 240 h130 M190 250 h130" class="mrz"/></g>
             <path d="M124 78 Q118 114 108 150" class="tail"/>
             <foreignObject x="18" y="12" width="230" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m2.b1">Passport scan, as requested.</div></foreignObject>
           </svg>
-          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API says the scan is black and white and the page with the perforated number is missing. The adviser will ask for a new one.">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API says the scan is black and white and the page with the perforated number is missing. The adviser will ask for a new one.">
             <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-api" x="18" y="160" width="132" height="132"/>
             <use href="#c-adviser" x="220" y="92" width="120" height="200"/>
@@ -292,26 +300,24 @@
             <foreignObject x="18" y="14" width="200" height="86"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m2.b2">Black and white. And the page with the perforated number is missing.</div></foreignObject>
             <foreignObject x="228" y="14" width="122" height="70"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m2.b3">I’ll ask for a new one.</div></foreignObject>
           </svg>
-        </div>
-        <div class="module-body">
-          <div><div class="label" data-i18n="modules.inLabel">What goes in</div><p data-i18n="m2.in">A scan of a passport or identity card, front and back.</p></div>
-          <div><div class="label" data-i18n="modules.outLabel">What comes out</div><p data-i18n="m2.out">Name, date and place of birth, nationality as an ISO code, document number, issue and expiry date, issuing authority.</p></div>
-          <div><div class="label" data-i18n="modules.checkLabel">Worth noticing</div><p data-i18n="m2.check">Whether the citizen service number is visible, whether the scan is in colour, and for passports whether the opposite page with the perforated document number is included. The machine-readable zone is verified with its own check digits.</p></div>
+          </div>
+          <div class="module-body">
+            <div><h4 data-i18n="modules.inLabel">What goes in</h4><p data-i18n="m2.in">A scan of a passport or identity card, front and back.</p></div>
+            <div><h4 data-i18n="modules.outLabel">What comes out</h4><p data-i18n="m2.out">Name, date and place of birth, nationality as an ISO code, document number, issue and expiry date, issuing authority.</p></div>
+            <div><h4 data-i18n="modules.checkLabel">Worth noticing</h4><p data-i18n="m2.check">Whether the citizen service number is visible, whether the scan is in colour, and for passports whether the opposite page with the perforated document number is included. The machine-readable zone is verified with its own check digits.</p></div>
+          </div>
         </div>
       </article>
 
-      <!-- 03 Purchase agreement -->
-      <article class="module">
-        <header class="module-head">
-          <div class="module-index">03</div>
-          <div class="module-title">
-            <h3 data-i18n="m3.name">Purchase agreement</h3>
-            <div class="module-doc" data-i18n="m3.doc">Koopovereenkomst</div>
-          </div>
-          <div class="module-meta"><span class="pill code" data-i18n="m3.code">kovk</span><span class="pill"><b data-i18n="m3.count">43</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
-        </header>
-        <div class="strip two">
-          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The underwriter reads the purchase price out loud, in digits and in words.">
+      <article class="module" id="m3">
+        <div class="module-id">
+          <h3 data-i18n="m3.name">Purchase agreement</h3>
+          <p class="module-doc" data-i18n="m3.doc">Koopovereenkomst</p>
+          <p class="module-meta"><span class="mono" data-i18n="m3.code">kovk</span><span><span data-i18n="m3.count">43</span> <span data-i18n="modules.fields">fields</span></span></p>
+        </div>
+        <div class="module-main">
+          <div class="strip two">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The underwriter reads the purchase price out loud, in digits and in words.">
             <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-under-hold" x="14" y="92" width="120" height="200"/>
             <g class="ln"><path d="M186 120 h150 v168 h-150 z"/></g>
@@ -321,7 +327,7 @@
             <path d="M124 82 Q118 116 108 150" class="tail"/>
             <foreignObject x="18" y="12" width="326" height="68"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m3.b1">Purchase price € 407.000. In words: vierhonderdzevenduizend.</div></foreignObject>
           </svg>
-          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API says digits and words agree with confidence 0.99. The underwriter asks whether it reads the words too. Always.">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API says digits and words agree with confidence 0.99. The underwriter asks whether it reads the words too. Always.">
             <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-api" x="18" y="160" width="132" height="132"/>
             <use href="#c-under" x="220" y="92" width="120" height="200"/>
@@ -332,26 +338,24 @@
             <foreignObject x="228" y="14" width="122" height="62"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m3.b3">You read the words too?</div></foreignObject>
             <foreignObject x="18" y="108" width="150" height="42"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m3.b4">Always.</div></foreignObject>
           </svg>
-        </div>
-        <div class="module-body">
-          <div><div class="label" data-i18n="modules.inLabel">What goes in</div><p data-i18n="m3.in">A signed purchase agreement for a home, often twenty pages or more.</p></div>
-          <div><div class="label" data-i18n="modules.outLabel">What comes out</div><p data-i18n="m3.out">Both buyers, the property, purchase price, movable goods, completion date, notary, bank guarantee and the financing condition.</p></div>
-          <div><div class="label" data-i18n="modules.checkLabel">Worth noticing</div><p data-i18n="m3.check">Amounts appear twice in a Dutch purchase agreement: in digits and written out. Both are extracted and compared, and the comparison feeds the confidence score.</p></div>
+          </div>
+          <div class="module-body">
+            <div><h4 data-i18n="modules.inLabel">What goes in</h4><p data-i18n="m3.in">A signed purchase agreement for a home, often twenty pages or more.</p></div>
+            <div><h4 data-i18n="modules.outLabel">What comes out</h4><p data-i18n="m3.out">Both buyers, the property, purchase price, movable goods, completion date, notary, bank guarantee and the financing condition.</p></div>
+            <div><h4 data-i18n="modules.checkLabel">Worth noticing</h4><p data-i18n="m3.check">Amounts appear twice in a Dutch purchase agreement: in digits and written out. Both are extracted and compared, and the comparison feeds the confidence score.</p></div>
+          </div>
         </div>
       </article>
 
-      <!-- 04 Payslip -->
-      <article class="module">
-        <header class="module-head">
-          <div class="module-index">04</div>
-          <div class="module-title">
-            <h3 data-i18n="m4.name">Payslip</h3>
-            <div class="module-doc" data-i18n="m4.doc">Loonstrook</div>
-          </div>
-          <div class="module-meta"><span class="pill code" data-i18n="m4.code">ls</span><span class="pill"><b data-i18n="m4.count">34</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
-        </header>
-        <div class="strip two">
-          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The adviser stands next to three payslips that all look different.">
+      <article class="module" id="m4">
+        <div class="module-id">
+          <h3 data-i18n="m4.name">Payslip</h3>
+          <p class="module-doc" data-i18n="m4.doc">Loonstrook</p>
+          <p class="module-meta"><span class="mono" data-i18n="m4.code">ls</span><span><span data-i18n="m4.count">34</span> <span data-i18n="modules.fields">fields</span></span></p>
+        </div>
+        <div class="module-main">
+          <div class="strip two">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The adviser stands next to three payslips that all look different.">
             <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-adviser" x="10" y="92" width="120" height="200"/>
             <g class="ln">
@@ -362,7 +366,7 @@
             <path d="M120 76 Q114 112 104 150" class="tail"/>
             <foreignObject x="18" y="12" width="326" height="62"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m4.b1">Every employer has its own payslip layout.</div></foreignObject>
           </svg>
-          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API returns the same 34 fields every time, shown as a neat list with confidence bars.">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The API returns the same 34 fields every time, shown as a neat list with confidence bars.">
             <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-api" x="18" y="160" width="132" height="132"/>
             <g class="ln"><path d="M190 96 h150 v190 h-150 z"/></g>
@@ -371,26 +375,24 @@
             <path d="M108 82 Q112 130 110 176" class="tail"/>
             <foreignObject x="18" y="12" width="200" height="68"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m4.b2">Same 34 fields. Every time.</div></foreignObject>
           </svg>
-        </div>
-        <div class="module-body">
-          <div><div class="label" data-i18n="modules.inLabel">What goes in</div><p data-i18n="m4.in">A payslip from any employer or payroll provider, in any layout.</p></div>
-          <div><div class="label" data-i18n="modules.outLabel">What comes out</div><p data-i18n="m4.out">Employee and employer, IBAN, hours and part-time factor, contract flags, pay period, salary components, pension contribution, end-of-year bonus, thirteenth month, individual choice budget and net paid.</p></div>
-          <div><div class="label" data-i18n="modules.checkLabel">Worth noticing</div><p data-i18n="m4.check">Payslips are the least standardised document in the set. Several models read every payslip independently and vote on each field. What they agree on is then confirmed against the text of the document.</p></div>
+          </div>
+          <div class="module-body">
+            <div><h4 data-i18n="modules.inLabel">What goes in</h4><p data-i18n="m4.in">A payslip from any employer or payroll provider, in any layout.</p></div>
+            <div><h4 data-i18n="modules.outLabel">What comes out</h4><p data-i18n="m4.out">Employee and employer, IBAN, hours and part-time factor, contract flags, pay period, salary components, pension contribution, end-of-year bonus, thirteenth month, individual choice budget and net paid.</p></div>
+            <div><h4 data-i18n="modules.checkLabel">Worth noticing</h4><p data-i18n="m4.check">Payslips are the least standardised document in the set. Several models read every payslip independently and vote on each field. What they agree on is then confirmed against the text of the document.</p></div>
+          </div>
         </div>
       </article>
 
-      <!-- 05 Appraisal report -->
-      <article class="module spot">
-        <header class="module-head">
-          <div class="module-index">05</div>
-          <div class="module-title">
-            <h3 data-i18n="m5.name">Appraisal report</h3>
-            <div class="module-doc" data-i18n="m5.doc">Taxatierapport</div>
-          </div>
-          <div class="module-meta"><span class="pill code" data-i18n="m5.code">taxrap</span><span class="pill"><b data-i18n="m5.count">112</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
-        </header>
-        <div class="spot-grid">
-          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The underwriter stands behind a sixty-page report. The API says the energy label is on page 12, the foundation on page 58, 112 fields in total.">
+      <article class="module" id="m5">
+        <div class="module-id">
+          <h3 data-i18n="m5.name">Appraisal report</h3>
+          <p class="module-doc" data-i18n="m5.doc">Taxatierapport</p>
+          <p class="module-meta"><span class="mono" data-i18n="m5.code">taxrap</span><span><span data-i18n="m5.count">112</span> <span data-i18n="modules.fields">fields</span></span></p>
+        </div>
+        <div class="module-main">
+          <div class="strip one">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The underwriter stands behind a sixty-page report. The API says the energy label is on page 12, the foundation on page 58, 112 fields in total.">
             <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-under" x="14" y="92" width="120" height="200"/>
             <g class="ln"><path d="M126 222 h96 v66 h-96 z"/><path d="M126 232 h96 M126 242 h96 M126 252 h96 M126 262 h96 M126 272 h96" class="thin"/><path d="M118 214 h96 v8 h-96 z"/></g>
@@ -400,26 +402,24 @@
             <foreignObject x="16" y="12" width="126" height="50"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m5.b1">Sixty pages.</div></foreignObject>
             <foreignObject x="156" y="12" width="192" height="92"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m5.b2">Energy label on page 12. Foundation on page 58. 112 fields.</div></foreignObject>
           </svg>
+          </div>
           <div class="module-body">
-            <div><div class="label" data-i18n="modules.inLabel">What goes in</div><p data-i18n="m5.in">A residential appraisal report, typically fifty pages or more.</p></div>
-            <div><div class="label" data-i18n="modules.outLabel">What comes out</div><p data-i18n="m5.out">Client, property, market value, valuation date, leasehold, homeowners’ association, energy label, a sustainability block covering insulation, heating, energy generation and improvement potential, and the foundation report.</p></div>
-            <div><div class="label" data-i18n="modules.checkLabel">Worth noticing</div><p data-i18n="m5.check">Fields only appear where they apply: leasehold details for leasehold properties, association details for apartments. The sustainability block is the newest part and is still being refined.</p></div>
+            <div><h4 data-i18n="modules.inLabel">What goes in</h4><p data-i18n="m5.in">A residential appraisal report, typically fifty pages or more.</p></div>
+            <div><h4 data-i18n="modules.outLabel">What comes out</h4><p data-i18n="m5.out">Client, property, market value, valuation date, leasehold, homeowners’ association, energy label, a sustainability block covering insulation, heating, energy generation and improvement potential, and the foundation report.</p></div>
+            <div><h4 data-i18n="modules.checkLabel">Worth noticing</h4><p data-i18n="m5.check">Fields only appear where they apply: leasehold details for leasehold properties, association details for apartments. The sustainability block is the newest part and is still being refined.</p></div>
           </div>
         </div>
       </article>
 
-      <!-- 06 DUO -->
-      <article class="module spot">
-        <header class="module-head">
-          <div class="module-index">06</div>
-          <div class="module-title">
-            <h3 data-i18n="m6.name">DUO student loan statement</h3>
-            <div class="module-doc" data-i18n="m6.doc">Overzicht studieschuld</div>
-          </div>
-          <div class="module-meta"><span class="pill code" data-i18n="m6.code">duo</span><span class="pill"><b data-i18n="m6.count">51</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
-        </header>
-        <div class="spot-grid">
-          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The adviser asks about student debt. The API answers: two loans, with balance, interest and term for each.">
+      <article class="module" id="m6">
+        <div class="module-id">
+          <h3 data-i18n="m6.name">DUO student loan statement</h3>
+          <p class="module-doc" data-i18n="m6.doc">Overzicht studieschuld</p>
+          <p class="module-meta"><span class="mono" data-i18n="m6.code">duo</span><span><span data-i18n="m6.count">51</span> <span data-i18n="modules.fields">fields</span></span></p>
+        </div>
+        <div class="module-main">
+          <div class="strip one">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The adviser asks about student debt. The API answers: two loans, with balance, interest and term for each.">
             <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-adviser" x="14" y="92" width="120" height="200"/>
             <g class="ln"><path d="M152 222 h64 v56 h-64 z"/><path d="M162 236 h44 M162 248 h30 M162 260 h44" class="thin"/><path d="M164 208 h64 v56 h-64 z"/><path d="M174 222 h44 M174 234 h30 M174 246 h44" class="thin"/></g>
@@ -429,26 +429,24 @@
             <foreignObject x="16" y="12" width="126" height="46"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m6.b1">Student debt?</div></foreignObject>
             <foreignObject x="156" y="12" width="192" height="80"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m6.b2">Two loans. Balance, interest and term for each.</div></foreignObject>
           </svg>
+          </div>
           <div class="module-body">
-            <div><div class="label" data-i18n="modules.inLabel">What goes in</div><p data-i18n="m6.in">A DUO statement as a PDF, a screenshot or a forwarded e-mail.</p></div>
-            <div><div class="label" data-i18n="modules.outLabel">What comes out</div><p data-i18n="m6.out">Borrower details, total balance, and for each of up to five separate loans the type, start and current balance, interest, remaining term and repayment rules.</p></div>
-            <div><div class="label" data-i18n="modules.checkLabel">Worth noticing</div><p data-i18n="m6.check">A statement that explicitly says there is no student debt is recognised as such. That is different from a statement where the loan fields are simply empty.</p></div>
+            <div><h4 data-i18n="modules.inLabel">What goes in</h4><p data-i18n="m6.in">A DUO statement as a PDF, a screenshot or a forwarded e-mail.</p></div>
+            <div><h4 data-i18n="modules.outLabel">What comes out</h4><p data-i18n="m6.out">Borrower details, total balance, and for each of up to five separate loans the type, start and current balance, interest, remaining term and repayment rules.</p></div>
+            <div><h4 data-i18n="modules.checkLabel">Worth noticing</h4><p data-i18n="m6.check">A statement that explicitly says there is no student debt is recognised as such. That is different from a statement where the loan fields are simply empty.</p></div>
           </div>
         </div>
       </article>
 
-      <!-- 07 KVK -->
-      <article class="module spot">
-        <header class="module-head">
-          <div class="module-index">07</div>
-          <div class="module-title">
-            <h3 data-i18n="m7.name">Chamber of Commerce extract</h3>
-            <div class="module-doc" data-i18n="m7.doc">KVK-uittreksel</div>
-          </div>
-          <div class="module-meta"><span class="pill code" data-i18n="m7.code">kvk</span><span class="pill"><b data-i18n="m7.count">29</b>&nbsp;<span data-i18n="modules.fields">fields</span></span></div>
-        </header>
-        <div class="spot-grid">
-          <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The underwriter asks who may sign for the company. The API answers: three persons, each with their role.">
+      <article class="module" id="m7">
+        <div class="module-id">
+          <h3 data-i18n="m7.name">Chamber of Commerce extract</h3>
+          <p class="module-doc" data-i18n="m7.doc">KVK-uittreksel</p>
+          <p class="module-meta"><span class="mono" data-i18n="m7.code">kvk</span><span><span data-i18n="m7.count">29</span> <span data-i18n="modules.fields">fields</span></span></p>
+        </div>
+        <div class="module-main">
+          <div class="strip one">
+            <svg class="cmc" viewBox="0 0 360 300" role="img" aria-label="The underwriter asks who may sign for the company. The API answers: three persons, each with their role.">
             <rect x="2" y="2" width="356" height="296" rx="22" class="frame"/>
             <use href="#c-under" x="14" y="92" width="120" height="200"/>
             <g class="ln"><circle cx="156" cy="232" r="10"/><path d="M142 288 q0 -30 14 -30 q14 0 14 30 z"/><circle cx="186" cy="232" r="10"/><path d="M172 288 q0 -30 14 -30 q14 0 14 30 z"/><circle cx="216" cy="232" r="10"/><path d="M202 288 q0 -30 14 -30 q14 0 14 30 z"/></g>
@@ -458,64 +456,75 @@
             <foreignObject x="16" y="12" width="150" height="70"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m7.b1">Who is allowed to sign for this company?</div></foreignObject>
             <foreignObject x="176" y="12" width="172" height="70"><div xmlns="http://www.w3.org/1999/xhtml" class="bub" data-i18n="m7.b2">Three persons, each with their role.</div></foreignObject>
           </svg>
+          </div>
           <div class="module-body">
-            <div><div class="label" data-i18n="modules.inLabel">What goes in</div><p data-i18n="m7.in">A KVK extract for a company or a sole proprietorship.</p></div>
-            <div><div class="label" data-i18n="modules.outLabel">What comes out</div><p data-i18n="m7.out">Trade name, legal form, KVK and RSIN numbers, SBI codes, start date, shareholders and directors, and up to five natural persons with their role.</p></div>
-            <div><div class="label" data-i18n="modules.checkLabel">Worth noticing</div><p data-i18n="m7.check">Roles come back as stated on the extract: owner, partner, shareholder, director. That is what a lender needs in order to know who may sign.</p></div>
+            <div><h4 data-i18n="modules.inLabel">What goes in</h4><p data-i18n="m7.in">A KVK extract for a company or a sole proprietorship.</p></div>
+            <div><h4 data-i18n="modules.outLabel">What comes out</h4><p data-i18n="m7.out">Trade name, legal form, KVK and RSIN numbers, SBI codes, start date, shareholders and directors, and up to five natural persons with their role.</p></div>
+            <div><h4 data-i18n="modules.checkLabel">Worth noticing</h4><p data-i18n="m7.check">Roles come back as stated on the extract: owner, partner, shareholder, director. That is what a lender needs in order to know who may sign.</p></div>
           </div>
         </div>
       </article>
       </div>
     </section>
 
-    <section class="reliable"><div class="wrap">
-      <div class="section-intro">
-        <div class="eyebrow" data-i18n="reliable.eyebrow">What makes it reliable</div>
-        <h2 data-i18n="reliable.title">Extract first. Verify. Normalise last.</h2>
-        <p data-i18n="reliable.intro">A single model reading a document is a guess. The module around it is what turns a guess into a result you can build a process on.</p>
-      </div>
-      <ol class="pipeline">
-        <li><div class="step-num">01</div><h3 data-i18n="reliable.s1t">Extract as is</h3><p data-i18n="reliable.s1c">Values are taken exactly as they appear in the document. Nothing is interpreted yet.</p></li>
-        <li><div class="step-num">02</div><h3 data-i18n="reliable.s2t">Cross-check</h3><p data-i18n="reliable.s2c">Where a document says the same thing twice, both are compared: an amount in digits and in words, a date here and a date there.</p></li>
-        <li><div class="step-num">03</div><h3 data-i18n="reliable.s3t">Vote</h3><p data-i18n="reliable.s3c">For documents with many layouts, several models read the same document with different settings. The answer is what they agree on.</p></li>
-        <li><div class="step-num">04</div><h3 data-i18n="reliable.s4t">Confirm</h3><p data-i18n="reliable.s4c">Every extracted value is searched for in the raw text of the document. A value that cannot be found there loses confidence.</p></li>
-        <li><div class="step-num">05</div><h3 data-i18n="reliable.s5t">Normalise last</h3><p data-i18n="reliable.s5c">Only at the end are dates, country codes, postcodes and names brought into a fixed format, so that you never have to.</p></li>
-      </ol>
-      <div class="confidence">
-        <h3 data-i18n="reliable.conft">One confidence per field</h3>
-        <ul class="tiers">
-          <li><span class="tier-bar" style="--w: 97%"></span><span data-i18n="reliable.hi">0.95 and up. Several methods agreed and the value was found in the document text.</span></li>
-          <li><span class="tier-bar" style="--w: 80%"></span><span data-i18n="reliable.mid">Around 0.80. Most methods agreed. Suitable for most automated workflows.</span></li>
-          <li><span class="tier-bar low" style="--w: 60%"></span><span data-i18n="reliable.low">0.60 and below. Methods disagreed. Have a person look.</span></li>
-        </ul>
-      </div>
+    <section class="band band-ledger">
+      <div class="shell">
+        <div class="split" style="margin-bottom: 48px">
+          <div class="split-title">
+            <p class="kicker" data-i18n="reliable.eyebrow">What makes it reliable</p>
+            <h2 data-i18n="reliable.title">Extract first. Verify. Normalise last.</h2>
+          </div>
+          <div class="prose">
+            <p data-i18n="reliable.intro">A single model reading a document is a guess. The module around it is what turns a guess into a result you can build a process on.</p>
+          </div>
+        </div>
+
+        <ol class="pipeline">
+          <li><h3 data-i18n="reliable.s1t">Extract as is</h3><p data-i18n="reliable.s1c">Values are taken exactly as they appear in the document. Nothing is interpreted yet.</p></li>
+          <li><h3 data-i18n="reliable.s2t">Cross-check</h3><p data-i18n="reliable.s2c">Where a document says the same thing twice, both are compared: an amount in digits and in words, a date here and a date there.</p></li>
+          <li><h3 data-i18n="reliable.s3t">Vote</h3><p data-i18n="reliable.s3c">For documents with many layouts, several models read the same document with different settings. The answer is what they agree on.</p></li>
+          <li><h3 data-i18n="reliable.s4t">Confirm</h3><p data-i18n="reliable.s4c">Every extracted value is searched for in the raw text of the document. A value that cannot be found there loses confidence.</p></li>
+          <li><h3 data-i18n="reliable.s5t">Normalise last</h3><p data-i18n="reliable.s5c">Only at the end are dates, country codes, postcodes and names brought into a fixed format, so that you never have to.</p></li>
+        </ol>
+
+        <div class="tiers-block">
+          <h3 data-i18n="reliable.conft">One confidence per field</h3>
+          <ul class="tiers">
+            <li><span class="meter"><i style="--v:97%"></i></span><span data-i18n="reliable.hi">0.95 and up. Several methods agreed and the value was found in the document text.</span></li>
+            <li><span class="meter"><i style="--v:80%"></i></span><span data-i18n="reliable.mid">Around 0.80. Most methods agreed. Suitable for most automated workflows.</span></li>
+            <li><span class="meter low"><i style="--v:60%"></i></span><span data-i18n="reliable.low">0.60 and below. Methods disagreed. Have a person look.</span></li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="who"><div class="wrap">
-      <div class="section-intro">
-        <div class="eyebrow" data-i18n="who.eyebrow">Who it is for</div>
-        <h2 data-i18n="who.title">Advisers, intermediaries and lenders.</h2>
-      </div>
-      <div class="who-grid">
-        <div class="who-card">
-          <h3 data-i18n="who.at">Advisers and intermediaries</h3>
-          <p data-i18n="who.ac">Prepare a complete application faster, and see at intake which documents will not do: a black-and-white passport scan, a payslip from the wrong period, an unsigned declaration.</p>
+    <section class="band">
+      <div class="shell split">
+        <div class="split-title">
+          <p class="kicker" data-i18n="who.eyebrow">Who it is for</p>
+          <h2 data-i18n="who.title">Advisers, intermediaries and lenders.</h2>
         </div>
-        <div class="who-card">
-          <h3 data-i18n="who.bt">Lenders</h3>
-          <p data-i18n="who.bc">Support checks, assessment and acceptance with fields you can compare against the application, each with a confidence you can set thresholds on.</p>
+        <div>
+          <dl class="mapping" style="margin-bottom: 34px">
+            <div class="mapping-row">
+              <dt data-i18n="who.at">Advisers and intermediaries</dt>
+              <dd data-i18n="who.ac">Prepare a complete application faster, and see at intake which documents will not do.</dd>
+            </div>
+            <div class="mapping-row">
+              <dt data-i18n="who.bt">Lenders</dt>
+              <dd data-i18n="who.bc">Support checks, assessment and acceptance with fields you can compare against the application.</dd>
+            </div>
+          </dl>
+          <p class="chair" data-i18n="who.note">The API processes one document at a time and returns what that document says. Comparing documents with each other and with the application stays in your process, where your business rules live.</p>
         </div>
-      </div>
-      <p class="who-note" data-i18n="who.note">The API processes one document at a time and returns what that document says. Comparing documents with each other and with the application stays in your process, where your business rules live.</p>
       </div>
     </section>
 
-    <section class="band band-dark closing">
-      <div class="wrap">
-        <div class="practical-grid">
-          <div>
-            <div class="eyebrow" data-i18n="practical.eyebrow">Practicalities</div>
+    <section id="contact" class="band band-deep">
+      <div class="shell">
+        <div class="split">
+          <div class="split-title">
+            <p class="kicker" data-i18n="practical.eyebrow">Practicalities</p>
             <h2 data-i18n="practical.title">Built to be boring to integrate.</h2>
           </div>
           <ul class="practical-list">
@@ -526,32 +535,33 @@
           </ul>
         </div>
 
-        <div id="contact" class="contact-card">
-          <div>
-            <div class="eyebrow" data-i18n="contact.eyebrow">Try it</div>
-            <h3 data-i18n="contact.title">Want to see it with your own documents?</h3>
-            <p data-i18n="contact.copy">Send us a message. We set you up with a key and the documentation, and you can be processing documents the same week.</p>
+        <div class="contact" style="margin-top: 88px; padding-top: 56px; border-top: 1px solid var(--deep-rule)">
+          <div class="split-title">
+            <p class="kicker" data-i18n="contact.eyebrow">Try it</p>
+            <h2 data-i18n="contact.title">Want to see it with your own documents?</h2>
           </div>
-          <a class="contact-mail" href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents">info@smart-backoffice.nl <span>↗</span></a>
+          <div>
+            <div class="prose">
+              <p data-i18n="contact.copy">Send us a message. We set you up with a key and the documentation, and you can be processing documents the same week.</p>
+            </div>
+            <div class="contact-lines">
+              <a class="link" href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents">info@smart-backoffice.nl</a>
+              <span>Saal van Zwanenbergweg 11, 5026 RM Tilburg</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <div>
-        <strong>Smart Backoffice Solutions B.V.</strong><br />
-        Saal van Zwanenbergweg 11 · 5026 RM Tilburg · Nederland
-      </div>
-      <div class="footer-links">
+  <footer class="colophon">
+    <div class="shell colophon-in">
+      <div><strong>Smart Backoffice Solutions B.V.</strong></div>
+      <div class="colophon-links">
         <a href="../" data-i18n="footer.home">Smart Backoffice Solutions</a>
         <a href="../foodmoments/" data-i18n="footer.fm">Food Moments</a>
       </div>
-      <div class="footer-right">
-        KvK 90141482 · BTW NL865221406B01
-      </div>
+      <div>KvK 90141482 &nbsp; BTW NL865221406B01</div>
     </div>
   </footer>
 

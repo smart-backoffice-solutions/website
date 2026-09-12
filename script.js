@@ -1,316 +1,308 @@
 // Landing page copy. The mechanism that applies it lives in i18n.js.
+// Values inside the readout (names, amounts, confidences) are data and live in the HTML.
 window.SBO_COPY = {
   en: {
-    nav: { build: 'What we build', expertise: 'Expertise', approach: 'How we work', contact: 'Contact' },
+    nav: { build: 'What we built', expertise: 'What we know', approach: 'Working with us', contact: 'Contact' },
     hero: {
-      eyebrow: 'AI × Back-end engineering × Economics × Econometrics',
       title: 'AI can do far more than chat. We make it do the work.',
-      copy1: 'AI has become part of everyday life. Most people meet it as an assistant they talk to. That is only the front of it. The real gains come when several AI systems are combined, checked against each other and wired into a real process.',
-      copy2: 'That is what Smart Backoffice Solutions builds: back offices where AI does the work, so that on the outside things are simply easy. A document goes in and every field comes out. A photo of a meal goes in and the meal is understood.',
-      copy3: 'Econometrics helps us turn data into reliable knowledge; engineering lets us turn that knowledge into systems that work. We build what the problem calls for, often involving AI, never technology for its own sake.',
+      lead1: 'Most people meet AI as an assistant they talk to. That is the front of it. The work starts when several models are combined, made to check each other, and wired into a process that has to be right.',
+      lead2: 'We build those back ends, and the domain knowledge that tells them what right means. Submit a payslip and every field comes back, each one carrying how far it can be trusted.',
       cta: 'Get in touch',
-      more: 'See what we build'
+      more: 'See what we built'
     },
-    dg: {
-      in1: 'Documents', in2: 'Photos', in3: 'Speech',
-      box: 'Back office',
-      n1: 'Vision model', n2: 'Language model', n3: 'OCR', n4: 'Domain rules', n5: 'Cross-check · vote · confirm',
-      out: 'Structured result', conf: 'confidence per field'
+    readout: {
+      doc: 'payslip.pdf',
+      count: '34 fields returned',
+      k1: 'Employee', k2: 'Employer', k3: 'Part-time factor', k4: 'Gross salary', k5: 'Net paid', k6: 'Individual choice budget',
+      note: 'Every value is searched for in the document text, compared against the other methods that read it, and returned with a confidence. A field the methods disagree on says so.'
     },
-    signal: {
-      s1: 'AI', s2: 'Back-end', s3: 'Full stack', s4: 'Document AI', s5: 'iOS', s6: 'Economics',
-      s7: 'Econometrics', s8: 'Competition economics', s9: 'Marketing', s10: 'Compliance', s11: 'Dutch mortgages'
+    range: {
+      line: 'Smart Backoffice Solutions works on Dutch mortgage and banking processes, information extraction from documents, iOS and desktop applications, and on economic, econometric and competition analysis for companies, lawyers and courts. Based in Tilburg, the Netherlands.'
     },
-    office: {
-      eyebrow: 'Why “Backoffice”?',
+    ends: {
+      kicker: 'Why we are called Backoffice',
       title: 'The smart part happens where you don’t see it.',
-      copy1: 'The app, the website, the whole software package someone works with is the front end. What that front end can offer depends entirely on the back end behind it. The smarter the back end, the more the front end can do and the better the experience for the person using it.',
-      copy2: 'In the back end, vision models read documents and photos, language models interpret them, OCR confirms what was read, and checks and domain rules catch what a single model gets wrong. Combine those well and the front end can stay simple: one call, one photo, one question. Everything else happens behind it.',
-      copy3: 'We build both ends, and the back end is where we are unusual. Most developers work on the front end. The hard part, combining several models, letting them check each other and wiring them into a real process, happens out of sight.',
-      copy4: 'Smart Backoffice Solutions grew out of the development of a modular information-extraction pipeline for mortgage documents: a back office that could work smarter. From there the company broadened. The same combination of domain knowledge, software engineering, economics and econometrics turned out to be valuable for many other complex problems as well.',
-      front: 'Front end', frontc: 'The app, the website, the screen in the process. What the user sees and works with.',
-      back: 'Back end', backc: 'Models, checks, rules and data working together out of sight. What decides how much the front end can offer.'
+      copy1: 'The app, the website, the whole software package someone works with is the front end. What it can offer them depends entirely on the back end behind it. The smarter the back end, the more the front end can do and the better the experience for the person using it.',
+      copy2: 'In the back end, vision models read documents and photos, language models interpret them, OCR confirms what was read, and checks and domain rules catch what a single model gets wrong. Combine those well and the front end can stay simple: one call, one photo, one question.',
+      copy3: 'We build both ends, and the back end is the unusual part. Most developers work on the front end. This company began by building a back office for mortgage documents that could work smarter, and the same combination of domain knowledge, engineering, economics and econometrics has since proved useful well beyond it.',
+      frontT: 'Front end',
+      frontC: 'The app, the website, the screen in the process. What someone sees and works with.',
+      backT: 'Back end',
+      backC: 'Models, checks, rules and data working together out of sight. What decides how much the front end can offer, and whether its answers hold up.'
     },
-    live: {
-      eyebrow: 'Live today',
-      title: 'Two examples of what that looks like.',
-      intro: 'Different users, different technology under the hood, the same idea: a lot happens in the back office so that very little is asked of the person in front.'
+    built: {
+      kicker: 'In use today',
+      title: 'Two things we built, at opposite ends of the spectrum.',
+      intro: 'One is an interface for other software, used inside a regulated process. The other is a consumer app that has to feel effortless. Both are mostly back end.'
     },
     md: {
-      label: 'API · Dutch mortgage documents',
+      role: 'API for Dutch mortgage documents',
       title: 'Mortgage Documents',
-      copy: 'Submit a mortgage document and receive every relevant field back as structured data, each with its own confidence score. One call per document, and it just works.',
-      copy2: 'The technology helps mortgage advisers and intermediaries prepare applications more efficiently, and supports lenders with controls, assessment and acceptance. Payslips, employer declarations, identity documents, purchase agreements, appraisal reports, DUO statements and KVK extracts.',
-      f1: 'document types', f2: 'fields extracted', f3: 'call per document',
+      copy1: 'Submit one document and receive every relevant field as structured data, each with its own confidence. Payslips, employer declarations, identity documents, purchase agreements, appraisal reports, DUO statements and Chamber of Commerce extracts.',
+      copy2: 'It helps advisers and intermediaries prepare a complete application faster, and supports lenders with controls, assessment and acceptance. Each document type has its own module, because a payslip that looks different at every employer needs different treatment from a standardised form.',
+      s1l: 'document types', s2l: 'fields defined across them', s3l: 'call per document',
       link: 'How it works'
     },
     fm: {
-      label: 'iOS app',
-      badge: 'Coming soon to the App Store',
+      role: 'iPhone app',
+      store: 'Coming soon to the App Store',
       title: 'Food Moments',
-      copy: 'Take a photo of what you eat, say a few words if you like, and see what is in it. It feels like a personal feed, not a food ledger. Underneath, vision models, speech recognition, barcode lookup and the context of your recent meals do the work.',
-      copy2: 'Photos come first: up to ten per meal, with nutrition labels and barcodes read from the shot. Dictate a note and it is transcribed while you talk. The result is a per-dish breakdown with an honest confidence rating, and a day view that shows where you stand before the next meal.',
+      copy1: 'Photograph what you eat, say a few words if you like, and see what is in it. It reads like a personal feed rather than a food ledger, which is the whole point: almost no effort in, a lot of understanding out.',
+      copy2: 'Underneath it are vision models reading up to ten photos of one meal, speech transcription that streams in while you talk, nutrition labels and barcodes read straight from the shot, and the context of your recent meals so that “my usual shake” resolves to yours. Estimates carry a confidence here too.',
+      s1l: 'languages', s2l: 'photos per meal', s3l: 'trackers or ads',
       link: 'About the app'
     },
-    work: {
-      eyebrow: 'What we bring',
-      title: 'A small team with an unusually broad combination of expertise.',
-      intro: 'Building AI that does real work takes three things at once: engineering, a serious approach to data, and knowing the domain. We combine domain knowledge, software engineering, economics and econometrics, using data to understand what is happening and technology to build what is needed. All three in one team.'
+    know: {
+      kicker: 'What we know',
+      title: 'Knowing how to build something is not enough.',
+      intro: 'It gets much better when you also understand what you are building and why. Domain knowledge is what tells a system what a right answer looks like, and it is what tells us which problem is worth solving at all. Building AI that does real work takes engineering that holds up in production, a serious approach to data, and enough domain knowledge to recognise a wrong answer. Most teams have one of the three.',
+      head1: 'What we understand', head2: 'Where it makes the difference',
+      a1: 'Econometrics', b1: 'Work where data analysis is involved, and any number that has to survive being checked.',
+      a2: 'The mortgage industry, and risk management in banking', b2: 'Anything to do with mortgages: what a document has to prove, and what a lender needs to see before saying yes.',
+      a3: 'Competition economics and regulation', b3: 'Compliance, where the rules and the incentives behind them both matter.',
+      a4: 'Marketing', b4: 'Front ends that work for the people using them, because we know what they came to do.'
     },
     ai: {
-      title: 'AI & back-end engineering',
-      copy: 'We build the whole stack, but our strength is the part most developers avoid: the back end. Python services, pipelines that orchestrate several models and let them check each other, APIs that others build on, and the iOS apps, desktop tools and speech interfaces in front of them.',
-      li1: 'Python back ends, pipelines and APIs',
-      li2: 'Document AI, vision and information extraction',
-      li3: 'Combining and checking multiple models',
-      li4: 'Full stack: iOS, desktop, speech transcription'
+      title: 'AI and back-end engineering',
+      copy: 'We build the whole stack, but our strength is the part most developers avoid. Python services, pipelines that run several models and let them check each other, APIs other systems depend on, and the applications in front of them. The interesting problems are rarely in the interface.',
+      tags: 'Python and back ends / Document AI and vision / Information extraction / Combining and checking models / APIs / iOS and desktop / Speech transcription'
     },
     econ: {
-      title: 'Economics & econometrics',
-      copy: 'Economics is about how people, firms and markets behave, and what that means for a decision. We work in two of its areas. The first is extracting credible conclusions from data. The second is competition economics: how markets and platforms function, mergers and acquisitions, and the estimation of damages. We support companies, lawyers and courts with analysis that is clear, rigorous and defensible, and we help with compliance, including using AI to make compliance better. Marketing expertise sits alongside it, so that the question of what a customer actually needs stays in view.',
-      li1: 'Competition economics, platforms, mergers and acquisitions',
-      li2: 'Damages estimation and econometric analysis',
-      li3: 'Expert witness work and litigation support',
-      li4: 'Compliance, and AI for compliance',
-      li5: 'Marketing, customer needs and value creation'
+      title: 'Economics, econometrics and marketing',
+      copy: 'Economics is about how people, firms and markets behave and what that means for a decision. We work on credible conclusions from data, and on competition economics: how markets and platforms function, mergers and acquisitions, and the estimation of damages. We support companies, lawyers and courts with analysis that has to survive scrutiny. Marketing expertise sits alongside it, which is what keeps a solution pointed at something a customer actually needs.',
+      tags: 'Competition economics / Platform economics / Mergers and acquisitions / Damages estimation / Econometric analysis / Expert witness work / Marketing and customer needs / Compliance, and AI for compliance'
     },
     fin: {
-      title: 'Finance & banking',
-      copy: 'We know the Dutch mortgage chain from advice and application through underwriting, acceptance and servicing. On the lender side we add experience with risk management, relevant Dutch and European regulation and compliance. That is why we understand what a document check has to catch, and what a lender needs to see.',
-      li1: 'Mortgage advice, applications and underwriting',
-      li2: 'Documents, controls and credit assessment',
-      li3: 'Risk management and regulation',
-      li4: 'Compliance in banking processes'
+      title: 'Finance, banking and mortgages',
+      copy: 'We know the Dutch mortgage chain from advice and application through underwriting, acceptance and servicing, and the lender side with it: risk management, Dutch and European regulation, compliance. That is why our software knows that an employer declaration filled in with two ink colours is worth flagging.',
+      tags: 'Mortgage advice and applications / Underwriting and acceptance / Document controls / Credit assessment / Risk management / Regulation and compliance'
     },
     metrics: {
-      eyebrow: 'Econometrics',
-      title: 'Being serious about what data can tell you.',
-      copy1: 'Econometrics is the data side of economics: the discipline of extracting value from data without fooling yourself about what the data supports. We use data to establish what can actually be learned, measured and defended.',
-      copy2: 'The same discipline is what makes a smart back end work. Measure, validate, let models check each other, and only trust what has been confirmed. Solving hard problems with AI is, to a surprising degree, an econometrics problem.',
-      copy3: 'Our strength is not only what we can build, but understanding the substance behind it, from mortgage processes and banking risk to markets and competition. Our work is firmly grounded in academic expertise.',
-      market: 'We also have substantial expertise in economics and marketing. That is what helps us build solutions that address a real customer need and work well in practice, and it is how we create value with data: techniques from econometrics coupled with the most recent AI technology.',
-      copy4: 'The Netherlands has a strong tradition in econometrics, going back to Jan Tinbergen. One of our team members is a full professor in the Department of Econometrics and Operations Research at Tilburg University.'
+      kicker: 'Where the confidence comes from',
+      title: 'An estimate without an interval is an opinion.',
+      copy1: 'Econometrics is the data side of economics: the discipline of extracting value from data without fooling yourself about what the data supports. It is the habit of asking how wrong a number could be before acting on it.',
+      copy2: 'That habit is also what makes a back end trustworthy. Measure, validate, let several methods read the same document and compare them, confirm each value against the source, and report what could not be confirmed. Solving hard problems with AI turns out, to a surprising degree, to be an econometrics problem.',
+      market: 'Economics and marketing shape what gets built in the first place, so that a solution addresses a real need and works in practice. Econometric technique and current AI technology are how we then create value from the data itself.',
+      ivcap: 'point estimate and interval',
+      chair: 'The Netherlands has a long tradition here, going back to Jan Tinbergen. One of our team members is a full professor in the Department of Econometrics and Operations Research at Tilburg University.'
     },
-    approach: {
-      eyebrow: 'How we work',
+    start: {
+      kicker: 'Working with us',
       title: 'Small team. Short lines. Built around the problem.',
-      copy1: 'We are based in the Netherlands and work closely with our clients. We do not start from a standard package or a preferred technology. We work out what the problem actually requires and build or analyse accordingly: no more complicated than needed, but no simpler than the problem allows.',
-      copy2: 'From the outside the result should look easy. That is the point.'
+      copy: 'We are based in the Netherlands and work closely with our clients. We do not start from a standard package or a preferred technology; we work out what the problem actually requires and build or analyse exactly that. No more complicated than it needs to be, and no simpler than the problem allows.',
+      t1: 'A conversation', c1: 'You describe the problem. We say what we think it really is, what we would build, and what we would not. If we are the wrong firm for it, that is a useful hour for both of us.',
+      t2: 'A trial on your own material', c2: 'For document work, we run your documents and show you the fields and the confidences. You see the failure cases, not a demo that was chosen to succeed.',
+      t3: 'Into production', c3: 'A key, documentation, and an interface that stays stable. We keep working on the part behind it, which is where the improvements come from.'
     },
     contact: {
-      eyebrow: 'A problem to solve?',
+      kicker: 'Contact',
       title: 'Tell us what you are working on.',
-      copy: 'From AI and software to economics, econometrics and compliance: if our combination of expertise could be useful, we would be happy to hear from you.'
+      copy: 'From mortgage processes and AI to economics, econometrics and compliance: if this combination of expertise could be useful, we would like to hear about it.',
+      note: 'Smart Backoffice Solutions B.V. is registered in Tilburg, the Netherlands.'
     },
     footer: { md: 'Mortgage Documents', fm: 'Food Moments' }
   },
 
   nl: {
-    nav: { build: 'Wat we bouwen', expertise: 'Expertise', approach: 'Hoe we werken', contact: 'Contact' },
+    nav: { build: 'Wat we bouwden', expertise: 'Wat we weten', approach: 'Samenwerken', contact: 'Contact' },
     hero: {
-      eyebrow: 'AI × Back-end engineering × Economie × Econometrie',
       title: 'AI kan veel meer dan chatten. Wij laten het werk doen.',
-      copy1: 'AI is onderdeel van het dagelijks leven geworden. De meeste mensen kennen het als een assistent waarmee je praat. Dat is alleen de voorkant. De echte winst ontstaat wanneer meerdere AI-systemen worden gecombineerd, elkaar controleren en in een echt proces worden ingebouwd.',
-      copy2: 'Dat is wat Smart Backoffice Solutions bouwt: backoffices waarin AI het werk doet, zodat het aan de buitenkant gewoon eenvoudig is. Er gaat een document in en ieder veld komt eruit. Er gaat een foto van een maaltijd in en de maaltijd wordt begrepen.',
-      copy3: 'Met econometrie halen we betrouwbare kennis uit data; met software engineering vertalen we die kennis naar systemen die werken. We bouwen wat het vraagstuk vraagt, vaak met AI, nooit technologie om de technologie.',
+      lead1: 'De meeste mensen kennen AI als een assistent waarmee je praat. Dat is de voorkant. Het werk begint wanneer meerdere modellen worden gecombineerd, elkaar controleren en worden ingebouwd in een proces dat gewoon moet kloppen.',
+      lead2: 'Wij bouwen die back-ends, en de domeinkennis die ze vertelt wat kloppen betekent. Stuur een loonstrook in en ieder veld komt terug, elk met hoever het te vertrouwen is.',
       cta: 'Neem contact op',
-      more: 'Wat we bouwen'
+      more: 'Wat we bouwden'
     },
-    dg: {
-      in1: 'Documenten', in2: 'Foto’s', in3: 'Spraak',
-      box: 'Backoffice',
-      n1: 'Vision-model', n2: 'Taalmodel', n3: 'OCR', n4: 'Domeinregels', n5: 'Controleren · stemmen · bevestigen',
-      out: 'Gestructureerd resultaat', conf: 'betrouwbaarheid per veld'
+    readout: {
+      doc: 'loonstrook.pdf',
+      count: '34 velden terug',
+      k1: 'Werknemer', k2: 'Werkgever', k3: 'Deeltijdfactor', k4: 'Brutosalaris', k5: 'Netto uitbetaald', k6: 'Individueel keuzebudget',
+      note: 'Iedere waarde wordt teruggezocht in de tekst van het document, vergeleken met de andere methoden die het lazen, en teruggegeven met een betrouwbaarheid. Een veld waarover de methoden het oneens zijn, zegt dat.'
     },
-    signal: {
-      s1: 'AI', s2: 'Back-end', s3: 'Full stack', s4: 'Document-AI', s5: 'iOS', s6: 'Economie',
-      s7: 'Econometrie', s8: 'Mededingingseconomie', s9: 'Marketing', s10: 'Compliance', s11: 'Nederlandse hypotheken'
+    range: {
+      line: 'Smart Backoffice Solutions werkt aan Nederlandse hypotheek- en bankprocessen, informatie-extractie uit documenten, iOS- en desktoptoepassingen, en aan economische, econometrische en mededingingsanalyse voor bedrijven, advocaten en rechtbanken. Gevestigd in Tilburg.'
     },
-    office: {
-      eyebrow: 'Waarom “Backoffice”?',
+    ends: {
+      kicker: 'Waarom we Backoffice heten',
       title: 'Het slimme deel gebeurt waar je het niet ziet.',
-      copy1: 'De app, de website, het hele softwarepakket waarmee iemand werkt: dat is de front-end. Wat die front-end kan bieden hangt volledig af van de back-end erachter. Hoe slimmer de back-end, hoe meer de front-end kan en hoe beter de ervaring voor degene die ermee werkt.',
-      copy2: 'In de back-end lezen vision-modellen documenten en foto’s, interpreteren taalmodellen ze, bevestigt OCR wat er is gelezen, en vangen controles en domeinregels op wat één model verkeerd doet. Combineer dat goed en de front-end kan eenvoudig blijven: één aanroep, één foto, één vraag. Al het andere gebeurt erachter.',
-      copy3: 'We bouwen beide kanten, en in de back-end zijn we ongewoon. De meeste ontwikkelaars werken aan de front-end. Het moeilijke deel, meerdere modellen combineren, ze elkaar laten controleren en ze in een echt proces inbouwen, gebeurt uit het zicht.',
-      copy4: 'Smart Backoffice Solutions is ontstaan vanuit de ontwikkeling van een modulaire pipeline voor informatie-extractie uit hypotheekdocumenten: een backoffice die slimmer kon. Daaruit groeide een bredere onderneming. Dezelfde combinatie van domeinkennis, software engineering, economie en econometrie bleek ook waardevol voor veel andere complexe vraagstukken.',
-      front: 'Front-end', frontc: 'De app, de website, het scherm in het proces. Wat de gebruiker ziet en gebruikt.',
-      back: 'Back-end', backc: 'Modellen, controles, regels en data die uit het zicht samenwerken. Wat bepaalt hoeveel de front-end kan bieden.'
+      copy1: 'De app, de website, het hele softwarepakket waarmee iemand werkt: dat is de front-end. Wat die kan bieden hangt volledig af van de back-end erachter. Hoe slimmer de back-end, hoe meer de front-end kan en hoe beter de ervaring voor degene die ermee werkt.',
+      copy2: 'In de back-end lezen vision-modellen documenten en foto’s, interpreteren taalmodellen ze, bevestigt OCR wat er is gelezen, en vangen controles en domeinregels op wat één model verkeerd doet. Combineer dat goed en de front-end kan eenvoudig blijven: één aanroep, één foto, één vraag.',
+      copy3: 'We bouwen beide kanten, en de back-end is het ongewone deel. De meeste ontwikkelaars werken aan de front-end. Dit bedrijf begon met een backoffice voor hypotheekdocumenten die slimmer kon, en dezelfde combinatie van domeinkennis, engineering, economie en econometrie bleek daarna ook ver daarbuiten bruikbaar.',
+      frontT: 'Front-end',
+      frontC: 'De app, de website, het scherm in het proces. Wat iemand ziet en gebruikt.',
+      backT: 'Back-end',
+      backC: 'Modellen, controles, regels en data die uit het zicht samenwerken. Wat bepaalt hoeveel de front-end kan bieden, en of de antwoorden standhouden.'
     },
-    live: {
-      eyebrow: 'Nu in gebruik',
-      title: 'Twee voorbeelden van hoe dat eruitziet.',
-      intro: 'Andere gebruikers, andere technologie onder de motorkap, hetzelfde idee: er gebeurt veel in de backoffice, zodat er weinig wordt gevraagd van degene aan de voorkant.'
+    built: {
+      kicker: 'Nu in gebruik',
+      title: 'Twee dingen die we bouwden, aan weerszijden van het spectrum.',
+      intro: 'Het ene is een koppeling voor andere software, gebruikt binnen een gereguleerd proces. Het andere is een consumenten-app die moeiteloos moet aanvoelen. Beide zijn vooral back-end.'
     },
     md: {
-      label: 'API · Nederlandse hypotheekdocumenten',
+      role: 'API voor Nederlandse hypotheekdocumenten',
       title: 'Mortgage Documents',
-      copy: 'Stuur een hypotheekdocument in en ontvang ieder relevant veld terug als gestructureerde data, elk met een eigen betrouwbaarheidsscore. Eén aanroep per document, en het werkt gewoon.',
-      copy2: 'De technologie helpt hypotheekadviseurs en ketens aanvragen efficiënter voor te bereiden, en ondersteunt hypotheekaanbieders bij controles, beoordeling en acceptatie. Loonstroken, werkgeversverklaringen, legitimaties, koopovereenkomsten, taxatierapporten, DUO-overzichten en KVK-uittreksels.',
-      f1: 'documenttypen', f2: 'velden uitgelezen', f3: 'aanroep per document',
+      copy1: 'Stuur één document in en ontvang ieder relevant veld als gestructureerde data, elk met een eigen betrouwbaarheid. Loonstroken, werkgeversverklaringen, legitimaties, koopovereenkomsten, taxatierapporten, DUO-overzichten en KVK-uittreksels.',
+      copy2: 'Het helpt adviseurs en ketens een complete aanvraag sneller voor te bereiden, en ondersteunt geldverstrekkers bij controles, beoordeling en acceptatie. Ieder documenttype heeft een eigen module, omdat een loonstrook die er bij iedere werkgever anders uitziet een andere behandeling nodig heeft dan een gestandaardiseerd formulier.',
+      s1l: 'documenttypen', s2l: 'velden gedefinieerd', s3l: 'aanroep per document',
       link: 'Hoe het werkt'
     },
     fm: {
-      label: 'iOS-app',
-      badge: 'Binnenkort in de App Store',
+      role: 'iPhone-app',
+      store: 'Binnenkort in de App Store',
       title: 'Food Moments',
-      copy: 'Maak een foto van wat je eet, zeg er eventueel iets bij, en zie wat erin zit. Het voelt als een persoonlijke feed, niet als een voedingsboekhouding. Daaronder doen vision-modellen, spraakherkenning, barcodes en de context van je recente maaltijden het werk.',
-      copy2: 'Foto’s staan voorop: tot tien per maaltijd, met voedingswaardelabels en barcodes die uit de foto worden gelezen. Spreek een notitie in en die wordt uitgeschreven terwijl je praat. Het resultaat is een uitsplitsing per gerecht met een eerlijke betrouwbaarheidsscore, en een dagoverzicht dat laat zien waar je staat vóór de volgende maaltijd.',
+      copy1: 'Fotografeer wat je eet, zeg er eventueel iets bij, en zie wat erin zit. Het leest als een persoonlijke feed in plaats van een voedingsboekhouding, en dat is precies de bedoeling: bijna geen moeite erin, veel begrip eruit.',
+      copy2: 'Daaronder lezen vision-modellen tot tien foto’s van één maaltijd, wordt spraak uitgeschreven terwijl je praat, worden voedingswaardelabels en barcodes rechtstreeks uit de foto gelezen, en zorgt de context van je recente maaltijden dat “mijn gebruikelijke shake” de jouwe is. Ook hier hebben schattingen een betrouwbaarheid.',
+      s1l: 'talen', s2l: 'foto’s per maaltijd', s3l: 'trackers of advertenties',
       link: 'Over de app'
     },
-    work: {
-      eyebrow: 'Wat we meebrengen',
-      title: 'Een klein team met een ongewoon brede combinatie van expertise.',
-      intro: 'AI bouwen die echt werk doet vraagt drie dingen tegelijk: engineering, een serieuze omgang met data en kennis van het domein. We combineren domeinkennis, software engineering, economie en econometrie, om uit data te halen wat er werkelijk in zit en vervolgens te bouwen wat nodig is. Alle drie in één team.'
+    know: {
+      kicker: 'Wat we weten',
+      title: 'Weten hóé je iets bouwt is niet genoeg.',
+      intro: 'Het wordt veel beter als je ook begrijpt wát je bouwt en waarom. Domeinkennis vertelt een systeem hoe een goed antwoord eruitziet, en vertelt ons welk probleem überhaupt de moeite waard is. AI bouwen die echt werk doet vraagt engineering die het in productie volhoudt, een serieuze omgang met data, en genoeg domeinkennis om een fout antwoord te herkennen. De meeste teams hebben er één van de drie.',
+      head1: 'Wat we begrijpen', head2: 'Waar het het verschil maakt',
+      a1: 'Econometrie', b1: 'Werk waarin data-analyse zit, en ieder getal dat een controle moet doorstaan.',
+      a2: 'De hypotheekbranche, en risk management bij banken', b2: 'Alles rond hypotheken: wat een document moet aantonen, en wat een geldverstrekker wil zien voordat hij ja zegt.',
+      a3: 'Mededingingseconomie en regelgeving', b3: 'Compliance, waar zowel de regels als de prikkels erachter tellen.',
+      a4: 'Marketing', b4: 'Front-ends die werken voor de mensen die ze gebruiken, omdat we weten waarvoor ze kwamen.'
     },
     ai: {
-      title: 'AI & back-end engineering',
-      copy: 'We bouwen de hele stack, maar onze kracht zit in het deel dat de meeste ontwikkelaars vermijden: de back-end. Python-services, pipelines die meerdere modellen aansturen en elkaar laten controleren, API’s waar anderen op bouwen, en de iOS-apps, desktoptools en spraakinterfaces ervoor.',
-      li1: 'Python back-ends, pipelines en API’s',
-      li2: 'Document-AI, vision en informatie-extractie',
-      li3: 'Meerdere modellen combineren en controleren',
-      li4: 'Full stack: iOS, desktop, spraaktranscriptie'
+      title: 'AI en back-end engineering',
+      copy: 'We bouwen de hele stack, maar onze kracht zit in het deel dat de meeste ontwikkelaars vermijden. Python-services, pipelines die meerdere modellen draaien en elkaar laten controleren, API’s waar andere systemen van afhangen, en de toepassingen ervoor. De interessante problemen zitten zelden in de interface.',
+      tags: 'Python en back-ends / Document-AI en vision / Informatie-extractie / Modellen combineren en controleren / API’s / iOS en desktop / Spraaktranscriptie'
     },
     econ: {
-      title: 'Economie & econometrie',
-      copy: 'Economie gaat over hoe mensen, bedrijven en markten zich gedragen, en wat dat betekent voor een beslissing. We werken op twee terreinen. Het eerste is betrouwbare conclusies halen uit data. Het tweede is mededingingseconomie: de werking van markten en platforms, fusies en overnames, en het schatten van schade. We ondersteunen bedrijven, advocaten en rechtbanken met analyses die helder, degelijk en verdedigbaar zijn, en we helpen met compliance, ook door AI in te zetten om compliance beter te maken. Daarnaast brengen we marketingexpertise mee, zodat de vraag wat een klant werkelijk nodig heeft in beeld blijft.',
-      li1: 'Mededingingseconomie, platforms, fusies en overnames',
-      li2: 'Schadeberekening en econometrische analyse',
-      li3: 'Deskundigenwerk en ondersteuning in procedures',
-      li4: 'Compliance, en AI voor compliance',
-      li5: 'Marketing, klantbehoefte en waardecreatie'
+      title: 'Economie, econometrie en marketing',
+      copy: 'Economie gaat over hoe mensen, bedrijven en markten zich gedragen en wat dat betekent voor een beslissing. We werken aan betrouwbare conclusies uit data, en aan mededingingseconomie: de werking van markten en platforms, fusies en overnames, en het schatten van schade. We ondersteunen bedrijven, advocaten en rechtbanken met analyses die kritiek moeten doorstaan. Marketingexpertise hoort daarbij, en die houdt een oplossing gericht op iets wat een klant werkelijk nodig heeft.',
+      tags: 'Mededingingseconomie / Platformeconomie / Fusies en overnames / Schadeberekening / Econometrische analyse / Deskundigenwerk / Marketing en klantbehoefte / Compliance, en AI voor compliance'
     },
     fin: {
-      title: 'Financiële sector & banken',
-      copy: 'We kennen de Nederlandse hypotheekketen van advies en aanvraag tot acceptatie en beheer. Aan de bankzijde voegen we ervaring toe met risk management, relevante Nederlandse en Europese regelgeving en compliance. Daarom begrijpen we wat een documentcontrole moet opvangen, en wat een geldverstrekker wil zien.',
-      li1: 'Hypotheekadvies, aanvraag en acceptatie',
-      li2: 'Documenten, controles en kredietbeoordeling',
-      li3: 'Risk management en regelgeving',
-      li4: 'Compliance in bankprocessen'
+      title: 'Financiële sector, banken en hypotheken',
+      copy: 'We kennen de Nederlandse hypotheekketen van advies en aanvraag tot acceptatie en beheer, en de bankzijde erbij: risk management, Nederlandse en Europese regelgeving, compliance. Daarom weet onze software dat een werkgeversverklaring die met twee inktkleuren is ingevuld het signaleren waard is.',
+      tags: 'Hypotheekadvies en aanvraag / Acceptatie / Documentcontroles / Kredietbeoordeling / Risk management / Regelgeving en compliance'
     },
     metrics: {
-      eyebrow: 'Econometrie',
-      title: 'Serieus nemen wat data je kan vertellen.',
-      copy1: 'Econometrie is de datakant van de economie: de discipline om waarde uit data te halen zonder jezelf voor de gek te houden over wat die data onderbouwt. We gebruiken data om vast te stellen wat er werkelijk te leren, meten en onderbouwen valt.',
-      copy2: 'Diezelfde discipline maakt een slimme back-end mogelijk. Meten, valideren, modellen elkaar laten controleren, en alleen vertrouwen op wat is bevestigd. Moeilijke problemen oplossen met AI is, in verrassende mate, een econometrisch probleem.',
-      copy3: 'Onze kracht zit niet alleen in wat we kunnen bouwen, maar in het begrijpen van de inhoud erachter, van hypotheekprocessen en bankrisico tot markten en mededinging. Ons werk is stevig verankerd in academische expertise.',
-      market: 'We hebben daarnaast substantiële expertise in economie en marketing. Dat helpt ons oplossingen te bouwen die aansluiten bij wat een klant werkelijk nodig heeft en die in de praktijk goed werken, en het is hoe we waarde creëren met data: technieken uit de econometrie gecombineerd met de nieuwste AI-technologie.',
-      copy4: 'Nederland heeft een sterke traditie in de econometrie, die teruggaat tot Jan Tinbergen. Een van onze teamleden is hoogleraar bij het departement Econometrie en Operations Research van Tilburg University.'
+      kicker: 'Waar de betrouwbaarheid vandaan komt',
+      title: 'Een schatting zonder interval is een mening.',
+      copy1: 'Econometrie is de datakant van de economie: de discipline om waarde uit data te halen zonder jezelf voor de gek te houden over wat die data onderbouwt. Het is de gewoonte om te vragen hoe fout een getal kan zijn voordat je ernaar handelt.',
+      copy2: 'Diezelfde gewoonte maakt een back-end betrouwbaar. Meten, valideren, meerdere methoden hetzelfde document laten lezen en vergelijken, iedere waarde bevestigen in de bron, en melden wat niet bevestigd kon worden. Moeilijke problemen oplossen met AI blijkt in verrassende mate een econometrisch probleem.',
+      market: 'Economie en marketing bepalen allereerst wát er gebouwd wordt, zodat een oplossing aansluit bij een echte behoefte en in de praktijk werkt. Econometrische technieken en de nieuwste AI-technologie zijn vervolgens hoe we waarde creëren uit de data zelf.',
+      ivcap: 'puntschatting en interval',
+      chair: 'Nederland heeft hierin een lange traditie, die teruggaat tot Jan Tinbergen. Een van onze teamleden is hoogleraar bij het departement Econometrie en Operations Research van Tilburg University.'
     },
-    approach: {
-      eyebrow: 'Hoe we werken',
+    start: {
+      kicker: 'Samenwerken',
       title: 'Klein team. Korte lijnen. Het vraagstuk staat centraal.',
-      copy1: 'We zijn gevestigd in Nederland en werken nauw met onze klanten samen. We beginnen niet met een standaardpakket of favoriete technologie. We bepalen wat het vraagstuk werkelijk vraagt en bouwen of analyseren precies dat: niet ingewikkelder dan nodig, maar ook niet eenvoudiger dan het probleem toelaat.',
-      copy2: 'Van buiten moet het resultaat er eenvoudig uitzien. Dat is precies de bedoeling.'
+      copy: 'We zijn gevestigd in Nederland en werken nauw met onze klanten samen. We beginnen niet met een standaardpakket of een favoriete technologie; we bepalen wat het vraagstuk werkelijk vraagt en bouwen of analyseren precies dat. Niet ingewikkelder dan nodig, en niet eenvoudiger dan het probleem toelaat.',
+      t1: 'Een gesprek', c1: 'U beschrijft het vraagstuk. Wij zeggen wat het volgens ons werkelijk is, wat we zouden bouwen en wat niet. Als wij het verkeerde bureau zijn, is dat voor allebei een nuttig uur.',
+      t2: 'Een proef op uw eigen materiaal', c2: 'Bij documentwerk draaien we uw documenten en laten we de velden en de betrouwbaarheden zien. U ziet de gevallen die misgaan, niet een demo die is uitgekozen om te slagen.',
+      t3: 'Naar productie', c3: 'Een sleutel, documentatie en een koppeling die stabiel blijft. Wij blijven werken aan het deel erachter, want daar komen de verbeteringen vandaan.'
     },
     contact: {
-      eyebrow: 'Een vraagstuk?',
+      kicker: 'Contact',
       title: 'Vertel ons waar u aan werkt.',
-      copy: 'Van AI en software tot economie, econometrie en compliance: als onze combinatie van expertise nuttig kan zijn, horen we graag van u.'
+      copy: 'Van hypotheekprocessen en AI tot economie, econometrie en compliance: als deze combinatie van expertise nuttig kan zijn, horen we er graag over.',
+      note: 'Smart Backoffice Solutions B.V. is gevestigd in Tilburg.'
     },
     footer: { md: 'Mortgage Documents', fm: 'Food Moments' }
   },
 
   de: {
-    nav: { build: 'Was wir bauen', expertise: 'Expertise', approach: 'Wie wir arbeiten', contact: 'Kontakt' },
+    nav: { build: 'Was wir gebaut haben', expertise: 'Was wir können', approach: 'Zusammenarbeit', contact: 'Kontakt' },
     hero: {
-      eyebrow: 'KI × Back-end-Engineering × Ökonomie × Ökonometrie',
       title: 'KI kann weit mehr als chatten. Wir lassen sie arbeiten.',
-      copy1: 'KI ist Teil des Alltags geworden. Die meisten kennen sie als Assistenten, mit dem man spricht. Das ist nur die Vorderseite. Der eigentliche Gewinn entsteht, wenn mehrere KI-Systeme kombiniert werden, sich gegenseitig prüfen und in einen echten Prozess eingebaut sind.',
-      copy2: 'Genau das baut Smart Backoffice Solutions: Backoffices, in denen KI die Arbeit macht, damit es nach außen einfach ist. Ein Dokument geht hinein, und jedes Feld kommt heraus. Ein Foto einer Mahlzeit geht hinein, und die Mahlzeit wird verstanden.',
-      copy3: 'Mit Ökonometrie gewinnen wir belastbare Erkenntnisse aus Daten; mit Software Engineering übersetzen wir diese Erkenntnisse in Systeme, die funktionieren. Wir entwickeln, was das Problem erfordert, häufig mit KI, nie Technologie um ihrer selbst willen.',
+      lead1: 'Die meisten kennen KI als Assistenten, mit dem man spricht. Das ist die Vorderseite. Die Arbeit beginnt, wenn mehrere Modelle kombiniert werden, sich gegenseitig prüfen und in einen Prozess eingebaut sind, der stimmen muss.',
+      lead2: 'Wir bauen diese Back-ends und das Fachwissen, das ihnen sagt, was stimmen bedeutet. Reichen Sie eine Gehaltsabrechnung ein, und jedes Feld kommt zurück, jeweils mit dem Grad an Vertrauen, den es verdient.',
       cta: 'Kontakt aufnehmen',
-      more: 'Was wir bauen'
+      more: 'Was wir gebaut haben'
     },
-    dg: {
-      in1: 'Dokumente', in2: 'Fotos', in3: 'Sprache',
-      box: 'Backoffice',
-      n1: 'Vision-Modell', n2: 'Sprachmodell', n3: 'OCR', n4: 'Fachregeln', n5: 'Prüfen · abstimmen · bestätigen',
-      out: 'Strukturiertes Ergebnis', conf: 'Konfidenz je Feld'
+    readout: {
+      doc: 'gehaltsabrechnung.pdf',
+      count: '34 Felder zurück',
+      k1: 'Arbeitnehmer', k2: 'Arbeitgeber', k3: 'Teilzeitfaktor', k4: 'Bruttogehalt', k5: 'Nettoauszahlung', k6: 'Wahlbudget',
+      note: 'Jeder Wert wird im Dokumenttext gesucht, mit den anderen Methoden verglichen, die ihn gelesen haben, und mit einer Konfidenz zurückgegeben. Ein Feld, über das die Methoden uneins sind, sagt das.'
     },
-    signal: {
-      s1: 'KI', s2: 'Back-end', s3: 'Full Stack', s4: 'Dokumenten-KI', s5: 'iOS', s6: 'Ökonomie',
-      s7: 'Ökonometrie', s8: 'Wettbewerbsökonomie', s9: 'Marketing', s10: 'Compliance', s11: 'Niederländische Hypotheken'
+    range: {
+      line: 'Smart Backoffice Solutions arbeitet an niederländischen Hypotheken- und Bankprozessen, an Informationsextraktion aus Dokumenten, an iOS- und Desktop-Anwendungen sowie an ökonomischer, ökonometrischer und wettbewerbsrechtlicher Analyse für Unternehmen, Anwälte und Gerichte. Sitz in Tilburg, Niederlande.'
     },
-    office: {
-      eyebrow: 'Warum „Backoffice“?',
+    ends: {
+      kicker: 'Warum wir Backoffice heißen',
       title: 'Der kluge Teil passiert dort, wo man ihn nicht sieht.',
-      copy1: 'Die App, die Website, das ganze Softwarepaket, mit dem jemand arbeitet: das ist das Front-end. Was dieses Front-end bieten kann, hängt vollständig vom Back-end dahinter ab. Je klüger das Back-end, desto mehr kann das Front-end und desto besser die Erfahrung für den Menschen davor.',
-      copy2: 'Im Back-end lesen Vision-Modelle Dokumente und Fotos, Sprachmodelle interpretieren sie, OCR bestätigt das Gelesene, und Prüfungen und Fachregeln fangen auf, was ein einzelnes Modell falsch macht. Kombiniert man das gut, kann das Front-end einfach bleiben: ein Aufruf, ein Foto, eine Frage. Alles andere passiert dahinter.',
-      copy3: 'Wir bauen beide Seiten, und im Back-end sind wir ungewöhnlich. Die meisten Entwickler arbeiten am Front-end. Der schwierige Teil, mehrere Modelle zu kombinieren, sie sich gegenseitig prüfen zu lassen und in einen echten Prozess einzubauen, passiert im Verborgenen.',
-      copy4: 'Smart Backoffice Solutions entstand aus der Entwicklung einer modularen Pipeline zur Informationsextraktion aus Hypothekendokumenten: ein Backoffice, das intelligenter arbeiten konnte. Daraus wuchs ein breiter aufgestelltes Unternehmen. Dieselbe Kombination aus Fachwissen, Software Engineering, Ökonomie und Ökonometrie erwies sich auch bei vielen anderen komplexen Problemen als wertvoll.',
-      front: 'Front-end', frontc: 'Die App, die Website, der Bildschirm im Prozess. Was der Nutzer sieht und bedient.',
-      back: 'Back-end', backc: 'Modelle, Prüfungen, Regeln und Daten, die im Verborgenen zusammenarbeiten. Was bestimmt, wie viel das Front-end bieten kann.'
+      copy1: 'Die App, die Website, das ganze Softwarepaket, mit dem jemand arbeitet: das ist das Front-end. Was es bieten kann, hängt vollständig vom Back-end dahinter ab. Je klüger das Back-end, desto mehr kann das Front-end und desto besser die Erfahrung für den Menschen davor.',
+      copy2: 'Im Back-end lesen Vision-Modelle Dokumente und Fotos, Sprachmodelle interpretieren sie, OCR bestätigt das Gelesene, und Prüfungen und Fachregeln fangen auf, was ein einzelnes Modell falsch macht. Kombiniert man das gut, kann das Front-end einfach bleiben: ein Aufruf, ein Foto, eine Frage.',
+      copy3: 'Wir bauen beide Seiten, und das Back-end ist der ungewöhnliche Teil. Die meisten Entwickler arbeiten am Front-end. Dieses Unternehmen begann mit einem Backoffice für Hypothekendokumente, das intelligenter arbeiten konnte, und dieselbe Kombination aus Fachwissen, Engineering, Ökonomie und Ökonometrie erwies sich danach auch weit darüber hinaus als nützlich.',
+      frontT: 'Front-end',
+      frontC: 'Die App, die Website, der Bildschirm im Prozess. Was jemand sieht und bedient.',
+      backT: 'Back-end',
+      backC: 'Modelle, Prüfungen, Regeln und Daten, die im Verborgenen zusammenarbeiten. Was bestimmt, wie viel das Front-end bieten kann und ob seine Antworten halten.'
     },
-    live: {
-      eyebrow: 'Heute im Einsatz',
-      title: 'Zwei Beispiele dafür, wie das aussieht.',
-      intro: 'Andere Nutzer, andere Technik unter der Haube, dieselbe Idee: Im Backoffice passiert viel, damit von der Person davor wenig verlangt wird.'
+    built: {
+      kicker: 'Heute im Einsatz',
+      title: 'Zwei Dinge, die wir gebaut haben, an entgegengesetzten Enden.',
+      intro: 'Das eine ist eine Schnittstelle für andere Software, eingesetzt in einem regulierten Prozess. Das andere ist eine Verbraucher-App, die sich mühelos anfühlen muss. Beide sind überwiegend Back-end.'
     },
     md: {
-      label: 'API · Niederländische Hypothekendokumente',
+      role: 'API für niederländische Hypothekendokumente',
       title: 'Mortgage Documents',
-      copy: 'Ein Hypothekendokument einreichen und jedes relevante Feld als strukturierte Daten zurückerhalten, jedes mit eigenem Konfidenzwert. Ein Aufruf pro Dokument, und es funktioniert einfach.',
-      copy2: 'Die Technologie hilft Hypothekenberatern und Vermittlern, Anträge effizienter vorzubereiten, und unterstützt Kreditgeber bei Kontrollen, Prüfung und Annahme. Gehaltsabrechnungen, Arbeitgeberbescheinigungen, Ausweise, Kaufverträge, Wertgutachten, DUO-Übersichten und Handelsregisterauszüge.',
-      f1: 'Dokumenttypen', f2: 'extrahierte Felder', f3: 'Aufruf pro Dokument',
+      copy1: 'Ein Dokument einreichen und jedes relevante Feld als strukturierte Daten zurückerhalten, jeweils mit eigener Konfidenz. Gehaltsabrechnungen, Arbeitgeberbescheinigungen, Ausweise, Kaufverträge, Wertgutachten, DUO-Übersichten und Handelsregisterauszüge.',
+      copy2: 'Es hilft Beratern und Vermittlern, einen vollständigen Antrag schneller vorzubereiten, und unterstützt Kreditgeber bei Kontrollen, Prüfung und Annahme. Jeder Dokumenttyp hat ein eigenes Modul, denn eine Gehaltsabrechnung, die bei jedem Arbeitgeber anders aussieht, braucht eine andere Behandlung als ein standardisiertes Formular.',
+      s1l: 'Dokumenttypen', s2l: 'definierte Felder', s3l: 'Aufruf pro Dokument',
       link: 'So funktioniert es'
     },
     fm: {
-      label: 'iOS-App',
-      badge: 'Bald im App Store',
+      role: 'iPhone-App',
+      store: 'Bald im App Store',
       title: 'Food Moments',
-      copy: 'Ein Foto vom Essen machen, wenn man möchte ein paar Worte dazu sagen, und sehen, was drin ist. Es fühlt sich an wie ein persönlicher Feed, nicht wie eine Ernährungsbuchhaltung. Darunter erledigen Vision-Modelle, Spracherkennung, Barcodes und der Kontext der letzten Mahlzeiten die Arbeit.',
-      copy2: 'Fotos stehen an erster Stelle: bis zu zehn pro Mahlzeit, Nährwertetiketten und Barcodes werden aus der Aufnahme gelesen. Eine diktierte Notiz wird transkribiert, während man spricht. Das Ergebnis ist eine Aufschlüsselung je Gericht mit einer ehrlichen Konfidenz und eine Tagesansicht, die zeigt, wo man vor der nächsten Mahlzeit steht.',
+      copy1: 'Fotografieren Sie, was Sie essen, sagen Sie ein paar Worte dazu, und sehen Sie, was drin ist. Es liest sich wie ein persönlicher Feed statt wie eine Ernährungsbuchhaltung, und genau darum geht es: fast keine Mühe hinein, viel Verständnis heraus.',
+      copy2: 'Darunter lesen Vision-Modelle bis zu zehn Fotos einer Mahlzeit, Sprache wird transkribiert, während man spricht, Nährwertetiketten und Barcodes werden direkt aus der Aufnahme gelesen, und der Kontext der letzten Mahlzeiten sorgt dafür, dass „mein üblicher Shake“ Ihrer ist. Auch hier tragen Schätzungen eine Konfidenz.',
+      s1l: 'Sprachen', s2l: 'Fotos pro Mahlzeit', s3l: 'Tracker oder Werbung',
       link: 'Über die App'
     },
-    work: {
-      eyebrow: 'Was wir mitbringen',
-      title: 'Ein kleines Team mit einer ungewöhnlich breiten Kombination von Expertise.',
-      intro: 'KI zu bauen, die echte Arbeit leistet, braucht drei Dinge zugleich: Engineering, einen ernsthaften Umgang mit Daten und Kenntnis der Domäne. Wir verbinden Domänenwissen, Software Engineering, Ökonomie und Ökonometrie, um aus Daten belastbare Erkenntnisse zu gewinnen und anschließend zu entwickeln, was benötigt wird. Alle drei in einem Team.'
+    know: {
+      kicker: 'Was wir können',
+      title: 'Zu wissen, wie man etwas baut, reicht nicht.',
+      intro: 'Es wird deutlich besser, wenn man auch versteht, was man baut und warum. Fachwissen sagt einem System, wie eine richtige Antwort aussieht, und es sagt uns, welches Problem überhaupt lohnt. KI zu bauen, die echte Arbeit leistet, braucht Engineering, das im Betrieb hält, einen ernsthaften Umgang mit Daten und genug Fachwissen, um eine falsche Antwort zu erkennen. Die meisten Teams haben eines der drei.',
+      head1: 'Was wir verstehen', head2: 'Wo es den Unterschied macht',
+      a1: 'Ökonometrie', b1: 'Arbeit, in der Datenanalyse steckt, und jede Zahl, die einer Prüfung standhalten muss.',
+      a2: 'Die Hypothekenbranche und Risikomanagement in Banken', b2: 'Alles rund um Hypotheken: was ein Dokument belegen muss und was ein Kreditgeber sehen will, bevor er zustimmt.',
+      a3: 'Wettbewerbsökonomie und Regulierung', b3: 'Compliance, wo sowohl die Regeln als auch die Anreize dahinter zählen.',
+      a4: 'Marketing', b4: 'Front-ends, die für die Menschen funktionieren, die sie benutzen, weil wir wissen, weswegen sie gekommen sind.'
     },
     ai: {
-      title: 'KI & Back-end-Engineering',
-      copy: 'Wir bauen den gesamten Stack, aber unsere Stärke liegt in dem Teil, den die meisten Entwickler meiden: dem Back-end. Python-Services, Pipelines, die mehrere Modelle steuern und sich gegenseitig prüfen lassen, APIs, auf denen andere aufbauen, und die iOS-Apps, Desktop-Werkzeuge und Sprachschnittstellen davor.',
-      li1: 'Python-Back-ends, Pipelines und APIs',
-      li2: 'Dokumenten-KI, Vision und Informationsextraktion',
-      li3: 'Mehrere Modelle kombinieren und prüfen',
-      li4: 'Full Stack: iOS, Desktop, Sprachtranskription'
+      title: 'KI und Back-end-Engineering',
+      copy: 'Wir bauen den gesamten Stack, aber unsere Stärke liegt in dem Teil, den die meisten Entwickler meiden. Python-Services, Pipelines, die mehrere Modelle laufen lassen und sich gegenseitig prüfen, APIs, von denen andere Systeme abhängen, und die Anwendungen davor. Die interessanten Probleme liegen selten in der Oberfläche.',
+      tags: 'Python und Back-ends / Dokumenten-KI und Vision / Informationsextraktion / Modelle kombinieren und prüfen / APIs / iOS und Desktop / Sprachtranskription'
     },
     econ: {
-      title: 'Ökonomie & Ökonometrie',
-      copy: 'Ökonomie handelt davon, wie sich Menschen, Unternehmen und Märkte verhalten und was das für eine Entscheidung bedeutet. Wir arbeiten in zwei ihrer Bereiche. Der erste: belastbare Schlussfolgerungen aus Daten ziehen. Der zweite: Wettbewerbsökonomie, also wie Märkte und Plattformen funktionieren, Fusionen und Übernahmen und die Schätzung von Schäden. Wir unterstützen Unternehmen, Rechtsanwälte und Gerichte mit klaren, fundierten und nachvollziehbaren Analysen und helfen bei Compliance, auch mit KI, die Compliance besser macht. Daneben bringen wir Marketing-Expertise mit, damit die Frage, was ein Kunde tatsächlich braucht, im Blick bleibt.',
-      li1: 'Wettbewerbsökonomie, Plattformen, Fusionen und Übernahmen',
-      li2: 'Schadensschätzung und ökonometrische Analyse',
-      li3: 'Sachverständigentätigkeit und Prozessunterstützung',
-      li4: 'Compliance, und KI für Compliance',
-      li5: 'Marketing, Kundenbedürfnisse und Wertschöpfung'
+      title: 'Ökonomie, Ökonometrie und Marketing',
+      copy: 'Ökonomie handelt davon, wie sich Menschen, Unternehmen und Märkte verhalten und was das für eine Entscheidung bedeutet. Wir arbeiten an belastbaren Schlussfolgerungen aus Daten und an Wettbewerbsökonomie: wie Märkte und Plattformen funktionieren, Fusionen und Übernahmen und die Schätzung von Schäden. Wir unterstützen Unternehmen, Anwälte und Gerichte mit Analysen, die einer Prüfung standhalten müssen. Marketing-Expertise gehört dazu und hält eine Lösung auf das gerichtet, was ein Kunde tatsächlich braucht.',
+      tags: 'Wettbewerbsökonomie / Plattformökonomie / Fusionen und Übernahmen / Schadensschätzung / Ökonometrische Analyse / Sachverständigentätigkeit / Marketing und Kundenbedürfnisse / Compliance, und KI für Compliance'
     },
     fin: {
-      title: 'Finanzen & Banken',
-      copy: 'Wir kennen die niederländische Hypothekenkette von Beratung und Antrag über Kreditprüfung und Annahme bis zur Verwaltung. Auf Bankseite kommt Erfahrung mit Risikomanagement, relevanter niederländischer und europäischer Regulierung und Compliance hinzu. Deshalb wissen wir, was eine Dokumentprüfung auffangen muss und was ein Kreditgeber sehen will.',
-      li1: 'Hypothekenberatung, Antrag und Kreditprüfung',
-      li2: 'Dokumente, Kontrollen und Bonitätsbeurteilung',
-      li3: 'Risikomanagement und Regulierung',
-      li4: 'Compliance in Bankprozessen'
+      title: 'Finanzen, Banken und Hypotheken',
+      copy: 'Wir kennen die niederländische Hypothekenkette von Beratung und Antrag bis zu Annahme und Verwaltung, und die Bankseite dazu: Risikomanagement, niederländische und europäische Regulierung, Compliance. Deshalb weiß unsere Software, dass eine Arbeitgeberbescheinigung, die mit zwei Tintenfarben ausgefüllt wurde, eine Markierung wert ist.',
+      tags: 'Hypothekenberatung und Antrag / Kreditprüfung / Dokumentkontrollen / Bonitätsbeurteilung / Risikomanagement / Regulierung und Compliance'
     },
     metrics: {
-      eyebrow: 'Ökonometrie',
-      title: 'Ernst nehmen, was Daten sagen können.',
-      copy1: 'Ökonometrie ist die Datenseite der Ökonomie: die Disziplin, Wert aus Daten zu gewinnen, ohne sich darüber zu täuschen, was diese Daten tatsächlich belegen. Wir nutzen Daten, um festzustellen, was sich tatsächlich erkennen, messen und belastbar begründen lässt.',
-      copy2: 'Dieselbe Disziplin macht ein kluges Back-end möglich. Messen, validieren, Modelle sich gegenseitig prüfen lassen und nur dem vertrauen, was bestätigt wurde. Schwierige Probleme mit KI zu lösen ist in überraschendem Maß ein ökonometrisches Problem.',
-      copy3: 'Unsere Stärke liegt nicht nur darin, was wir entwickeln können, sondern darin, die fachlichen Zusammenhänge zu verstehen, von Hypothekenprozessen und Bankrisiken bis zu Märkten und Wettbewerb. Unsere Arbeit ist fest in akademischer Expertise verankert.',
-      market: 'Hinzu kommt substanzielle Expertise in Ökonomie und Marketing. Sie hilft uns, Lösungen zu bauen, die einem echten Kundenbedürfnis entsprechen und in der Praxis gut funktionieren, und sie ist der Weg, auf dem wir mit Daten Wert schaffen: Techniken aus der Ökonometrie kombiniert mit der neuesten KI-Technologie.',
-      copy4: 'Die Niederlande haben eine starke Tradition in der Ökonometrie, die bis auf Jan Tinbergen zurückgeht. Eines unserer Teammitglieder ist ordentlicher Professor am Department of Econometrics and Operations Research der Tilburg University.'
+      kicker: 'Woher die Konfidenz kommt',
+      title: 'Eine Schätzung ohne Intervall ist eine Meinung.',
+      copy1: 'Ökonometrie ist die Datenseite der Ökonomie: die Disziplin, Wert aus Daten zu gewinnen, ohne sich darüber zu täuschen, was diese Daten belegen. Es ist die Gewohnheit zu fragen, wie falsch eine Zahl sein kann, bevor man danach handelt.',
+      copy2: 'Dieselbe Gewohnheit macht ein Back-end vertrauenswürdig. Messen, validieren, mehrere Methoden dasselbe Dokument lesen lassen und vergleichen, jeden Wert an der Quelle bestätigen und melden, was sich nicht bestätigen ließ. Schwierige Probleme mit KI zu lösen ist in überraschendem Maß ein ökonometrisches Problem.',
+      market: 'Ökonomie und Marketing bestimmen zuerst, was überhaupt gebaut wird, damit eine Lösung einem echten Bedürfnis entspricht und in der Praxis funktioniert. Ökonometrische Technik und aktuelle KI-Technologie sind dann der Weg, auf dem wir aus den Daten selbst Wert schaffen.',
+      ivcap: 'Punktschätzung und Intervall',
+      chair: 'Die Niederlande haben hier eine lange Tradition, die bis auf Jan Tinbergen zurückgeht. Eines unserer Teammitglieder ist ordentlicher Professor am Department of Econometrics and Operations Research der Tilburg University.'
     },
-    approach: {
-      eyebrow: 'Wie wir arbeiten',
+    start: {
+      kicker: 'Zusammenarbeit',
       title: 'Kleines Team. Kurze Wege. Das Problem steht im Mittelpunkt.',
-      copy1: 'Wir sind in den Niederlanden ansässig und arbeiten eng mit unseren Kunden zusammen. Wir beginnen weder mit einem Standardpaket noch mit einer bevorzugten Technologie. Wir bestimmen, was das Problem tatsächlich erfordert, und entwickeln oder analysieren genau das: nicht komplizierter als nötig, aber auch nicht einfacher, als das Problem erlaubt.',
-      copy2: 'Von außen soll das Ergebnis einfach aussehen. Genau darum geht es.'
+      copy: 'Wir sind in den Niederlanden ansässig und arbeiten eng mit unseren Kunden zusammen. Wir beginnen weder mit einem Standardpaket noch mit einer bevorzugten Technologie; wir bestimmen, was das Problem tatsächlich erfordert, und bauen oder analysieren genau das. Nicht komplizierter als nötig und nicht einfacher, als das Problem erlaubt.',
+      t1: 'Ein Gespräch', c1: 'Sie beschreiben das Problem. Wir sagen, was es unserer Ansicht nach wirklich ist, was wir bauen würden und was nicht. Sind wir die falsche Firma dafür, war die Stunde für beide nützlich.',
+      t2: 'Ein Test mit Ihrem eigenen Material', c2: 'Bei Dokumentarbeit lassen wir Ihre Dokumente laufen und zeigen Ihnen die Felder und die Konfidenzen. Sie sehen die Fälle, die schiefgehen, nicht eine Demo, die zum Gelingen ausgewählt wurde.',
+      t3: 'In den Betrieb', c3: 'Ein Schlüssel, Dokumentation und eine Schnittstelle, die stabil bleibt. Wir arbeiten weiter an dem Teil dahinter, denn dort entstehen die Verbesserungen.'
     },
     contact: {
-      eyebrow: 'Eine Fragestellung?',
+      kicker: 'Kontakt',
       title: 'Erzählen Sie uns, woran Sie arbeiten.',
-      copy: 'Von KI und Software bis zu Ökonomie, Ökonometrie und Compliance: Wenn unsere Kombination von Expertise hilfreich sein könnte, freuen wir uns auf Ihre Nachricht.'
+      copy: 'Von Hypothekenprozessen und KI bis zu Ökonomie, Ökonometrie und Compliance: Wenn diese Kombination von Expertise nützlich sein könnte, hören wir gern davon.',
+      note: 'Smart Backoffice Solutions B.V. hat ihren Sitz in Tilburg, Niederlande.'
     },
     footer: { md: 'Mortgage Documents', fm: 'Food Moments' }
   }

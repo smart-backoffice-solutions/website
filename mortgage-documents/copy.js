@@ -1,9 +1,10 @@
 // Mortgage Documents page copy. The mechanism that applies it lives in ../i18n.js.
 window.SBO_COPY = {
   en: {
+    tbl: { doc: 'Document', code: 'Type', fields: 'Fields' },
     nav: { home: 'Smart Backoffice Solutions', modules: 'Modules', api: 'API', contact: 'Contact' },
     hero: {
-      eyebrow: 'Mortgage Documents · API',
+      eyebrow: 'An API by Smart Backoffice Solutions',
       title: 'A document goes in. The facts come out.',
       lead: 'An API for Dutch mortgage documents. Submit one document, receive every relevant field as structured data, each with its own confidence score. Seven document types. It just works.',
       cta: 'Talk to us',
@@ -142,9 +143,10 @@ window.SBO_COPY = {
   },
 
   nl: {
+    tbl: { doc: 'Document', code: 'Type', fields: 'Velden' },
     nav: { home: 'Smart Backoffice Solutions', modules: 'Modules', api: 'API', contact: 'Contact' },
     hero: {
-      eyebrow: 'Mortgage Documents · API',
+      eyebrow: 'Een API van Smart Backoffice Solutions',
       title: 'Er gaat een document in. De feiten komen eruit.',
       lead: 'Een API voor Nederlandse hypotheekdocumenten. Stuur één document in en ontvang ieder relevant veld als gestructureerde data, elk met een eigen betrouwbaarheidsscore. Zeven documenttypen. Het werkt gewoon.',
       cta: 'Neem contact op',
@@ -283,9 +285,10 @@ window.SBO_COPY = {
   },
 
   de: {
+    tbl: { doc: 'Dokument', code: 'Typ', fields: 'Felder' },
     nav: { home: 'Smart Backoffice Solutions', modules: 'Module', api: 'API', contact: 'Kontakt' },
     hero: {
-      eyebrow: 'Mortgage Documents · API',
+      eyebrow: 'Eine API von Smart Backoffice Solutions',
       title: 'Ein Dokument geht hinein. Die Fakten kommen heraus.',
       lead: 'Eine API für niederländische Hypothekendokumente. Ein Dokument einreichen, jedes relevante Feld als strukturierte Daten zurückerhalten, jedes mit eigenem Konfidenzwert. Sieben Dokumenttypen. Es funktioniert einfach.',
       cta: 'Kontakt aufnehmen',
