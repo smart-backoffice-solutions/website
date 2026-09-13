@@ -20,6 +20,17 @@ does: document types and fields, retention, sub-processors, Azure regions and se
 against that repository and against Azure before changing it. Its `CLAUDE.md` lists what the terms commit to
 and which backend changes require a change here.
 
+The website privacy statement (`/privacy/`, English, Dutch and German) takes its text from `tools/privacy/body.<lang>.html`
+in the same way. It describes exactly what `consent.js` does.
+
+## Cookie banner and Google Analytics
+
+`consent.js`, loaded on every page (Food Moments too, through its generator), shows the cookie banner and loads
+Google Analytics (`G-F29KPBNC6V`) only after the visitor accepts; before that nothing is requested from Google. It
+only sends data from `smart-backoffice.nl`, so local previews do not count as visits. Every footer has a
+Cookie settings link (`data-consent-open`) that reopens the banner. If you change what is measured, or the Analytics
+settings (retention, Google Signals, data sharing), update the privacy statement in all three languages.
+
 After adding or removing a page,
 update `tools/sitemap.json` and regenerate `sitemap.xml` with the `seo` skill's `gen_sitemap.py`
 (it takes `lastmod` from git, so run it after committing). Share images in `og/` are screenshots of

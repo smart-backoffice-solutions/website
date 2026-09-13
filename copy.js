@@ -1,6 +1,11 @@
 // Landing page copy. tools/render-languages.mjs renders it into /, /nl/ and /de/.
 window.SBO_COPY = {
   nl: {
+    footer: { privacy: 'Privacy', cookies: 'Cookie-instellingen' },
+    privacyMeta: {
+      title: 'Privacyverklaring website - Smart Backoffice Solutions',
+      description: 'Welke gegevens Smart Backoffice Solutions B.V. verwerkt als u deze website bezoekt: hosting en, alleen met uw toestemming, Google Analytics.'
+    },
     meta: {
       title: 'Hypotheektechnologie, AI en econometrie - Smart Backoffice',
       description: 'Team uit Tilburg voor hypotheekdocumenten, software en AI, en economische en econometrische analyses voor bedrijven, advocaten en rechtbanken.'
@@ -73,6 +78,11 @@ window.SBO_COPY = {
     }
   },
   en: {
+    footer: { privacy: 'Privacy', cookies: 'Cookie settings' },
+    privacyMeta: {
+      title: 'Website privacy statement - Smart Backoffice Solutions',
+      description: 'Which data Smart Backoffice Solutions B.V. processes when you visit this website: hosting and, only with your consent, Google Analytics.'
+    },
     meta: {
       title: 'Mortgage technology, AI and econometrics - Smart Backoffice',
       description: 'Tilburg team for Dutch mortgage documents, software and AI, and economic and econometric analysis for companies, lawyers and courts.'
@@ -145,6 +155,11 @@ window.SBO_COPY = {
     }
   },
   de: {
+    footer: { privacy: 'Datenschutz', cookies: 'Cookie-Einstellungen' },
+    privacyMeta: {
+      title: 'Datenschutzerklärung Website - Smart Backoffice Solutions',
+      description: 'Welche Daten Smart Backoffice Solutions B.V. beim Besuch dieser Website verarbeitet: Hosting und, nur mit Ihrer Einwilligung, Google Analytics.'
+    },
     meta: {
       title: 'Hypothekentechnologie, KI und Ökonometrie - Smart Backoffice',
       description: 'Team aus Tilburg für niederländische Hypothekendokumente, Software und KI sowie ökonometrische Analysen für Unternehmen, Kanzleien und Gerichte.'

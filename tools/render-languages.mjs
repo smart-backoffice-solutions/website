@@ -5,8 +5,8 @@
 // The English files (index.html, mortgage-documents/index.html) are both the templates and the
 // English output: every element with data-i18n="section.key" gets its text from the page's copy
 // file, and the blocks between <!-- seo:head --> and <!-- lang-switch --> markers are rewritten.
-// The terms page also gets its document text between <!-- terms:body --> markers, from
-// tools/terms/body.<lang>.html. Rendering is idempotent. Edit the copy files or the English HTML, then run:
+// The terms and privacy pages also get their document text between <!-- terms:body --> or
+// <!-- privacy:body --> markers, from tools/terms/ and tools/privacy/body.<lang>.html. Rendering is idempotent. Edit the copy files or the English HTML, then run:
 //
 //   node tools/render-languages.mjs
 //
@@ -97,6 +97,7 @@ const PAGES = [
     copy: 'mortgage-documents/copy.js',
     metaKey: 'termsMeta',
     body: lang => `tools/terms/body.${lang}.html`,
+    marker: 'terms:body',
     // The Dutch text is the binding one, so it is also what a visitor in any other language gets.
     xDefault: 'nl',
     og: 'og/mortgage-documents.png',
@@ -108,6 +109,25 @@ const PAGES = [
           { '@type': 'ListItem', position: 1, name: 'Smart Backoffice Solutions', item: `${SITE}/${LANGS[lang]}` },
           { '@type': 'ListItem', position: 2, name: 'Mortgage Documents', item: url(lang, 'mortgage-documents/') },
           { '@type': 'ListItem', position: 3, name: t.nav.terms, item: url(lang, 'mortgage-documents/terms/') }
+        ]
+      }
+    ]
+  },
+  {
+    src: 'privacy/index.html',
+    path: 'privacy/',
+    copy: 'copy.js',
+    metaKey: 'privacyMeta',
+    body: lang => `tools/privacy/body.${lang}.html`,
+    marker: 'privacy:body',
+    og: 'og/home.png',
+    jsonld: (lang, t) => [
+      ORGANIZATION,
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Smart Backoffice Solutions', item: `${SITE}/${LANGS[lang]}` },
+          { '@type': 'ListItem', position: 2, name: t.footer.privacy, item: url(lang, 'privacy/') }
         ]
       }
     ]
@@ -203,7 +223,8 @@ for (const page of PAGES) {
       .replace(/<!-- lang-switch -->[\s\S]*?<!-- \/lang-switch -->/, () => langSwitch(page, lang));
     if (page.body) {
       const body = fs.readFileSync(path.join(ROOT, page.body(lang)), 'utf8').trim().replace(/^/gm, '    ');
-      html = html.replace(/<!-- terms:body -->[\s\S]*?<!-- \/terms:body -->/, () => `<!-- terms:body -->\n${body}\n    <!-- /terms:body -->`);
+      const block = new RegExp(`<!-- ${page.marker} -->[\\s\\S]*?<!-- /${page.marker} -->`);
+      html = html.replace(block, () => `<!-- ${page.marker} -->\n${body}\n    <!-- /${page.marker} -->`);
     }
     const out = path.join(ROOT, LANGS[lang], page.path, 'index.html');
     fs.mkdirSync(path.dirname(out), { recursive: true });

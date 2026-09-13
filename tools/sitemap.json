@@ -21,6 +21,12 @@
       "x-default": "/nl/mortgage-documents/terms/"
     },
     {
+      "en": "/privacy/",
+      "nl": "/nl/privacy/",
+      "de": "/de/privacy/",
+      "x-default": "/privacy/"
+    },
+    {
       "en": "/foodmoments/",
       "de": "/de/foodmoments/",
       "nl": "/nl/foodmoments/",

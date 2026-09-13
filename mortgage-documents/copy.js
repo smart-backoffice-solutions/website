@@ -163,6 +163,8 @@ window.SBO_COPY = {
       termsLink: 'Read the terms'
     },
     footer: {
+      privacy: 'Privacy',
+      cookies: 'Cookie settings',
       madeBy: 'Mortgage Documents is made by',
       home: 'Smart Backoffice Solutions B.V.'
     }
@@ -331,6 +333,8 @@ window.SBO_COPY = {
       termsLink: 'Lees de voorwaarden'
     },
     footer: {
+      privacy: 'Privacy',
+      cookies: 'Cookie-instellingen',
       madeBy: 'Mortgage Documents wordt gemaakt door',
       home: 'Smart Backoffice Solutions B.V.'
     }
@@ -499,6 +503,8 @@ window.SBO_COPY = {
       termsLink: 'Zu den AGB'
     },
     footer: {
+      privacy: 'Datenschutz',
+      cookies: 'Cookie-Einstellungen',
       madeBy: 'Mortgage Documents wird entwickelt von',
       home: 'Smart Backoffice Solutions B.V.'
     }
