@@ -230,7 +230,6 @@
   .hero { padding: 54px 0 40px; }
   .hero h1 { font-size: 44px; }
   .brand { margin-left: 0; }
-  .brand img { width: min(260px, 56vw); }
   .lang-switch { gap: 0; }
   .lang-switch a { padding-inline: 6px; }
   .strip.three, .strip.two { grid-template-columns: 1fr; max-width: 420px; }
@@ -255,8 +254,6 @@
 .approach-box { align-items: start; }
 
 /* ---------- Product navigation: Mortgage Documents and its terms, in the header and the footer ---------- */
-/* The logo gives up a little width so that the two page links fit beside it. */
-.brand img { width: min(360px, 32vw); }
 .site-nav {
   display: flex; align-items: center; gap: 24px;
   margin: 0 auto 0 30px; padding-left: 30px; min-height: 32px;
@@ -264,6 +261,10 @@
   font: 500 14px/1.2 var(--sans);
 }
 .site-nav a, .footer-nav a { color: var(--muted); text-decoration: none; transition: color .18s ease; }
+/* The menu text sits on the same line as the bottom of the lettering in the logo. In logo.png the
+   lettering ends at row 43 of 55, which is 15.5px below the image's centre (0.0336 of its 461px
+   width); the menu's own baseline already sits 4.6px below the header's centre. */
+.site-nav a { position: relative; top: calc(var(--logo-w) * 0.0336 - 4.6px); }
 .site-nav a:hover, .footer-nav a:hover { color: var(--accent); }
 .site-nav a[aria-current="page"], .footer-nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
 .site-nav a:focus-visible, .footer-nav a:focus-visible, .translation-note a:focus-visible {
@@ -281,10 +282,9 @@
 @media (max-width: 900px) {
   .site-header { flex-wrap: wrap; padding-top: 16px; }
   .site-nav { order: 3; width: 100%; margin: 14px 0 0; padding: 12px 0 14px; border-left: 0; border-top: 1px solid var(--line); }
-  .brand img { width: min(300px, 56vw); }
+  .site-nav a { top: 0; }
 }
 @media (max-width: 760px) {
-  .brand img { width: min(260px, 56vw); }
   .site-nav { gap: 20px; }
   .footer-nav + .footer { min-height: 0; padding-top: 22px; }
 }

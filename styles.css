@@ -41,7 +41,10 @@ a { color: inherit; }
   border-bottom: 1px solid var(--line);
 }
 .brand { margin-left: 10px; }
-.brand img { display: block; width: min(440px, 58vw); height: auto; }
+/* One logo size for every page. The width is a custom property because the Mortgage Documents menu
+   positions its text from it (see mortgage-documents.css). */
+.site-header { --logo-w: min(360px, 32vw); }
+.brand img { display: block; width: var(--logo-w); height: auto; }
 
 .lang-switch { display: flex; gap: 4px; }
 .lang-switch a {
@@ -124,9 +127,12 @@ h2 { font-size: clamp(34px, 5vw, 62px); line-height: 1.04; font-weight: 620; }
 .footer strong { color: var(--ink); font-family: Inter, sans-serif; font-size: 13px; }
 .footer-right { text-align: right; }
 
+@media (max-width: 900px) {
+  .site-header { --logo-w: min(300px, 56vw); }
+}
+
 @media (max-width: 760px) {
-  .site-header { min-height: 78px; }
-  .brand img { width: min(330px, 68vw); }
+  .site-header { min-height: 78px; --logo-w: min(260px, 56vw); }
   .hero { padding: 80px 0 68px; }
   .section-intro, .origin, .expertise, .approach-box { grid-template-columns: 1fr; }
   .work-grid, .work-grid.three { grid-template-columns: 1fr; }
@@ -301,7 +307,6 @@ h2 { font-size: clamp(34px, 5vw, 62px); line-height: 1.04; font-weight: 620; }
 
 @media (max-width: 760px) {
   .home-page .brand { margin-left: 0; }
-  .home-page .brand img { width: min(260px, 56vw); }
   .home-page .lang-switch { gap: 0; }
   .home-page .lang-switch a { padding-inline: 6px; }
   .home-page .hero { padding: 68px 0 54px; }
