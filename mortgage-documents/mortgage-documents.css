@@ -254,19 +254,24 @@
 .approach-box { align-items: start; }
 
 /* ---------- Product navigation: Mortgage Documents and its terms, in the header and the footer ---------- */
+/* The Mortgage Documents page shows only its own name; the terms page adds "› Terms" after it, like the
+   Food Moments breadcrumbs. The text is as large as the logo's lettering: in logo.png the capitals are
+   21.5px of its 461px width, and Inter's capitals are 0.727em, so 0.0642 of the logo width per em. */
 .site-nav {
-  display: flex; align-items: center; gap: 24px;
+  display: flex; align-items: center; gap: 12px;
   margin: 0 auto 0 30px; padding-left: 30px; min-height: 32px;
   border-left: 1px solid var(--line);
-  font: 500 14px/1.2 var(--sans);
+  font: 500 calc(var(--logo-w) * 0.0642)/1.2 var(--sans);
 }
+.site-nav .sep { color: var(--muted); position: relative; top: calc(var(--logo-w) * 0.0336 - 0.364em); }
 .site-nav a, .footer-nav a { color: var(--muted); text-decoration: none; transition: color .18s ease; }
 /* The menu text sits on the same line as the bottom of the lettering in the logo. In logo.png the
    lettering ends at row 43 of 55, which is 15.5px below the image's centre (0.0336 of its 461px
-   width); the menu's own baseline already sits 4.6px below the header's centre. */
-.site-nav a { position: relative; top: calc(var(--logo-w) * 0.0336 - 4.6px); }
+   width); an Inter line's baseline already sits 0.364em below its centre. */
+.site-nav a { white-space: nowrap; position: relative; top: calc(var(--logo-w) * 0.0336 - 0.364em); }
 .site-nav a:hover, .footer-nav a:hover { color: var(--accent); }
-.site-nav a[aria-current="page"], .footer-nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+.site-nav a[aria-current="page"] { color: var(--ink); }
+.footer-nav a[aria-current="page"] { color: var(--ink); font-weight: 600; }
 .site-nav a:focus-visible, .footer-nav a:focus-visible, .translation-note a:focus-visible {
   outline: 3px solid color-mix(in srgb, var(--accent) 45%, transparent);
   outline-offset: 4px;
@@ -279,10 +284,11 @@
 }
 .footer-nav + .footer { border-top: 0; min-height: 124px; }
 
-@media (max-width: 900px) {
+/* Below this width "Mortgage Documents › Algemene voorwaarden" no longer fits next to the logo. */
+@media (max-width: 1140px) {
   .site-header { flex-wrap: wrap; padding-top: 16px; }
   .site-nav { order: 3; width: 100%; margin: 14px 0 0; padding: 12px 0 14px; border-left: 0; border-top: 1px solid var(--line); }
-  .site-nav a { top: 0; }
+  .site-nav a, .site-nav .sep { top: 0; }
 }
 @media (max-width: 760px) {
   .site-nav { gap: 20px; }
