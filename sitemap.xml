@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://smart-backoffice.nl/nl/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/"/>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://smart-backoffice.nl/de/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/"/>
@@ -74,200 +74,266 @@
   </url>
   <url>
     <loc>https://smart-backoffice.nl/foodmoments/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/index.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/index.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/index.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/index.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/index.pt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/index.de.html</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://smart-backoffice.nl/de/foodmoments/</loc>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/index.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/index.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/index.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/index.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/index.pt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/index.nl.html</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://smart-backoffice.nl/nl/foodmoments/</loc>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/index.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/index.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/index.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/index.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/index.pt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/index.es.html</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://smart-backoffice.nl/es/foodmoments/</loc>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/index.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/index.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/index.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/index.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/index.pt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/index.fr.html</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://smart-backoffice.nl/fr/foodmoments/</loc>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/index.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/index.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/index.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/index.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/index.pt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/index.pt.html</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://smart-backoffice.nl/pt/foodmoments/</loc>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/index.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/index.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/index.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/index.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/index.pt.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/privacy.en.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/privacy.en.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/privacy.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/privacy.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/privacy.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/privacy.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/privacy.pt.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/privacy.en.html"/>
+    <loc>https://smart-backoffice.nl/foodmoments/privacy/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/privacy/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/privacy.de.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/privacy.en.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/privacy.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/privacy.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/privacy.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/privacy.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/privacy.pt.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/privacy.en.html"/>
+    <loc>https://smart-backoffice.nl/de/foodmoments/privacy/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/privacy/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/privacy.nl.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/privacy.en.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/privacy.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/privacy.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/privacy.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/privacy.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/privacy.pt.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/privacy.en.html"/>
+    <loc>https://smart-backoffice.nl/nl/foodmoments/privacy/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/privacy/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/privacy.es.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/privacy.en.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/privacy.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/privacy.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/privacy.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/privacy.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/privacy.pt.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/privacy.en.html"/>
+    <loc>https://smart-backoffice.nl/es/foodmoments/privacy/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/privacy/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/privacy.fr.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/privacy.en.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/privacy.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/privacy.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/privacy.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/privacy.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/privacy.pt.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/privacy.en.html"/>
+    <loc>https://smart-backoffice.nl/fr/foodmoments/privacy/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/privacy/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/privacy.pt.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/privacy.en.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/privacy.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/privacy.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/privacy.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/privacy.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/privacy.pt.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/privacy.en.html"/>
+    <loc>https://smart-backoffice.nl/pt/foodmoments/privacy/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/privacy/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/terms.en.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/terms.en.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/terms.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/terms.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/terms.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/terms.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/terms.pt.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/terms.en.html"/>
+    <loc>https://smart-backoffice.nl/foodmoments/terms/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/terms/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/terms.de.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/terms.en.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/terms.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/terms.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/terms.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/terms.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/terms.pt.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/terms.en.html"/>
+    <loc>https://smart-backoffice.nl/de/foodmoments/terms/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/terms/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/terms.nl.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/terms.en.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/terms.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/terms.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/terms.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/terms.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/terms.pt.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/terms.en.html"/>
+    <loc>https://smart-backoffice.nl/nl/foodmoments/terms/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/terms/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/terms.es.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/terms.en.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/terms.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/terms.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/terms.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/terms.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/terms.pt.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/terms.en.html"/>
+    <loc>https://smart-backoffice.nl/es/foodmoments/terms/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/terms/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/terms.fr.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/terms.en.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/terms.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/terms.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/terms.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/terms.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/terms.pt.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/terms.en.html"/>
+    <loc>https://smart-backoffice.nl/fr/foodmoments/terms/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/terms/"/>
   </url>
   <url>
-    <loc>https://smart-backoffice.nl/foodmoments/terms.pt.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/terms.en.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/foodmoments/terms.de.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/foodmoments/terms.nl.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/foodmoments/terms.es.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/foodmoments/terms.fr.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/foodmoments/terms.pt.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/terms.en.html"/>
+    <loc>https://smart-backoffice.nl/pt/foodmoments/terms/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/terms/"/>
+  </url>
+  <url>
+    <loc>https://smart-backoffice.nl/foodmoments/support/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/support/"/>
+  </url>
+  <url>
+    <loc>https://smart-backoffice.nl/de/foodmoments/support/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/support/"/>
+  </url>
+  <url>
+    <loc>https://smart-backoffice.nl/nl/foodmoments/support/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/support/"/>
+  </url>
+  <url>
+    <loc>https://smart-backoffice.nl/es/foodmoments/support/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/support/"/>
+  </url>
+  <url>
+    <loc>https://smart-backoffice.nl/fr/foodmoments/support/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/support/"/>
+  </url>
+  <url>
+    <loc>https://smart-backoffice.nl/pt/foodmoments/support/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://smart-backoffice.nl/es/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://smart-backoffice.nl/fr/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://smart-backoffice.nl/pt/foodmoments/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/foodmoments/support/"/>
   </url>
 </urlset>
