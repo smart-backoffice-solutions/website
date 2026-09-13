@@ -1,5 +1,5 @@
-/* Food Moments — one stylesheet for every page: the landing (index*.html),
-   the support hub (support.html) and the legal documents (privacy/terms).
+/* Food Moments — one stylesheet for every page: the landing (/foodmoments/ and /<lang>/foodmoments/),
+   the support page and the legal documents (privacy/terms).
    Palette from the app icon: cream→mint gradient, carrot orange, leaf green,
    warm ink. The stylized meal/day cards mirror the app's MealMomentCard /
    DaySummaryCard. Rendered pages come from the food-moments repo
@@ -288,7 +288,7 @@ footer .fine a:hover { color: var(--orange-deep); }
 footer .legal { font-size: 13px; color: var(--soft); }
 footer .legal a { color: inherit; }
 
-/* ---- support hub & legal documents: plain text on the gradient, no card ---- */
+/* ---- support page & legal documents: plain text on the gradient, no card ---- */
 .doc { max-width: none; padding: 64px 0 10px; }
 .doc h1 { font-size: clamp(32px, 5vw, 46px); font-weight: 600; margin: 0 0 12px; }
 .doc > h2 { font-size: 23px; font-weight: 600; margin: 58px 0 10px; }
@@ -302,13 +302,8 @@ footer .legal a { color: inherit; }
 }
 .address { color: var(--soft); font-size: 14.5px; }
 
-/* hub language sections: each section's h2 is that language's page title */
-.doc section { border-bottom: 1px solid var(--line); padding: 0 0 46px; margin-bottom: 54px; }
-.doc section h2 { font-size: clamp(30px, 4.6vw, 42px); margin: 0 0 14px; }
-.doc section:last-of-type { border-bottom: 0; margin-bottom: 0; }
-section[hidden] { display: none; }
-/* With JS active only one section is visible — drop the separators. */
-body.js section { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
+/* The support page has no effective-date line under its title, so its first paragraph needs the room. */
+.doc h1 + p:not(.meta) { margin-top: 24px; }
 
 @media print {
   body { background: #fff; }

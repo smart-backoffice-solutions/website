@@ -28,11 +28,13 @@ update `tools/sitemap.json` and regenerate `sitemap.xml` with the `seo` skill's 
 
 The site uses plain HTML/CSS/JavaScript and needs no build step.
 
-## foodmoments/ — generated, do not edit by hand
+## Food Moments — generated, do not edit by hand
 
-`foodmoments/` holds the Food Moments app's landing page, support hub and legal pages (privacy
-policy + supplemental terms) in six languages. Everything except `support.html` is indexable. The HTML
-there is **generated**: the sources are the markdown files in the food-moments repo under
+Food Moments has a landing page, a support page and two legal pages (privacy policy +
+supplemental terms) in six languages, in the same folder scheme as the rest of the site:
+`/foodmoments/`, `/foodmoments/privacy/`, `/foodmoments/terms/`, `/foodmoments/support/` in English and
+`/nl/foodmoments/...`, `/de/...`, `/es/...`, `/fr/...`, `/pt/...` for the others. All are indexable.
+`foodmoments/` also holds the shared stylesheet and icons. The HTML is **generated**: the sources are the markdown files in the food-moments repo under
 `documents/public/`, rendered by `scripts/website/build.py` in that repo. To change wording,
 edit the markdown there, run the script, then commit both repos and push this one (pushing
 main publishes). Only `foodmoments/foodmoments.css` is edited directly in this repo.

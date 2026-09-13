@@ -118,10 +118,11 @@ function url(lang, pagePath) {
   return `${SITE}/${LANGS[lang]}${pagePath}`;
 }
 
-// Links to a rendered page stay in the same language; Food Moments has its own per-language files.
+// Links to a rendered page stay in the same language. Food Moments, generated in its own repo,
+// uses the same folder scheme (/nl/foodmoments/).
 function localisedPath(sitePath, lang) {
   for (const page of PAGES) if (sitePath === `/${page.path}`) return `/${LANGS[lang]}${page.path}`;
-  if (sitePath === '/foodmoments/' && lang !== 'en') return `/foodmoments/index.${lang}.html`;
+  if (sitePath === '/foodmoments/') return `/${LANGS[lang]}foodmoments/`;
   return sitePath;
 }
 
