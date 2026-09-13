@@ -51,7 +51,7 @@
 <main class="doc">
 
 <h1>Política de privacidad — Food Moments</h1>
-<p class="meta">Fecha de entrada en vigor: 6 de septiembre de 2026. Esta política está disponible en inglés, alemán, neerlandés, español, francés y portugués; la versión inglesa es la vinculante.</p>
+<p class="meta">Fecha de entrada en vigor: 13 de septiembre de 2026. Esta política está disponible en inglés, alemán, neerlandés, español, francés y portugués; la versión inglesa es la vinculante.</p>
 <p>Food Moments estima el valor nutricional de sus comidas a partir de fotos y de sus propias palabras. La aplicación está construida para que sus datos sigan siendo suyos: sin publicidad, sin rastreo y sin nombre — su cuenta no es más que su dirección de correo electrónico. Todo lo que usted registra se almacena en esa cuenta, en nuestros propios servidores en la Unión Europea, con los días recientes en su iPhone; eso es lo que permite que un iPhone nuevo lo recupere todo, y viene con dos botones que mantienen los datos suyos también en la práctica: uno que lo descarga todo y otro que lo borra todo. Qué se envía adónde — y el único flujo que puede salir de la UE — se describe con precisión más abajo; el análisis por IA y el dictado solo comienzan después de que usted haya dado su consentimiento en la aplicación.</p>
 <h2 id="s1">1. Quién es el responsable</h2>
 <p>El responsable del tratamiento es <strong>Smart Backoffice Solutions B.V.</strong>, Saal van Zwanenbergweg 11, 5026 RM Tilburg, Países Bajos, inscrita en el registro mercantil neerlandés (KvK) con el número 90141482. Contacto: <strong><a href="mailto:info@smart-backoffice.nl">info@smart-backoffice.nl</a></strong>.</p>
@@ -63,6 +63,7 @@
   <li>Su perfil nutricional (año de nacimiento, sexo, peso, estatura, actividad, objetivo)</li>
   <li>Sus objetivos diarios, día a día — en los días basados en Apple Health, incluida la cifra de calorías quemadas a partir de la cual se calculó el objetivo (véase más abajo)</li>
   <li>Sus fotos de fondo de la línea de tiempo, si eligió las suyas propias</li>
+  <li>Qué fotos de sus comidas y qué productos escaneados ha marcado como favoritos, para que aparezcan primero cuando vuelva a usarlos</li>
   <li>Los ajustes de la app: el aspecto, cuándo empieza su día y si sus objetivos proceden de Apple Salud</li>
   <li>Los tamaños que usted mismo le ha indicado a la app — cuánto mide su plato llano, cuánto pesa una rebanada de su pan — guardados para que la app no tenga que volver a estimarlos</li>
 </ul>
@@ -83,6 +84,12 @@
 <ul>
   <li>La grabación de audio de su dictado, para transcribirla a texto. A diferencia de todo lo demás en esta lista, se procesa en una implementación global de Azure y por tanto puede salir de la Unión Europea — véanse §3 y §5</li>
 </ul>
+<p><strong>Guardado solo en su iPhone, mientras algo está sin terminar:</strong></p>
+<ul>
+  <li>Una comida empezada y aún no analizada — sus fotos, códigos de barras escaneados y la nota escrita —, para que la pantalla de captura vuelva a abrirse donde la dejó si la aplicación se cierra, falla o iOS la finaliza; lo mismo vale para una corrección empezada sobre una comida y aún no aplicada. Se conserva hasta que pulse Analizar o Aplicar — entonces pasa a ser su comida o su corrección y se guarda en su cuenta como se describe arriba — o Cancelar, en cuyo caso se elimina. También se elimina cuando cierra la sesión o elimina su cuenta, y nada de ello se envía para su análisis antes de que pulse Analizar o Aplicar</li>
+  <li>La grabación de un dictado, desde que está completa — al soltar el botón del micrófono, o aproximadamente cada minuto en una nota larga — hasta que llega su texto, normalmente en un segundo o dos; después se elimina. Si todavía no puede enviarse, porque no hay red o el servicio no está disponible, espera en su iPhone y se envía automáticamente cuando vuelve la conexión o abre de nuevo la aplicación, y su nota se completa sola. Una grabación en espera también se elimina cuando cancela la comida o la corrección a la que pertenece, cierra la sesión o elimina su cuenta, y nunca se envía sin su consentimiento para el dictado</li>
+</ul>
+<p>Ambas se guardan en el almacenamiento privado de la aplicación en su iPhone, protegidas por el cifrado de iOS y excluidas de las copias de seguridad del iPhone; ninguna se sube nunca a su cuenta.</p>
 <p><strong>Enviado cuando escanea un código de barras o se encuentra uno en una foto:</strong></p>
 <ul>
   <li>El número del código de barras, consultado en la base de datos pública Open Food Facts (§4). El nombre, el tamaño del envase, los valores nutricionales y la fotografía del producto vuelven a su iPhone y se guardan allí; la fotografía nunca se sube a nuestros servidores, nunca se envía para el análisis y nunca viaja en una comida compartida: su iPhone obtiene su propia copia de Open Food Facts</li>
@@ -117,6 +124,7 @@
 <h2 id="s6">6. Conservación</h2>
 <p><strong>Los datos de su cuenta se conservan hasta que usted los borra</strong> — para eso existe una cuenta. Una comida individual se elimina deslizándola, en nuestros servidores igual que en el teléfono; <strong>Ajustes → Cuenta → Eliminar cuenta</strong> borra de una vez todo lo que tenemos — comidas, fotos, perfil, sesiones y cualquier archivo de exportación aún pendiente. Eliminar la aplicación ya no borra nada: inicie sesión de nuevo y todo vuelve; elimine la cuenta cuando quiera que desaparezca.</p>
 <p>Todo lo que rodea a la cuenta es efímero. Un <strong>código de acceso</strong> funciona una vez y caduca a los diez minutos aproximadamente. El zip de <strong>Descargar todos mis datos</strong> se elimina de nuestro servidor en un plazo de 48 horas (su enlace de descarga deja de funcionar a las 24). Lo que envía para un análisis o un dictado no se almacena en nuestra pasarela — se transmite y desaparece — y la conservación transitoria de Microsoft se describe en §4.</p>
+<p><strong>En su iPhone</strong>, una comida o una corrección sin terminar y una grabación de dictado que aún espera su texto se conservan solo el tiempo que describe el §2: hasta que la termine o la cancele, o hasta que llegue su texto — y nunca más allá de cerrar la sesión o eliminar su cuenta.</p>
 <p>El identificador de dispositivo descrito en el §3 se conserva, como hasta ahora, mientras esa instalación de la aplicación use el servicio, porque es aquello con lo que se comprueba una solicitud, y lo eliminamos si nos lo pide: escriba a la dirección del §1 indicando que desea eliminar el registro de su dispositivo. No nos dice nada sobre usted ni sobre lo que come.</p>
 <p>Los <strong>diagnósticos de fallos</strong> (§2) se conservan durante <strong>90 días</strong> y después se eliminan automáticamente — tiempo suficiente para detectar y solucionar un problema, no un registro permanente.</p>
 <p><strong>Hacemos copias de seguridad.</strong> Su cuenta es la única copia completa de sus comidas — en el iPhone solo están los días recientes —, así que la respaldamos. Las fotos y los archivos pueden restaurarse a cualquier momento de los últimos <strong>30 días</strong>, y el resto de su cuenta se escribe cada noche en un archivo fechado que se conserva también 30 días. Ambos permanecen, junto con el resto de sus datos, en la Unión Europea y no se utilizan para nada más. Una consecuencia, dicha claramente: eliminar su cuenta borra de inmediato todo lo que tenemos en servicio, pero lo que quede en esas copias de seguridad desaparece cuando sale de ese plazo — dentro de 30 días — y no en ese mismo instante.</p>
