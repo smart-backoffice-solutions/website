@@ -352,4 +352,4 @@
 /* Privacy section and the terms line under the contact address */
 .who-note a, .contact-terms a { color: var(--ink); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent); }
 .who-note a:hover, .contact-terms a:hover { color: var(--accent); border-color: var(--ink); }
-.contact-card .contact-terms { margin-top: 26px; font-size: 14px; max-width: 620px; }
+.contact-card .contact-terms { margin-top: 26px; }
