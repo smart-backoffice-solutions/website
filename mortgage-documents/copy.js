@@ -5,7 +5,11 @@ window.SBO_COPY = {
       title: 'Dutch mortgage document extraction API - Smart Backoffice',
       description: 'API for Dutch payslips, employer declarations, IDs, purchase agreements, appraisal reports, DUO and KVK extracts. Every field has a confidence score.'
     },
-    nav: { home: 'Smart Backoffice Solutions', modules: 'Modules', api: 'API', contact: 'Contact' },
+    nav: { home: 'Smart Backoffice Solutions', modules: 'Modules', api: 'API', contact: 'Contact', product: 'Mortgage Documents', terms: 'Terms and conditions' },
+    termsMeta: {
+      title: 'Terms and conditions - Mortgage Documents - Smart Backoffice',
+      description: 'Terms and conditions of Smart Backoffice Solutions B.V. for Mortgage Documents, with the data processing agreement. English translation; the Dutch text is binding.'
+    },
     hero: {
       eyebrow: 'Mortgage Documents · API',
       title: 'Upload a document. Get structured data back.',
@@ -153,7 +157,11 @@ window.SBO_COPY = {
       title: 'Hypotheekdocumenten uitlezen via API - Smart Backoffice',
       description: 'API voor loonstroken, werkgeversverklaringen, ID\'s, koopovereenkomsten, taxatierapporten, DUO- en KVK-uittreksels. Elk veld met betrouwbaarheidsscore.'
     },
-    nav: { home: 'Smart Backoffice Solutions', modules: 'Modules', api: 'API', contact: 'Contact' },
+    nav: { home: 'Smart Backoffice Solutions', modules: 'Modules', api: 'API', contact: 'Contact', product: 'Mortgage Documents', terms: 'Algemene voorwaarden' },
+    termsMeta: {
+      title: 'Algemene voorwaarden - Mortgage Documents - Smart Backoffice',
+      description: 'Algemene voorwaarden van Smart Backoffice Solutions B.V. voor Mortgage Documents, met de verwerkersovereenkomst en bijlagen over persoonsgegevens en beveiliging.'
+    },
     hero: {
       eyebrow: 'Mortgage Documents · API',
       title: 'Document uploaden. Gestructureerde data terug.',
@@ -301,7 +309,11 @@ window.SBO_COPY = {
       title: 'Hypothekendokumente per API auslesen - Smart Backoffice',
       description: 'API für Gehaltsabrechnungen, Arbeitgeberbescheinigungen, Ausweise, Kaufverträge, Wertgutachten, DUO- und KVK-Auszüge. Jedes Feld mit Konfidenzwert.'
     },
-    nav: { home: 'Smart Backoffice Solutions', modules: 'Module', api: 'API', contact: 'Kontakt' },
+    nav: { home: 'Smart Backoffice Solutions', modules: 'Module', api: 'API', contact: 'Kontakt', product: 'Mortgage Documents', terms: 'AGB' },
+    termsMeta: {
+      title: 'AGB - Mortgage Documents - Smart Backoffice',
+      description: 'AGB der Smart Backoffice Solutions B.V. für Mortgage Documents mit Auftragsverarbeitungsvertrag. Deutsche Übersetzung; verbindlich ist die niederländische Fassung.'
+    },
     hero: {
       eyebrow: 'Mortgage Documents · API',
       title: 'Dokument hochladen. Strukturierte Daten erhalten.',

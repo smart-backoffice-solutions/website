@@ -4,6 +4,7 @@
   "groups": [
     {"en": "/", "nl": "/nl/", "de": "/de/", "x-default": "/"},
     {"en": "/mortgage-documents/", "nl": "/nl/mortgage-documents/", "de": "/de/mortgage-documents/", "x-default": "/mortgage-documents/"},
+    {"en": "/mortgage-documents/terms/", "nl": "/nl/mortgage-documents/terms/", "de": "/de/mortgage-documents/terms/", "x-default": "/nl/mortgage-documents/terms/"},
     {"en": "/foodmoments/", "de": "/foodmoments/index.de.html", "nl": "/foodmoments/index.nl.html", "es": "/foodmoments/index.es.html", "fr": "/foodmoments/index.fr.html", "pt": "/foodmoments/index.pt.html", "x-default": "/foodmoments/"},
     {"en": "/foodmoments/privacy.en.html", "de": "/foodmoments/privacy.de.html", "nl": "/foodmoments/privacy.nl.html", "es": "/foodmoments/privacy.es.html", "fr": "/foodmoments/privacy.fr.html", "pt": "/foodmoments/privacy.pt.html", "x-default": "/foodmoments/privacy.en.html"},
     {"en": "/foodmoments/terms.en.html", "de": "/foodmoments/terms.de.html", "nl": "/foodmoments/terms.nl.html", "es": "/foodmoments/terms.es.html", "fr": "/foodmoments/terms.fr.html", "pt": "/foodmoments/terms.pt.html", "x-default": "/foodmoments/terms.en.html"}

@@ -1,11 +1,12 @@
 #!/usr/bin/env node
-// Renders the landing page and the Mortgage Documents page into one static HTML file per
-// language, so that every language has its own URL that search engines can index.
+// Renders the landing page, the Mortgage Documents page and its terms page into one static HTML
+// file per language, so that every language has its own URL that search engines can index.
 //
 // The English files (index.html, mortgage-documents/index.html) are both the templates and the
 // English output: every element with data-i18n="section.key" gets its text from the page's copy
 // file, and the blocks between <!-- seo:head --> and <!-- lang-switch --> markers are rewritten.
-// Rendering is idempotent. Edit the copy files or the English HTML, then run:
+// The terms page also gets its document text between <!-- terms:body --> markers, from
+// tools/terms/body.<lang>.html. Rendering is idempotent. Edit the copy files or the English HTML, then run:
 //
 //   node tools/render-languages.mjs
 //
@@ -89,6 +90,27 @@ const PAGES = [
         provider: { '@id': ORGANIZATION['@id'] }
       }
     ]
+  },
+  {
+    src: 'mortgage-documents/terms/index.html',
+    path: 'mortgage-documents/terms/',
+    copy: 'mortgage-documents/copy.js',
+    metaKey: 'termsMeta',
+    body: lang => `tools/terms/body.${lang}.html`,
+    // The Dutch text is the binding one, so it is also what a visitor in any other language gets.
+    xDefault: 'nl',
+    og: 'og/mortgage-documents.png',
+    jsonld: (lang, t) => [
+      ORGANIZATION,
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Smart Backoffice Solutions', item: `${SITE}/${LANGS[lang]}` },
+          { '@type': 'ListItem', position: 2, name: 'Mortgage Documents', item: url(lang, 'mortgage-documents/') },
+          { '@type': 'ListItem', position: 3, name: t.nav.terms, item: url(lang, 'mortgage-documents/terms/') }
+        ]
+      }
+    ]
   }
 ];
 
@@ -132,7 +154,7 @@ function seoHead(page, lang, t) {
     `<meta name="description" content="${escapeAttr(t.meta.description)}" />`,
     `<link rel="canonical" href="${self}" />`,
     ...Object.keys(LANGS).map(l => `<link rel="alternate" hreflang="${l}" href="${url(l, page.path)}" />`),
-    `<link rel="alternate" hreflang="x-default" href="${url('en', page.path)}" />`,
+    `<link rel="alternate" hreflang="x-default" href="${url(page.xDefault || 'en', page.path)}" />`,
     `<meta property="og:type" content="website" />`,
     `<meta property="og:site_name" content="Smart Backoffice Solutions" />`,
     `<meta property="og:title" content="${escapeAttr(t.meta.title)}" />`,
@@ -166,7 +188,7 @@ for (const page of PAGES) {
   const template = fs.readFileSync(path.join(ROOT, page.src), 'utf8');
   const copy = loadCopy(page.copy);
   for (const lang of Object.keys(LANGS)) {
-    const t = copy[lang];
+    const t = page.metaKey ? { ...copy[lang], meta: copy[lang][page.metaKey] } : copy[lang];
     let html = template
       .replace(/<html lang="[^"]*">/, `<html lang="${lang}">`)
       .replace(/(<([a-zA-Z][\w:-]*)\b[^>]*\sdata-i18n="([\w.]+)"[^>]*>)[^<]*(<\/\2>)/g, (m, open, tag, key, close) => {
@@ -178,6 +200,10 @@ for (const page of PAGES) {
       .replace(/\s(href|src)="([^"]*)"/g, (m, attr, value) => ` ${attr}="${rewriteUrl(value, page, lang)}"`)
       .replace(/<!-- seo:head -->[\s\S]*?<!-- \/seo:head -->/, () => seoHead(page, lang, t))
       .replace(/<!-- lang-switch -->[\s\S]*?<!-- \/lang-switch -->/, () => langSwitch(page, lang));
+    if (page.body) {
+      const body = fs.readFileSync(path.join(ROOT, page.body(lang)), 'utf8').trim().replace(/^/gm, '    ');
+      html = html.replace(/<!-- terms:body -->[\s\S]*?<!-- \/terms:body -->/, () => `<!-- terms:body -->\n${body}\n    <!-- /terms:body -->`);
+    }
     const out = path.join(ROOT, LANGS[lang], page.path, 'index.html');
     fs.mkdirSync(path.dirname(out), { recursive: true });
     fs.writeFileSync(out, html);
