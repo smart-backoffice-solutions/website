@@ -11,9 +11,9 @@ changing either, run `node tools/render-languages.mjs` (no dependencies) and com
 together with `nl/` and `de/`. Never edit `nl/` or `de/` by hand.
 
 The Mortgage Documents terms page (`/nl/mortgage-documents/terms/`, with English and German translations) takes
-its document text from `tools/terms/body.<lang>.html`. The Dutch text is the binding one and is converted from
-the Word file with `python3 tools/terms/docx-to-html.py <file.docx> > tools/terms/body.nl.html`; after a new
-version, update the English and German translations to match and re-run the render script. After adding or removing a page,
+its document text from `tools/terms/body.<lang>.html`. The Dutch text (`body.nl.html`) is the binding one and is
+edited there directly; after changing it, make the same change in the English and German translations and
+re-run the render script. Clause anchors (`id="av-5-2"` etc.) must stay the same in all three. After adding or removing a page,
 update `tools/sitemap.json` and regenerate `sitemap.xml` with the `seo` skill's `gen_sitemap.py`
 (it takes `lastmod` from git, so run it after committing). Share images in `og/` are screenshots of
 `tools/og-cards.html`. Fonts are self-hosted in `fonts/`.
