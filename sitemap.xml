@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://smart-backoffice.nl/mortgage-documents/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/mortgage-documents/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/mortgage-documents/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/mortgage-documents/"/>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://smart-backoffice.nl/nl/mortgage-documents/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/mortgage-documents/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/mortgage-documents/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/mortgage-documents/"/>
@@ -42,11 +42,35 @@
   </url>
   <url>
     <loc>https://smart-backoffice.nl/de/mortgage-documents/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/mortgage-documents/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/mortgage-documents/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/mortgage-documents/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/mortgage-documents/"/>
+  </url>
+  <url>
+    <loc>https://smart-backoffice.nl/mortgage-documents/terms/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/mortgage-documents/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/mortgage-documents/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/mortgage-documents/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/nl/mortgage-documents/terms/"/>
+  </url>
+  <url>
+    <loc>https://smart-backoffice.nl/nl/mortgage-documents/terms/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/mortgage-documents/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/mortgage-documents/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/mortgage-documents/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/nl/mortgage-documents/terms/"/>
+  </url>
+  <url>
+    <loc>https://smart-backoffice.nl/de/mortgage-documents/terms/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/mortgage-documents/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/mortgage-documents/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/mortgage-documents/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/nl/mortgage-documents/terms/"/>
   </url>
   <url>
     <loc>https://smart-backoffice.nl/foodmoments/</loc>
