@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://smart-backoffice.nl/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/"/>
@@ -71,6 +71,30 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/mortgage-documents/terms/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/mortgage-documents/terms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/nl/mortgage-documents/terms/"/>
+  </url>
+  <url>
+    <loc>https://smart-backoffice.nl/privacy/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/privacy/"/>
+  </url>
+  <url>
+    <loc>https://smart-backoffice.nl/nl/privacy/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/privacy/"/>
+  </url>
+  <url>
+    <loc>https://smart-backoffice.nl/de/privacy/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://smart-backoffice.nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://smart-backoffice.nl/nl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://smart-backoffice.nl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://smart-backoffice.nl/privacy/"/>
   </url>
   <url>
     <loc>https://smart-backoffice.nl/foodmoments/</loc>
