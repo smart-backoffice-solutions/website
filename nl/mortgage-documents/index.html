@@ -285,7 +285,7 @@
     "Status": "Finished",
     "DocumentType": "ls",
     "FlowData": [
-      { "name": "naam", "value": "De Vries", "confidence": 0.98 },
+      { "name": "wn_naam", "value": "De Vries", "confidence": 0.98 },
       { "name": "wg_naam", "value": "Voorbeeld B.V.", "confidence": 0.97 },
       { "name": "deeltijdfactor", "value": 0.8, "confidence": 0.99 },
       { "name": "salaris_regulier", "value": 4667, "confidence": 0.97 },
@@ -601,18 +601,46 @@
         <ul class="practical-list">
           <li data-i18n="practical.p1">Gehost in de Europese Unie.</li>
           <li data-i18n="practical.p2">Eén API-sleutel per klant, meegestuurd als header. Er zijn altijd twee sleutels geldig, dus een sleutelrotatie vraagt geen onderhoudsvenster.</li>
-          <li data-i18n="practical.p3">Resultaten zijn een beperkte tijd na verwerking op te halen en worden daarna verwijderd. Dat beperkt wat een gelekte sleutel waard zou zijn.</li>
-          <li data-i18n="practical.p4">Volumes in overleg. Algemene voorwaarden en een SLA zijn op aanvraag beschikbaar.</li>
+          <li data-i18n="practical.p3">Resultaten zijn tot één uur na verwerking op te halen; daarna geeft de API ze niet meer terug. Dat beperkt wat een gelekte sleutel waard zou zijn.</li>
+          <li data-i18n="practical.p4">Volumes in overleg. Een SLA is op aanvraag beschikbaar.</li>
         </ul>
+      </div>
+    </section>
+
+    <section id="privacy" class="who privacy"><div class="wrap">
+      <div class="section-intro">
+        <div class="eyebrow" data-i18n="privacy.eyebrow">Privacy en AVG</div>
+        <h2 data-i18n="privacy.title">Zorgvuldig met persoonsgegevens.</h2>
+      </div>
+      <div class="who-grid">
+        <div class="who-card">
+          <h3 data-i18n="privacy.c1t">U houdt de regie</h3>
+          <p data-i18n="privacy.c1c">U blijft verwerkingsverantwoordelijke en wij zijn uw verwerker, met een verwerkersovereenkomst die deel uitmaakt van onze voorwaarden. Vraagt u ons uw documenten te verwijderen, dan worden ze verwijderd.</p>
+        </div>
+        <div class="who-card">
+          <h3 data-i18n="privacy.c2t">Alleen in de EER</h3>
+          <p data-i18n="privacy.c2c">Documenten worden verwerkt en opgeslagen in datacenters van Microsoft Azure binnen de Europese Economische Ruimte. Microsoft is onze enige sub-verwerker.</p>
+        </div>
+        <div class="who-card">
+          <h3 data-i18n="privacy.c3t">Minder blootgesteld, by design</h3>
+          <p data-i18n="privacy.c3c">API-sleutels bewaren we alleen als hash, iedere klant ziet alleen de eigen documenten, en resultaten zijn één uur op te halen. Van een identiteitsbewijs meldt de API of het BSN zichtbaar is, nooit het nummer zelf.</p>
+        </div>
+        <div class="who-card">
+          <h3 data-i18n="privacy.c4t">Heldere afspraken</h3>
+          <p data-i18n="privacy.c4c">Bewaartermijnen, verwijdering, beveiligingsmaatregelen en het melden van datalekken zijn schriftelijk vastgelegd. We kunnen documenten onder strikte voorwaarden gebruiken om de dienst te verbeteren; met één e-mail zegt u daar nee tegen.</p>
+        </div>
+      </div>
+      <p class="who-note"><span data-i18n="privacy.note">De voorwaarden en de verwerkersovereenkomst gelden ook bij een proef.</span> <a href="terms/" data-i18n="privacy.link">Lees de voorwaarden en de verwerkersovereenkomst</a></p>
       </div>
     </section>
 
     <section id="contact" class="contact wrap">
       <div class="contact-card">
         <div class="eyebrow" data-i18n="contact.eyebrow">Probeer het</div>
-        <h2 data-i18n="contact.title">Wilt u het met een paar documenten proberen?</h2>
+        <h2 data-i18n="contact.title">Wilt u het zelf proberen?</h2>
         <p data-i18n="contact.copy">Stuur ons een bericht. We kunnen een sleutel en documentatie beschikbaar stellen en helpen met een kleine test op eigen materiaal.</p>
         <p class="contact-mail-line"><a href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents">info@smart-backoffice.nl</a></p>
+        <p class="contact-terms"><span data-i18n="contact.terms">Op ieder gebruik van Mortgage Documents, ook op een proef, zijn onze algemene voorwaarden met de verwerkersovereenkomst van toepassing. Door een document in te sturen aanvaardt u deze namens uw organisatie.</span> <a href="terms/" data-i18n="contact.termsLink">Lees de voorwaarden</a></p>
       </div>
     </section>
 

@@ -285,7 +285,7 @@
     "Status": "Finished",
     "DocumentType": "ls",
     "FlowData": [
-      { "name": "naam", "value": "De Vries", "confidence": 0.98 },
+      { "name": "wn_naam", "value": "De Vries", "confidence": 0.98 },
       { "name": "wg_naam", "value": "Voorbeeld B.V.", "confidence": 0.97 },
       { "name": "deeltijdfactor", "value": 0.8, "confidence": 0.99 },
       { "name": "salaris_regulier", "value": 4667, "confidence": 0.97 },
@@ -601,18 +601,46 @@
         <ul class="practical-list">
           <li data-i18n="practical.p1">Gehostet in der Europäischen Union.</li>
           <li data-i18n="practical.p2">Ein API-Schlüssel je Kunde, als Header gesendet. Zwei Schlüssel sind jederzeit gültig, sodass eine Schlüsselrotation kein Wartungsfenster braucht.</li>
-          <li data-i18n="practical.p3">Ergebnisse sind nach der Verarbeitung für ein begrenztes Zeitfenster abrufbar und werden dann gelöscht. Das begrenzt, was ein geleakter Schlüssel wert wäre.</li>
-          <li data-i18n="practical.p4">Volumen nach Vereinbarung. Geschäftsbedingungen und ein Service Level Agreement sind auf Anfrage erhältlich.</li>
+          <li data-i18n="practical.p3">Ergebnisse sind bis eine Stunde nach der Verarbeitung abrufbar; danach gibt die API sie nicht mehr zurück. Das begrenzt, was ein geleakter Schlüssel wert wäre.</li>
+          <li data-i18n="practical.p4">Volumen nach Vereinbarung. Ein Service Level Agreement ist auf Anfrage erhältlich.</li>
         </ul>
+      </div>
+    </section>
+
+    <section id="privacy" class="who privacy"><div class="wrap">
+      <div class="section-intro">
+        <div class="eyebrow" data-i18n="privacy.eyebrow">Datenschutz und DSGVO</div>
+        <h2 data-i18n="privacy.title">Sorgfältig mit personenbezogenen Daten.</h2>
+      </div>
+      <div class="who-grid">
+        <div class="who-card">
+          <h3 data-i18n="privacy.c1t">Sie behalten die Kontrolle</h3>
+          <p data-i18n="privacy.c1c">Sie bleiben Verantwortlicher, wir sind Ihr Auftragsverarbeiter, mit einem Auftragsverarbeitungsvertrag als Teil unserer AGB. Bitten Sie uns, Ihre Dokumente zu löschen, werden sie gelöscht.</p>
+        </div>
+        <div class="who-card">
+          <h3 data-i18n="privacy.c2t">Nur im EWR</h3>
+          <p data-i18n="privacy.c2c">Dokumente werden in Rechenzentren von Microsoft Azure im Europäischen Wirtschaftsraum verarbeitet und gespeichert. Microsoft ist unser einziger Unterauftragsverarbeiter.</p>
+        </div>
+        <div class="who-card">
+          <h3 data-i18n="privacy.c3t">Weniger angreifbar durch Design</h3>
+          <p data-i18n="privacy.c3c">API-Schlüssel speichern wir nur als Hash, jeder Kunde sieht nur seine eigenen Dokumente, und Ergebnisse sind eine Stunde lang abrufbar. Bei einem Ausweis meldet die API, ob die Bürgerservicenummer sichtbar ist, nie die Nummer selbst.</p>
+        </div>
+        <div class="who-card">
+          <h3 data-i18n="privacy.c4t">Klare Vereinbarungen</h3>
+          <p data-i18n="privacy.c4c">Aufbewahrung, Löschung, Sicherheitsmaßnahmen und die Meldung von Datenpannen sind schriftlich geregelt. Wir können Dokumente unter strengen Bedingungen zur Verbesserung des Dienstes nutzen; mit einer E-Mail widersprechen Sie.</p>
+        </div>
+      </div>
+      <p class="who-note"><span data-i18n="privacy.note">AGB und Auftragsverarbeitungsvertrag gelten auch bei einer Testnutzung.</span> <a href="terms/" data-i18n="privacy.link">AGB und Auftragsverarbeitungsvertrag lesen</a></p>
       </div>
     </section>
 
     <section id="contact" class="contact wrap">
       <div class="contact-card">
         <div class="eyebrow" data-i18n="contact.eyebrow">Ausprobieren</div>
-        <h2 data-i18n="contact.title">Möchten Sie es mit einigen Dokumenten ausprobieren?</h2>
+        <h2 data-i18n="contact.title">Möchten Sie es selbst ausprobieren?</h2>
         <p data-i18n="contact.copy">Schreiben Sie uns. Wir können einen Schlüssel und die Dokumentation bereitstellen und Sie bei einem kleinen Test mit eigenem Material unterstützen.</p>
         <p class="contact-mail-line"><a href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents">info@smart-backoffice.nl</a></p>
+        <p class="contact-terms"><span data-i18n="contact.terms">Für jede Nutzung von Mortgage Documents, auch zum Test, gelten unsere Allgemeinen Geschäftsbedingungen einschließlich des Auftragsverarbeitungsvertrags. Mit dem Einreichen eines Dokuments akzeptieren Sie diese im Namen Ihrer Organisation.</span> <a href="terms/" data-i18n="contact.termsLink">Zu den AGB</a></p>
       </div>
     </section>
 

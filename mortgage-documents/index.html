@@ -285,7 +285,7 @@
     "Status": "Finished",
     "DocumentType": "ls",
     "FlowData": [
-      { "name": "naam", "value": "De Vries", "confidence": 0.98 },
+      { "name": "wn_naam", "value": "De Vries", "confidence": 0.98 },
       { "name": "wg_naam", "value": "Voorbeeld B.V.", "confidence": 0.97 },
       { "name": "deeltijdfactor", "value": 0.8, "confidence": 0.99 },
       { "name": "salaris_regulier", "value": 4667, "confidence": 0.97 },
@@ -601,18 +601,46 @@
         <ul class="practical-list">
           <li data-i18n="practical.p1">Hosted in the European Union.</li>
           <li data-i18n="practical.p2">One API key per client, sent as a header. Two keys are valid at any time, so a key rotation needs no maintenance window.</li>
-          <li data-i18n="practical.p3">Results are retrievable for a limited window after processing and then deleted. That limits what a leaked key would be worth.</li>
-          <li data-i18n="practical.p4">Volumes by agreement. Terms and a service level agreement are available on request.</li>
+          <li data-i18n="practical.p3">Results can be collected for one hour after processing; after that the API no longer returns them. That limits what a leaked key would be worth.</li>
+          <li data-i18n="practical.p4">Volumes by agreement. A service level agreement is available on request.</li>
         </ul>
+      </div>
+    </section>
+
+    <section id="privacy" class="who privacy"><div class="wrap">
+      <div class="section-intro">
+        <div class="eyebrow" data-i18n="privacy.eyebrow">Privacy and GDPR</div>
+        <h2 data-i18n="privacy.title">Personal data, handled with care.</h2>
+      </div>
+      <div class="who-grid">
+        <div class="who-card">
+          <h3 data-i18n="privacy.c1t">You stay in control</h3>
+          <p data-i18n="privacy.c1c">You remain the controller and we act as your processor, under a data processing agreement that is part of our terms. Ask us to delete your documents and they are deleted.</p>
+        </div>
+        <div class="who-card">
+          <h3 data-i18n="privacy.c2t">Only in the EEA</h3>
+          <p data-i18n="privacy.c2c">Documents are processed and stored in Microsoft Azure data centres within the European Economic Area. Microsoft is our only sub-processor.</p>
+        </div>
+        <div class="who-card">
+          <h3 data-i18n="privacy.c3t">Less exposed by design</h3>
+          <p data-i18n="privacy.c3c">API keys are stored only as hashes, each client sees only its own documents, and results can be collected for one hour. For an ID document the API reports whether the citizen service number is visible, never the number itself.</p>
+        </div>
+        <div class="who-card">
+          <h3 data-i18n="privacy.c4t">Clear agreements</h3>
+          <p data-i18n="privacy.c4c">Retention, deletion, security measures and data breach notification are set out in writing. We may use documents to improve the service, under strict conditions, and you can opt out with one email.</p>
+        </div>
+      </div>
+      <p class="who-note"><span data-i18n="privacy.note">The terms and the data processing agreement apply to trials too.</span> <a href="terms/" data-i18n="privacy.link">Read the terms and data processing agreement</a></p>
       </div>
     </section>
 
     <section id="contact" class="contact wrap">
       <div class="contact-card">
         <div class="eyebrow" data-i18n="contact.eyebrow">Try it</div>
-        <h2 data-i18n="contact.title">Would you like to try it with a few documents?</h2>
+        <h2 data-i18n="contact.title">Would you like to try it yourself?</h2>
         <p data-i18n="contact.copy">Send us a message. We can provide a key and documentation, and help you run a small test with your own material.</p>
         <p class="contact-mail-line"><a href="mailto:info@smart-backoffice.nl?subject=Mortgage%20Documents">info@smart-backoffice.nl</a></p>
+        <p class="contact-terms"><span data-i18n="contact.terms">Our general terms and conditions, including the data processing agreement, apply to every use of Mortgage Documents, trials included. By submitting a document, you accept them on behalf of your organisation.</span> <a href="terms/" data-i18n="contact.termsLink">Read the terms</a></p>
       </div>
     </section>
 

@@ -138,13 +138,29 @@ window.SBO_COPY = {
       title: 'A small, predictable API surface.',
       p1: 'Hosted in the European Union.',
       p2: 'One API key per client, sent as a header. Two keys are valid at any time, so a key rotation needs no maintenance window.',
-      p3: 'Results are retrievable for a limited window after processing and then deleted. That limits what a leaked key would be worth.',
-      p4: 'Volumes by agreement. Terms and a service level agreement are available on request.'
+      p3: 'Results can be collected for one hour after processing; after that the API no longer returns them. That limits what a leaked key would be worth.',
+      p4: 'Volumes by agreement. A service level agreement is available on request.'
+    },
+    privacy: {
+      eyebrow: 'Privacy and GDPR',
+      title: 'Personal data, handled with care.',
+      c1t: 'You stay in control',
+      c1c: 'You remain the controller and we act as your processor, under a data processing agreement that is part of our terms. Ask us to delete your documents and they are deleted.',
+      c2t: 'Only in the EEA',
+      c2c: 'Documents are processed and stored in Microsoft Azure data centres within the European Economic Area. Microsoft is our only sub-processor.',
+      c3t: 'Less exposed by design',
+      c3c: 'API keys are stored only as hashes, each client sees only its own documents, and results can be collected for one hour. For an ID document the API reports whether the citizen service number is visible, never the number itself.',
+      c4t: 'Clear agreements',
+      c4c: 'Retention, deletion, security measures and data breach notification are set out in writing. We may use documents to improve the service, under strict conditions, and you can opt out with one email.',
+      note: 'The terms and the data processing agreement apply to trials too.',
+      link: 'Read the terms and data processing agreement'
     },
     contact: {
       eyebrow: 'Try it',
-      title: 'Would you like to try it with a few documents?',
-      copy: 'Send us a message. We can provide a key and documentation, and help you run a small test with your own material.'
+      title: 'Would you like to try it yourself?',
+      copy: 'Send us a message. We can provide a key and documentation, and help you run a small test with your own material.',
+      terms: 'Our general terms and conditions, including the data processing agreement, apply to every use of Mortgage Documents, trials included. By submitting a document, you accept them on behalf of your organisation.',
+      termsLink: 'Read the terms'
     },
     footer: {
       madeBy: 'Mortgage Documents is made by',
@@ -290,13 +306,29 @@ window.SBO_COPY = {
       title: 'Een kleine, voorspelbare API.',
       p1: 'Gehost in de Europese Unie.',
       p2: 'Eén API-sleutel per klant, meegestuurd als header. Er zijn altijd twee sleutels geldig, dus een sleutelrotatie vraagt geen onderhoudsvenster.',
-      p3: 'Resultaten zijn een beperkte tijd na verwerking op te halen en worden daarna verwijderd. Dat beperkt wat een gelekte sleutel waard zou zijn.',
-      p4: 'Volumes in overleg. Algemene voorwaarden en een SLA zijn op aanvraag beschikbaar.'
+      p3: 'Resultaten zijn tot één uur na verwerking op te halen; daarna geeft de API ze niet meer terug. Dat beperkt wat een gelekte sleutel waard zou zijn.',
+      p4: 'Volumes in overleg. Een SLA is op aanvraag beschikbaar.'
+    },
+    privacy: {
+      eyebrow: 'Privacy en AVG',
+      title: 'Zorgvuldig met persoonsgegevens.',
+      c1t: 'U houdt de regie',
+      c1c: 'U blijft verwerkingsverantwoordelijke en wij zijn uw verwerker, met een verwerkersovereenkomst die deel uitmaakt van onze voorwaarden. Vraagt u ons uw documenten te verwijderen, dan worden ze verwijderd.',
+      c2t: 'Alleen in de EER',
+      c2c: 'Documenten worden verwerkt en opgeslagen in datacenters van Microsoft Azure binnen de Europese Economische Ruimte. Microsoft is onze enige sub-verwerker.',
+      c3t: 'Minder blootgesteld, by design',
+      c3c: 'API-sleutels bewaren we alleen als hash, iedere klant ziet alleen de eigen documenten, en resultaten zijn één uur op te halen. Van een identiteitsbewijs meldt de API of het BSN zichtbaar is, nooit het nummer zelf.',
+      c4t: 'Heldere afspraken',
+      c4c: 'Bewaartermijnen, verwijdering, beveiligingsmaatregelen en het melden van datalekken zijn schriftelijk vastgelegd. We kunnen documenten onder strikte voorwaarden gebruiken om de dienst te verbeteren; met één e-mail zegt u daar nee tegen.',
+      note: 'De voorwaarden en de verwerkersovereenkomst gelden ook bij een proef.',
+      link: 'Lees de voorwaarden en de verwerkersovereenkomst'
     },
     contact: {
       eyebrow: 'Probeer het',
-      title: 'Wilt u het met een paar documenten proberen?',
-      copy: 'Stuur ons een bericht. We kunnen een sleutel en documentatie beschikbaar stellen en helpen met een kleine test op eigen materiaal.'
+      title: 'Wilt u het zelf proberen?',
+      copy: 'Stuur ons een bericht. We kunnen een sleutel en documentatie beschikbaar stellen en helpen met een kleine test op eigen materiaal.',
+      terms: 'Op ieder gebruik van Mortgage Documents, ook op een proef, zijn onze algemene voorwaarden met de verwerkersovereenkomst van toepassing. Door een document in te sturen aanvaardt u deze namens uw organisatie.',
+      termsLink: 'Lees de voorwaarden'
     },
     footer: {
       madeBy: 'Mortgage Documents wordt gemaakt door',
@@ -442,13 +474,29 @@ window.SBO_COPY = {
       title: 'Eine kleine, vorhersehbare API.',
       p1: 'Gehostet in der Europäischen Union.',
       p2: 'Ein API-Schlüssel je Kunde, als Header gesendet. Zwei Schlüssel sind jederzeit gültig, sodass eine Schlüsselrotation kein Wartungsfenster braucht.',
-      p3: 'Ergebnisse sind nach der Verarbeitung für ein begrenztes Zeitfenster abrufbar und werden dann gelöscht. Das begrenzt, was ein geleakter Schlüssel wert wäre.',
-      p4: 'Volumen nach Vereinbarung. Geschäftsbedingungen und ein Service Level Agreement sind auf Anfrage erhältlich.'
+      p3: 'Ergebnisse sind bis eine Stunde nach der Verarbeitung abrufbar; danach gibt die API sie nicht mehr zurück. Das begrenzt, was ein geleakter Schlüssel wert wäre.',
+      p4: 'Volumen nach Vereinbarung. Ein Service Level Agreement ist auf Anfrage erhältlich.'
+    },
+    privacy: {
+      eyebrow: 'Datenschutz und DSGVO',
+      title: 'Sorgfältig mit personenbezogenen Daten.',
+      c1t: 'Sie behalten die Kontrolle',
+      c1c: 'Sie bleiben Verantwortlicher, wir sind Ihr Auftragsverarbeiter, mit einem Auftragsverarbeitungsvertrag als Teil unserer AGB. Bitten Sie uns, Ihre Dokumente zu löschen, werden sie gelöscht.',
+      c2t: 'Nur im EWR',
+      c2c: 'Dokumente werden in Rechenzentren von Microsoft Azure im Europäischen Wirtschaftsraum verarbeitet und gespeichert. Microsoft ist unser einziger Unterauftragsverarbeiter.',
+      c3t: 'Weniger angreifbar durch Design',
+      c3c: 'API-Schlüssel speichern wir nur als Hash, jeder Kunde sieht nur seine eigenen Dokumente, und Ergebnisse sind eine Stunde lang abrufbar. Bei einem Ausweis meldet die API, ob die Bürgerservicenummer sichtbar ist, nie die Nummer selbst.',
+      c4t: 'Klare Vereinbarungen',
+      c4c: 'Aufbewahrung, Löschung, Sicherheitsmaßnahmen und die Meldung von Datenpannen sind schriftlich geregelt. Wir können Dokumente unter strengen Bedingungen zur Verbesserung des Dienstes nutzen; mit einer E-Mail widersprechen Sie.',
+      note: 'AGB und Auftragsverarbeitungsvertrag gelten auch bei einer Testnutzung.',
+      link: 'AGB und Auftragsverarbeitungsvertrag lesen'
     },
     contact: {
       eyebrow: 'Ausprobieren',
-      title: 'Möchten Sie es mit einigen Dokumenten ausprobieren?',
-      copy: 'Schreiben Sie uns. Wir können einen Schlüssel und die Dokumentation bereitstellen und Sie bei einem kleinen Test mit eigenem Material unterstützen.'
+      title: 'Möchten Sie es selbst ausprobieren?',
+      copy: 'Schreiben Sie uns. Wir können einen Schlüssel und die Dokumentation bereitstellen und Sie bei einem kleinen Test mit eigenem Material unterstützen.',
+      terms: 'Für jede Nutzung von Mortgage Documents, auch zum Test, gelten unsere Allgemeinen Geschäftsbedingungen einschließlich des Auftragsverarbeitungsvertrags. Mit dem Einreichen eines Dokuments akzeptieren Sie diese im Namen Ihrer Organisation.',
+      termsLink: 'Zu den AGB'
     },
     footer: {
       madeBy: 'Mortgage Documents wird entwickelt von',
