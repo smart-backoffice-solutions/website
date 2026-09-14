@@ -71,6 +71,33 @@ window.SBO_COPY = {
       fmCopy: 'Food Moments laat zien wat AI kan zodra het goed is ingebouwd. Fotografeer een maaltijd, zeg er eventueel iets bij, en de app vertelt wat erin zit: de gerechten, de voedingswaarden en hoe de dag tot nu toe optelt. Daarachter zit een krachtige AI-back-end die vision-modellen, spraakherkenning en barcodes combineert; ervoor zit een iOS-app die een plezier moet zijn om te gebruiken. Juist die combinatie is het punt.',
       fmLink: 'Lees meer'
     },
+    process: {
+      eyebrow: 'U bepaalt wat. Wij zorgen voor het hoe.',
+      title: 'Zo werken wij.',
+      intro: 'Achter de techniek zit inhoud: ervaring met marketing en economie, kennis van hoe platforms werken en overzicht over hoe systemen op elkaar aansluiten. Daardoor kunnen we een vraagstuk volledig uit handen nemen.',
+      s1Title: 'Wat u nodig hebt',
+      s1Copy: 'We beginnen met begrijpen wat u wilt bereiken en wat u werkelijk nodig hebt. Pas daarna praten we over techniek.',
+      s2Title: 'Privacy vanaf dag één',
+      s2Copy: 'Elke organisatie werkt binnen grenzen: privacy, compliance, de AVG. Die brengen we eerst in kaart en we nemen ze vanaf het begin mee in het ontwerp, niet pas als controle achteraf.',
+      s3Title: 'Wat vandaag kan',
+      s3Copy: 'Er kan veel zonder dure hardware aan te schaffen. Moeten gegevens in huis blijven, dan draaien we het lokaal. Wat mogelijk is verandert met de dag, en wij blijven bij.',
+      s4Title: 'Kant-en-klaar',
+      s4Copy: 'Wij nemen de ingewikkelde delen voor onze rekening. U krijgt een interface die prettig werkt, met moderne inlog die aansluit op uw systemen — of gewoon een API: u stuurt iets in en krijgt iets terug.'
+    },
+    services: {
+      eyebrow: 'Voorbeelden, geen menukaart',
+      title: 'Dit kunnen we voor u doen.',
+      intro: 'We bouwen full stack, van de app op uw telefoon tot de servers erachter, en we werken veel met AI. Een paar voorbeelden:',
+      li1: 'iOS-apps',
+      li2: 'Webapps',
+      li3: 'Backends en API’s',
+      li4: 'Full-stack development',
+      li5: 'Alles met AI en grote taalmodellen',
+      more: 'En nog veel meer. Dit zijn slechts voorbeelden.',
+      cardLabel: 'Voorbeeld',
+      cardTitle: 'Rapporten in plaats van dashboards',
+      cardCopy: 'U levert de data aan, bijvoorbeeld een export uit SAP. Wij maken er een PDF-rapport van in uw eigen sjabloon, met overzichtelijke grafieken en een echte interpretatie van wat de cijfers zeggen. Klaar om rond te mailen. Voor iedereen die dashboards beu is.'
+    },
     contact: {
       eyebrow: 'Een vraagstuk?',
       title: 'Vertel ons waar u aan werkt.',
@@ -148,6 +175,33 @@ window.SBO_COPY = {
       fmCopy: 'Food Moments shows what AI can do once it is properly built in. Photograph a meal, say a few words if you like, and the app tells you what is in it: the dishes, the nutrients, and how the day adds up so far. Behind it sits a powerful AI back end combining vision models, speech recognition and barcode lookup; in front of it sits an iOS app that is meant to be a pleasure to use. That combination is the point.',
       fmLink: 'Read more'
     },
+    process: {
+      eyebrow: 'You decide what. We take care of how.',
+      title: 'This is how we work.',
+      intro: 'Behind the technology sits substance: experience in marketing and economics, a working knowledge of how platforms function, and a clear view of how systems fit together. That is what lets us take a problem off your hands completely.',
+      s1Title: 'What you need',
+      s1Copy: 'We start by understanding what you want to achieve and what you actually need. Only then do we talk about technology.',
+      s2Title: 'Privacy from day one',
+      s2Copy: 'Every organisation works within limits: privacy, compliance, the GDPR. We map them first and build them into the design from the start, not as a check at the end.',
+      s3Title: 'What is possible today',
+      s3Copy: 'A lot can be done without buying expensive hardware. If data has to stay in-house, we run it locally. What is possible changes by the day, and we keep up with it.',
+      s4Title: 'Turnkey',
+      s4Copy: 'We take care of the complicated parts. You get an interface that is a pleasure to use, with modern sign-in that fits your systems — or simply an API: you send something in and get something back.'
+    },
+    services: {
+      eyebrow: 'Examples, not a menu',
+      title: 'This is what we can do for you.',
+      intro: 'We build full stack, from the app on your phone to the servers behind it, and we work a lot with AI. A few examples:',
+      li1: 'iOS apps',
+      li2: 'Web apps',
+      li3: 'Backends and APIs',
+      li4: 'Full-stack development',
+      li5: 'Anything involving AI and large language models',
+      more: 'And much more. These are only examples.',
+      cardLabel: 'Example',
+      cardTitle: 'Reports instead of dashboards',
+      cardCopy: 'You provide the data, for instance an export from SAP. We turn it into a PDF report in your own template, with charts that are easy to read and a real interpretation of what the numbers say. Ready to email around. For everyone who is tired of dashboards.'
+    },
     contact: {
       eyebrow: 'A problem to solve?',
       title: 'Tell us what you are working on.',
@@ -224,6 +278,33 @@ window.SBO_COPY = {
       fmTitle: 'Food Moments',
       fmCopy: 'Food Moments zeigt, was KI kann, sobald sie richtig eingebaut ist. Fotografieren Sie eine Mahlzeit, sagen Sie ein paar Worte dazu, und die App sagt Ihnen, was drin ist: die Gerichte, die Nährwerte und wie sich der Tag bisher summiert. Dahinter steht ein leistungsfähiges KI-Back-end aus Vision-Modellen, Spracherkennung und Barcode-Abfrage; davor eine iOS-App, die Freude machen soll. Genau diese Kombination ist der Punkt.',
       fmLink: 'Mehr erfahren'
+    },
+    process: {
+      eyebrow: 'Sie entscheiden, was. Wir kümmern uns um das Wie.',
+      title: 'So arbeiten wir.',
+      intro: 'Hinter der Technik steckt Substanz: Erfahrung in Marketing und Ökonomie, Wissen darüber, wie Plattformen funktionieren, und der Blick dafür, wie Systeme zusammenspielen. Deshalb können wir Ihnen ein Problem ganz abnehmen.',
+      s1Title: 'Was Sie brauchen',
+      s1Copy: 'Zuerst verstehen wir, was Sie erreichen wollen und was Sie tatsächlich brauchen. Erst dann sprechen wir über Technik.',
+      s2Title: 'Datenschutz ab dem ersten Tag',
+      s2Copy: 'Jede Organisation arbeitet innerhalb von Grenzen: Datenschutz, Compliance, DSGVO. Wir klären sie zuerst und berücksichtigen sie von Anfang an im Entwurf, nicht erst als Prüfung am Ende.',
+      s3Title: 'Was heute möglich ist',
+      s3Copy: 'Vieles geht, ohne teure Hardware anzuschaffen. Müssen Daten im Haus bleiben, betreiben wir die Lösung lokal. Was möglich ist, ändert sich täglich, und wir bleiben am Ball.',
+      s4Title: 'Schlüsselfertig',
+      s4Copy: 'Wir übernehmen die komplizierten Teile. Sie bekommen eine Oberfläche, die angenehm zu bedienen ist, mit moderner Anmeldung passend zu Ihren Systemen — oder einfach eine API: Sie schicken etwas hin und bekommen etwas zurück.'
+    },
+    services: {
+      eyebrow: 'Beispiele, keine Speisekarte',
+      title: 'Das können wir für Sie tun.',
+      intro: 'Wir entwickeln Full Stack, von der App auf Ihrem Telefon bis zu den Servern dahinter, und wir arbeiten viel mit KI. Einige Beispiele:',
+      li1: 'iOS-Apps',
+      li2: 'Web-Apps',
+      li3: 'Backends und APIs',
+      li4: 'Full-Stack-Entwicklung',
+      li5: 'Alles rund um KI und große Sprachmodelle',
+      more: 'Und vieles mehr. Das sind nur Beispiele.',
+      cardLabel: 'Beispiel',
+      cardTitle: 'Berichte statt Dashboards',
+      cardCopy: 'Sie liefern die Daten, etwa einen Export aus SAP. Wir machen daraus einen PDF-Bericht in Ihrer eigenen Vorlage, mit gut lesbaren Grafiken und einer echten Interpretation dessen, was die Zahlen sagen. Fertig zum Versenden per E-Mail. Für alle, die genug von Dashboards haben.'
     },
     contact: {
       eyebrow: 'Eine Fragestellung?',

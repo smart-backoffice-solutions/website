@@ -290,6 +290,40 @@ h2 { font-size: clamp(34px, 5vw, 62px); line-height: 1.04; font-weight: 620; }
   box-shadow: 0 18px 34px -20px rgba(27, 38, 31, .55);
 }
 
+.home-page .process,
+.home-page .services {
+  padding: 88px 0;
+  border-top: 1px solid var(--line);
+}
+.home-page .process .section-intro,
+.home-page .services .section-intro {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  margin-bottom: 58px;
+}
+.home-page .process .section-intro h2,
+.home-page .services .section-intro h2 { max-width: 580px; text-wrap: balance; }
+.home-page .process .section-intro p,
+.home-page .services .section-intro p { max-width: 500px; line-height: 1.68; }
+
+.steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+.step { border-top: 3px solid var(--ink); padding-top: 22px; }
+.step h3 { font-size: 22px; font-weight: 620; line-height: 1.2; text-wrap: balance; }
+.step p { color: var(--muted); font-size: 15.5px; line-height: 1.65; margin: 12px 0 0; }
+
+.services-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 56px; align-items: start; }
+.capabilities { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
+.capabilities li { display: flex; align-items: baseline; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 20px; font-weight: 560; letter-spacing: -.01em; line-height: 1.3; }
+.capabilities li::before { content: ""; flex: none; width: 10px; height: 10px; background: var(--accent); transform: translateY(-2px); }
+.capabilities-more { color: var(--muted); font-size: 17px; margin: 22px 0 0; }
+.home-page .panel.report-card { min-height: 0; background: #f5f2ec; }
+.home-page .mini-title { stroke-width: 5; }
+.home-page .mini-bar { fill: #cfe5ee; stroke-width: 2.2; }
+.home-page .mini-small { font-size: 11px; }
+.home-page .mini-bar.hot { fill: #e65143; }
+@media (max-width: 1000px) {
+  .steps { grid-template-columns: repeat(2, 1fr); row-gap: 44px; }
+}
+
 .home-page .contact { padding-bottom: 48px; }
 .home-page .contact-card { padding: 72px 0; }
 .home-page .contact-card .eyebrow { margin-bottom: 14px; }
@@ -321,6 +355,11 @@ h2 { font-size: clamp(34px, 5vw, 62px); line-height: 1.04; font-weight: 620; }
   .home-page .approach-box { grid-template-columns: 1fr; }
   .home-page .origin, .home-page .expertise { padding: 70px 0; }
   .home-page .examples { padding-top: 70px; }
+  .home-page .process, .home-page .services { padding: 70px 0; }
+  .home-page .process .section-intro,
+  .home-page .services .section-intro { grid-template-columns: 1fr; margin-bottom: 40px; }
+  .steps, .services-grid { grid-template-columns: 1fr; gap: 36px; }
+  .capabilities li { font-size: 18px; }
   .home-page .panel { min-height: 0; }
   .home-page .panel.example { min-height: 470px; }
   .home-page .example-visual { height: 230px; }
