@@ -13,32 +13,32 @@ window.SBO_COPY = {
     hero: {
       eyebrow: 'Hypotheken × Technologie × Economie × Econometrie',
       title: 'Moeilijke vraagstukken. Passende oplossingen.',
-      copy: 'Smart Backoffice Solutions combineert diepgaande kennis van de Nederlandse hypotheekmarkt met technologie, economie en econometrie. Met econometrie halen we betrouwbare kennis uit data; met software engineering vertalen we die kennis naar systemen die werken. We bouwen wat het vraagstuk vraagt — vaak met AI, nooit technologie om de technologie.',
+      copy: 'We combineren kennis van de Nederlandse hypotheekmarkt met software, economie en econometrie. Data laat zien wat er werkelijk speelt; software engineering maakt daar systemen van die werken. Vaak met AI, nooit om de AI.',
       cta: 'Neem contact op',
       more: 'Wat we doen'
     },
     work: {
-      eyebrow: 'Van hypotheekacceptatie tot economisch en econometrisch advies',
-      title: 'Goede oplossingen vragen om expertise uit meerdere vakgebieden.',
-      intro: 'We werken vooral aan complexe vraagstukken in en rond de hypotheek- en bankensector, maar onze expertise is breder. We combineren domeinkennis, software engineering, economie en econometrie — om uit data te halen wat er werkelijk in zit en vervolgens te bouwen wat nodig is.'
+      eyebrow: 'Drie vakgebieden, één team',
+      title: 'Goede oplossingen putten uit meer dan één vakgebied.',
+      intro: 'We begonnen bij hypotheken en banken. Het werk is inmiddels breder, maar de combinatie is dezelfde: domeinkennis, software engineering, economie en econometrie.'
     },
     mortgage: {
       title: 'Mortgages & Banking',
-      copy: 'We kennen de Nederlandse hypotheekketen van advies en aanvraag tot hypotheekacceptatie en beheer. Aan de bankzijde combineren we dit met ervaring in risk management en relevante Nederlandse en Europese regelgeving.',
+      copy: 'We kennen de Nederlandse hypotheekketen van advies en aanvraag tot acceptatie en beheer, en aan de kant van de geldverstrekker risk management en de regelgeving die daarbij hoort.',
       li1: 'Hypotheekadvies, aanvraag en acceptatie',
       li2: 'Documenten, controles en kredietbeoordeling',
       li3: 'Risk management en regelgeving'
     },
     tech: {
       title: 'Software & AI',
-      copy: 'We ontwerpen en bouwen complete oplossingen: van modulaire backends en informatie-extractie uit documenten tot full-stack toepassingen, mobiele apps en AI-ondersteunde workflows.',
+      copy: 'Complete oplossingen, van backends en informatie-extractie uit documenten tot full-stack toepassingen, mobiele apps en AI in het dagelijkse werk.',
       li1: 'Python, backends en full-stack development',
       li2: 'Document AI, informatie-extractie en automatisering',
       li3: 'Swift/iOS, desktop apps, AI en spraaktranscriptie'
     },
     consulting: {
       title: 'Economie & Econometrie',
-      copy: 'We combineren economie en econometrie met AI-expertise om praktische oplossingen voor klanten te bouwen — van applicaties die mensen direct gebruiken tot systemen die op de achtergrond draaien. Daarnaast ondersteunen we bedrijven, advocaten en rechtbanken met heldere, degelijke en verdedigbare analyses.',
+      copy: 'Economie en econometrie in de producten die we bouwen, en als analyse op zichzelf: helder, degelijk en verdedigbaar, voor bedrijven, advocaten en rechtbanken.',
       li1: 'AI-toepassingen op basis van economie en econometrie',
       li2: 'Datagedreven hulpmiddelen en backendsystemen',
       li3: 'Mededinging, schadeberekeningen en deskundigenwerk'
@@ -46,62 +46,62 @@ window.SBO_COPY = {
     origin: {
       eyebrow: 'Waarom “Backoffice”?',
       title: 'Het begon met een hypotheek-backoffice die slimmer kon.',
-      copy1: 'Smart Backoffice Solutions is ontstaan vanuit de ontwikkeling van een modulaire pipeline voor informatie-extractie uit hypotheekdocumenten. Die technologie kan hypotheekadviseurs en ketens helpen aanvragen efficiënter voor te bereiden, en hypotheekaanbieders ondersteunen bij controles en de beoordeling en acceptatie van aanvragen.',
-      copy2: 'Daaruit groeide een bredere onderneming: dezelfde combinatie van domeinkennis, software engineering, economie en econometrie blijkt ook waardevol voor andere complexe problemen.'
+      copy1: 'Het bedrijf is voortgekomen uit een pipeline voor informatie-extractie uit hypotheekdocumenten. Die helpt adviseurs aanvragen voor te bereiden en geldverstrekkers ze te controleren en te accepteren.',
+      copy2: 'Dezelfde combinatie van kennis bleek ook ver buiten hypotheken bruikbaar.'
     },
     expertise: {
       eyebrow: 'Domeinkennis telt',
       title: 'Goede oplossingen beginnen met het begrijpen van het probleem.',
-      copy1: 'Onze kracht zit niet alleen in wat we kunnen bouwen, maar in het begrijpen van de inhoud erachter — van hypotheekprocessen en bankrisico tot economie en econometrie. We gebruiken data om vast te stellen wat er werkelijk te leren, meten en onderbouwen valt.',
-      copy2: 'Ons werk is bovendien stevig verankerd in academische expertise. Een van onze teamleden is hoogleraar aan Tilburg University.'
+      copy1: 'Wat we bouwen is zo goed als ons begrip van de inhoud erachter. Met data stellen we vast wat werkelijk te meten en te onderbouwen valt.',
+      copy2: 'Het werk heeft academische wortels: een van ons is hoogleraar aan Tilburg University.'
     },
     approach: {
-      eyebrow: 'Hoe we werken',
+      eyebrow: 'Wie we zijn',
       title: 'Klein team. Korte lijnen. Het vraagstuk staat centraal.',
-      copy: 'We zijn gevestigd in Nederland en werken nauw met onze klanten samen. We beginnen niet met een standaardpakket of favoriete technologie. We bepalen wat het vraagstuk werkelijk vraagt en bouwen of analyseren precies dat — niet ingewikkelder dan nodig, maar ook niet eenvoudiger dan het probleem toelaat.'
+      copy: 'Gevestigd in Nederland, dicht bij onze klanten. Geen standaardpakket, geen favoriete technologie. Zo eenvoudig als het vraagstuk toelaat, en niet eenvoudiger.'
     },
     examples: {
-      eyebrow: 'Dit doen we',
+      eyebrow: 'Recent werk',
       title: 'Twee voorbeelden',
-      intro: 'Beide begonnen als een moeilijk vraagstuk en eindigden als iets dat gewoon werkt. Het ene is infrastructuur waar andere software mee praat; het andere is een app die je in je hand houdt.',
+      intro: 'Het ene is infrastructuur waar andere software mee praat. Het andere is een app die je in je hand houdt.',
       mdTitle: 'Mortgage Documents',
-      mdCopy: 'We bouwden een complete extractiepipeline voor de documenten die bij een hypotheekaanvraag horen: loonstroken, werkgeversverklaringen, legitimaties, koopovereenkomsten, taxatierapporten, DUO-overzichten en KVK-uittreksels. Er gaat een document in en ieder relevant veld komt terug als gestructureerde data, elk met een eigen betrouwbaarheidsscore. Het is een voorbeeld van een back-endoplossing als onderdeel van een backoffice: adviseurs bereiden een aanvraag sneller voor, geldverstrekkers krijgen de gegevens die ze nodig hebben voor hun controles, en de complexiteit blijft waar niemand ernaar hoeft te kijken.',
+      mdCopy: 'Een extractiepipeline voor de documenten bij een hypotheekaanvraag: loonstroken, werkgeversverklaringen, legitimaties, koopovereenkomsten, taxatierapporten, DUO-overzichten en KVK-uittreksels. Er gaat een document in; ieder relevant veld komt terug als gestructureerde data, elk met een betrouwbaarheidsscore. Adviseurs werken sneller, geldverstrekkers krijgen wat ze nodig hebben voor hun controles, en de complexiteit blijft uit het zicht.',
       mdLink: 'Lees meer',
       fmTitle: 'Food Moments',
-      fmCopy: 'Food Moments laat zien wat AI kan zodra het goed is ingebouwd. Fotografeer een maaltijd, zeg er eventueel iets bij, en de app vertelt wat erin zit: de gerechten, de voedingswaarden en hoe de dag tot nu toe optelt. Daarachter zit een krachtige AI-back-end die vision-modellen, spraakherkenning en barcodes combineert; ervoor zit een iOS-app die een plezier moet zijn om te gebruiken. Juist die combinatie is het punt.',
+      fmCopy: 'Fotografeer een maaltijd, zeg er eventueel iets bij, en de app vertelt wat erin zit en hoe de dag optelt. Daarachter werken vision-modellen, spraakherkenning en barcodes samen; ervoor zit een iOS-app die niet in de weg zit.',
       fmLink: 'Lees meer'
     },
     process: {
-      eyebrow: 'U bepaalt wat. Wij zorgen voor het hoe.',
+      eyebrow: 'U zegt wat. Wij regelen hoe.',
       title: 'Zo werken wij.',
-      intro: 'Achter de techniek zit inhoud: ervaring met marketing en economie, kennis van hoe platforms werken en overzicht over hoe systemen op elkaar aansluiten. Daardoor kunnen we een vraagstuk volledig uit handen nemen.',
+      intro: 'We kennen het hypotheekaanvraagproces van begin tot eind, en risk management bij banken. We begrijpen marketing, economie en hoe platforms werken, en hoe systemen op elkaar aansluiten. U kunt het vraagstuk bij ons laten.',
       s1Title: 'Wat u nodig hebt',
-      s1Copy: 'We beginnen met begrijpen wat u wilt bereiken en wat u werkelijk nodig hebt. Pas daarna praten we over techniek.',
-      s2Title: 'Privacy vanaf dag één',
-      s2Copy: 'Elke organisatie werkt binnen grenzen: privacy, compliance, de AVG. Die brengen we eerst in kaart en we nemen ze vanaf het begin mee in het ontwerp, niet pas als controle achteraf.',
-      s3Title: 'Wat vandaag kan',
-      s3Copy: 'Er kan veel zonder dure hardware aan te schaffen. Moeten gegevens in huis blijven, dan draaien we het lokaal. Wat mogelijk is verandert met de dag, en wij blijven bij.',
+      s1Copy: 'We beginnen bij wat u wilt bereiken en wat u nodig hebt. De techniek komt later.',
+      s2Title: 'Privacy vanaf het begin',
+      s2Copy: 'Privacy, compliance en de AVG bepalen het ontwerp vanaf de eerste dag, niet pas aan het eind.',
+      s3Title: 'Wat kan',
+      s3Copy: 'Er is veel mogelijk zonder eigen hardware. Moeten gegevens in huis blijven, dan kan alles ook lokaal draaien. Wat kan verandert snel, en we volgen het op de voet.',
       s4Title: 'Kant-en-klaar',
-      s4Copy: 'Wij nemen de ingewikkelde delen voor onze rekening. U krijgt een interface die prettig werkt, met moderne inlog die aansluit op uw systemen — of gewoon een API: u stuurt iets in en krijgt iets terug.'
+      s4Copy: 'Wij nemen de lastige delen voor onze rekening. U krijgt een heldere interface met moderne inlog die aansluit op uw systemen, of gewoon een API: iets insturen, iets terugkrijgen.'
     },
     services: {
       eyebrow: 'Voorbeelden, geen menukaart',
       title: 'Dit kunnen we voor u doen.',
-      intro: 'We bouwen full stack, van de app op uw telefoon tot de servers erachter, en we werken veel met AI. Een paar voorbeelden:',
+      intro: 'Full stack, van de app tot de servers erachter, vaak met AI. Bijvoorbeeld:',
       li1: 'iOS-apps',
       li2: 'Webapps',
       li3: 'Backends en API’s',
       li4: 'Full-stack development',
-      li5: 'Alles met AI en grote taalmodellen',
-      more: 'En nog veel meer. Dit zijn slechts voorbeelden.',
+      li5: 'Alles wat op grote taalmodellen draait',
+      more: 'En een stuk meer.',
       cardLabel: 'Voorbeeld',
       cardTitle: 'Rapporten in plaats van dashboards',
-      cardCopy: 'U levert de data aan, bijvoorbeeld een export uit SAP. Wij maken er een PDF-rapport van in uw eigen sjabloon, met overzichtelijke grafieken en een echte interpretatie van wat de cijfers zeggen. Klaar om rond te mailen. Voor iedereen die dashboards beu is.'
+      cardCopy: 'U stuurt de data. U krijgt een PDF-rapport terug in uw eigen sjabloon, met heldere grafieken en een duiding van wat de cijfers betekenen, klaar om rond te mailen. Voor wie genoeg heeft van dashboards.'
     },
     contact: {
       eyebrow: 'Een vraagstuk?',
       title: 'Vertel ons waar u aan werkt.',
-      copy: 'Van hypotheekprocessen tot AI, software, economie en econometrie: als onze combinatie van expertise nuttig kan zijn, horen we graag van u.'
+      copy: 'Als onze combinatie van expertise kan helpen, horen we graag van u.'
     }
   },
   en: {
@@ -117,32 +117,32 @@ window.SBO_COPY = {
     hero: {
       eyebrow: 'Mortgages × Technology × Economics × Econometrics',
       title: 'Hard problems. Solutions that fit.',
-      copy: 'Smart Backoffice Solutions combines deep expertise in the Dutch mortgage market with technology, economics and econometrics. Econometrics helps us turn data into reliable knowledge; engineering lets us turn that knowledge into systems that work. We build what the problem calls for — often involving AI, never technology for its own sake.',
+      copy: 'We combine knowledge of the Dutch mortgage market with software, economics and econometrics. Data shows what is actually going on; engineering turns that into systems that work. Often with AI, never for its own sake.',
       cta: 'Get in touch',
       more: 'What we do'
     },
     work: {
-      eyebrow: 'From mortgage underwriting to economic and econometric advice',
-      title: 'Good solutions require expertise across multiple domains.',
-      intro: 'We started by working on complex problems in and around mortgages and banking, but our expertise is broader. We combine domain knowledge, software engineering, economics and econometrics — using data to understand what is happening and technology to build what is needed.'
+      eyebrow: 'Three disciplines, one team',
+      title: 'Good solutions draw on more than one field.',
+      intro: 'We started with mortgages and banking. The work has grown wider since, but the combination is the same: domain knowledge, software engineering, economics and econometrics.'
     },
     mortgage: {
       title: 'Mortgages & Banking',
-      copy: 'We understand the Dutch mortgage chain from advice and application through underwriting, acceptance and servicing. On the lender side, we combine this with experience in risk management and relevant Dutch and European regulation.',
+      copy: 'We know the Dutch mortgage chain from advice and application to underwriting, acceptance and servicing, and on the lender side, risk management and the regulation that comes with it.',
       li1: 'Mortgage advice, applications and underwriting',
       li2: 'Documents, controls and credit assessment',
       li3: 'Risk management and regulation'
     },
     tech: {
       title: 'Software & AI',
-      copy: 'We design and build complete solutions: from modular backends and document information extraction to full-stack applications, mobile apps and AI-assisted workflows.',
+      copy: 'Complete solutions, from backends and document extraction to full-stack applications, mobile apps and AI in everyday workflows.',
       li1: 'Python, backends and full-stack development',
       li2: 'Document AI, information extraction and automation',
       li3: 'Swift/iOS, desktop apps, AI and speech transcription'
     },
     consulting: {
       title: 'Economics & Econometrics',
-      copy: 'We combine economics and econometrics with AI expertise to build practical solutions for clients — from applications people use directly to systems that run in the background. We also support companies, lawyers and courts with clear, rigorous and defensible analysis.',
+      copy: 'Economics and econometrics inside the products we build, and as analysis in their own right: clear, rigorous and defensible, for companies, lawyers and courts.',
       li1: 'AI applications informed by economics and econometrics',
       li2: 'Data-driven tools and backend systems',
       li3: 'Competition economics, damages and expert work'
@@ -150,62 +150,62 @@ window.SBO_COPY = {
     origin: {
       eyebrow: 'Why “Backoffice”?',
       title: 'It started with a mortgage backoffice that could work smarter.',
-      copy1: 'Smart Backoffice Solutions grew out of the development of a modular information-extraction pipeline for mortgage documents. The technology can help mortgage advisers and intermediaries prepare applications more efficiently, while supporting lenders with controls, assessment and acceptance of mortgage applications.',
-      copy2: 'From there, the company broadened: the same combination of domain knowledge, software engineering, economics and econometrics is valuable for many other complex problems as well.'
+      copy1: 'The company grew out of an information-extraction pipeline for mortgage documents. It helps advisers prepare applications, and lenders check and accept them.',
+      copy2: 'The same combination of knowledge turned out to be useful well beyond mortgages.'
     },
     expertise: {
       eyebrow: 'Domain knowledge matters',
       title: 'Good solutions start with understanding the problem.',
-      copy1: 'Our strength is not only what we can build, but understanding the substance behind it — from mortgage processes and banking risk to economics and econometrics. We use data to establish what can actually be learned, measured and defended.',
-      copy2: 'Our work is also firmly grounded in academic expertise. One of our team members is a full professor at Tilburg University.'
+      copy1: 'What we build is only as good as our grasp of the substance behind it. We use data to establish what can actually be measured and defended.',
+      copy2: 'The work has academic roots: one of us is a full professor at Tilburg University.'
     },
     approach: {
-      eyebrow: 'How we work',
+      eyebrow: 'Who we are',
       title: 'Small team. Short lines. Built around the problem.',
-      copy: 'We are based in the Netherlands and work closely with our clients. We do not start from a standard package or a preferred technology. We work out what the problem actually requires and build or analyse accordingly — no more complicated than needed, but no simpler than the problem allows.'
+      copy: 'Based in the Netherlands, close to our clients. No standard package, no favourite technology. As simple as the problem allows, and no simpler.'
     },
     examples: {
-      eyebrow: 'This is what we do',
+      eyebrow: 'Recent work',
       title: 'Two examples',
-      intro: 'Both began as a hard problem and ended as something that simply works. One is infrastructure that other software talks to; the other is an app you hold in your hand.',
+      intro: 'One is infrastructure that other software talks to. The other is an app you hold in your hand.',
       mdTitle: 'Mortgage Documents',
-      mdCopy: 'We built a complete extraction pipeline for the documents used in a mortgage application: payslips, employer declarations, identity documents, purchase agreements, appraisal reports, DUO statements and Chamber of Commerce extracts. A document goes in and every relevant field comes back as structured data, each with its own confidence score. It is an example of a back-end solution working as part of a back office: advisers prepare an application faster, lenders get the facts they need for their checks, and the complexity stays where nobody has to look at it.',
+      mdCopy: 'An extraction pipeline for the documents in a mortgage application: payslips, employer declarations, identity documents, purchase agreements, appraisal reports, DUO statements and Chamber of Commerce extracts. A document goes in; every relevant field comes back as structured data, each with a confidence score. Advisers work faster, lenders get what they need for their checks, and the complexity stays out of sight.',
       mdLink: 'Read more',
       fmTitle: 'Food Moments',
-      fmCopy: 'Food Moments shows what AI can do once it is properly built in. Photograph a meal, say a few words if you like, and the app tells you what is in it: the dishes, the nutrients, and how the day adds up so far. Behind it sits a powerful AI back end combining vision models, speech recognition and barcode lookup; in front of it sits an iOS app that is meant to be a pleasure to use. That combination is the point.',
+      fmCopy: 'Photograph a meal, add a few words if you like, and the app tells you what is in it and how the day adds up. Behind it, vision models, speech recognition and barcode lookup work together; in front, an iOS app that stays out of the way.',
       fmLink: 'Read more'
     },
     process: {
-      eyebrow: 'You decide what. We take care of how.',
+      eyebrow: 'You say what. We handle how.',
       title: 'This is how we work.',
-      intro: 'Behind the technology sits substance: experience in marketing and economics, a working knowledge of how platforms function, and a clear view of how systems fit together. That is what lets us take a problem off your hands completely.',
+      intro: 'We know the mortgage application process from start to finish, and risk management at banks. We understand marketing, economics and how platforms work, and how systems fit together. You can leave the problem with us.',
       s1Title: 'What you need',
-      s1Copy: 'We start by understanding what you want to achieve and what you actually need. Only then do we talk about technology.',
-      s2Title: 'Privacy from day one',
-      s2Copy: 'Every organisation works within limits: privacy, compliance, the GDPR. We map them first and build them into the design from the start, not as a check at the end.',
-      s3Title: 'What is possible today',
-      s3Copy: 'A lot can be done without buying expensive hardware. If data has to stay in-house, we run it locally. What is possible changes by the day, and we keep up with it.',
+      s1Copy: 'We start with what you want to achieve and what you need. Technology comes later.',
+      s2Title: 'Privacy from the start',
+      s2Copy: 'Privacy, compliance and the GDPR shape the design from the first day, not at the end.',
+      s3Title: 'What is possible',
+      s3Copy: 'A lot is possible without hardware of your own. Where data has to stay in-house, everything can run locally too. What can be done changes quickly, and we follow it closely.',
       s4Title: 'Turnkey',
-      s4Copy: 'We take care of the complicated parts. You get an interface that is a pleasure to use, with modern sign-in that fits your systems — or simply an API: you send something in and get something back.'
+      s4Copy: 'We take care of the difficult parts. You get a clean interface with modern sign-in that fits your systems, or simply an API: send something in, get something back.'
     },
     services: {
       eyebrow: 'Examples, not a menu',
       title: 'This is what we can do for you.',
-      intro: 'We build full stack, from the app on your phone to the servers behind it, and we work a lot with AI. A few examples:',
+      intro: 'Full stack, from the app to the servers behind it, often with AI. For instance:',
       li1: 'iOS apps',
       li2: 'Web apps',
       li3: 'Backends and APIs',
       li4: 'Full-stack development',
-      li5: 'Anything involving AI and large language models',
-      more: 'And much more. These are only examples.',
+      li5: 'Anything built on large language models',
+      more: 'And a good deal more.',
       cardLabel: 'Example',
       cardTitle: 'Reports instead of dashboards',
-      cardCopy: 'You provide the data, for instance an export from SAP. We turn it into a PDF report in your own template, with charts that are easy to read and a real interpretation of what the numbers say. Ready to email around. For everyone who is tired of dashboards.'
+      cardCopy: 'You send the data. You get back a PDF report in your own template, with clear charts and an interpretation of what the numbers mean, ready to pass around by email. For those who have had enough of dashboards.'
     },
     contact: {
       eyebrow: 'A problem to solve?',
       title: 'Tell us what you are working on.',
-      copy: 'From mortgage processes to AI, software, economics and econometrics: if our combination of expertise could be useful, we would be happy to hear from you.'
+      copy: 'If our combination of expertise could help, we would like to hear from you.'
     }
   },
   de: {
@@ -221,32 +221,32 @@ window.SBO_COPY = {
     hero: {
       eyebrow: 'Hypotheken × Technologie × Ökonomie × Ökonometrie',
       title: 'Komplexe Fragen. Passende Lösungen.',
-      copy: 'Smart Backoffice Solutions verbindet fundierte Kenntnisse des niederländischen Hypothekenmarkts mit Technologie, Ökonomie und Ökonometrie. Mit Ökonometrie gewinnen wir belastbare Erkenntnisse aus Daten; mit Software Engineering übersetzen wir diese Erkenntnisse in Systeme, die funktionieren. Wir entwickeln, was das Problem erfordert — häufig mit KI, nie Technologie um ihrer selbst willen.',
+      copy: 'Wir verbinden Kenntnisse des niederländischen Hypothekenmarkts mit Software, Ökonomie und Ökonometrie. Daten zeigen, was tatsächlich vor sich geht; Software Engineering macht daraus Systeme, die funktionieren. Oft mit KI, nie um ihrer selbst willen.',
       cta: 'Kontakt aufnehmen',
       more: 'Was wir tun'
     },
     work: {
-      eyebrow: 'Von der Kreditprüfung bis zur ökonomischen und ökonometrischen Beratung',
-      title: 'Gute Lösungen erfordern Expertise aus mehreren Fachgebieten.',
-      intro: 'Wir arbeiten vor allem an komplexen Fragestellungen im Hypotheken- und Bankenumfeld, unsere Expertise reicht jedoch weiter. Wir verbinden Domänenwissen, Software Engineering, Ökonomie und Ökonometrie — um aus Daten belastbare Erkenntnisse zu gewinnen und anschließend zu entwickeln, was benötigt wird.'
+      eyebrow: 'Drei Fachgebiete, ein Team',
+      title: 'Gute Lösungen schöpfen aus mehr als einem Fachgebiet.',
+      intro: 'Angefangen haben wir bei Hypotheken und Banken. Die Arbeit ist inzwischen breiter, die Kombination dieselbe: Domänenwissen, Software Engineering, Ökonomie und Ökonometrie.'
     },
     mortgage: {
       title: 'Mortgages & Banking',
-      copy: 'Wir kennen die niederländische Hypothekenkette von Beratung und Antrag über Kreditprüfung und Annahme bis zur Verwaltung. Auf Bankseite verbinden wir dies mit Erfahrung im Risikomanagement sowie mit relevanter niederländischer und europäischer Regulierung.',
+      copy: 'Wir kennen die niederländische Hypothekenkette von Beratung und Antrag über Kreditprüfung und Annahme bis zur Verwaltung, und auf Seite der Kreditgeber das Risikomanagement und die zugehörige Regulierung.',
       li1: 'Hypothekenberatung, Antrag und Kreditprüfung',
       li2: 'Dokumente, Kontrollen und Bonitätsbeurteilung',
       li3: 'Risikomanagement und Regulierung'
     },
     tech: {
       title: 'Software & AI',
-      copy: 'Wir konzipieren und entwickeln vollständige Lösungen: von modularen Backends und Informationsextraktion aus Dokumenten bis zu Full-Stack-Anwendungen, mobilen Apps und KI-gestützten Workflows.',
+      copy: 'Vollständige Lösungen, von Backends und Informationsextraktion aus Dokumenten bis zu Full-Stack-Anwendungen, mobilen Apps und KI im Arbeitsalltag.',
       li1: 'Python, Backends und Full-Stack-Entwicklung',
       li2: 'Document AI, Informationsextraktion und Automatisierung',
       li3: 'Swift/iOS, Desktop-Apps, KI und Sprachtranskription'
     },
     consulting: {
       title: 'Ökonomie & Ökonometrie',
-      copy: 'Wir verbinden Ökonomie und Ökonometrie mit KI-Expertise, um praktische Lösungen für unsere Kunden zu entwickeln — von Anwendungen, die Menschen direkt nutzen, bis zu Systemen, die im Hintergrund laufen. Außerdem unterstützen wir Unternehmen, Rechtsanwälte und Gerichte mit klaren, fundierten und nachvollziehbaren Analysen.',
+      copy: 'Ökonomie und Ökonometrie in den Produkten, die wir entwickeln, und als eigenständige Analyse: klar, fundiert und belastbar, für Unternehmen, Kanzleien und Gerichte.',
       li1: 'KI-Anwendungen auf Basis von Ökonomie und Ökonometrie',
       li2: 'Datenbasierte Werkzeuge und Backend-Systeme',
       li3: 'Wettbewerbsökonomie, Schadensberechnung und Gutachten'
@@ -254,62 +254,62 @@ window.SBO_COPY = {
     origin: {
       eyebrow: 'Warum „Backoffice“?',
       title: 'Begonnen hat es mit einem Hypotheken-Backoffice, das intelligenter arbeiten konnte.',
-      copy1: 'Smart Backoffice Solutions entstand aus der Entwicklung einer modularen Pipeline zur Informationsextraktion aus Hypothekendokumenten. Die Technologie kann Hypothekenberater und Vermittler dabei unterstützen, Anträge effizienter vorzubereiten, und Kreditgeber bei Kontrollen sowie bei Prüfung und Annahme von Hypothekenanträgen unterstützen.',
-      copy2: 'Daraus entwickelte sich ein breiter aufgestelltes Unternehmen: Dieselbe Kombination aus Fachwissen, Software Engineering, Ökonomie und Ökonometrie ist auch bei vielen anderen komplexen Problemen wertvoll.'
+      copy1: 'Das Unternehmen ging aus einer Pipeline zur Informationsextraktion aus Hypothekendokumenten hervor. Sie hilft Beratern, Anträge vorzubereiten, und Kreditgebern, sie zu prüfen und anzunehmen.',
+      copy2: 'Dieselbe Kombination von Wissen erwies sich weit über Hypotheken hinaus als nützlich.'
     },
     expertise: {
       eyebrow: 'Domänenwissen zählt',
       title: 'Gute Lösungen beginnen mit dem Verständnis des Problems.',
-      copy1: 'Unsere Stärke liegt nicht nur darin, was wir entwickeln können, sondern auch darin, die fachlichen Zusammenhänge zu verstehen — von Hypothekenprozessen und Bankrisiken bis zu Ökonomie und Ökonometrie. Wir nutzen Daten, um festzustellen, was sich tatsächlich erkennen, messen und belastbar begründen lässt.',
-      copy2: 'Unsere Arbeit ist zudem fest in akademischer Expertise verankert. Eines unserer Teammitglieder ist Professor an der Tilburg University.'
+      copy1: 'Was wir entwickeln, ist nur so gut wie unser Verständnis der Sache dahinter. Mit Daten stellen wir fest, was sich tatsächlich messen und belastbar begründen lässt.',
+      copy2: 'Die Arbeit hat akademische Wurzeln: Einer von uns ist Professor an der Tilburg University.'
     },
     approach: {
-      eyebrow: 'Wie wir arbeiten',
+      eyebrow: 'Wer wir sind',
       title: 'Kleines Team. Kurze Wege. Das Problem steht im Mittelpunkt.',
-      copy: 'Wir sind in den Niederlanden ansässig und arbeiten eng mit unseren Kunden zusammen. Wir beginnen weder mit einem Standardpaket noch mit einer bevorzugten Technologie. Wir bestimmen, was das Problem tatsächlich erfordert, und entwickeln oder analysieren genau das — nicht komplizierter als nötig, aber auch nicht einfacher, als das Problem erlaubt.'
+      copy: 'In den Niederlanden ansässig, nah an unseren Kunden. Kein Standardpaket, keine Lieblingstechnologie. So einfach, wie das Problem es erlaubt, und nicht einfacher.'
     },
     examples: {
-      eyebrow: 'Das tun wir',
+      eyebrow: 'Aktuelle Arbeit',
       title: 'Zwei Beispiele',
-      intro: 'Beide begannen als schwieriges Problem und endeten als etwas, das einfach funktioniert. Das eine ist Infrastruktur, mit der andere Software spricht; das andere eine App, die man in der Hand hält.',
+      intro: 'Das eine ist Infrastruktur, mit der andere Software spricht. Das andere eine App, die man in der Hand hält.',
       mdTitle: 'Mortgage Documents',
-      mdCopy: 'Wir haben eine vollständige Extraktions-Pipeline für die Dokumente eines Hypothekenantrags gebaut: Gehaltsabrechnungen, Arbeitgeberbescheinigungen, Ausweise, Kaufverträge, Wertgutachten, DUO-Übersichten und Handelsregisterauszüge. Ein Dokument geht hinein, und jedes relevante Feld kommt als strukturierte Daten zurück, jeweils mit eigenem Konfidenzwert. Es ist ein Beispiel für eine Back-end-Lösung als Teil eines Backoffice: Berater bereiten einen Antrag schneller vor, Kreditgeber erhalten die Angaben, die sie für ihre Kontrollen brauchen, und die Komplexität bleibt dort, wo niemand hinsehen muss.',
+      mdCopy: 'Eine Extraktions-Pipeline für die Dokumente eines Hypothekenantrags: Gehaltsabrechnungen, Arbeitgeberbescheinigungen, Ausweise, Kaufverträge, Wertgutachten, DUO-Übersichten und Handelsregisterauszüge. Ein Dokument geht hinein; jedes relevante Feld kommt als strukturierte Daten zurück, jeweils mit Konfidenzwert. Berater arbeiten schneller, Kreditgeber erhalten, was sie für ihre Kontrollen brauchen, und die Komplexität bleibt unsichtbar.',
       mdLink: 'Mehr erfahren',
       fmTitle: 'Food Moments',
-      fmCopy: 'Food Moments zeigt, was KI kann, sobald sie richtig eingebaut ist. Fotografieren Sie eine Mahlzeit, sagen Sie ein paar Worte dazu, und die App sagt Ihnen, was drin ist: die Gerichte, die Nährwerte und wie sich der Tag bisher summiert. Dahinter steht ein leistungsfähiges KI-Back-end aus Vision-Modellen, Spracherkennung und Barcode-Abfrage; davor eine iOS-App, die Freude machen soll. Genau diese Kombination ist der Punkt.',
+      fmCopy: 'Fotografieren Sie eine Mahlzeit, sagen Sie auf Wunsch ein paar Worte dazu, und die App sagt Ihnen, was drin ist und wie sich der Tag summiert. Dahinter arbeiten Vision-Modelle, Spracherkennung und Barcode-Abfrage zusammen; davor eine iOS-App, die nicht im Weg steht.',
       fmLink: 'Mehr erfahren'
     },
     process: {
-      eyebrow: 'Sie entscheiden, was. Wir kümmern uns um das Wie.',
+      eyebrow: 'Sie sagen, was. Wir kümmern uns um das Wie.',
       title: 'So arbeiten wir.',
-      intro: 'Hinter der Technik steckt Substanz: Erfahrung in Marketing und Ökonomie, Wissen darüber, wie Plattformen funktionieren, und der Blick dafür, wie Systeme zusammenspielen. Deshalb können wir Ihnen ein Problem ganz abnehmen.',
+      intro: 'Wir kennen den Hypothekenantrag von Anfang bis Ende und das Risikomanagement von Banken. Wir verstehen Marketing, Ökonomie und die Funktionsweise von Plattformen, und wie Systeme zusammenspielen. Sie können das Problem bei uns lassen.',
       s1Title: 'Was Sie brauchen',
-      s1Copy: 'Zuerst verstehen wir, was Sie erreichen wollen und was Sie tatsächlich brauchen. Erst dann sprechen wir über Technik.',
-      s2Title: 'Datenschutz ab dem ersten Tag',
-      s2Copy: 'Jede Organisation arbeitet innerhalb von Grenzen: Datenschutz, Compliance, DSGVO. Wir klären sie zuerst und berücksichtigen sie von Anfang an im Entwurf, nicht erst als Prüfung am Ende.',
-      s3Title: 'Was heute möglich ist',
-      s3Copy: 'Vieles geht, ohne teure Hardware anzuschaffen. Müssen Daten im Haus bleiben, betreiben wir die Lösung lokal. Was möglich ist, ändert sich täglich, und wir bleiben am Ball.',
+      s1Copy: 'Wir beginnen bei dem, was Sie erreichen wollen und was Sie brauchen. Die Technik kommt später.',
+      s2Title: 'Datenschutz von Anfang an',
+      s2Copy: 'Datenschutz, Compliance und DSGVO prägen den Entwurf vom ersten Tag an, nicht erst am Ende.',
+      s3Title: 'Was möglich ist',
+      s3Copy: 'Vieles geht ohne eigene Hardware. Müssen Daten im Haus bleiben, lässt sich alles auch lokal betreiben. Was möglich ist, ändert sich schnell, und wir verfolgen es genau.',
       s4Title: 'Schlüsselfertig',
-      s4Copy: 'Wir übernehmen die komplizierten Teile. Sie bekommen eine Oberfläche, die angenehm zu bedienen ist, mit moderner Anmeldung passend zu Ihren Systemen — oder einfach eine API: Sie schicken etwas hin und bekommen etwas zurück.'
+      s4Copy: 'Wir übernehmen die schwierigen Teile. Sie bekommen eine klare Oberfläche mit moderner Anmeldung passend zu Ihren Systemen, oder einfach eine API: etwas hinschicken, etwas zurückbekommen.'
     },
     services: {
       eyebrow: 'Beispiele, keine Speisekarte',
       title: 'Das können wir für Sie tun.',
-      intro: 'Wir entwickeln Full Stack, von der App auf Ihrem Telefon bis zu den Servern dahinter, und wir arbeiten viel mit KI. Einige Beispiele:',
+      intro: 'Full Stack, von der App bis zu den Servern dahinter, oft mit KI. Zum Beispiel:',
       li1: 'iOS-Apps',
       li2: 'Web-Apps',
       li3: 'Backends und APIs',
       li4: 'Full-Stack-Entwicklung',
-      li5: 'Alles rund um KI und große Sprachmodelle',
-      more: 'Und vieles mehr. Das sind nur Beispiele.',
+      li5: 'Alles, was auf großen Sprachmodellen aufbaut',
+      more: 'Und einiges mehr.',
       cardLabel: 'Beispiel',
       cardTitle: 'Berichte statt Dashboards',
-      cardCopy: 'Sie liefern die Daten, etwa einen Export aus SAP. Wir machen daraus einen PDF-Bericht in Ihrer eigenen Vorlage, mit gut lesbaren Grafiken und einer echten Interpretation dessen, was die Zahlen sagen. Fertig zum Versenden per E-Mail. Für alle, die genug von Dashboards haben.'
+      cardCopy: 'Sie schicken die Daten. Sie erhalten einen PDF-Bericht in Ihrer eigenen Vorlage zurück, mit klaren Grafiken und einer Deutung dessen, was die Zahlen bedeuten, fertig zum Weiterleiten per E-Mail. Für alle, die genug von Dashboards haben.'
     },
     contact: {
       eyebrow: 'Eine Fragestellung?',
       title: 'Erzählen Sie uns, woran Sie arbeiten.',
-      copy: 'Von Hypothekenprozessen über KI und Software bis zu Ökonomie und Ökonometrie: Wenn unsere Kombination von Expertise hilfreich sein könnte, freuen wir uns auf Ihre Nachricht.'
+      copy: 'Wenn unsere Kombination von Expertise helfen kann, freuen wir uns auf Ihre Nachricht.'
     }
   }
 };
