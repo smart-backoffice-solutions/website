@@ -1,0 +1,319 @@
+/* Food Moments — one stylesheet for every page: the landing (/foodmoments/ and /<lang>/foodmoments/),
+   the support page and the legal documents (privacy/terms).
+   Palette from the app icon: cream→mint gradient, carrot orange, leaf green,
+   warm ink. The stylized meal/day cards mirror the app's MealMomentCard /
+   DaySummaryCard. Rendered pages come from the food-moments repo
+   (scripts/website/build.py + landing.html + landing_i18n.py). */
+
+:root {
+  --cream: #fff7e0;
+  --mint: #d6f0db;
+  --card: #fffdf6;
+  --ink: #33200f;
+  --soft: #7a6a58;
+  --orange: #f2820f;
+  --orange-deep: #d95f08;
+  --green: #4a9e4a;
+  --green-deep: #388c47;
+  --line: #eadfc8;
+  --shadow: 0 10px 30px rgba(122, 82, 30, .10);
+  --radius: 22px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: linear-gradient(160deg, var(--cream) 0%, var(--cream) 45%, var(--mint) 100%) fixed;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+h1, h2, h3 { font-family: Fraunces, Georgia, serif; letter-spacing: -.01em; line-height: 1.12; margin: 0; }
+a { color: var(--orange-deep); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+/* the wordmark is a mark, not a sentence: it changes colour on hover, never underlines */
+.wordmark:hover { text-decoration: none; color: var(--orange-deep); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 22px; }
+
+/* header — identical on every page: wordmark left, small language codes right.
+   On the document pages the wordmark grows into a breadcrumb, so the reader can see where they
+   are: only the current page is bold, the levels above it are plain links. */
+.crumbs { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.crumbs .sep { color: var(--soft); font-family: Fraunces, Georgia, serif; font-size: 19px; }
+.crumbs a.up, .crumbs .here {
+  font-family: Fraunces, Georgia, serif; font-size: 19px; color: var(--ink); text-decoration: none;
+}
+.crumbs a.up { font-weight: 500; color: var(--soft); }
+.crumbs .here { font-weight: 700; }
+.crumbs .wordmark.plain { font-size: 19px; font-weight: 500; color: var(--soft); }
+.crumbs a.up:hover, .crumbs .wordmark.plain:hover { color: var(--orange-deep); text-decoration: none; }
+@media (max-width: 620px) {
+  .crumbs { flex-wrap: wrap; gap: 6px 8px; }
+  .crumbs a.up, .crumbs .here, .crumbs .sep { font-size: 16px; }
+}
+
+.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0 6px; }
+.wordmark {
+  display: flex; align-items: center; gap: 10px;
+  font-family: Fraunces, Georgia, serif; font-weight: 700; font-size: 21px;
+  color: var(--ink); text-decoration: none;
+}
+.wordmark img { height: 34px; width: auto; border-radius: 22.5%; margin-left: -4px; }
+.langs { display: flex; flex-wrap: wrap; gap: 4px 14px; font-family: Fraunces, Georgia, serif; font-size: 13.5px; }
+.langs a, .langs button {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  font: inherit; letter-spacing: .05em;
+  color: var(--soft); text-decoration: none;
+}
+.langs a:hover, .langs button:hover { color: var(--orange-deep); text-decoration: none; }
+.langs a.active, .langs button.active { color: var(--orange-deep); font-weight: 600; }
+
+/* hero — the app icon exactly as on the iPhone home screen, name beneath */
+.hero { text-align: center; padding: 128px 0 45px; }
+.hero .appicon {
+  width: clamp(240px, 40vw, 336px); height: auto;
+  border-radius: 22.5%;
+  box-shadow: 0 12px 28px rgba(122, 82, 30, .18);
+}
+.hero .applabel {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, Inter, sans-serif;
+  font-size: clamp(23px, 3.8vw, 32px); font-weight: 400; line-height: 1.2;
+  margin: 18px 0 0;
+}
+.hero h1 { font-size: clamp(38px, 7vw, 62px); font-weight: 700; margin: 96px 0 10px; }
+.see-it { font-family: Fraunces, Georgia, serif; font-size: clamp(21px, 3.4vw, 27px); font-weight: 500; color: var(--orange-deep); margin: 0 0 78px; }
+.hero p.lead { max-width: 640px; margin: 0 auto 90px; font-size: clamp(17px, 2.3vw, 19px); color: var(--soft); }
+.badge {
+  display: inline-block; background: var(--ink); color: var(--cream);
+  border-radius: 999px; padding: 12px 24px; font-weight: 600; font-size: 15.5px;
+}
+.badge { display: inline-flex; align-items: center; gap: 9px; }
+.badge .applemark { width: 15px; height: 18px; fill: currentColor; margin-top: -2px; }
+
+/* landing sections */
+section { padding: 162px 0 10px; }
+/* Sections whose illustration is wide read better when their text is not: a narrower block,
+   centred as a block — the text itself stays left-aligned. */
+.lede { max-width: 620px; margin: 0 auto 34px; }
+.lede p.sub { margin-bottom: 0; }
+.kicker {
+  font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em;
+  color: var(--green-deep); margin: 0 0 10px;
+}
+section h2 { font-size: clamp(28px, 4.6vw, 40px); font-weight: 600; margin-bottom: 14px; }
+section p.sub { max-width: 640px; color: var(--soft); margin: 0 0 34px; }
+/* One reading column for the whole landing: every section's words sit in the same centred
+   620px block (text left-aligned), and the illustrations are centred beneath it. Before, some
+   sections started at the page edge and others in this column, so the eye zig-zagged. */
+section > .kicker, section > h2, section > p.sub, section > .values, section > .panel {
+  max-width: 620px; margin-left: auto; margin-right: auto;
+}
+
+/* steps */
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+@media (max-width: 860px) { .steps { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 460px) { .steps { grid-template-columns: 1fr; } }
+.step {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 22px 20px 18px; box-shadow: var(--shadow);
+}
+.step .num {
+  width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--orange); color: #fff; font-weight: 700; font-size: 16px; margin-bottom: 14px;
+}
+.step h3 { font-size: 21px; margin-bottom: 6px; }
+.step p { margin: 0; font-size: 14.5px; color: var(--soft); }
+.step p b { color: var(--ink); }
+
+/* "Calories are only the beginning": text in the reading column, the tall detail card centred
+   beneath it at the width of the note panel — side by side, the card left a long empty column. */
+.duo > div:first-child { max-width: 620px; margin: 0 auto 34px; }
+.duo > div:first-child p.sub { margin-bottom: 0; }
+.duo .detailcard { max-width: 460px; margin: 0 auto; }
+
+/* ---- stylized app cards (faithful to MealMomentCard / DaySummaryCard) ---- */
+.mcard {
+  background: #fff; border: 1px solid var(--line); border-radius: 18px;
+  padding: 14px 16px 10px; box-shadow: var(--shadow); text-align: left;
+}
+.mcard .mtitle { font-weight: 700; font-size: 16px; }
+.mcard .mdate { font-size: 12.5px; color: var(--soft); }
+.shots { display: flex; gap: 8px; margin: 10px 0; }
+.shot {
+  width: 78px; height: 98px; border-radius: 12px; display: grid; place-items: center;
+  font-size: 38px; background: linear-gradient(150deg, var(--cream), var(--mint));
+}
+.msummary { font-size: 13.5px; color: var(--soft); margin: 0; }
+.ngrid { display: grid; grid-template-columns: repeat(5, 1fr); row-gap: 10px; margin: 12px 0 8px; text-align: center; }
+.ngrid b { display: block; font-size: 13.5px; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.25; }
+.ngrid small { font-size: 10.5px; color: var(--soft); }
+.ngrid .conf b { color: var(--orange-deep); }
+
+/* the day summary card — dark grey with white bars, like the app's timeline header */
+.daycard {
+  background: #57514a; color: #fff; border-radius: 18px; padding: 14px 16px;
+  box-shadow: var(--shadow); text-align: left;
+}
+.daycard .ddate { font-weight: 700; font-size: 16px; }
+.daycard .ngrid { margin: 12px 0 4px; }
+.daycard .ngrid small { color: rgba(255, 255, 255, .75); }
+.dbars { margin-top: 10px; display: grid; gap: 6px; }
+.dbar { display: flex; align-items: center; gap: 8px; font-size: 11px; }
+.dbar .lbl { width: 82px; flex: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dbar .track { position: relative; flex: 1; height: 6px; border-radius: 999px; background: rgba(255, 255, 255, .25); overflow: hidden; }
+/* a limit's zone, lower to upper end, tinted on the empty track — the app's DayBar */
+.dbar .track b.zone { position: absolute; top: 0; bottom: 0; right: 0; background: rgba(255, 159, 10, .45); }
+.dbar .track i { position: relative; display: block; height: 100%; border-radius: 999px; background: #fff; }
+.dbar .track i.reached { background: #34c759; }
+.dbar .track i.near { background: #ff9f0a; }
+.dbar .track i.over { background: #ff6b61; }
+.dbar .pct { width: 38px; flex: none; text-align: right; font-variant-numeric: tabular-nums; }
+.dnote { font-size: 10.5px; color: rgba(255, 255, 255, .75); margin: 10px 0 0; }
+
+/* the feed: a phone-width timeline, day card on top */
+.phone { max-width: 430px; margin: 0 auto; display: grid; gap: 12px; }
+
+/* ---- capture screen, shaped like PhotoStepView and framed in iPhone proportions so it reads
+   as a screenshot: viewfinder, the strip of shots taken so far, then the control row the app
+   really has — library, shutter, counter — and Next beneath ---- */
+.capture {
+  width: 288px; margin: 0 auto; aspect-ratio: 9 / 19.5;
+  background: linear-gradient(165deg, var(--cream) 0%, var(--cream) 55%, var(--mint) 100%);
+  border: 9px solid #262220; border-radius: 42px;
+  box-shadow: 0 18px 40px rgba(122, 82, 30, .22);
+  padding: 16px 12px 12px; display: flex; flex-direction: column;
+}
+.viewfinder {
+  flex: 1; border-radius: 20px; display: grid; place-items: center; font-size: 84px;
+  background: linear-gradient(155deg, #efe7d6, #d6ccb8);
+  box-shadow: inset 0 0 0 1px rgba(122, 82, 30, .12);
+}
+.filmstrip { display: flex; gap: 8px; margin: 10px 0 0; justify-content: center; }
+.filmstrip .shot, .filmstrip .shot-more {
+  width: 62px; height: 74px; flex: none; border-radius: 12px;
+  display: grid; place-items: center; font-size: 28px;
+  background: rgba(255, 255, 255, .8); border: 1px solid var(--line);
+}
+.filmstrip .shot-more { font-size: 11px; font-weight: 700; color: var(--soft); line-height: 1.25; text-align: center; }
+.camrow { display: flex; align-items: center; justify-content: space-between; padding: 14px 10px 4px; }
+.camrow .lib { color: var(--soft); display: flex; }
+.camrow .count { font-size: 14px; font-weight: 600; color: var(--soft); font-variant-numeric: tabular-nums; }
+.camrow .shutter { width: 54px; height: 54px; border-radius: 50%; border: 4px solid var(--ink); }
+.camnext { text-align: center; font-weight: 600; color: var(--orange-deep); font-size: 15px; }
+p.caption { text-align: center; font-size: 13.5px; color: var(--soft); margin: 16px auto 0; max-width: 460px; }
+
+/* ---- the note step (NoteStepView): the field with its Back · mic · Analyze row ---- */
+.voice-panel { max-width: 460px; margin: 0 auto; }
+.notestep {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 18px; box-shadow: var(--shadow); display: flex; flex-direction: column;
+}
+.notestep .nhint { font-size: 13.5px; color: var(--soft); margin: 0 0 12px; }
+.notestep .nfield {
+  min-height: 132px; background: #fff; border: 1px solid var(--line);
+  border-radius: 14px; padding: 14px; font-size: 15.5px;
+}
+.notestep .nrow { display: flex; align-items: center; justify-content: space-between; margin-top: 16px; }
+.notestep .nbtn {
+  font-size: 14.5px; font-weight: 600; color: var(--ink);
+  background: rgba(122, 82, 30, .08); border-radius: 999px; padding: 9px 16px;
+}
+.notestep .nbtn.solid { background: var(--orange); color: #fff; }
+.notestep .mic {
+  width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; flex: none;
+  background: linear-gradient(160deg, var(--orange), var(--orange-deep));
+  box-shadow: 0 8px 18px rgba(217, 95, 8, .32);
+}
+
+/* ---- the detail view (MealMomentEditView): Estimate → Components → Confidence, with a full
+   nutrient row per component — which is what "calories are only the beginning" means ---- */
+.detailcard {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 16px 18px 18px; box-shadow: var(--shadow); text-align: left;
+}
+.detailcard .dsec {
+  font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--soft); margin: 20px 0 8px;
+}
+.detailcard .dsec:first-child { margin-top: 2px; }
+.detailcard .dwhole { font-size: 15px; font-weight: 600; }
+.detailcard .dsum { font-size: 13.5px; color: var(--soft); margin: 4px 0 0; }
+.detailcard .dhint { font-size: 12.5px; color: var(--soft); margin: 0 0 12px; }
+.detailcard .comp { border-top: 1px solid var(--line); padding-top: 12px; margin-top: 12px; }
+.detailcard .comp:first-of-type { border-top: 0; margin-top: 0; padding-top: 0; }
+.detailcard .cname { font-size: 15px; font-weight: 600; }
+.detailcard .cmeta { font-size: 12.5px; color: var(--soft); margin-top: 2px; }
+.detailcard .dconf b { display: block; font-size: 15px; color: var(--orange-deep); text-transform: capitalize; }
+.detailcard .dconf p { font-size: 12.5px; color: var(--soft); margin: 4px 0 0; }
+
+/* manifesto */
+.manifesto { text-align: center; padding: 162px 0 24px; }
+.manifesto p.big {
+  font-family: Fraunces, Georgia, serif; font-size: clamp(24px, 4vw, 34px); font-weight: 600;
+  line-height: 1.35; max-width: 780px; margin: 0 auto 22px;
+}
+.manifesto p.big em { font-style: normal; color: var(--orange-deep); }
+.manifesto p.big em.g { color: var(--green-deep); }
+.manifesto p.follow { max-width: 620px; margin: 0 auto; color: var(--soft); font-size: 17px; }
+
+/* pull quote */
+.pull { text-align: center; padding: 162px 0 20px; }
+.pull blockquote {
+  margin: 0 auto; max-width: 700px;
+  font-family: Fraunces, Georgia, serif; font-size: clamp(24px, 4vw, 34px); font-weight: 600; line-height: 1.3;
+}
+.pull blockquote em { font-style: normal; color: var(--orange-deep); }
+
+/* values — a plain list on the background, each line led by the little carrot that was the
+   app's first icon (rendered from the food-moments repo's old scripts/icon/render-icon.swift) */
+.values { display: grid; gap: 14px; }
+.values .value { position: relative; padding-left: 36px; font-size: 17.5px; font-weight: 500; }
+.values .value::before {
+  content: ""; position: absolute; left: 3px; top: 1px; width: 15px; height: 28px;
+  background: url("carrot.png") center / contain no-repeat;
+}
+.values .value em { font-style: normal; font-weight: 650; color: var(--green-deep); }
+
+/* privacy */
+.privacy .panel {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 24px; box-shadow: var(--shadow); display: flex; gap: 18px; align-items: flex-start;
+}
+.privacy .panel .lock { font-size: 30px; line-height: 1.2; }
+.privacy .panel p { margin: 0; font-size: 15.5px; color: var(--soft); }
+.privacy .panel b { color: var(--ink); }
+
+/* landing fine print */
+footer { margin-top: 152px; padding: 40px 0 56px; border-top: 1px solid var(--line); }
+footer .fine {
+  display: flex; flex-wrap: wrap; gap: 8px 26px; margin: 0 0 18px; padding: 0; list-style: none;
+  font-size: 14.5px; font-weight: 600;
+}
+footer .fine a { color: var(--soft); }
+footer .fine a:hover { color: var(--orange-deep); }
+footer .legal { font-size: 13px; color: var(--soft); }
+footer .legal a { color: inherit; }
+
+/* ---- support page & legal documents: plain text on the gradient, no card ---- */
+.doc { max-width: none; padding: 64px 0 10px; }
+.doc h1 { font-size: clamp(32px, 5vw, 46px); font-weight: 600; margin: 0 0 12px; }
+.doc > h2 { font-size: 23px; font-weight: 600; margin: 58px 0 10px; }
+.doc p { margin: 0 0 16px; text-align: justify; hyphens: auto; }
+.doc ul { margin: 0 0 16px; padding-left: 22px; }
+.doc li { margin-bottom: 6px; text-align: justify; hyphens: auto; }
+.meta {
+  font-size: 13.5px; color: var(--soft); font-style: italic;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 18px; margin-bottom: 26px;
+}
+.address { color: var(--soft); font-size: 14.5px; }
+
+/* The support page has no effective-date line under its title, so its first paragraph needs the room. */
+.doc h1 + p:not(.meta) { margin-top: 24px; }
+
+@media print {
+  body { background: #fff; }
+  .top, footer { display: none; }
+  .doc { max-width: 100%; padding: 0; }
+}

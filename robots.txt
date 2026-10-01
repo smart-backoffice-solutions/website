@@ -1,0 +1,6 @@
+# https://smart-backoffice.nl/robots.txt
+# Everyone is welcome, including search and AI crawlers.
+User-agent: *
+Allow: /
+
+Sitemap: https://smart-backoffice.nl/sitemap.xml
